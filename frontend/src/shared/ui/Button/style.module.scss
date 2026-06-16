@@ -20,7 +20,7 @@
     }
     &:active {
         background: transparent;
-        color: #000A1F;
+        color: #FFFFFF;
     }
     &:focus {
         outline: none;
@@ -49,6 +49,73 @@
     }
     &:active {
         background: linear-gradient(90deg, #00DC55 0%, #00C77A 100%);
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.icon {
+    display: flex;
+    flex-shrink: 0;
+    color: inherit;
+
+    svg {
+        display: block;
+    }
+}
+
+.button.header-outline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    background: transparent;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000A1F;
+    border: 2px solid #00C77A;
+    cursor: pointer;
+    &:hover {
+        background: linear-gradient(90deg, #00DC55 0%, #00C77A 100%);
+        border: 2px solid #00C77A;
+        color: #000A1F;
+    }
+    &:active {
+        background: transparent;
+        color: #000A1F;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.button.header-filled {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    background: linear-gradient(90deg, #00DC55 0%, #00C77A 100%);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border: 2px solid transparent;
+    cursor: pointer;
+    &:hover {
+        background: transparent;
+        border: 2px solid #00C77A;
+        color: #000A1F;
+    }
+    &:active {
+        background: linear-gradient(90deg, #00DC55 0%, #00C77A 100%);
+        color: #000A1F;
     }
     &:focus {
         outline: none;

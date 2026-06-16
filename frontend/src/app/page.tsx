@@ -1,4 +1,5 @@
 import { Hero } from "@/widgets/Hero";
+import { Header } from "@/widgets/Header";
 
 
 const HeroData ={
@@ -16,6 +17,7 @@ const HeroData ={
 export default function Home() {
   return (
     <>
+      <Header />
       <Hero {...HeroData} />
     </>
   );

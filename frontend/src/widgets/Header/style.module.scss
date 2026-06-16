@@ -1,0 +1,66 @@
+.header {
+    width: 100%;
+    background: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.headerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 20px;
+    max-height: 74px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.headerLogoBig {
+    display: none;
+}
+
+.headerButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.headerButtonOutline,
+.headerButtonFulled {
+    display: flex;
+    flex-shrink: 0;
+    width: 262px;
+
+    button {
+        width: 100%;
+    }
+}
+
+.headerButtonOutline {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .headerLogoBig {
+        display: block;
+    }
+
+    .headerLogoSmall {
+        display: none;
+    }
+
+    .headerButtonFulled {
+        max-width: 154px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .headerButtonOutline {
+        display: flex;
+    }
+}
