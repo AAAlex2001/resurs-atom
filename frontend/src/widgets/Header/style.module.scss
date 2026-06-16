@@ -1,11 +1,14 @@
 .header {
     width: 100%;
-    background: #FFFFFF;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
+    background-color: rgba(255, 255, 255, 0.35);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .headerContent {
