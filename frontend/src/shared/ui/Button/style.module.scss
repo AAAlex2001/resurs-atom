@@ -9,12 +9,12 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
-    color: #000A1F;
-    border: 1px solid #00C77A;
+    color: #FFFFFF;
+    border: 2px solid #00C77A;
     cursor: pointer;
     &:hover {
         background: linear-gradient(90deg, #00DC55 0%, #00C77A 100%);
-        border: 1px solid #00C77A;
+        border: 2px solid #00C77A;
         color: #FFFFFF;
 
     }
@@ -39,11 +39,12 @@
     font-size: 16px;
     line-height: 16px;
     color: #000A1F;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     cursor: pointer;
     &:hover {
         background: transparent;
-        border: 1px solid #00C77A;
+        border: 2px solid #00C77A;
+        color: #FFFFFF;
 
     }
     &:active {
