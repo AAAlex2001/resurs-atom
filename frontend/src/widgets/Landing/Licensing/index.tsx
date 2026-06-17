@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 import { ArrowRightIcon } from "@/shared/ui/icons/ArrowRightIcon";
 import { LicensingCard, type LicensingCardData } from "@/widgets/Landing/Licensing/LicensingCard";
@@ -33,6 +34,15 @@ export const Licensing = ({ data }: LicensingProps) => {
 
     return (
         <section id="process" className={style.licensingContainer}>
+            <Image
+                src="/licensing.png"
+                alt=""
+                aria-hidden
+                width={864}
+                height={528}
+                className={style.bgImage}
+                sizes="800px"
+            />
             <div className={style.licensingContent}>
                 <div className={style.licensingHeader}>
                     <div className={style.licensingKicker}>{data.kicker}</div>

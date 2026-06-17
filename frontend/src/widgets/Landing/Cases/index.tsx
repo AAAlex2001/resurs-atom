@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import { Fragment, useState } from "react";
 import { ArrowRightIcon } from "@/shared/ui/icons/ArrowRightIcon";
 import { Button } from "@/shared/ui/Button";
@@ -34,6 +35,15 @@ export const Cases = ({ data }: CasesProps) => {
 
     return (
         <section id="cases" className={style.casesContainer}>
+            <Image
+                src="/licensing.png"
+                alt=""
+                aria-hidden
+                width={864}
+                height={528}
+                className={style.bgImage}
+                sizes="800px"
+            />
             <div className={style.casesContent}>
                 <div className={style.casesIntro}>
                     <div className={style.casesHeader}>
