@@ -98,6 +98,44 @@
     }
 }
 
+.outline-dark {
+    background: transparent;
+    border: 2px solid #00C77A;
+
+    .buttonText {
+        background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &:hover {
+        &::before {
+            opacity: 1;
+        }
+
+        .buttonText {
+            background: none;
+            -webkit-text-fill-color: #FFFFFF;
+            color: #FFFFFF;
+        }
+    }
+
+    &:active {
+        &::before {
+            opacity: 0;
+        }
+
+        .buttonText {
+            background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+    }
+}
+
 .header-outline {
     gap: 10px;
     background: transparent;
