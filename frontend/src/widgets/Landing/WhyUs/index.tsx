@@ -31,7 +31,7 @@ export const WhyUs = ({ data }: WhyUsProps) => {
                             <p className={style.description}>{data.description}</p>
                         </div>
                     </div>
-                    <Button text={data.buttonText} variant="header-filled" className={style.cta} />
+                    <Button text={data.buttonText} variant="filled-dark" className={style.cta} />
                 </div>
                 <ul className={style.cards}>
                     {data.reasons.map((item) => (

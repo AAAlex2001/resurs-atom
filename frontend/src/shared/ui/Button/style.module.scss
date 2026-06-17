@@ -101,6 +101,52 @@
             color: #FFFFFF;
         }
     }
+
+    &:active {
+        border-color: #00C77A;
+
+        &::before {
+            opacity: 1;
+        }
+
+        .buttonText {
+            background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.filled-dark {
+    background: transparent;
+
+    &::before {
+        opacity: 1;
+    }
+
+    .buttonText {
+        background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &:hover {
+        border-color: #00C77A;
+
+        &::before {
+            opacity: 0;
+        }
+    }
+
+    &:active {
+        border-color: #00C77A;
+
+        &::before {
+            opacity: 1;
+        }
+    }
 }
 
 .outline-dark {

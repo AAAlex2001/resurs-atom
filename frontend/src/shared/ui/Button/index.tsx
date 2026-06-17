@@ -3,7 +3,7 @@ import style from "./style.module.scss";
 
 type ButtonProps = {
     text?: string;
-    variant: "outline" | "filled" | "outline-dark" | "header-outline" | "header-filled" | "transparent";
+    variant: "outline" | "filled" | "filled-dark" | "outline-dark" | "header-outline" | "header-filled" | "transparent";
     onClick?: () => void;
     className?: string;
     type?: "button" | "submit" | "reset";

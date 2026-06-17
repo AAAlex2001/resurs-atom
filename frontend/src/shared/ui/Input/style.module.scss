@@ -1,0 +1,21 @@
+.input {
+    width: 100%;
+    padding: 12px 16px;
+    background: #FFFFFF;
+    border: 1px solid #B3B9C0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000A1F;
+
+    &::placeholder {
+        color: #B3B9C0;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: #00C77A;
+    }
+}

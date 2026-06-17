@@ -12,6 +12,8 @@ import {
     PackagesData,
     TestimonialsData,
     FaqData,
+    ContactData,
+    FooterData,
 } from "@/app/data";
 import { Hero } from "@/widgets/Landing/Hero";
 import { Header } from "@/widgets/Header";
@@ -26,6 +28,8 @@ import { Cases } from "@/widgets/Landing/Cases";
 import { Packages } from "@/widgets/Landing/Packages";
 import { Testimonials } from "@/widgets/Landing/Testimonials";
 import { Faq } from "@/widgets/Landing/Faq";
+import { Contact } from "@/widgets/Landing/Contact";
+import { Footer } from "@/widgets/Footer";
 
 export default function Home() {
     return (
@@ -43,6 +47,8 @@ export default function Home() {
             <Packages data={PackagesData} />
             <Testimonials data={TestimonialsData} />
             <Faq data={FaqData} />
+            <Contact data={ContactData} />
+            <Footer data={FooterData} />
         </>
     );
 }
