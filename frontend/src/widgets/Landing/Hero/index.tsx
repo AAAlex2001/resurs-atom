@@ -2,7 +2,7 @@ import Image from "next/image";
 import style from "./style.module.scss";
 import { Button } from "@/shared/ui/Button";
 
-export type HeroProps = {
+type HeroProps = {
     titlePrefix: string;
     highlight: string;
     titleSuffix: string;

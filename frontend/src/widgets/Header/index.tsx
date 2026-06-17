@@ -4,9 +4,14 @@ import { Button } from "@/shared/ui/Button";
 import { LogoBig } from "@/shared/ui/icons/LogoBig";
 import { LogoSmall } from "@/shared/ui/icons/LogoSmall";
 import { PhoneIcon } from "@/shared/ui/icons/PhoneIcon";
-import type { NavLink } from "@/shared/types/content";
 
-export type HeaderProps = {
+type NavLink = {
+    id: number;
+    label: string;
+    href: string;
+};
+
+type HeaderProps = {
     phone: string;
     consultationText: string;
     navLinks: NavLink[];

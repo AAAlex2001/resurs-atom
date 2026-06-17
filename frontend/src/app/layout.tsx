@@ -1,24 +1,6 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import Script from "next/script";
 import "./globals.scss";
-
-const ttFirsNeue = localFont({
-    src: [
-        {
-            path: "../../public/fonts/TTFirsNeue-Regular.woff2",
-            weight: "400",
-            style: "normal",
-        },
-        {
-            path: "../../public/fonts/TTFirsNeue-Medium.woff2",
-            weight: "500",
-            style: "normal",
-        },
-    ],
-    display: "swap",
-    variable: "--font-tt-firs",
-});
 
 export const metadata: Metadata = {
     title: "Атомные лицензии Ростехнадзора | Ресурс Атом — сопровождение под ключ",
@@ -182,7 +164,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="ru" className={ttFirsNeue.variable}>
+        <html lang="ru">
             <head>
                 <script
                     type="application/ld+json"

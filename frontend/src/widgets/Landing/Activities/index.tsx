@@ -1,15 +1,19 @@
 import { Button } from "@/shared/ui/Button";
 import { ActivitiesSlider } from "@/widgets/Landing/Activities/ActivitiesSlider";
-import type { NumberedCard } from "@/shared/types/content";
 import style from "./style.module.scss";
 
-export type ActivitiesProps = {
+type ActivitiesProps = {
     kicker: string;
     title: string;
     highlight: string;
     description: string;
     buttonText: string;
-    activities: NumberedCard[];
+    activities: {
+        id: number;
+        number: string;
+        title: string;
+        description: string;
+    }[];
 };
 
 export const Activities = ({ kicker, title, highlight, description, buttonText, activities }: ActivitiesProps) => {

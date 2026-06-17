@@ -1,11 +1,4 @@
-import type { HeaderProps } from "@/widgets/Header";
-import type { HeroProps } from "@/widgets/Landing/Hero";
-import type { StatsProps } from "@/widgets/Landing/Stats";
-import type { ActivitiesProps } from "@/widgets/Landing/Activities";
-import type { ClientsBenefitsProps } from "@/widgets/Landing/ClientsBenefits";
-import type { LicensingProps } from "@/widgets/Landing/Licensing";
-
-export const HeaderData: HeaderProps = {
+export const HeaderData = {
     phone: "+7 999 001-80-00",
     consultationText: "Консультация",
     navLinks: [
@@ -32,7 +25,7 @@ export const HeaderData: HeaderProps = {
     ],
 };
 
-export const HeroData: HeroProps = {
+export const HeroData = {
     titlePrefix: "Получение",
     highlight: "атомных лицензий",
     titleSuffix: "Ростехнадзора",
@@ -44,7 +37,7 @@ export const HeroData: HeroProps = {
     imageAlt: "Получение атомных лицензий Ростехнадзора",
 };
 
-export const StatsData: StatsProps = {
+export const StatsData = {
     stats: [
         {
             id: 1,
@@ -69,7 +62,7 @@ export const StatsData: StatsProps = {
     ],
 };
 
-export const ActivitiesData: ActivitiesProps = {
+export const ActivitiesData = {
     kicker: "Кому нужна лицензия",
     title: "Виды деятельности, требующие лицензии",
     highlight: "Ростехнадзора",
@@ -143,7 +136,7 @@ export const ActivitiesData: ActivitiesProps = {
     ],
 };
 
-export const ClientsBenefitsData: ClientsBenefitsProps = {
+export const ClientsBenefitsData = {
     kicker: "Что получают клиенты",
     title: "Полное сопровождение лицензирования — от начала до конца.",
     description:
@@ -213,7 +206,7 @@ export const ClientsBenefitsData: ClientsBenefitsProps = {
     ],
 };
 
-export const LicensingData: LicensingProps = {
+export const LicensingData = {
     kicker: "процесс лицензирования",
     title: "Семь чётких этапов —",
     highlight: "от аудита до выдачи",
@@ -330,4 +323,42 @@ export const LicensingData: LicensingProps = {
             ],
         },
     ],
+};
+
+export const LicenseTermData = {
+    kicker: "Срок действия лицензии",
+    title: "Выдаётся на определённый срок —",
+    highlight: "до 10 лет",
+    description:
+        "Лицензии в области использования атомной энергии имеют ограниченный срок действия. Он зависит от вида деятельности, классификации объекта, результатов обоснования безопасности и решения регулятора. Обязательства по соответствию действуют непрерывно весь срок.",
+    warning: {
+        prefix: "Лицензия выдаётся конкретному юридическому лицу и ",
+        emphasis: "не подлежит передаче",
+        suffix:
+            " другой организации — включая аффилированные структуры, правопреемников и субподрядчиков. Корпоративная реорганизация требует нового лицензирования.",
+    },
+    termsKicker: "Ориентиры по срокам",
+    terms: [
+        {
+            id: 1,
+            term: "До 5 лет",
+            description: "Эксплуатация и обращение с РМ",
+        },
+        {
+            id: 2,
+            term: "До 7 лет",
+            description: "Проектирование и инжиниринг",
+        },
+        {
+            id: 3,
+            term: "До 10 лет",
+            description: "Строительство и производство (по объекту)",
+        },
+        {
+            id: 4,
+            term: "По решению",
+            description: "Специализированные исследования и пилотные работы",
+        },
+    ],
+    termsNote: "Ориентировочно. Фактический срок устанавливается Ростехнадзором индивидуально.",
 };

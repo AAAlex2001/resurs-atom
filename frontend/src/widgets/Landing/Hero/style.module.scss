@@ -23,7 +23,7 @@
 .image {
     display: block;
     width: 100%;
-    min-height: 280px;
+    height: 460px;
     object-fit: cover;
 }
 
@@ -85,6 +85,10 @@
     .heroButtons {
         flex-direction: row;
         justify-content: flex-start;
+    }
+
+    .image {
+        height: 660px;
     }
 }
 

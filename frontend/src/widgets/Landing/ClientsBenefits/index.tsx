@@ -1,14 +1,23 @@
 import { BenefitsSlider } from "@/widgets/Landing/ClientsBenefits/BenefitsSlider";
 import { BenefitsOrbit } from "@/widgets/Landing/ClientsBenefits/BenefitsOrbit";
-import type { NumberedCard, OrbitHint } from "@/shared/types/content";
 import style from "./style.module.scss";
 
-export type ClientsBenefitsProps = {
+type Benefit = {
+    id: number;
+    number: string;
+    title: string;
+    description: string;
+};
+
+type ClientsBenefitsProps = {
     kicker: string;
     title: string;
     description: string;
-    orbitHint: OrbitHint;
-    benefits: NumberedCard[];
+    orbitHint: {
+        title: string;
+        description: string;
+    };
+    benefits: Benefit[];
 };
 
 export const ClientsBenefits = ({ kicker, title, description, orbitHint, benefits }: ClientsBenefitsProps) => {

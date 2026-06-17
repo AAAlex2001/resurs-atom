@@ -3,16 +3,19 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { ArrowRightIcon } from "@/shared/ui/icons/ArrowRightIcon";
-import { LicensingCard } from "@/widgets/Landing/Licensing/LicensingCard";
-import type { LicensingStep, LicensingCardData } from "@/shared/types/content";
+import { LicensingCard, type LicensingCardData } from "@/widgets/Landing/Licensing/LicensingCard";
 import style from "./style.module.scss";
 
-export type LicensingProps = {
+type LicensingProps = {
     kicker: string;
     title: string;
     highlight: string;
     description: string;
-    steps: LicensingStep[];
+    steps: {
+        id: number;
+        number: string;
+        title: string;
+    }[];
     stepsCard: LicensingCardData[];
 };
 
