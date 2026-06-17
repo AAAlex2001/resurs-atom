@@ -5,16 +5,78 @@
     background-color: #000a1f;
     background-image: url("/licensing.png");
     background-repeat: no-repeat;
-    background-position: calc(100% + 200px) center;
+    background-position: calc(100% + 290px) center;
     background-size: auto 100%;
 }
 
 .licensingContent {
     position: relative;
     z-index: 1;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+
+.licensingHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.licemsingKicker {
+    color: #00DE4F;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.licensingTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.licensingTitle {
+    
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0;
+    color: #F7FFF3;
+}
+
+.licensingHighlight {
+    color: #00DE4F;
 }
 
 .licensingCards {
     display: flex;
     flex-direction: column;
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+    .licensingContainer {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        background-color: #000a1f;
+        background-image: url("/licensing.png");
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: auto 100%;
+    }
+
+    .licensingContent {
+        padding: 100px 50px;
+    }
 }
