@@ -2,17 +2,10 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-}
-
-.bgImage {
-    position: absolute;
-    top: 0;
-    right: -300px;
-    height: 100%;
-    width: auto;
-    z-index: 0;
-    pointer-events: none;
-    user-select: none;
+    background-image: url("/licensing.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% + 300px) center;
+    background-size: auto 100%;
 }
 
 .casesContent {
