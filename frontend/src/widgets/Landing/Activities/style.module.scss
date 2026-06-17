@@ -11,6 +11,19 @@
     overflow: hidden;
 }
 
+.activitiesHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.activitiesHeaderTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 656px;
+}
+
 .activitiesKicker {
     color: #00DE4F;
     text-transform: uppercase;
@@ -82,5 +95,18 @@
     .activitiesSliderWrapper {
         width: calc(100% + 50px);
         margin-right: -50px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .activitiesHeader {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .activitiesButton {
+        width: 254px;
+        flex-shrink: 0;
     }
 }

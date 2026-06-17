@@ -20,16 +20,20 @@ export const Activities = ({ kicker, title, highlight, description, buttonText, 
     return (
         <section className={style.activitiesContainer}>
             <div className={style.activitiesContent}>
-                <div className={style.activitiesKicker}>{kicker}</div>
-                <div className={style.activitiesTexts}>
-                    <h1 className={style.activitiesTitle}>
-                        <span className={style.activitiesTitleText}>{title}</span>
-                        <span className={style.activitiesHighlight}>{highlight}</span>
-                    </h1>
-                    <p className={style.activitiesDescription}>{description}</p>
-                </div>
-                <div className={style.activitiesButton}>
-                    <Button text={buttonText} variant="outline-dark" />
+                <div className={style.activitiesHeader}>
+                    <div className={style.activitiesHeaderTexts}>
+                        <div className={style.activitiesKicker}>{kicker}</div>
+                        <div className={style.activitiesTexts}>
+                            <h1 className={style.activitiesTitle}>
+                                <span className={style.activitiesTitleText}>{title}</span>
+                                <span className={style.activitiesHighlight}>{highlight}</span>
+                            </h1>
+                            <p className={style.activitiesDescription}>{description}</p>
+                        </div>
+                    </div>
+                    <div className={style.activitiesButton}>
+                        <Button text={buttonText} variant="outline-dark" />
+                    </div>
                 </div>
                 <div className={style.activitiesSliderWrapper}>
                     <ActivitiesSlider activities={activities} />
