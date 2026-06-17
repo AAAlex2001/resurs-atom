@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { AnimatePresence, motion, useAnimationFrame, useMotionValue, useReducedMotion, useTransform } from "framer-motion";
 import { useState } from "react";
 import { HoverPointerIcon } from "@/shared/ui/icons/HoverPointerIcon";
 import style from "./style.module.scss";
@@ -47,9 +47,9 @@ const ringClassNames: Record<Ring, string> = {
 };
 
 const ringDurations: Record<Ring, number> = {
-    outer: 46,
-    middle: 36,
-    inner: 28,
+    outer: 38,
+    middle: 30,
+    inner: 23,
 };
 
 const ringDirections: Record<Ring, number> = {
@@ -58,10 +58,69 @@ const ringDirections: Record<Ring, number> = {
     inner: 360,
 };
 
+type OrbitRingProps = {
+    ring: Ring;
+    benefits: Benefit[];
+    isPaused: boolean;
+    setActiveBenefit: (benefit: Benefit | null) => void;
+};
+
+const OrbitRing = ({ ring, benefits, isPaused, setActiveBenefit }: OrbitRingProps) => {
+    const rotation = useMotionValue(0);
+    const counterRotation = useTransform(rotation, (value) => -value);
+    const duration = ringDurations[ring];
+    const direction = ringDirections[ring];
+
+    useAnimationFrame((_, delta) => {
+        if (isPaused) {
+            return;
+        }
+
+        rotation.set(rotation.get() + (direction * delta) / (duration * 1000));
+    });
+
+    return (
+        <motion.div
+            className={`${style.ringLayer} ${ringClassNames[ring]}`}
+            style={{ rotate: rotation }}
+        >
+            {orbitItems
+                .filter((item) => item.ring === ring)
+                .map((item) => {
+                    const benefit = benefits[item.benefitIndex];
+
+                    if (!benefit) {
+                        return null;
+                    }
+
+                    return (
+                        <motion.button
+                            className={style.orbitNumber}
+                            key={benefit.id}
+                            onBlur={() => setActiveBenefit(null)}
+                            onFocus={() => setActiveBenefit(benefit)}
+                            onHoverEnd={() => setActiveBenefit(null)}
+                            onHoverStart={() => setActiveBenefit(benefit)}
+                            style={{
+                                left: item.x,
+                                top: item.y,
+                                rotate: counterRotation,
+                            }}
+                            type="button"
+                            whileHover={{ scale: 1.08 }}
+                        >
+                            <span className={style.orbitNumberText}>{benefit.number}</span>
+                        </motion.button>
+                    );
+                })}
+        </motion.div>
+    );
+};
+
 export const BenefitsOrbit = ({ benefits, hint }: BenefitsOrbitProps) => {
     const [activeBenefit, setActiveBenefit] = useState<Benefit | null>(null);
     const shouldReduceMotion = useReducedMotion();
-    const isOrbitPaused = Boolean(activeBenefit) || shouldReduceMotion;
+    const isOrbitPaused = Boolean(activeBenefit) || Boolean(shouldReduceMotion);
 
     const rings: Ring[] = ["outer", "middle", "inner"];
 
@@ -73,48 +132,7 @@ export const BenefitsOrbit = ({ benefits, hint }: BenefitsOrbitProps) => {
                 <div className={`${style.circle} ${style.innerCircle}`} />
 
                 {rings.map((ring) => {
-                    const duration = ringDurations[ring];
-                    const direction = ringDirections[ring];
-
-                    return (
-                        <motion.div
-                            animate={isOrbitPaused ? undefined : { rotate: direction }}
-                            className={`${style.ringLayer} ${ringClassNames[ring]}`}
-                            key={ring}
-                            transition={{ duration, ease: "linear", repeat: Infinity }}
-                        >
-                            {orbitItems
-                                .filter((item) => item.ring === ring)
-                                .map((item) => {
-                                    const benefit = benefits[item.benefitIndex];
-
-                                    if (!benefit) {
-                                        return null;
-                                    }
-
-                                    return (
-                                        <motion.button
-                                            animate={isOrbitPaused ? undefined : { rotate: -direction }}
-                                            className={style.orbitNumber}
-                                            key={benefit.id}
-                                            onBlur={() => setActiveBenefit(null)}
-                                            onFocus={() => setActiveBenefit(benefit)}
-                                            onHoverEnd={() => setActiveBenefit(null)}
-                                            onHoverStart={() => setActiveBenefit(benefit)}
-                                            style={{
-                                                left: item.x,
-                                                top: item.y,
-                                            }}
-                                            transition={{ duration, ease: "linear", repeat: Infinity }}
-                                            type="button"
-                                            whileHover={{ scale: 1.08 }}
-                                        >
-                                            {benefit.number}
-                                        </motion.button>
-                                    );
-                                })}
-                        </motion.div>
-                    );
+                    return <OrbitRing benefits={benefits} isPaused={isOrbitPaused} key={ring} ring={ring} setActiveBenefit={setActiveBenefit} />;
                 })}
 
                 <AnimatePresence mode="wait">
