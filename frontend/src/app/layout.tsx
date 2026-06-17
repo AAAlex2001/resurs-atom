@@ -42,9 +42,9 @@ export const metadata: Metadata = {
         images: [
             {
                 url: "/og-image.jpg",
-                width: 1200,
-                height: 630,
-                alt: "Ресурс Атом — атомные лицензии Ростехнадзора",
+                width: 3750,
+                height: 1969,
+                alt: "Атом-Плюс — атомные лицензии Ростехнадзора",
             },
         ],
     },
