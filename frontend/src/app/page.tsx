@@ -1,4 +1,4 @@
-import { Hero } from "@/widgets/Hero";
+import { Hero } from "@/widgets/Landing/Hero";
 import { Header } from "@/widgets/Header";
 
 
