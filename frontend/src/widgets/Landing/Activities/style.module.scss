@@ -78,8 +78,7 @@
 }
 
 .activitiesSliderWrapper {
-    width: calc(100% + 20px);
-    margin-right: -20px;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -92,10 +91,6 @@
         max-width: 254px;
     }
 
-    .activitiesSliderWrapper {
-        width: calc(100% + 50px);
-        margin-right: -50px;
-    }
 }
 
 @media (min-width: 1440px) {

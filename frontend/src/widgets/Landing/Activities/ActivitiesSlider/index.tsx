@@ -18,6 +18,9 @@ type ActivitiesSliderProps = {
 export const ActivitiesSlider = ({ activities }: ActivitiesSliderProps) => {
     const [sliderRef] = useKeenSlider({
         loop: false,
+        range: {
+            align: true,
+        },
         slides: {
             perView: 1.1,
             spacing: 10,
@@ -25,7 +28,7 @@ export const ActivitiesSlider = ({ activities }: ActivitiesSliderProps) => {
         breakpoints: {
             "(min-width: 768px)": {
                 slides: {
-                    perView: 2.2,
+                    perView: 2,
                     spacing: 10,
                 },
             },
