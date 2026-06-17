@@ -14,13 +14,17 @@ type NavLink = {
     href: string;
 };
 
-type BurgerMenuProps = {
+type BurgerMenuData = {
     navLinks: NavLink[];
     phone: string;
     consultationText: string;
 };
 
-export const BurgerMenu = ({ navLinks, phone, consultationText }: BurgerMenuProps) => {
+type BurgerMenuProps = {
+    data: BurgerMenuData;
+};
+
+export const BurgerMenu = ({ data }: BurgerMenuProps) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isMounted, setIsMounted] = useState(false);
     const openButtonRef = useRef<HTMLButtonElement>(null);
@@ -114,7 +118,7 @@ export const BurgerMenu = ({ navLinks, phone, consultationText }: BurgerMenuProp
                           </div>
 
                           <nav className={style.overlayNav} aria-label="Мобильная навигация">
-                              {navLinks.map((link) => (
+                              {data.navLinks.map((link) => (
                                   <a className={style.overlayLink} href={link.href} key={link.id} onClick={closeMenu}>
                                       <span>{link.label}</span>
                                   </a>
@@ -122,8 +126,8 @@ export const BurgerMenu = ({ navLinks, phone, consultationText }: BurgerMenuProp
                           </nav>
 
                           <div className={style.overlayButtons}>
-                              <Button text={phone} variant="header-outline" icon={<PhoneIcon />} />
-                              <Button text={consultationText} variant="header-filled" />
+                              <Button text={data.phone} variant="header-outline" icon={<PhoneIcon />} />
+                              <Button text={data.consultationText} variant="header-filled" />
                           </div>
                       </div>
                   </div>,

@@ -9,7 +9,7 @@ type Benefit = {
     description: string;
 };
 
-type ClientsBenefitsProps = {
+type ClientsBenefitsData = {
     kicker: string;
     title: string;
     description: string;
@@ -20,22 +20,26 @@ type ClientsBenefitsProps = {
     benefits: Benefit[];
 };
 
-export const ClientsBenefits = ({ kicker, title, description, orbitHint, benefits }: ClientsBenefitsProps) => {
+type ClientsBenefitsProps = {
+    data: ClientsBenefitsData;
+};
+
+export const ClientsBenefits = ({ data }: ClientsBenefitsProps) => {
     return (
         <section className={style.benefitsContainer}>
             <div className={style.benefitsContent}>
                 <div className={style.benefitsHeader}>
-                    <div className={style.benefitsKicker}>{kicker}</div>
+                    <div className={style.benefitsKicker}>{data.kicker}</div>
                     <div className={style.benefitsTexts}>
-                        <h2 className={style.benefitsTitle}>{title}</h2>
-                        <p className={style.benefitsDescription}>{description}</p>
+                        <h2 className={style.benefitsTitle}>{data.title}</h2>
+                        <p className={style.benefitsDescription}>{data.description}</p>
                     </div>
                 </div>
                 <div className={style.benefitsSlider}>
-                    <BenefitsSlider benefits={benefits} />
+                    <BenefitsSlider benefits={data.benefits} />
                 </div>
                 <div className={style.benefitsOrbit}>
-                    <BenefitsOrbit benefits={benefits} hint={orbitHint} />
+                    <BenefitsOrbit benefits={data.benefits} hint={data.orbitHint} />
                 </div>
             </div>
         </section>

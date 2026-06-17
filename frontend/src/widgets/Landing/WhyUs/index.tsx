@@ -7,7 +7,7 @@ type Reason = {
     description: string;
 };
 
-type WhyUsProps = {
+type WhyUsData = {
     kicker: string;
     title: string;
     description: string;
@@ -15,22 +15,26 @@ type WhyUsProps = {
     reasons: Reason[];
 };
 
-export const WhyUs = ({ kicker, title, description, buttonText, reasons }: WhyUsProps) => {
+type WhyUsProps = {
+    data: WhyUsData;
+};
+
+export const WhyUs = ({ data }: WhyUsProps) => {
     return (
         <section className={style.whyUs}>
             <div className={style.content}>
                 <div className={style.intro}>
                     <div className={style.header}>
-                        <div className={style.kicker}>{kicker}</div>
+                        <div className={style.kicker}>{data.kicker}</div>
                         <div className={style.texts}>
-                            <h2 className={style.title}>{title}</h2>
-                            <p className={style.description}>{description}</p>
+                            <h2 className={style.title}>{data.title}</h2>
+                            <p className={style.description}>{data.description}</p>
                         </div>
                     </div>
-                    <Button text={buttonText} variant="header-filled" className={style.cta} />
+                    <Button text={data.buttonText} variant="header-filled" className={style.cta} />
                 </div>
                 <ul className={style.cards}>
-                    {reasons.map((item) => (
+                    {data.reasons.map((item) => (
                         <li className={style.card} key={item.id}>
                             <div className={style.cardTexts}>
                                 <span className={style.cardTitle}>{item.title}</span>

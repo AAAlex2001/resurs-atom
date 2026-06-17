@@ -6,7 +6,7 @@ import { ArrowRightIcon } from "@/shared/ui/icons/ArrowRightIcon";
 import { LicensingCard, type LicensingCardData } from "@/widgets/Landing/Licensing/LicensingCard";
 import style from "./style.module.scss";
 
-type LicensingProps = {
+type LicensingData = {
     kicker: string;
     title: string;
     highlight: string;
@@ -19,9 +19,13 @@ type LicensingProps = {
     stepsCard: LicensingCardData[];
 };
 
-export const Licensing = ({ kicker, title, highlight, description, steps, stepsCard }: LicensingProps) => {
+type LicensingProps = {
+    data: LicensingData;
+};
+
+export const Licensing = ({ data }: LicensingProps) => {
     const [activeStep, setActiveStep] = useState<number | null>(1);
-    const activeCard = stepsCard.find((card) => card.id === activeStep);
+    const activeCard = data.stepsCard.find((card) => card.id === activeStep);
 
     const toggle = (id: number) => {
         setActiveStep((current) => (current === id ? null : id));
@@ -31,18 +35,18 @@ export const Licensing = ({ kicker, title, highlight, description, steps, stepsC
         <section className={style.licensingContainer}>
             <div className={style.licensingContent}>
                 <div className={style.licensingHeader}>
-                    <div className={style.licensingKicker}>{kicker}</div>
+                    <div className={style.licensingKicker}>{data.kicker}</div>
                     <div className={style.licensingTexts}>
                         <h2 className={style.licensingTitle}>
-                            {title}{" "}
-                            <span className={style.licensingHighlight}>{highlight}</span>
+                            {data.title}{" "}
+                            <span className={style.licensingHighlight}>{data.highlight}</span>
                         </h2>
-                        <p className={style.licensingDescription}>{description}</p>
+                        <p className={style.licensingDescription}>{data.description}</p>
                     </div>
                 </div>
                 <div className={style.licensingBody}>
                     <div className={style.licensingSteps}>
-                        {steps.map((step) => (
+                        {data.steps.map((step) => (
                             <button
                                 className={`${style.licensingStep} ${activeStep === step.id ? style.active : ""}`}
                                 key={step.id}

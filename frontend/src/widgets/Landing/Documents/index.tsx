@@ -10,15 +10,19 @@ type DocItem = {
     description: string;
 };
 
-type DocumentsProps = {
+type DocumentsData = {
     kicker: string;
     title: string;
     description: string;
     docs: DocItem[];
 };
 
-export const Documents = ({ kicker, title, description, docs }: DocumentsProps) => {
-    const [activeId, setActiveId] = useState<number | null>(docs[0]?.id ?? null);
+type DocumentsProps = {
+    data: DocumentsData;
+};
+
+export const Documents = ({ data }: DocumentsProps) => {
+    const [activeId, setActiveId] = useState<number | null>(data.docs[0]?.id ?? null);
     const [canHover, setCanHover] = useState(false);
 
     useEffect(() => {
@@ -39,10 +43,10 @@ export const Documents = ({ kicker, title, description, docs }: DocumentsProps) 
         <section className={style.documents}>
             <div className={style.content}>
                 <div className={style.header}>
-                    <div className={style.kicker}>{kicker}</div>
+                    <div className={style.kicker}>{data.kicker}</div>
                     <div className={style.texts}>
-                        <h2 className={style.title}>{title}</h2>
-                        <p className={style.description}>{description}</p>
+                        <h2 className={style.title}>{data.title}</h2>
+                        <p className={style.description}>{data.description}</p>
                     </div>
                 </div>
                 <ul
@@ -53,7 +57,7 @@ export const Documents = ({ kicker, title, description, docs }: DocumentsProps) 
                         }
                     }}
                 >
-                    {docs.map((item) => {
+                    {data.docs.map((item) => {
                         const isActive = item.id === activeId;
 
                         return (

@@ -2,7 +2,7 @@ import Image from "next/image";
 import style from "./style.module.scss";
 import { Button } from "@/shared/ui/Button";
 
-type HeroProps = {
+type HeroData = {
     titlePrefix: string;
     highlight: string;
     titleSuffix: string;
@@ -13,37 +13,32 @@ type HeroProps = {
     imageAlt: string;
 };
 
-export const Hero = ({
-    imageAlt,
-    subtitle,
-    image,
-    buttonOutlineText,
-    buttonFilledText,
-    highlight,
-    titleSuffix,
-    titlePrefix,
-}: HeroProps) => {
+type HeroProps = {
+    data: HeroData;
+};
+
+export const Hero = ({ data }: HeroProps) => {
     return (
         <section className={style.hero}>
             <div className={style.heroInner}>
                 <div className={style.heroContent}>
                     <div className={style.heroTexts}>
                         <h1 className={style.title}>
-                            {titlePrefix}{" "}
-                            <span className={style.highlight}>{highlight}</span>{" "}
-                            {titleSuffix}
+                            {data.titlePrefix}{" "}
+                            <span className={style.highlight}>{data.highlight}</span>{" "}
+                            {data.titleSuffix}
                         </h1>
-                        <p className={style.subtitle}>{subtitle}</p>
+                        <p className={style.subtitle}>{data.subtitle}</p>
                     </div>
                     <div className={style.heroButtons}>
-                        <Button text={buttonFilledText} variant="filled" />
-                        <Button text={buttonOutlineText} variant="outline" />
+                        <Button text={data.buttonFilledText} variant="filled" />
+                        <Button text={data.buttonOutlineText} variant="outline" />
                     </div>
                 </div>
             </div>
             <Image
-                src={image}
-                alt={imageAlt}
+                src={data.image}
+                alt={data.imageAlt}
                 className={style.image}
                 width={1680}
                 height={1120}

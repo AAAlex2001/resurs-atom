@@ -1,0 +1,193 @@
+.casesContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("/licensing.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% + 300px) center;
+    background-size: auto 100%;
+}
+
+.casesContent {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 100px 20px;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.casesIntro {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.casesHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.casesKicker {
+    color: #00DE4F;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.casesTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.casesTitle {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0;
+    color: #F7FFF3;
+}
+
+.casesHighlight {
+    color: #00DE4F;
+}
+
+.casesDescription {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #F7FFF3;
+}
+
+.casesButton {
+    width: 100%;
+}
+
+.casesSteps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.casesStep {
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1fr) 24px;
+    align-items: center;
+    width: 100%;
+    min-height: 64px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #B3B9C0;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.12);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    gap: 10px;
+    cursor: pointer;
+    color: #F7FFF3;
+
+    &:hover {
+        border-color: #00DE4F;
+
+        .casesStepNumber,
+        .casesStepIcon {
+            color: #00DE4F;
+        }
+    }
+
+    &:active {
+        border-color: #00DE4F;
+
+        .casesStepNumber,
+        .casesStepIcon {
+            color: #00DE4F;
+        }
+    }
+
+    &.active {
+        border-color: #00DE4F;
+
+        .casesStepNumber,
+        .casesStepIcon {
+            color: #00DE4F;
+        }
+    }
+}
+
+.casesStepNumber {
+    min-width: 64px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #F7FFF3;
+}
+
+.casesStepTitle {
+    min-width: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #F7FFF3;
+    text-align: left;
+}
+
+.casesStepIcon {
+    width: 24px;
+    height: 24px;
+    color: #F7FFF3;
+    justify-self: end;
+    flex-shrink: 0;
+}
+
+.casesCardWrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .casesContent {
+        padding: 100px 50px;
+        max-width: 768px;
+    }
+    .casesContainer {
+        background-position: calc(100% + 70px) center;
+    }
+    .casesButton {
+        max-width: 265px;
+        align-self: flex-start;
+    }
+}
+
+@media (min-width: 1440px) {
+    .casesContainer {
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .casesContent {
+        max-width: 1440px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .casesIntro {
+        width: 656px;
+        flex-shrink: 0;
+    }
+
+    .casesSteps {
+        flex: 1;
+    }
+}

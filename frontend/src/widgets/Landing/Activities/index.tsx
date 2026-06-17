@@ -2,7 +2,7 @@ import { Button } from "@/shared/ui/Button";
 import { ActivitiesSlider } from "@/widgets/Landing/Activities/ActivitiesSlider";
 import style from "./style.module.scss";
 
-type ActivitiesProps = {
+type ActivitiesData = {
     kicker: string;
     title: string;
     highlight: string;
@@ -16,27 +16,31 @@ type ActivitiesProps = {
     }[];
 };
 
-export const Activities = ({ kicker, title, highlight, description, buttonText, activities }: ActivitiesProps) => {
+type ActivitiesProps = {
+    data: ActivitiesData;
+};
+
+export const Activities = ({ data }: ActivitiesProps) => {
     return (
         <section className={style.activitiesContainer}>
             <div className={style.activitiesContent}>
                 <div className={style.activitiesHeader}>
                     <div className={style.activitiesHeaderTexts}>
-                        <div className={style.activitiesKicker}>{kicker}</div>
+                        <div className={style.activitiesKicker}>{data.kicker}</div>
                         <div className={style.activitiesTexts}>
                             <h2 className={style.activitiesTitle}>
-                                <span className={style.activitiesTitleText}>{title}</span>{" "}
-                                <span className={style.activitiesHighlight}>{highlight}</span>
+                                <span className={style.activitiesTitleText}>{data.title}</span>{" "}
+                                <span className={style.activitiesHighlight}>{data.highlight}</span>
                             </h2>
-                            <p className={style.activitiesDescription}>{description}</p>
+                            <p className={style.activitiesDescription}>{data.description}</p>
                         </div>
                     </div>
                     <div className={style.activitiesButton}>
-                        <Button text={buttonText} variant="outline-dark" />
+                        <Button text={data.buttonText} variant="outline-dark" />
                     </div>
                 </div>
                 <div className={style.activitiesSliderWrapper}>
-                    <ActivitiesSlider activities={activities} />
+                    <ActivitiesSlider activities={data.activities} />
                 </div>
             </div>
         </section>

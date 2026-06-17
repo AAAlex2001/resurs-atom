@@ -7,7 +7,7 @@ type Term = {
     description: string;
 };
 
-type LicenseTermProps = {
+type LicenseTermData = {
     kicker: string;
     title: string;
     highlight: string;
@@ -22,28 +22,23 @@ type LicenseTermProps = {
     termsNote: string;
 };
 
-export const LicenseTerm = ({
-    kicker,
-    title,
-    highlight,
-    description,
-    warning,
-    termsKicker,
-    terms,
-    termsNote,
-}: LicenseTermProps) => {
+type LicenseTermProps = {
+    data: LicenseTermData;
+};
+
+export const LicenseTerm = ({ data }: LicenseTermProps) => {
     return (
         <section className={style.term}>
             <div className={style.termContent}>
                 <div className={style.intro}>
                     <div className={style.header}>
-                        <div className={style.kicker}>{kicker}</div>
+                        <div className={style.kicker}>{data.kicker}</div>
                         <div className={style.texts}>
                             <h2 className={style.title}>
-                                <span className={style.titleText}>{title}</span>{" "}
-                                <span className={style.highlight}>{highlight}</span>
+                                <span className={style.titleText}>{data.title}</span>{" "}
+                                <span className={style.highlight}>{data.highlight}</span>
                             </h2>
-                            <p className={style.description}>{description}</p>
+                            <p className={style.description}>{data.description}</p>
                         </div>
                     </div>
                     <div className={style.warning}>
@@ -51,24 +46,24 @@ export const LicenseTerm = ({
                             <ExclamationIcon />
                         </span>
                         <p className={style.warningText}>
-                            {warning.prefix}
-                            <strong className={style.warningEmphasis}>{warning.emphasis}</strong>
-                            {warning.suffix}
+                            {data.warning.prefix}
+                            <strong className={style.warningEmphasis}>{data.warning.emphasis}</strong>
+                            {data.warning.suffix}
                         </p>
                     </div>
                 </div>
                 <div className={style.guide}>
-                    <div className={style.guideKicker}>{termsKicker}</div>
+                    <div className={style.guideKicker}>{data.termsKicker}</div>
                     <div className={style.guideBody}>
                         <ul className={style.terms}>
-                            {terms.map((item) => (
+                            {data.terms.map((item) => (
                                 <li className={style.termItem} key={item.id}>
                                     <span className={style.termValue}>{item.term}</span>
                                     <span className={style.termLabel}>{item.description}</span>
                                 </li>
                             ))}
                         </ul>
-                        <p className={style.note}>{termsNote}</p>
+                        <p className={style.note}>{data.termsNote}</p>
                     </div>
                 </div>
             </div>

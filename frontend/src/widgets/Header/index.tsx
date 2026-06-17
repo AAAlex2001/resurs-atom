@@ -11,13 +11,17 @@ type NavLink = {
     href: string;
 };
 
-type HeaderProps = {
+type HeaderData = {
     phone: string;
     consultationText: string;
     navLinks: NavLink[];
 };
 
-export const Header = ({ phone, consultationText, navLinks }: HeaderProps) => {
+type HeaderProps = {
+    data: HeaderData;
+};
+
+export const Header = ({ data }: HeaderProps) => {
     return (
         <>
             <header className={style.header}>
@@ -29,7 +33,7 @@ export const Header = ({ phone, consultationText, navLinks }: HeaderProps) => {
                         <LogoBig />
                     </div>
                     <nav className={style.headerNav} aria-label="Основная навигация">
-                        {navLinks.map((link) => (
+                        {data.navLinks.map((link) => (
                             <a className={style.headerNavLink} href={link.href} key={link.id}>
                                 <span>{link.label}</span>
                             </a>
@@ -37,15 +41,15 @@ export const Header = ({ phone, consultationText, navLinks }: HeaderProps) => {
                     </nav>
                     <div className={style.headerButtons}>
                         <div className={style.headerButtonOutline}>
-                            <Button text={phone} variant="header-outline" icon={<PhoneIcon />} />
+                            <Button text={data.phone} variant="header-outline" icon={<PhoneIcon />} />
                         </div>
                         <div className={style.headerButtonFilled}>
-                            <Button text={consultationText} variant="header-filled" />
+                            <Button text={data.consultationText} variant="header-filled" />
                         </div>
                     </div>
                 </div>
             </header>
-            <BurgerMenu navLinks={navLinks} phone={phone} consultationText={consultationText} />
+            <BurgerMenu data={data} />
         </>
     );
 };

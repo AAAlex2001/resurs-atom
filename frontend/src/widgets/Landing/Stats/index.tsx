@@ -1,6 +1,6 @@
 import style from "./style.module.scss";
 
-type StatsProps = {
+type StatsData = {
     stats: {
         id: number;
         number: string;
@@ -8,11 +8,15 @@ type StatsProps = {
     }[];
 };
 
-export const Stats = ({ stats }: StatsProps) => {
+type StatsProps = {
+    data: StatsData;
+};
+
+export const Stats = ({ data }: StatsProps) => {
     return (
         <section className={style.statsContainer}>
             <div className={style.statsContent}>
-                {stats.map((stat) => (
+                {data.stats.map((stat) => (
                     <div className={style.stat} key={stat.id}>
                         <div className={style.statNumber}>{stat.number}</div>
                         <div className={style.statText}>{stat.text}</div>

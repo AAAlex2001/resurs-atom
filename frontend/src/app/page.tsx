@@ -8,6 +8,8 @@ import {
     LicensingData,
     StatsData,
     WhyUsData,
+    CasesData,
+    PackagesData,
 } from "@/app/data";
 import { Hero } from "@/widgets/Landing/Hero";
 import { Header } from "@/widgets/Header";
@@ -18,19 +20,23 @@ import { Licensing } from "@/widgets/Landing/Licensing";
 import { LicenseTerm } from "@/widgets/Landing/LicenseTerm";
 import { Documents } from "@/widgets/Landing/Documents";
 import { WhyUs } from "@/widgets/Landing/WhyUs";
+import { Cases } from "@/widgets/Landing/Cases";
+import { Packages } from "@/widgets/Landing/Packages";
 
 export default function Home() {
     return (
         <>
-            <Header {...HeaderData} />
-            <Hero {...HeroData} />
-            <Stats {...StatsData} />
-            <Activities {...ActivitiesData} />
-            <ClientsBenefits {...ClientsBenefitsData} />
-            <Licensing {...LicensingData} />
-            <LicenseTerm {...LicenseTermData} />
-            <Documents {...DocumentsData} />
-            <WhyUs {...WhyUsData} />
+            <Header data={HeaderData} />
+            <Hero data={HeroData} />
+            <Stats data={StatsData} />
+            <Activities data={ActivitiesData} />
+            <ClientsBenefits data={ClientsBenefitsData} />
+            <Licensing data={LicensingData} />
+            <LicenseTerm data={LicenseTermData} />
+            <Documents data={DocumentsData} />
+            <WhyUs data={WhyUsData} />
+            <Cases data={CasesData} />
+            <Packages data={PackagesData} />
         </>
     );
 }
