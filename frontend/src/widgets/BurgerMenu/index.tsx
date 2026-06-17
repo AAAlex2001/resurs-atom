@@ -101,7 +101,7 @@ export const BurgerMenu = ({ data }: BurgerMenuProps) => {
                   <div className={style.overlay} id="burger-menu" role="dialog" aria-modal="true" aria-label="Меню">
                       <div className={style.overlayPanel} ref={panelRef}>
                           <div className={style.overlayHeader}>
-                              <a className={style.logoLink} href="/" aria-label="Ресурс-Атом">
+                              <a className={style.logoLink} href="/" aria-label="Атом-Плюс">
                                   <span className={style.logoSmall}>
                                       <LogoSmall />
                                   </span>

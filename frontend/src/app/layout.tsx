@@ -4,7 +4,7 @@ import { FaqData, FooterData, PackagesData } from "@/app/data";
 import "./globals.scss";
 
 export const metadata: Metadata = {
-    title: "Атомные лицензии Ростехнадзора | Ресурс Атом — сопровождение под ключ",
+    title: "Атомные лицензии Ростехнадзора | Атом-Плюс — сопровождение под ключ",
     description:
         "Получение атомных лицензий Ростехнадзора под ключ. 120+ проектов, 10 лет в атомном надзоре, 94% одобренной документации. Аудит готовности, лицензионная документация, обоснование безопасности.",
     keywords: [
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
         "подготовка документации для Ростехнадзора",
         "gap-анализ ядерный объект",
     ],
-    authors: [{ name: "Ресурс Атом" }],
-    creator: "Ресурс Атом",
-    publisher: "Ресурс Атом",
+    authors: [{ name: "Атом-Плюс" }],
+    creator: "Атом-Плюс",
+    publisher: "Атом-Плюс",
     metadataBase: new URL("https://atom-plus.pro"),
     alternates: {
         canonical: "/",
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
         type: "website",
         locale: "ru_RU",
         url: "https://atom-plus.pro",
-        siteName: "Ресурс Атом",
-        title: "Атомные лицензии Ростехнадзора | Ресурс Атом",
+        siteName: "Атом-Плюс",
+        title: "Атомные лицензии Ростехнадзора | Атом-Плюс",
         description:
             "Сопровождение лицензирования в атомной отрасли под ключ. 120+ проектов, 94% одобренной документации.",
         images: [
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Атомные лицензии Ростехнадзора | Ресурс Атом",
+        title: "Атомные лицензии Ростехнадзора | Атом-Плюс",
         description:
             "Сопровождение лицензирования в атомной отрасли под ключ. 120+ проектов, 94% одобренной документации.",
         images: ["/og-image.jpg"],
@@ -74,7 +74,7 @@ const jsonLd = {
         {
             "@type": "Organization",
             "@id": "https://atom-plus.pro/#organization",
-            name: "Ресурс Атом",
+            name: "Атом-Плюс",
             url: "https://atom-plus.pro",
             telephone: "+79990018000",
             email: FooterData.email,
@@ -106,7 +106,7 @@ const jsonLd = {
             "@type": "WebSite",
             "@id": "https://atom-plus.pro/#website",
             url: "https://atom-plus.pro",
-            name: "Ресурс Атом",
+            name: "Атом-Плюс",
             publisher: { "@id": "https://atom-plus.pro/#organization" },
             inLanguage: "ru-RU",
         },
@@ -114,7 +114,7 @@ const jsonLd = {
             "@type": "WebPage",
             "@id": "https://atom-plus.pro/#webpage",
             url: "https://atom-plus.pro",
-            name: "Атомные лицензии Ростехнадзора — Ресурс Атом",
+            name: "Атомные лицензии Ростехнадзора — Атом-Плюс",
             isPartOf: { "@id": "https://atom-plus.pro/#website" },
             about: { "@id": "https://atom-plus.pro/#organization" },
             description:
