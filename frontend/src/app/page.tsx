@@ -10,6 +10,8 @@ import {
     WhyUsData,
     CasesData,
     PackagesData,
+    TestimonialsData,
+    FaqData,
 } from "@/app/data";
 import { Hero } from "@/widgets/Landing/Hero";
 import { Header } from "@/widgets/Header";
@@ -22,6 +24,8 @@ import { Documents } from "@/widgets/Landing/Documents";
 import { WhyUs } from "@/widgets/Landing/WhyUs";
 import { Cases } from "@/widgets/Landing/Cases";
 import { Packages } from "@/widgets/Landing/Packages";
+import { Testimonials } from "@/widgets/Landing/Testimonials";
+import { Faq } from "@/widgets/Landing/Faq";
 
 export default function Home() {
     return (
@@ -37,6 +41,8 @@ export default function Home() {
             <WhyUs data={WhyUsData} />
             <Cases data={CasesData} />
             <Packages data={PackagesData} />
+            <Testimonials data={TestimonialsData} />
+            <Faq data={FaqData} />
         </>
     );
 }
