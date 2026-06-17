@@ -22,7 +22,7 @@ type ActivitiesProps = {
 
 export const Activities = ({ data }: ActivitiesProps) => {
     return (
-        <section className={style.activitiesContainer}>
+        <section id="services" className={style.activitiesContainer}>
             <div className={style.activitiesContent}>
                 <div className={style.activitiesHeader}>
                     <div className={style.activitiesHeaderTexts}>

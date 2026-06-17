@@ -7,7 +7,10 @@ import style from "./style.module.scss";
 type FooterData = {
     description: string;
     servicesTitle: string;
-    services: string[];
+    services: {
+        label: string;
+        href: string;
+    }[];
     contactsTitle: string;
     phone: string;
     email: string;
@@ -34,9 +37,9 @@ export const Footer = ({ data }: FooterProps) => {
                     <div className={style.columnTitle}>{data.servicesTitle}</div>
                     <ul className={style.links}>
                         {data.services.map((service) => (
-                            <li key={service}>
-                                <a className={style.link} href="#">
-                                    {service}
+                            <li key={service.label}>
+                                <a className={style.link} href={service.href}>
+                                    {service.label}
                                 </a>
                             </li>
                         ))}

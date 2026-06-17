@@ -33,7 +33,7 @@ export const Cases = ({ data }: CasesProps) => {
     };
 
     return (
-        <section className={style.casesContainer}>
+        <section id="cases" className={style.casesContainer}>
             <div className={style.casesContent}>
                 <div className={style.casesIntro}>
                     <div className={style.casesHeader}>

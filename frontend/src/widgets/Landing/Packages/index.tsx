@@ -33,7 +33,7 @@ export const Packages = ({ data }: PackagesProps) => {
     const activeId = canHover ? hoveredId ?? popularId : popularId;
 
     return (
-        <section className={style.packages}>
+        <section id="packages" className={style.packages}>
             <div className={style.content}>
                 <div className={style.header}>
                     <div className={style.kicker}>{data.kicker}</div>

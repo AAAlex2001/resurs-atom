@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { FaqData, FooterData, PackagesData } from "@/app/data";
 import "./globals.scss";
 
 export const metadata: Metadata = {
@@ -76,9 +77,23 @@ const jsonLd = {
             name: "Ресурс Атом",
             url: "https://atom-plus.pro",
             telephone: "+79990018000",
+            email: FooterData.email,
             description:
                 "Сопровождение получения атомных лицензий Ростехнадзора под ключ: аудит готовности, подготовка документации, обоснование безопасности.",
             areaServed: "RU",
+            address: {
+                "@type": "PostalAddress",
+                addressLocality: "Кемерово",
+                addressCountry: "RU",
+            },
+            contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+79990018000",
+                email: FooterData.email,
+                contactType: "customer service",
+                areaServed: "RU",
+                availableLanguage: "Russian",
+            },
             knowsAbout: [
                 "Лицензирование атомных объектов",
                 "Обоснование безопасности ядерных установок",
@@ -114,46 +129,34 @@ const jsonLd = {
             areaServed: "RU",
             hasOfferCatalog: {
                 "@type": "OfferCatalog",
-                name: "Услуги лицензирования",
-                itemListElement: [
-                    {
-                        "@type": "Offer",
-                        itemOffered: {
-                            "@type": "Service",
-                            name: "Аудит готовности к лицензированию",
-                            description:
-                                "Экспресс-аудит организации на соответствие требованиям Ростехнадзора: персонал, документация, технические возможности.",
-                        },
+                name: "Пакеты услуг лицензирования",
+                itemListElement: PackagesData.packages.map((pkg) => ({
+                    "@type": "Offer",
+                    itemOffered: {
+                        "@type": "Service",
+                        name: pkg.title,
+                        description: pkg.description,
+                        serviceType: pkg.name,
                     },
-                    {
-                        "@type": "Offer",
-                        itemOffered: {
-                            "@type": "Service",
-                            name: "Подготовка лицензионной документации",
-                            description:
-                                "Разработка и ревью корпоративных, технических и обосновывающих материалов для Ростехнадзора.",
-                        },
+                    eligibleDuration: {
+                        "@type": "QuantitativeValue",
+                        description: pkg.duration,
                     },
-                    {
-                        "@type": "Offer",
-                        itemOffered: {
-                            "@type": "Service",
-                            name: "Обоснование безопасности",
-                            description:
-                                "Подготовка материалов обоснования безопасности ядерных установок и радиационно-опасных объектов.",
-                        },
-                    },
-                    {
-                        "@type": "Offer",
-                        itemOffered: {
-                            "@type": "Service",
-                            name: "Сопровождение системы ОКК",
-                            description:
-                                "Построение программ обеспечения качества и контроля в соответствии с НП-090.",
-                        },
-                    },
-                ],
+                })),
             },
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://atom-plus.pro/#faq",
+            inLanguage: "ru-RU",
+            mainEntity: FaqData.items.map((item) => ({
+                "@type": "Question",
+                name: item.question,
+                acceptedAnswer: {
+                    "@type": "Answer",
+                    text: item.answer,
+                },
+            })),
         },
     ],
 };

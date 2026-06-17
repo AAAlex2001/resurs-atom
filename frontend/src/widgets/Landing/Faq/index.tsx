@@ -28,7 +28,7 @@ export const Faq = ({ data }: FaqProps) => {
     };
 
     return (
-        <section className={style.faq}>
+        <section id="questions" className={style.faq}>
             <div className={style.content}>
                 <div className={style.header}>
                     <div className={style.kicker}>{data.kicker}</div>

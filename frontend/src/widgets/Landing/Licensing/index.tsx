@@ -32,7 +32,7 @@ export const Licensing = ({ data }: LicensingProps) => {
     };
 
     return (
-        <section className={style.licensingContainer}>
+        <section id="process" className={style.licensingContainer}>
             <div className={style.licensingContent}>
                 <div className={style.licensingHeader}>
                     <div className={style.licensingKicker}>{data.kicker}</div>

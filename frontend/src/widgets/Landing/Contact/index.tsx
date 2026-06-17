@@ -46,7 +46,7 @@ type ContactProps = {
 
 export const Contact = ({ data }: ContactProps) => {
     return (
-        <section className={style.contact}>
+        <section id="contact" className={style.contact}>
             <div className={style.inner}>
                 <div className={style.intro}>
                     <div className={style.head}>
