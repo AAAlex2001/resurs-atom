@@ -30,13 +30,13 @@ export const BenefitsSlider = ({ benefits }: BenefitsSliderProps) => {
         breakpoints: {
             "(min-width: 768px)": {
                 slides: {
-                    perView: 2,
+                    perView: 1.5,
                     spacing: 10,
                 },
             },
             "(min-width: 1440px)": {
                 slides: {
-                    perView: 4.5,
+                    perView: 4,
                     spacing: 10,
                 },
             },

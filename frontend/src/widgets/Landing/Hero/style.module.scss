@@ -23,6 +23,8 @@
 .image {
     display: block;
     width: 100%;
+    min-height: 280px;
+    object-fit: cover;
 }
 
 .heroTexts {
@@ -89,14 +91,15 @@
 @media (min-width: 1440px) {
     .hero {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-columns: calc((100vw - 1440px) / 2 + 720px) minmax(0, 1fr);
         align-items: stretch;
     }
 
     .heroInner {
         width: 100%;
-        max-width: 720px;
-        justify-self: end;
+        max-width: none;
+        align-items: stretch;
+        padding-left: calc((100vw - 1440px) / 2);
     }
 
     .heroContent {
@@ -106,6 +109,7 @@
     .image {
         width: 100%;
         height: 100%;
+        min-height: 428px;
         object-fit: cover;
     }
 }

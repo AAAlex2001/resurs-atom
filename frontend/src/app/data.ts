@@ -3,6 +3,28 @@
 export const HeaderData = {
     phone: "+7 999 001-80-00",
     consultationText: "Консультация",
+    navLinks: [
+        {
+            id: 1,
+            label: "Услуги",
+            href: "#services",
+        },
+        {
+            id: 2,
+            label: "Процесс",
+            href: "#process",
+        },
+        {
+            id: 3,
+            label: "Пакеты",
+            href: "#packages",
+        },
+        {
+            id: 4,
+            label: "Вопросы",
+            href: "#questions",
+        },
+    ],
 };
 
 // ─── Hero ────────────────────────────────────────────────────────────────────

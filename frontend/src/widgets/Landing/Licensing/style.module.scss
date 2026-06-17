@@ -4,8 +4,8 @@
     overflow: hidden;
     background-image: url("/licensing.png");
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background-position: calc(100% + 300px) center;
+    background-size: auto 100%;
 }
 
 .licensingContent {
@@ -171,9 +171,17 @@
         padding: 100px 50px;
         max-width: 768px;
     }
+    .licensingContainer {
+        background-position: calc(100% + 70px) center;
+    }
 }
 
 @media (min-width: 1440px) {
+    .licensingContainer {
+        background-position: center center;
+        background-size: cover;
+    }
+
     .licensingContent {
         max-width: 1440px;
     }

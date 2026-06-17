@@ -11,7 +11,7 @@
     line-height: 16px;
     border: 2px solid transparent;
     cursor: pointer;
-    transition: color 0.3s ease, border-color 0.3s ease;
+    transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
 
     &::before {
         content: "";
@@ -136,6 +136,49 @@
     }
 }
 
+.transparent {
+    gap: 10px;
+    border: 0;
+    background: transparent;
+    color: #000A1F;
+
+    .buttonText {
+        background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &:hover {
+        background-color: rgba(0, 220, 85, 0.08);
+        color: #000A1F;
+
+        &::before {
+            opacity: 0;
+        }
+
+        .buttonText {
+            background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &:active {
+        &::before {
+            opacity: 0;
+        }
+
+        .buttonText {
+            background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
 .header-outline {
     gap: 10px;
     background: transparent;
@@ -147,19 +190,34 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        white-space: nowrap;
     }
 
     &:hover {
-        color: #000A1F;
+        color: #FFFFFF;
 
         &::before {
             opacity: 1;
+        }
+
+        .buttonText {
+            background: none;
+            -webkit-text-fill-color: #FFFFFF;
+            color: #FFFFFF;
         }
     }
 
     &:active {
         &::before {
             opacity: 0;
+        }
+
+        color: #000A1F;
+
+        .buttonText {
+            background: none;
+            -webkit-text-fill-color: #000A1F;
+            color: #000A1F;
         }
     }
 }

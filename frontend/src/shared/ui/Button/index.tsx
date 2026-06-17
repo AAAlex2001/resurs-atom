@@ -3,7 +3,7 @@ import style from "./style.module.scss";
 
 type ButtonProps = {
     text?: string;
-    variant: "outline" | "filled" | "outline-dark" | "header-outline" | "header-filled";
+    variant: "outline" | "filled" | "outline-dark" | "header-outline" | "header-filled" | "transparent";
     onClick?: () => void;
     className?: string;
     type?: "button" | "submit" | "reset";
@@ -13,7 +13,7 @@ type ButtonProps = {
 export const Button = ({ text = "", variant, onClick, className, type = "button", icon }: ButtonProps) => {
     return (
         <button
-            className={`${style.button} ${style[variant]} ${className}`}
+            className={`${style.button} ${style[variant]} ${className ?? ""}`}
             onClick={onClick}
             type={type}
         >

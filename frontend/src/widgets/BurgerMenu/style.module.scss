@@ -1,0 +1,159 @@
+.burgerMenu {
+    display: flex;
+    position: fixed;
+    left: 50%;
+    bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+    z-index: 120;
+    transform: translateX(-50%);
+    padding: 4px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.openButton {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 160px;
+    height: 52px;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 16px;
+    background: #FFFFFF;
+    font: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #000A1F;
+    cursor: pointer;
+}
+
+.openIcon {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-shrink: 0;
+
+    span {
+        width: 18px;
+        height: 2px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+    }
+}
+
+.openText {
+    background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    padding: 20px;
+    background: #F7FFF3;
+    overflow-y: auto;
+}
+
+.overlayPanel {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    gap: 40px;
+}
+
+.overlayHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoLink {
+    display: flex;
+    color: inherit;
+    line-height: 0;
+}
+
+.logoBig {
+    display: none;
+}
+
+.logoSmall {
+    display: flex;
+}
+
+.closeButton {
+    width: auto;
+    height: 44px;
+    padding: 0 18px;
+}
+
+.overlayNav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.overlayLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 56px;
+    padding: 16px 20px;
+    border: 0;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+
+    span {
+        background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &:hover {
+        background-color: rgba(0, 220, 85, 0.08);
+    }
+}
+
+.overlayButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: auto;
+
+    button {
+        width: 100%;
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 768px) {
+    .logoSmall {
+        display: none;
+    }
+
+    .logoBig {
+        display: flex;
+    }
+}
+
+@media (min-width: 1440px) {
+    .burgerMenu {
+        display: none;
+    }
+}
