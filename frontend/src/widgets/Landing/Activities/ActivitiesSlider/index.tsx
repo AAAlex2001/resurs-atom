@@ -19,6 +19,8 @@ export const ActivitiesSlider = ({ activities }: ActivitiesSliderProps) => {
     const [sliderRef] = useKeenSlider({
         loop: false,
         range: {
+            min: 0,
+            max: Math.max(0, activities.length - 1),
             align: true,
         },
         slides: {

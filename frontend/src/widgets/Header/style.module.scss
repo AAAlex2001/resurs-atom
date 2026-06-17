@@ -62,11 +62,16 @@
 
     .headerContent {
         padding: 15px 50px;
+        max-width: 768px;
     }
 }
 
 
 @media (min-width: 1440px) {
+    .headerContent {
+        max-width: 1440px;
+    }
+
     .headerButtonOutline {
         display: flex;
     }

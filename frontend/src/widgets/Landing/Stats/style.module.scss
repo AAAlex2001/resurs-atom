@@ -2,7 +2,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 30px 20px;
 }
 
 .statsContent {
@@ -10,6 +9,8 @@
     flex-direction: column;
     gap: 50px;
     width: 100%;
+    padding: 30px 20px;
+    margin: 0 auto;
 }
 
 .stat {
@@ -41,14 +42,12 @@
 }
 
 @media (min-width: 768px) {
-    .statsContainer {
-        padding: 30px 50px;
-    }
-
     .statsContent {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 50px;
+        max-width: 768px;
+        padding: 30px 50px;
     }
 }
 
@@ -60,5 +59,6 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        max-width: 1440px;
     }
 }

@@ -19,6 +19,8 @@ export const BenefitsSlider = ({ benefits }: BenefitsSliderProps) => {
     const [sliderRef] = useKeenSlider({
         loop: false,
         range: {
+            min: 0,
+            max: Math.max(0, benefits.length - 1),
             align: true,
         },
         slides: {
