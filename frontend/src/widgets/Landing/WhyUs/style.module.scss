@@ -1,6 +1,5 @@
-.documents {
+.whyUs {
     display: flex;
-    background: #F7FFF3;
 }
 
 .content {
@@ -10,7 +9,13 @@
     width: 100%;
     padding: 100px 20px;
     margin: 0 auto;
-    isolation: isolate;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
 }
 
 .header {
@@ -56,54 +61,52 @@
     -webkit-text-fill-color: transparent;
 }
 
-.list {
+.cta {
+    width: 100%;
+}
+
+.cards {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    min-height: 880px;
     list-style: none;
-
-    li {
-        display: flex;
-    }
 }
 
 .card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
+    position: relative;
+    isolation: isolate;
     padding: 20px;
-    background: #FFFFFF;
-    border: 1px solid #B3B9C0;
     border-radius: 20px;
+    border: 1px solid #00C77A;
     box-sizing: border-box;
-    text-align: left;
-    font: inherit;
-    cursor: pointer;
-    transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        border-radius: inherit;
+        background: radial-gradient(104.43% 104.43% at 95.84% -4.43%, #FFFFFF 0%, rgba(0, 222, 79, 0.1) 100%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
 }
 
-.cardActive {
+@media (hover: hover) {
+    .card:hover::before {
+        opacity: 1;
+    }
+}
+
+.cardTexts {
+    position: relative;
+    z-index: 1;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 10px;
-    border-color: #00C77A;
-}
-
-.docLabel {
-    flex-shrink: 0;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 41px;
-    letter-spacing: 0;
-    text-transform: uppercase;
-    color: #B3B9C0;
 }
 
 .cardTitle {
-    flex: 1;
     font-size: 18px;
     font-weight: 700;
     line-height: 23px;
@@ -112,40 +115,6 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.docLabelActive {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 21px;
-    letter-spacing: 0;
-    text-transform: uppercase;
-    color: #B3B9C0;
-}
-
-.cardBody {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    animation: docReveal 0.35s ease;
-}
-
-@keyframes docReveal {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.cardTitleActive {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 23px;
-    letter-spacing: 0;
-    color: #00DE4F;
 }
 
 .cardDescription {
@@ -165,27 +134,33 @@
         max-width: 768px;
     }
 
-    .list {
+    .cta {
+        width: 100%;
+        max-width: 213px;
+        align-self: flex-start;
+    }
+
+    .cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-        min-height: 558px;
-    }
-
-    .cardActive {
-        position: relative;
-        z-index: 1;
-        transform: rotate(-10deg);
     }
 }
 
 @media (min-width: 1440px) {
     .content {
         max-width: 1440px;
+        flex-direction: row;
+        align-items: flex-start;
     }
 
-    .list {
-        grid-template-columns: repeat(4, 1fr);
-        min-height: 286px;
+    .intro {
+        width: 568px;
+        flex-shrink: 0;
+    }
+
+    .cards {
+        flex: 1;
+        grid-template-columns: repeat(3, 1fr);
     }
 }

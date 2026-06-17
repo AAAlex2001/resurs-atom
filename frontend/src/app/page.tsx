@@ -7,6 +7,7 @@ import {
     LicenseTermData,
     LicensingData,
     StatsData,
+    WhyUsData,
 } from "@/app/data";
 import { Hero } from "@/widgets/Landing/Hero";
 import { Header } from "@/widgets/Header";
@@ -16,6 +17,7 @@ import { ClientsBenefits } from "@/widgets/Landing/ClientsBenefits";
 import { Licensing } from "@/widgets/Landing/Licensing";
 import { LicenseTerm } from "@/widgets/Landing/LicenseTerm";
 import { Documents } from "@/widgets/Landing/Documents";
+import { WhyUs } from "@/widgets/Landing/WhyUs";
 
 export default function Home() {
     return (
@@ -28,6 +30,7 @@ export default function Home() {
             <Licensing {...LicensingData} />
             <LicenseTerm {...LicenseTermData} />
             <Documents {...DocumentsData} />
+            <WhyUs {...WhyUsData} />
         </>
     );
 }
