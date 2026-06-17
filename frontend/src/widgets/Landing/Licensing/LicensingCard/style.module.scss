@@ -1,0 +1,42 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #B3B9C0;
+    box-sizing: border-box;
+    background: transparent;
+    gap: 20px;
+}
+
+.kicker {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #00DE4F;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0;
+    color: #F7FFF3;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #F7FFF3;
+}

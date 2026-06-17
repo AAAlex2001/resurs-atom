@@ -1,0 +1,20 @@
+.licensingContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000a1f;
+    background-image: url("/licensing.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% + 200px) center;
+    background-size: auto 100%;
+}
+
+.licensingContent {
+    position: relative;
+    z-index: 1;
+}
+
+.licensingCards {
+    display: flex;
+    flex-direction: column;
+}
