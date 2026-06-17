@@ -23,12 +23,12 @@
     padding: 8px 12px;
     border: 0;
     border-radius: 16px;
-    background: #00C77A;
+    background: #FFFFFF;
     font: inherit;
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
-    color: #FFFFFF;
+    color: #000A1F;
     cursor: pointer;
 }
 
@@ -42,12 +42,15 @@
         width: 18px;
         height: 2px;
         border-radius: 999px;
-        background: #FFFFFF;
+        background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
     }
 }
 
 .openText {
-    color: #FFFFFF;
+    background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .overlay {

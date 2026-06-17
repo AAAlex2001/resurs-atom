@@ -20,12 +20,12 @@ type LicensingProps = {
 };
 
 export const Licensing = ({ kicker, title, highlight, description, steps, stepsCard }: LicensingProps) => {
-    const [activeStep, setActiveStep] = useState(1);
-    const activeCard = stepsCard.find((card) => card.id === activeStep) ?? stepsCard[0];
+    const [activeStep, setActiveStep] = useState<number | null>(1);
+    const activeCard = stepsCard.find((card) => card.id === activeStep);
 
-    if (!activeCard) {
-        return null;
-    }
+    const toggle = (id: number) => {
+        setActiveStep((current) => (current === id ? null : id));
+    };
 
     return (
         <section className={style.licensingContainer}>
@@ -46,7 +46,7 @@ export const Licensing = ({ kicker, title, highlight, description, steps, stepsC
                             <button
                                 className={`${style.licensingStep} ${activeStep === step.id ? style.active : ""}`}
                                 key={step.id}
-                                onClick={() => setActiveStep(step.id)}
+                                onClick={() => toggle(step.id)}
                                 type="button"
                             >
                                 <span className={style.licensingStepNumber}>{step.number}</span>
@@ -57,16 +57,18 @@ export const Licensing = ({ kicker, title, highlight, description, steps, stepsC
                     </div>
                     <div className={style.licensingCards}>
                         <AnimatePresence mode="wait">
-                            <motion.div
-                                className={style.licensingCardMotion}
-                                key={activeStep}
-                                initial={{ opacity: 0, y: 16 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -16 }}
-                                transition={{ duration: 0.28, ease: "easeOut" }}
-                            >
-                                <LicensingCard card={activeCard} />
-                            </motion.div>
+                            {activeCard && (
+                                <motion.div
+                                    className={style.licensingCardMotion}
+                                    key={activeStep}
+                                    initial={{ opacity: 0, y: 16 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: -16 }}
+                                    transition={{ duration: 0.28, ease: "easeOut" }}
+                                >
+                                    <LicensingCard card={activeCard} />
+                                </motion.div>
+                            )}
                         </AnimatePresence>
                     </div>
                 </div>

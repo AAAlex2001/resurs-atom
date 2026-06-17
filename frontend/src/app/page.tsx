@@ -3,6 +3,7 @@ import {
     ClientsBenefitsData,
     HeaderData,
     HeroData,
+    DocumentsData,
     LicenseTermData,
     LicensingData,
     StatsData,
@@ -14,6 +15,7 @@ import { Activities } from "@/widgets/Landing/Activities";
 import { ClientsBenefits } from "@/widgets/Landing/ClientsBenefits";
 import { Licensing } from "@/widgets/Landing/Licensing";
 import { LicenseTerm } from "@/widgets/Landing/LicenseTerm";
+import { Documents } from "@/widgets/Landing/Documents";
 
 export default function Home() {
     return (
@@ -25,6 +27,7 @@ export default function Home() {
             <ClientsBenefits {...ClientsBenefitsData} />
             <Licensing {...LicensingData} />
             <LicenseTerm {...LicenseTermData} />
+            <Documents {...DocumentsData} />
         </>
     );
 }
