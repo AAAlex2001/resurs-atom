@@ -1,4 +1,5 @@
 import { BenefitsSlider } from "@/widgets/Landing/ClientsBenefits/BenefitsSlider";
+import { BenefitsOrbit } from "@/widgets/Landing/ClientsBenefits/BenefitsOrbit";
 import style from "./style.module.scss";
 
 type Benefit = {
@@ -12,10 +13,14 @@ type ClientsBenefitsProps = {
     kicker: string;
     title: string;
     description: string;
+    orbitHint: {
+        title: string;
+        description: string;
+    };
     benefits: Benefit[];
 };
 
-export const ClientsBenefits = ({ kicker, title, description, benefits }: ClientsBenefitsProps) => {
+export const ClientsBenefits = ({ kicker, title, description, orbitHint, benefits }: ClientsBenefitsProps) => {
     return (
         <section className={style.benefitsContainer}>
             <div className={style.benefitsContent}>
@@ -26,7 +31,12 @@ export const ClientsBenefits = ({ kicker, title, description, benefits }: Client
                         <p className={style.benefitsDescription}>{description}</p>
                     </div>
                 </div>
-                <BenefitsSlider benefits={benefits} />
+                <div className={style.benefitsSlider}>
+                    <BenefitsSlider benefits={benefits} />
+                </div>
+                <div className={style.benefitsOrbit}>
+                    <BenefitsOrbit benefits={benefits} hint={orbitHint} />
+                </div>
             </div>
         </section>
     );

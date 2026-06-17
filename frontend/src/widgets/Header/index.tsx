@@ -4,9 +4,12 @@ import { LogoBig } from "@/shared/ui/icons/LogoBig";
 import { LogoSmall } from "@/shared/ui/icons/LogoSmall";
 import { PhoneIcon } from "@/shared/ui/icons/PhoneIcon";
 
-type HeaderProps = {};
+type HeaderProps = {
+    phone: string;
+    consultationText: string;
+};
 
-export const Header = ({}: HeaderProps) => {
+export const Header = ({ phone, consultationText }: HeaderProps) => {
     return (
         <header className={style.header}>
             <div className={style.headerContent}>
@@ -18,10 +21,10 @@ export const Header = ({}: HeaderProps) => {
                 </div>
                 <div className={style.headerButtons}>
                     <div className={style.headerButtonOutline}>
-                        <Button text="+7 999 001-80-00" variant="header-outline" icon={<PhoneIcon />} />
+                        <Button text={phone} variant="header-outline" icon={<PhoneIcon />} />
                     </div>
                     <div className={style.headerButtonFulled}>
-                        <Button text="Консультация" variant="header-filled" />
+                        <Button text={consultationText} variant="header-filled" />
                     </div>
                 </div>
             </div>

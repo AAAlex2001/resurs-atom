@@ -5,6 +5,11 @@ import { Activities } from "@/widgets/Landing/Activities";
 import { ClientsBenefits } from "@/widgets/Landing/ClientsBenefits";
 
 
+const HeaderData = {
+  phone: "+7 999 001-80-00",
+  consultationText: "Консультация",
+}
+
 const HeroData ={
   titlePrefix: "Получение ",
   hilightText: "атомных лицензий",
@@ -47,6 +52,10 @@ const ClientsBenefitsData = {
   kicker: "Что получают клиенты",
   title: "Полное сопровождение лицензирования — от начала до конца.",
   description: "Сочетание технической глубины, регуляторной экспертизы и проектной дисциплины — чтобы ваша команда занималась операционной деятельностью, пока мы ведём процесс лицензирования.",
+  orbitHint: {
+    title: "Изучите этапы лицензирования Ростехнадзора",
+    description: "Наведите на номер, чтобы увидеть состав работ и результат каждого этапа сопровождения.",
+  },
   benefits: [
     { id: 1, number: "1", title: "Анализ области лицензирования", description: "Определение категорий лицензий, необходимых для ваших операций и объектов." },
     { id: 2, number: "2", title: "Оценка готовности", description: "Структурированный gap-анализ требований Ростехнадзора по всем направлениям." },
@@ -62,7 +71,7 @@ const ClientsBenefitsData = {
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header {...HeaderData} />
       <Hero {...HeroData} />
       <Stats {...StatsData} />
       <Activities {...ActivitiesData} />

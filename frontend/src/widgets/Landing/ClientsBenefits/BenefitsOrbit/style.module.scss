@@ -1,0 +1,166 @@
+.orbitWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 34px;
+    width: 514px;
+    flex-shrink: 0;
+}
+
+.orbit {
+    position: relative;
+    width: 514px;
+    height: 514px;
+    flex-shrink: 0;
+    isolation: isolate;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 199, 122, 0.42);
+    pointer-events: none;
+}
+
+.outerCircle {
+    inset: 0;
+}
+
+.middleCircle {
+    inset: 76px;
+}
+
+.innerCircle {
+    inset: 151px;
+}
+
+.ringLayer {
+    position: absolute;
+    border-radius: 50%;
+    transform-origin: center;
+    pointer-events: none;
+}
+
+.outerRing {
+    inset: 0;
+}
+
+.middleRing {
+    inset: 76px;
+}
+
+.innerRing {
+    inset: 151px;
+}
+
+.orbitNumber {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    height: 72px;
+    padding: 5px 20px;
+    border: 0;
+    background: transparent;
+    color: #00DE4F;
+    font: inherit;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 62px;
+    text-transform: uppercase;
+    translate: -50% -50%;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.orbitNumber:focus-visible {
+    outline: 2px solid #00C77A;
+    outline-offset: 4px;
+}
+
+.infoCard {
+    position: absolute;
+    top: -12px;
+    left: -300px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 276px;
+    min-height: 159px;
+    padding: 20px;
+    border: 1px solid rgba(0, 199, 122, 0.45);
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.infoTitle {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0;
+    background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.infoDescription {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0;
+    background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.orbitHint {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 360px;
+    padding: 16px 18px;
+    border: 1px solid rgba(0, 199, 122, 0.45);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: 0 18px 45px rgba(0, 10, 31, 0.07);
+    box-sizing: border-box;
+}
+
+.hintIcon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.hintTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hintTitle {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+    background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hintDescription {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
