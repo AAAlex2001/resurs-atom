@@ -1,19 +1,214 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.scss";
 
 export const metadata: Metadata = {
-  title: "Resurs Atom",
-  description: "",
+    title: "Атомные лицензии Ростехнадзора | Ресурс Атом — сопровождение под ключ",
+    description:
+        "Получение атомных лицензий Ростехнадзора под ключ. 120+ проектов, 10 лет в атомном надзоре, 94% одобренной документации. Аудит готовности, лицензионная документация, обоснование безопасности.",
+    keywords: [
+        "атомная лицензия",
+        "лицензия Ростехнадзора",
+        "лицензирование в атомной энергии",
+        "получение лицензии на ядерную деятельность",
+        "обоснование безопасности ядерного объекта",
+        "лицензия на радиационную деятельность",
+        "ядерные установки лицензирование",
+        "радиоактивные материалы лицензия",
+        "НП-090 ОКК атомная энергия",
+        "сопровождение лицензирования атомных объектов",
+        "Ростехнадзор атомный надзор",
+        "лицензия на эксплуатацию ядерной установки",
+        "лицензирование источников ионизирующего излучения",
+        "подготовка документации для Ростехнадзора",
+        "gap-анализ ядерный объект",
+    ],
+    authors: [{ name: "Ресурс Атом" }],
+    creator: "Ресурс Атом",
+    publisher: "Ресурс Атом",
+    metadataBase: new URL("https://atom-plus.pro"),
+    alternates: {
+        canonical: "/",
+    },
+    openGraph: {
+        type: "website",
+        locale: "ru_RU",
+        url: "https://atom-plus.pro",
+        siteName: "Ресурс Атом",
+        title: "Атомные лицензии Ростехнадзора | Ресурс Атом",
+        description:
+            "Сопровождение лицензирования в атомной отрасли под ключ. 120+ проектов, 94% одобренной документации.",
+        images: [
+            {
+                url: "/og-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Ресурс Атом — атомные лицензии Ростехнадзора",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Атомные лицензии Ростехнадзора | Ресурс Атом",
+        description:
+            "Сопровождение лицензирования в атомной отрасли под ключ. 120+ проектов, 94% одобренной документации.",
+        images: ["/og-image.jpg"],
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+        },
+    },
+};
+
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://atom-plus.pro/#organization",
+            name: "Ресурс Атом",
+            url: "https://atom-plus.pro",
+            telephone: "+79990018000",
+            description:
+                "Сопровождение получения атомных лицензий Ростехнадзора под ключ: аудит готовности, подготовка документации, обоснование безопасности.",
+            areaServed: "RU",
+            knowsAbout: [
+                "Лицензирование атомных объектов",
+                "Обоснование безопасности ядерных установок",
+                "Подготовка документации для Ростехнадзора",
+                "Источники ионизирующего излучения",
+                "Радиационная безопасность",
+            ],
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://atom-plus.pro/#website",
+            url: "https://atom-plus.pro",
+            name: "Ресурс Атом",
+            publisher: { "@id": "https://atom-plus.pro/#organization" },
+            inLanguage: "ru-RU",
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://atom-plus.pro/#webpage",
+            url: "https://atom-plus.pro",
+            name: "Атомные лицензии Ростехнадзора — Ресурс Атом",
+            isPartOf: { "@id": "https://atom-plus.pro/#website" },
+            about: { "@id": "https://atom-plus.pro/#organization" },
+            description:
+                "Получение атомных лицензий Ростехнадзора под ключ. 120+ проектов, 10 лет в атомном надзоре, 94% одобренной документации.",
+            inLanguage: "ru-RU",
+        },
+        {
+            "@type": "ProfessionalService",
+            "@id": "https://atom-plus.pro/#service",
+            name: "Сопровождение атомного лицензирования",
+            provider: { "@id": "https://atom-plus.pro/#organization" },
+            areaServed: "RU",
+            hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Услуги лицензирования",
+                itemListElement: [
+                    {
+                        "@type": "Offer",
+                        itemOffered: {
+                            "@type": "Service",
+                            name: "Аудит готовности к лицензированию",
+                            description:
+                                "Экспресс-аудит организации на соответствие требованиям Ростехнадзора: персонал, документация, технические возможности.",
+                        },
+                    },
+                    {
+                        "@type": "Offer",
+                        itemOffered: {
+                            "@type": "Service",
+                            name: "Подготовка лицензионной документации",
+                            description:
+                                "Разработка и ревью корпоративных, технических и обосновывающих материалов для Ростехнадзора.",
+                        },
+                    },
+                    {
+                        "@type": "Offer",
+                        itemOffered: {
+                            "@type": "Service",
+                            name: "Обоснование безопасности",
+                            description:
+                                "Подготовка материалов обоснования безопасности ядерных установок и радиационно-опасных объектов.",
+                        },
+                    },
+                    {
+                        "@type": "Offer",
+                        itemOffered: {
+                            "@type": "Service",
+                            name: "Сопровождение системы ОКК",
+                            description:
+                                "Построение программ обеспечения качества и контроля в соответствии с НП-090.",
+                        },
+                    },
+                ],
+            },
+            aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.9",
+                reviewCount: "120",
+                bestRating: "5",
+            },
+        },
+    ],
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="ru">
-      <body>{children}</body>
-    </html>
-  );
+    return (
+        <html lang="ru">
+            <head>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
+            </head>
+            <body>
+                {children}
+                <Script id="yandex-metrika" strategy="afterInteractive">
+                    {`
+                        (function(m,e,t,r,i,k,a){
+                            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                            m[i].l=1*new Date();
+                            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+                        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109927382', 'ym');
+                        ym(109927382, 'init', {
+                            ssr: true,
+                            webvisor: true,
+                            clickmap: true,
+                            ecommerce: "dataLayer",
+                            referrer: document.referrer,
+                            url: location.href,
+                            accurateTrackBounce: true,
+                            trackLinks: true
+                        });
+                    `}
+                </Script>
+                <noscript>
+                    <div>
+                        <img
+                            src="https://mc.yandex.ru/watch/109927382"
+                            style={{ position: "absolute", left: "-9999px" }}
+                            alt=""
+                        />
+                    </div>
+                </noscript>
+            </body>
+        </html>
+    );
 }
