@@ -2,6 +2,7 @@ import { Hero } from "@/widgets/Landing/Hero";
 import { Header } from "@/widgets/Header";
 import { Stats } from "@/widgets/Landing/Stats";
 import { Activities } from "@/widgets/Landing/Activities";
+import { ClientsBenefits } from "@/widgets/Landing/ClientsBenefits";
 
 
 const HeroData ={
@@ -42,6 +43,22 @@ const ActivitiesData = {
   ],
 }
 
+const ClientsBenefitsData = {
+  kicker: "Что получают клиенты",
+  title: "Полное сопровождение лицензирования — от начала до конца.",
+  description: "Сочетание технической глубины, регуляторной экспертизы и проектной дисциплины — чтобы ваша команда занималась операционной деятельностью, пока мы ведём процесс лицензирования.",
+  benefits: [
+    { id: 1, number: "1", title: "Анализ области лицензирования", description: "Определение категорий лицензий, необходимых для ваших операций и объектов." },
+    { id: 2, number: "2", title: "Оценка готовности", description: "Структурированный gap-анализ требований Ростехнадзора по всем направлениям." },
+    { id: 3, number: "3", title: "Дорожная карта соответствия", description: "Пошаговый план со сроками, ответственными и приоритетами устранения замечаний." },
+    { id: 4, number: "4", title: "Подготовка документации", description: "Разработка и ревью корпоративных, технических и обосновывающих материалов." },
+    { id: 5, number: "5", title: "Сопровождение системы ОКК", description: "Построение программ ОКК в соответствии с НП-090 и применимыми нормами." },
+    { id: 6, number: "6", title: "Обоснование безопасности", description: "Подготовка материалов обоснования безопасности и сопроводительных расчётов." },
+    { id: 7, number: "7", title: "Подача в регулятор", description: "Формирование комплекта, оформление досье и работа с замечаниями регулятора." },
+    { id: 8, number: "8", title: "Сопровождение «под ключ»", description: "Единая точка ответственности на всех этапах — от аудита до решения о выдаче лицензии." },
+  ],
+}
+
 export default function Home() {
   return (
     <>
@@ -49,6 +66,7 @@ export default function Home() {
       <Hero {...HeroData} />
       <Stats {...StatsData} />
       <Activities {...ActivitiesData} />
+      <ClientsBenefits {...ClientsBenefitsData} />
     </>
   );
 }
