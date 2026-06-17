@@ -18,7 +18,7 @@ export const Button = ({ text = "", variant, onClick, className, type = "button"
             type={type}
         >
             {icon && <span className={style.icon}>{icon}</span>}
-            {text}
+            <span className={style.buttonText}>{text}</span>
         </button>
     );
 };
