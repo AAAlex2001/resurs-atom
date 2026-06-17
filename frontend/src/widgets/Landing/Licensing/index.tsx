@@ -18,7 +18,11 @@ type LicensingProps = {
 };
 
 export const Licensing = ({ kicker, title, highlight, description, steps, stepsCard }: LicensingProps) => {
-    const [activeStep, setActiveStep] = useState<number | null>(null);
+    const [activeStep, setActiveStep] = useState(1);
+    const activeCard = stepsCard.find((card) => card.id === activeStep);
+    if (!activeCard) {
+        return null;
+    }
 
     return (
         <section className={style.licensingContainer}>
@@ -47,9 +51,7 @@ export const Licensing = ({ kicker, title, highlight, description, steps, stepsC
                     ))}
                 </div>
                 <div className={style.licensingCards}>
-                    {stepsCard.map((card) => (
-                        <LicensingCard card={card} key={card.id} />
-                    ))}
+                    <LicensingCard card={activeCard} key={activeCard.id} />
                 </div>
             </div>
         </section>

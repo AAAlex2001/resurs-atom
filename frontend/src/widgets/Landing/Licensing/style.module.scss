@@ -83,11 +83,27 @@
     cursor: pointer;
 
     &:hover {
-        border-color: #00C77A;
+        border-color: #00DE4F;
+
+        .licensingStepNumber {
+            color: #00DE4F;
+        }
     }
 
     &:active {
-        border-color: #00C77A;
+        border-color: #00DE4F;
+
+        .licensingStepNumber {
+            color: #00DE4F;
+        }
+    }
+
+    &.active {
+        border-color: #00DE4F;
+
+        .licensingStepNumber {
+            color: #00DE4F;
+        }
     }
 }
 
@@ -97,14 +113,6 @@
     line-height: 100%;
     letter-spacing: 0;
     color: #F7FFF3;
-
-    &:hover {
-        color: #00C77A;
-    }
-
-    &:active {
-        color: #00C77A;
-    }
 }
 
 .licensingStepTitle {
