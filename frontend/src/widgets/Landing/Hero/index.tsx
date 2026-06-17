@@ -43,6 +43,7 @@ export const Hero = ({ data }: HeroProps) => {
                 width={1680}
                 height={1120}
                 sizes="(min-width: 1440px) 50vw, 100vw"
+                quality={70}
                 priority
             />
         </section>
