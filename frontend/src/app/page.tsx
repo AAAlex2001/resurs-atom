@@ -12,6 +12,7 @@ import {
     PackagesData,
     TestimonialsData,
     FaqData,
+    SeoTextData,
     ContactData,
     FooterData,
 } from "@/app/data";
@@ -28,6 +29,7 @@ import { Cases } from "@/widgets/Landing/Cases";
 import { Packages } from "@/widgets/Landing/Packages";
 import { Testimonials } from "@/widgets/Landing/Testimonials";
 import { Faq } from "@/widgets/Landing/Faq";
+import { SeoText } from "@/widgets/Landing/SeoText";
 import { Contact } from "@/widgets/Landing/Contact";
 import { Footer } from "@/widgets/Footer";
 
@@ -47,6 +49,7 @@ export default function Home() {
             <Packages data={PackagesData} />
             <Testimonials data={TestimonialsData} />
             <Faq data={FaqData} />
+            <SeoText data={SeoTextData} />
             <Contact data={ContactData} />
             <Footer data={FooterData} />
         </>

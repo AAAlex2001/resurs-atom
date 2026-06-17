@@ -1,0 +1,21 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="favbg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#000A1F" />
+      <stop offset="1" stop-color="#012E59" />
+    </linearGradient>
+    <linearGradient id="favgreen" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00DC55" />
+      <stop offset="1" stop-color="#00C77A" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#favbg)" />
+  <g transform="translate(32 32)">
+    <ellipse rx="22" ry="8" transform="rotate(40)" fill="none" stroke="#00DE4F" stroke-width="2.6" stroke-opacity="0.9" />
+    <ellipse rx="22" ry="8" transform="rotate(-40)" fill="none" stroke="#00DE4F" stroke-width="2.6" stroke-opacity="0.9" />
+    <circle cx="16.85" cy="-14.14" r="3.4" fill="#FFFFFF" />
+    <circle r="10" fill="url(#favgreen)" />
+    <rect x="-5" y="-1.6" width="10" height="3.2" rx="1.6" fill="#FFFFFF" />
+    <rect x="-1.6" y="-5" width="3.2" height="10" rx="1.6" fill="#FFFFFF" />
+  </g>
+</svg>
