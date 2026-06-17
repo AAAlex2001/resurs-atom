@@ -3,19 +3,16 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { ArrowRightIcon } from "@/shared/ui/icons/ArrowRightIcon";
-import { LicensingCard, type LicensingCardData } from "@/widgets/Landing/Licensing/LicensingCard";
+import { LicensingCard } from "@/widgets/Landing/Licensing/LicensingCard";
+import type { LicensingStep, LicensingCardData } from "@/shared/types/content";
 import style from "./style.module.scss";
 
-type LicensingProps = {
+export type LicensingProps = {
     kicker: string;
     title: string;
     highlight: string;
     description: string;
-    steps: {
-        id: number;
-        number: string;
-        title: string;
-    }[];
+    steps: LicensingStep[];
     stepsCard: LicensingCardData[];
 };
 
@@ -33,10 +30,10 @@ export const Licensing = ({ kicker, title, highlight, description, steps, stepsC
                 <div className={style.licensingHeader}>
                     <div className={style.licensingKicker}>{kicker}</div>
                     <div className={style.licensingTexts}>
-                        <h1 className={style.licensingTitle}>
-                            {title}
+                        <h2 className={style.licensingTitle}>
+                            {title}{" "}
                             <span className={style.licensingHighlight}>{highlight}</span>
-                        </h1>
+                        </h2>
                         <p className={style.licensingDescription}>{description}</p>
                     </div>
                 </div>

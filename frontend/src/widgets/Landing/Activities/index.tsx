@@ -1,19 +1,15 @@
 import { Button } from "@/shared/ui/Button";
 import { ActivitiesSlider } from "@/widgets/Landing/Activities/ActivitiesSlider";
+import type { NumberedCard } from "@/shared/types/content";
 import style from "./style.module.scss";
 
-type ActivitiesProps = {
+export type ActivitiesProps = {
     kicker: string;
     title: string;
     highlight: string;
     description: string;
     buttonText: string;
-    activities: {
-        id: number;
-        number: string;
-        title: string;
-        description: string;
-    }[];
+    activities: NumberedCard[];
 };
 
 export const Activities = ({ kicker, title, highlight, description, buttonText, activities }: ActivitiesProps) => {
@@ -24,10 +20,10 @@ export const Activities = ({ kicker, title, highlight, description, buttonText, 
                     <div className={style.activitiesHeaderTexts}>
                         <div className={style.activitiesKicker}>{kicker}</div>
                         <div className={style.activitiesTexts}>
-                            <h1 className={style.activitiesTitle}>
-                                <span className={style.activitiesTitleText}>{title}</span>
+                            <h2 className={style.activitiesTitle}>
+                                <span className={style.activitiesTitleText}>{title}</span>{" "}
                                 <span className={style.activitiesHighlight}>{highlight}</span>
-                            </h1>
+                            </h2>
                             <p className={style.activitiesDescription}>{description}</p>
                         </div>
                     </div>

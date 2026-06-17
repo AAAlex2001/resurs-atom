@@ -1,18 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Button } from "@/shared/ui/Button";
 import { LogoBig } from "@/shared/ui/icons/LogoBig";
 import { LogoSmall } from "@/shared/ui/icons/LogoSmall";
 import { PhoneIcon } from "@/shared/ui/icons/PhoneIcon";
+import type { NavLink } from "@/shared/types/content";
 import style from "./style.module.scss";
-
-type NavLink = {
-    id: number;
-    label: string;
-    href: string;
-};
 
 type BurgerMenuProps = {
     navLinks: NavLink[];
@@ -23,6 +18,8 @@ type BurgerMenuProps = {
 export const BurgerMenu = ({ navLinks, phone, consultationText }: BurgerMenuProps) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isMounted, setIsMounted] = useState(false);
+    const openButtonRef = useRef<HTMLButtonElement>(null);
+    const panelRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         setIsMounted(true);
@@ -33,18 +30,57 @@ export const BurgerMenu = ({ navLinks, phone, consultationText }: BurgerMenuProp
             return;
         }
 
+        const getFocusable = () => {
+            const panel = panelRef.current;
+
+            if (!panel) {
+                return [];
+            }
+
+            return Array.from(
+                panel.querySelectorAll<HTMLElement>(
+                    'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+                ),
+            );
+        };
+
         const handleKeyDown = (event: KeyboardEvent) => {
             if (event.key === "Escape") {
                 setIsOpen(false);
+                return;
+            }
+
+            if (event.key !== "Tab") {
+                return;
+            }
+
+            const focusable = getFocusable();
+
+            if (focusable.length === 0) {
+                event.preventDefault();
+                return;
+            }
+
+            const first = focusable[0];
+            const last = focusable[focusable.length - 1];
+
+            if (event.shiftKey && document.activeElement === first) {
+                event.preventDefault();
+                last.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+                event.preventDefault();
+                first.focus();
             }
         };
 
         document.body.style.overflow = "hidden";
         window.addEventListener("keydown", handleKeyDown);
+        getFocusable()[0]?.focus();
 
         return () => {
             document.body.style.overflow = "";
             window.removeEventListener("keydown", handleKeyDown);
+            openButtonRef.current?.focus();
         };
     }, [isOpen]);
 
@@ -54,7 +90,7 @@ export const BurgerMenu = ({ navLinks, phone, consultationText }: BurgerMenuProp
         isMounted && isOpen
             ? createPortal(
                   <div className={style.overlay} id="burger-menu" role="dialog" aria-modal="true" aria-label="Меню">
-                      <div className={style.overlayPanel}>
+                      <div className={style.overlayPanel} ref={panelRef}>
                           <div className={style.overlayHeader}>
                               <a className={style.logoLink} href="/" aria-label="Ресурс-Атом">
                                   <span className={style.logoSmall}>
@@ -98,6 +134,7 @@ export const BurgerMenu = ({ navLinks, phone, consultationText }: BurgerMenuProp
                 onClick={() => setIsOpen(true)}
                 aria-controls="burger-menu"
                 aria-expanded={isOpen}
+                ref={openButtonRef}
             >
                 <span className={style.openIcon} aria-hidden="true">
                     <span />

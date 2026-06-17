@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
     background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
-    margin-top: 74px;
+    margin-top: var(--header-height);
 }
 
 .heroInner {
@@ -42,7 +42,7 @@
     letter-spacing: 0.00em;
 }
 
-.hilightText{
+.highlight{
     color: #00DE4F;
 }
 

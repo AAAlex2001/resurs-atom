@@ -1,16 +1,5 @@
+import type { LicensingCardData } from "@/shared/types/content";
 import style from "./style.module.scss";
-
-export type LicensingCardData = {
-    id: number;
-    stage: string;
-    title: string;
-    subtitle: string;
-    details: {
-        id: number;
-        title: string;
-        description: string;
-    }[];
-};
 
 type LicensingCardProps = {
     card: LicensingCardData;

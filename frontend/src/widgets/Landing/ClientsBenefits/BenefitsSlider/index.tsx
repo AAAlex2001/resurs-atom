@@ -2,17 +2,11 @@
 
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
+import type { NumberedCard } from "@/shared/types/content";
 import style from "./style.module.scss";
 
-type Benefit = {
-    id: number;
-    number: string;
-    title: string;
-    description: string;
-};
-
 type BenefitsSliderProps = {
-    benefits: Benefit[];
+    benefits: NumberedCard[];
 };
 
 export const BenefitsSlider = ({ benefits }: BenefitsSliderProps) => {

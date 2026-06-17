@@ -3,21 +3,12 @@
 import { AnimatePresence, motion, useAnimationFrame, useMotionValue, useReducedMotion, useTransform } from "framer-motion";
 import { useState } from "react";
 import { HoverPointerIcon } from "@/shared/ui/icons/HoverPointerIcon";
+import type { NumberedCard, OrbitHint } from "@/shared/types/content";
 import style from "./style.module.scss";
 
-type Benefit = {
-    id: number;
-    number: string;
-    title: string;
-    description: string;
-};
-
 type BenefitsOrbitProps = {
-    benefits: Benefit[];
-    hint: {
-        title: string;
-        description: string;
-    };
+    benefits: NumberedCard[];
+    hint: OrbitHint;
 };
 
 type Ring = "outer" | "middle" | "inner";
@@ -60,9 +51,9 @@ const ringDirections: Record<Ring, number> = {
 
 type OrbitRingProps = {
     ring: Ring;
-    benefits: Benefit[];
+    benefits: NumberedCard[];
     isPaused: boolean;
-    setActiveBenefit: (benefit: Benefit | null) => void;
+    setActiveBenefit: (benefit: NumberedCard | null) => void;
 };
 
 const OrbitRing = ({ ring, benefits, isPaused, setActiveBenefit }: OrbitRingProps) => {
@@ -118,7 +109,7 @@ const OrbitRing = ({ ring, benefits, isPaused, setActiveBenefit }: OrbitRingProp
 };
 
 export const BenefitsOrbit = ({ benefits, hint }: BenefitsOrbitProps) => {
-    const [activeBenefit, setActiveBenefit] = useState<Benefit | null>(null);
+    const [activeBenefit, setActiveBenefit] = useState<NumberedCard | null>(null);
     const shouldReduceMotion = useReducedMotion();
     const isOrbitPaused = Boolean(activeBenefit) || Boolean(shouldReduceMotion);
 

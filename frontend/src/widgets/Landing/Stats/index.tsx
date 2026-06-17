@@ -1,11 +1,8 @@
 import style from "./style.module.scss";
+import type { Stat } from "@/shared/types/content";
 
-type StatsProps = {
-    stats: {
-        id: number;
-        number: string;
-        text: string;
-    }[];
+export type StatsProps = {
+    stats: Stat[];
 };
 
 export const Stats = ({ stats }: StatsProps) => {

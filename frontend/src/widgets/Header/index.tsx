@@ -4,14 +4,9 @@ import { Button } from "@/shared/ui/Button";
 import { LogoBig } from "@/shared/ui/icons/LogoBig";
 import { LogoSmall } from "@/shared/ui/icons/LogoSmall";
 import { PhoneIcon } from "@/shared/ui/icons/PhoneIcon";
+import type { NavLink } from "@/shared/types/content";
 
-type NavLink = {
-    id: number;
-    label: string;
-    href: string;
-};
-
-type HeaderProps = {
+export type HeaderProps = {
     phone: string;
     consultationText: string;
     navLinks: NavLink[];
@@ -39,7 +34,7 @@ export const Header = ({ phone, consultationText, navLinks }: HeaderProps) => {
                         <div className={style.headerButtonOutline}>
                             <Button text={phone} variant="header-outline" icon={<PhoneIcon />} />
                         </div>
-                        <div className={style.headerButtonFulled}>
+                        <div className={style.headerButtonFilled}>
                             <Button text={consultationText} variant="header-filled" />
                         </div>
                     </div>
