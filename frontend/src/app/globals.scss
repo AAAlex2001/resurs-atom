@@ -8,7 +8,7 @@
 @font-face {
   font-family: "TT Firs Neue";
   src: url("/fonts/TTFirsNeue-Regular.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 400 300;
   font-style: normal;
   font-display: swap;
 }
@@ -16,7 +16,7 @@
 @font-face {
   font-family: "TT Firs Neue";
   src: url("/fonts/TTFirsNeue-Medium.woff2") format("woff2");
-  font-weight: 500;
+  font-weight: 500 400;
   font-style: normal;
   font-display: swap;
 }
@@ -37,7 +37,7 @@ body {
   flex-direction: column;
   color: var(--foreground);
   background: var(--background);
-  font-family: "TT Firs Neue", Arial, Helvetica, sans-serif;
+  font-family: "TT Firs Neue";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

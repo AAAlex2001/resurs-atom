@@ -5,7 +5,7 @@
     background-color: #000a1f;
     background-image: url("/licensing.png");
     background-repeat: no-repeat;
-    background-position: calc(100% + 290px) center;
+    background-position: calc(100% + 490px) center;
     background-size: auto 100%;
 }
 
@@ -40,8 +40,7 @@
     gap: 15px;
 }
 
-.licensingTitle {
-    
+.licensingTitle {    
     font-size: 28px;
     font-weight: 700;
     line-height: 32px;
@@ -51,6 +50,70 @@
 
 .licensingHighlight {
     color: #00DE4F;
+}
+
+.licensingDescription {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #F7FFF3;
+}
+
+.licensingSteps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.licensingStep {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #B3B9C0;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.12);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    gap: 10px;
+    height: fit-content;
+    cursor: pointer;
+
+    &:hover {
+        border-color: #00C77A;
+    }
+
+    &:active {
+        border-color: #00C77A;
+    }
+}
+
+.licensingStepNumber {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #F7FFF3;
+
+    &:hover {
+        color: #00C77A;
+    }
+
+    &:active {
+        color: #00C77A;
+    }
+}
+
+.licensingStepTitle {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #F7FFF3;
+    text-align: left;
 }
 
 .licensingCards {
