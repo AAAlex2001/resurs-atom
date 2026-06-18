@@ -710,7 +710,7 @@ export const ContactData = {
         subtitle: "Специалисты ответят в течение одного рабочего дня.",
         fields: [
             { id: 1, type: "text", fieldKey: "name", label: "Имя *", placeholder: "Ваше имя" },
-            { id: 2, type: "phone", fieldKey: "phone", label: "Телефон *", placeholder: "+7 (___) ___-__-__", maxLength: 11 },
+            { id: 2, type: "phone", fieldKey: "phone", label: "Телефон *", placeholder: "+7 (___) ___-__-__" },
             { id: 3, type: "text", fieldKey: "email", label: "Email *", placeholder: "you@company.ru" },
             {
                 id: 4,
