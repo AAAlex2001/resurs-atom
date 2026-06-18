@@ -37,7 +37,7 @@ def upgrade() -> None:
         sa.Column("name", sa.String(350), nullable=False),
         sa.Column("phone", sa.String(15), nullable=False),
         sa.Column("email", sa.String(255), nullable=False),
-        sa.Column("activity", sa.Enum(name="activity"), nullable=False),
+        sa.Column("activity", sa.Enum(name="activity", create_type=False), nullable=False),
         sa.Column("company", sa.String(255), nullable=False),
         sa.Column("message", sa.Text(), nullable=False),
         sa.Column("created_at", sa.DateTime(), nullable=True),
