@@ -7,9 +7,10 @@ import style from "./style.module.scss";
 type SelectProps = {
     options: string[];
     placeholder?: string;
+    onChange?: (value: string) => void;
 };
 
-export const Select = ({ options, placeholder }: SelectProps) => {
+export const Select = ({ options, placeholder, onChange }: SelectProps) => {
     const [open, setOpen] = useState(false);
     const [value, setValue] = useState<string | null>(null);
     const ref = useRef<HTMLDivElement>(null);
@@ -33,6 +34,7 @@ export const Select = ({ options, placeholder }: SelectProps) => {
     const choose = (option: string) => {
         setValue(option);
         setOpen(false);
+        onChange?.(option);
     };
 
     return (

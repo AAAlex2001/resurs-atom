@@ -16,5 +16,6 @@ export type RequestIn = {
     email: string;
     activity: Activity;
     company: string;
+    inn: string;
     message: string;
 }

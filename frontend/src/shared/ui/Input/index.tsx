@@ -5,9 +5,10 @@ import style from "./style.module.scss";
 
 type InputProps = InputHTMLAttributes<HTMLInputElement> & {
     format?: (value: string) => string;
+    onValueChange?: (value: string) => void;
 };
 
-export const Input = ({ format, className, onChange, ...rest }: InputProps) => {
+export const Input = ({ format, className, onChange, onValueChange, ...rest }: InputProps) => {
     const [value, setValue] = useState("");
     const classes = `${style.input} ${className ?? ""}`;
 
@@ -20,7 +21,9 @@ export const Input = ({ format, className, onChange, ...rest }: InputProps) => {
             className={classes}
             value={value}
             onChange={(event) => {
-                setValue(format(event.target.value));
+                const formatted = format(event.target.value);
+                setValue(formatted);
+                onValueChange?.(formatted);
                 onChange?.(event);
             }}
             {...rest}

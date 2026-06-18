@@ -18,6 +18,7 @@ class RequestService:
             email=request.email,
             activity=request.activity,
             company=request.company,
+            inn=request.inn,
             message=request.message,
         )
 

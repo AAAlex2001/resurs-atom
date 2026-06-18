@@ -1,6 +1,8 @@
 from pydantic import BaseModel, Field, EmailStr
 from enum import Enum
+from typing import Optional
 from datetime import datetime
+
 
 class Activity(str, Enum):
     Engineering = "Проектирование и инжиниринг"
@@ -15,12 +17,14 @@ class Activity(str, Enum):
 
 
 class RequestIn(BaseModel):
-    name: str = Field(..., min_length=1, max_length=350, example="Иван Иванов", description="Имя и фамилия")
-    phone: str = Field(..., min_length=10, max_length=15, example="+79999999999", description="Телефон")
-    email: EmailStr = Field(..., example="ivan@example.com", description="Email")
-    activity: Activity = Field(..., description="Вид деятельности")
-    company: str = Field(..., min_length=1, max_length=255, example="ООО 'Тест'", description="Компания")
-    message: str = Field(..., min_length=1, max_length=1000, example="Хочу заказать услугу", description="Сообщение")
+    name: str = Field(..., min_length=1, max_length=350, description="Имя")
+    phone: str = Field(..., min_length=10, max_length=20, description="Телефон")
+    email: EmailStr = Field(..., description="Email")
+    activity: Optional[Activity] = Field(None, description="Вид деятельности")
+    company: Optional[str] = Field(None, max_length=255, description="Компания")
+    inn: Optional[int] = Field(None, ge=0, le=999999999999, description="ИНН")
+    message: Optional[str] = Field(None, max_length=1000, description="Сообщение")
+
 
 class RequestOut(RequestIn):
     id: int

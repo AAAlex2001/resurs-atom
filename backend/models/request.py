@@ -1,10 +1,11 @@
 from enum import Enum
+from typing import Optional
+from datetime import datetime
 
-from sqlalchemy import DateTime, Enum as SAEnum, Integer, String, Text
+from sqlalchemy import BigInteger, DateTime, Enum as SAEnum, Integer, String, Text
 from sqlalchemy.orm import Mapped, mapped_column
 
 from database import Base
-from datetime import datetime
 
 
 class Activity(str, Enum):
@@ -24,11 +25,12 @@ class Request(Base):
     name: Mapped[str] = mapped_column(String(350), nullable=False)
     phone: Mapped[str] = mapped_column(String(15), nullable=False)
     email: Mapped[str] = mapped_column(String(255), nullable=False)
-    activity: Mapped[Activity] = mapped_column(
+    activity: Mapped[Optional[Activity]] = mapped_column(
         SAEnum(Activity, values_callable=lambda obj: [e.name for e in obj]),
-        nullable=False,
+        nullable=True,
     )
-    company: Mapped[str] = mapped_column(String(255), nullable=False)
-    message: Mapped[str] = mapped_column(Text, nullable=False)
+    company: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
+    inn: Mapped[Optional[int]] = mapped_column(BigInteger, nullable=True)
+    message: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.now)
     updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.now, onupdate=datetime.now)

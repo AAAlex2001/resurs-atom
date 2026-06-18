@@ -1,5 +1,7 @@
 "use client";
 
+import type { RequestIn } from "@/entities/request";
+import { useSendRequest } from "@/features/send-request";
 import { Button } from "@/shared/ui/Button";
 import { Input } from "@/shared/ui/Input";
 import { Select } from "@/shared/ui/Select";
@@ -12,6 +14,7 @@ import style from "./style.module.scss";
 type Field = {
     id: number;
     type: string;
+    fieldKey: keyof RequestIn;
     label: string;
     placeholder: string;
     options?: string[];
@@ -45,6 +48,8 @@ type ContactProps = {
 };
 
 export const Contact = ({ data }: ContactProps) => {
+    const { state, handleChange, handleSubmit, reset } = useSendRequest();
+
     return (
         <section id="contact" className={style.contact}>
             <div className={style.inner}>
@@ -93,43 +98,91 @@ export const Contact = ({ data }: ContactProps) => {
                         </div>
                     </div>
                 </div>
-                <form className={style.form}>
-                    <div className={style.formHead}>
-                        <span className={style.formTitle}>{data.form.title}</span>
-                        <span className={style.formSubtitle}>{data.form.subtitle}</span>
-                    </div>
-                    <div className={style.formBody}>
-                        <div className={style.fields}>
-                            {data.form.fields.map((field) => (
-                                <div className={style.field} key={field.id}>
-                                    <span className={style.fieldLabel}>{field.label}</span>
-                                    {field.type === "textarea" ? (
-                                        <textarea
-                                            className={style.textarea}
-                                            placeholder={field.placeholder}
-                                            rows={3}
-                                        />
-                                    ) : field.type === "select" ? (
-                                        <Select options={field.options ?? []} placeholder={field.placeholder} />
-                                    ) : field.type === "phone" ? (
-                                        <Input
-                                            type="tel"
-                                            inputMode="tel"
-                                            placeholder={field.placeholder}
-                                            format={formatRussianPhone}
-                                        />
-                                    ) : (
-                                        <Input type="text" placeholder={field.placeholder} />
-                                    )}
-                                </div>
-                            ))}
+
+                {state.isSuccess ? (
+                    <div className={style.form}>
+                        <div className={style.formHead}>
+                            <span className={style.formTitle}>Заявка отправлена!</span>
+                            <span className={style.formSubtitle}>
+                                Наши специалисты свяжутся с вами в течение одного рабочего дня.
+                            </span>
                         </div>
-                        <div className={style.formFooter}>
-                            <Button text={data.form.submitText} variant="filled-dark" className={style.submit} />
-                            <span className={style.consent}>{data.form.consent}</span>
+                        <div className={style.formBody}>
+                            <Button
+                                text="Отправить ещё одну"
+                                variant="outline-dark"
+                                onClick={reset}
+                            />
                         </div>
                     </div>
-                </form>
+                ) : (
+                    <form
+                        className={style.form}
+                        onSubmit={(e) => {
+                            e.preventDefault();
+                            handleSubmit();
+                        }}
+                    >
+                        <div className={style.formHead}>
+                            <span className={style.formTitle}>{data.form.title}</span>
+                            <span className={style.formSubtitle}>{data.form.subtitle}</span>
+                        </div>
+                        <div className={style.formBody}>
+                            <div className={style.fields}>
+                                {data.form.fields.map((field) => (
+                                    <div className={style.field} key={field.id}>
+                                        <span className={style.fieldLabel}>{field.label}</span>
+                                        {field.type === "textarea" ? (
+                                            <textarea
+                                                className={style.textarea}
+                                                placeholder={field.placeholder}
+                                                rows={3}
+                                                onChange={(e) => handleChange(field.fieldKey, e.target.value)}
+                                            />
+                                        ) : field.type === "select" ? (
+                                            <Select
+                                                options={field.options ?? []}
+                                                placeholder={field.placeholder}
+                                                onChange={(v) => handleChange(field.fieldKey, v)}
+                                            />
+                                        ) : field.type === "phone" ? (
+                                            <Input
+                                                type="tel"
+                                                inputMode="tel"
+                                                placeholder={field.placeholder}
+                                                format={formatRussianPhone}
+                                                onValueChange={(v) => handleChange(field.fieldKey, v)}
+                                            />
+                                        ) : (
+                                            <Input
+                                                type="text"
+                                                placeholder={field.placeholder}
+                                                onChange={(e) => handleChange(field.fieldKey, e.target.value)}
+                                            />
+                                        )}
+                                        {state.errors[field.fieldKey] && (
+                                            <span className={style.fieldError}>
+                                                {state.errors[field.fieldKey]}
+                                            </span>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                            <div className={style.formFooter}>
+                                <Button
+                                    text={state.isLoading ? "Отправка..." : data.form.submitText}
+                                    variant="filled-dark"
+                                    className={style.submit}
+                                    type="submit"
+                                />
+                                <span className={style.consent}>{data.form.consent}</span>
+                            </div>
+                            {state.isError && state.errorMessage && (
+                                <span className={style.fieldError}>{state.errorMessage}</span>
+                            )}
+                        </div>
+                    </form>
+                )}
             </div>
         </section>
     );

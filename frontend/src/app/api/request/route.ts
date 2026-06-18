@@ -1,12 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
-import { sendRequest } from "@/entities/request/api";
 
 export async function POST(request: NextRequest) {
-    const { name, phone, email, activity, company, message } = await request.json();
-    try {
-        await sendRequest({ name, phone, email, activity, company, message });
-        return NextResponse.json({ message: "Запрос успешно отправлен" }, { status: 200 });
-    } catch (error) {
+    const body = await request.json();
+    const response = await fetch(`${process.env.BACKEND_URL}/request/send-request`, {
+        method: "POST",
+        body: JSON.stringify(body),
+        headers: { "Content-Type": "application/json" },
+    });
+    if (!response.ok) {
         return NextResponse.json({ message: "Не удалось отправить запрос" }, { status: 500 });
     }
+    return NextResponse.json(await response.json(), { status: 201 });
 }
