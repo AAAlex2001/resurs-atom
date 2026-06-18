@@ -19,7 +19,5 @@ jobs:
           script: |
             cd /root/resurs-atom
             git pull origin main
-            cd frontend
-            npm ci
-            npm run build
-            pm2 restart frontend
+            docker compose build frontend
+            docker compose up -d frontend
