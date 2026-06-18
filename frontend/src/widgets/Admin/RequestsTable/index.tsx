@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useAdminAuth } from "@/features/admin-auth";
+import { Button } from "@/shared/ui/Button";
 import style from "./style.module.scss";
 
 type Request = {
@@ -45,9 +46,7 @@ export const RequestsTable = ({ requests }: RequestsTableProps) => {
                     <span className={style.title}>Заявки</span>
                     <span className={style.count}>{requests.length}</span>
                 </div>
-                <button className={style.logout} onClick={onLogout}>
-                    Выйти
-                </button>
+                <Button text="Выйти" variant="transparent" onClick={onLogout} />
             </div>
 
             <div className={style.tableWrap}>

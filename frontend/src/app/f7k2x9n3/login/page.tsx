@@ -47,7 +47,7 @@ export default function AdminLoginPage() {
                     {state.error && <span className={style.error}>{state.error}</span>}
                     <Button
                         text={state.isLoading ? "Вход..." : "Войти"}
-                        variant="filled"
+                        variant="header-filled"
                         type="submit"
                     />
                 </form>
