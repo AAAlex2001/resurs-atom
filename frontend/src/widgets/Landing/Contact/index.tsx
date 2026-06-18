@@ -14,7 +14,7 @@ import style from "./style.module.scss";
 type Field = {
     id: number;
     type: string;
-    fieldKey: keyof RequestIn;
+    fieldKey: string;
     label: string;
     placeholder: string;
     options?: string[];
@@ -137,13 +137,13 @@ export const Contact = ({ data }: ContactProps) => {
                                                 className={style.textarea}
                                                 placeholder={field.placeholder}
                                                 rows={3}
-                                                onChange={(e) => handleChange(field.fieldKey, e.target.value)}
+                                                onChange={(e) => handleChange(field.fieldKey as keyof RequestIn, e.target.value)}
                                             />
                                         ) : field.type === "select" ? (
                                             <Select
                                                 options={field.options ?? []}
                                                 placeholder={field.placeholder}
-                                                onChange={(v) => handleChange(field.fieldKey, v)}
+                                                onChange={(v) => handleChange(field.fieldKey as keyof RequestIn, v)}
                                             />
                                         ) : field.type === "phone" ? (
                                             <Input
@@ -151,18 +151,18 @@ export const Contact = ({ data }: ContactProps) => {
                                                 inputMode="tel"
                                                 placeholder={field.placeholder}
                                                 format={formatRussianPhone}
-                                                onValueChange={(v) => handleChange(field.fieldKey, v)}
+                                                onValueChange={(v) => handleChange(field.fieldKey as keyof RequestIn, v)}
                                             />
                                         ) : (
                                             <Input
                                                 type="text"
                                                 placeholder={field.placeholder}
-                                                onChange={(e) => handleChange(field.fieldKey, e.target.value)}
+                                                onChange={(e) => handleChange(field.fieldKey as keyof RequestIn, e.target.value)}
                                             />
                                         )}
-                                        {state.errors[field.fieldKey] && (
+                                        {state.errors[field.fieldKey as keyof RequestIn] && (
                                             <span className={style.fieldError}>
-                                                {state.errors[field.fieldKey]}
+                                                {state.errors[field.fieldKey as keyof RequestIn]}
                                             </span>
                                         )}
                                     </div>
