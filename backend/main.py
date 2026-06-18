@@ -5,6 +5,8 @@ from pydantic import BaseModel
 
 from database import engine
 
+from routes.request import router as request_router
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -14,6 +16,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="Resurs Atom API", lifespan=lifespan)
 
+app.include_router(request_router)
 
 class HealthResponse(BaseModel):
     status: str
