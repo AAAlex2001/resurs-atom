@@ -24,7 +24,10 @@ class Request(Base):
     name: Mapped[str] = mapped_column(String(350), nullable=False)
     phone: Mapped[str] = mapped_column(String(15), nullable=False)
     email: Mapped[str] = mapped_column(String(255), nullable=False)
-    activity: Mapped[Activity] = mapped_column(SAEnum(Activity), nullable=False)
+    activity: Mapped[Activity] = mapped_column(
+        SAEnum(Activity, values_callable=lambda obj: [e.name for e in obj]),
+        nullable=False,
+    )
     company: Mapped[str] = mapped_column(String(255), nullable=False)
     message: Mapped[str] = mapped_column(Text, nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.now)

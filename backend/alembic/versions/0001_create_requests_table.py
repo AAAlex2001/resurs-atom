@@ -18,15 +18,15 @@ depends_on: Union[str, Sequence[str], None] = None
 
 def upgrade() -> None:
     activity_enum = sa.Enum(
-        "Проектирование и инжиниринг",
-        "Строительство и монтаж",
-        "Эксплуатация объектов",
-        "Обращение с РМ и РАО",
-        "Транспортирование и хранение",
-        "Источники ионизирующего излучения",
-        "Производство оборудования",
-        "Испытания и пусконаладка",
-        "Подряд в атомной отрасли",
+        "Engineering",
+        "Counstructing",
+        "Operation",
+        "Handling",
+        "Transportation",
+        "Ionizing",
+        "Production",
+        "Testing",
+        "Subcontracting",
         name="activity",
     )
     activity_enum.create(op.get_bind())
