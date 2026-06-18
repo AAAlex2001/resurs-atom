@@ -2,6 +2,8 @@
 
 import { useRouter } from "next/navigation";
 import { useAdminAuth } from "@/features/admin-auth";
+import { Input } from "@/shared/ui/Input";
+import { Button } from "@/shared/ui/Button";
 import style from "./style.module.scss";
 
 export default function AdminLoginPage() {
@@ -24,8 +26,7 @@ export default function AdminLoginPage() {
                 <form className={style.form} onSubmit={onSubmit}>
                     <div className={style.field}>
                         <label className={style.label}>Логин</label>
-                        <input
-                            className={style.input}
+                        <Input
                             type="text"
                             placeholder="Введите логин"
                             value={state.login}
@@ -35,8 +36,7 @@ export default function AdminLoginPage() {
                     </div>
                     <div className={style.field}>
                         <label className={style.label}>Пароль</label>
-                        <input
-                            className={style.input}
+                        <Input
                             type="password"
                             placeholder="Введите пароль"
                             value={state.password}
@@ -45,9 +45,11 @@ export default function AdminLoginPage() {
                         />
                     </div>
                     {state.error && <span className={style.error}>{state.error}</span>}
-                    <button className={style.button} type="submit" disabled={state.isLoading}>
-                        {state.isLoading ? "Вход..." : "Войти"}
-                    </button>
+                    <Button
+                        text={state.isLoading ? "Вход..." : "Войти"}
+                        variant="filled"
+                        type="submit"
+                    />
                 </form>
             </div>
         </div>
