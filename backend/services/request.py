@@ -1,4 +1,5 @@
 from fastapi import Depends
+from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from database import get_db
@@ -25,3 +26,8 @@ class RequestService:
         await self.db.commit()
 
         return db_request
+
+
+    async def get_requests (self) -> list[Request]:
+        requests = await self.db.execute(select(Request))
+        return requests.scalars().all()    
