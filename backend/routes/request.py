@@ -1,7 +1,17 @@
-from fastapi import APIRouter, Depends, status
+from fastapi import APIRouter, Depends, HTTPException, Security, status
+from fastapi.security import APIKeyHeader
 
+from database import settings
 from schemas.request import RequestIn, RequestOut
 from services.request import RequestService
+
+api_key_header = APIKeyHeader(name="X-API-Key")
+
+
+def verify_api_key(key: str = Security(api_key_header)):
+    if key != settings.api_key:
+        raise HTTPException(status_code=401, detail="Неверный ключ")
+
 
 router = APIRouter(prefix="/request", tags=["request"])
 
@@ -24,7 +34,7 @@ async def send_request(
     "/get-requests",
     response_model=list[RequestOut],
     summary="Получить все запросы",
-    description="Получить все запросы",
+    dependencies=[Depends(verify_api_key)],
 )
 async def get_requests(
     request_service: RequestService = Depends(),

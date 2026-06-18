@@ -12,9 +12,8 @@ from sqlalchemy.orm import DeclarativeBase
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
-    database_url: str = (
-        "postgresql+asyncpg://postgres:postgres@localhost:5432/resurs_atom"
-    )
+    database_url: str
+    api_key: str
 
 
 settings = Settings()
