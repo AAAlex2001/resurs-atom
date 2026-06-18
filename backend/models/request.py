@@ -23,7 +23,7 @@ class Request(Base):
     __tablename__ = "requests"
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
     name: Mapped[str] = mapped_column(String(350), nullable=False)
-    phone: Mapped[str] = mapped_column(String(15), nullable=False)
+    phone: Mapped[str] = mapped_column(String(20), nullable=False)
     email: Mapped[str] = mapped_column(String(255), nullable=False)
     activity: Mapped[Optional[Activity]] = mapped_column(
         SAEnum(Activity, values_callable=lambda obj: [e.name for e in obj]),

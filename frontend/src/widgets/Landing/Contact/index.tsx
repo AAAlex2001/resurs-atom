@@ -17,6 +17,7 @@ type Field = {
     fieldKey: string;
     label: string;
     placeholder: string;
+    maxLength?: number;
     options?: string[];
 };
 
@@ -149,6 +150,7 @@ export const Contact = ({ data }: ContactProps) => {
                                             <Input
                                                 type="tel"
                                                 inputMode="tel"
+                                                maxLength={field.maxLength}
                                                 placeholder={field.placeholder}
                                                 format={formatRussianPhone}
                                                 onValueChange={(v) => handleChange(field.fieldKey as keyof RequestIn, v)}
@@ -157,6 +159,7 @@ export const Contact = ({ data }: ContactProps) => {
                                             <Input
                                                 type="text"
                                                 placeholder={field.placeholder}
+                                                maxLength={field.maxLength}
                                                 onChange={(e) => handleChange(field.fieldKey as keyof RequestIn, e.target.value)}
                                             />
                                         )}
