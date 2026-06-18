@@ -29,5 +29,8 @@ class RequestService:
         return db_request
 
     async def get_requests(self) -> list[Request]:
-        requests = await self.db.execute(select(Request))
+        requests = await self.db.execute(
+            select(Request)
+            .order_by(Request.created_at.desc())
+            )
         return requests.scalars().all()
