@@ -127,7 +127,7 @@ export const BurgerMenu = ({ data }: BurgerMenuProps) => {
 
                           <div className={style.overlayButtons}>
                               <Button text={data.phone} variant="header-outline" icon={<PhoneIcon />} />
-                              <Button text={data.consultationText} variant="header-filled" />
+                              <Button text={data.consultationText} variant="header-filled" href="#contact" onClick={closeMenu} />
                           </div>
                       </div>
                   </div>,

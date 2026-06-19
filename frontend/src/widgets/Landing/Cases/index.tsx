@@ -46,7 +46,7 @@ export const Cases = ({ data }: CasesProps) => {
                             <p className={style.casesDescription}>{data.description}</p>
                         </div>
                     </div>
-                    <Button text={data.buttonText} variant="filled" className={style.casesButton} />
+                    <Button text={data.buttonText} variant="filled" className={style.casesButton} href="#contact" />
                 </div>
                 <div className={style.casesSteps}>
                     {data.steps.map((step) => {

@@ -44,7 +44,7 @@ export const Header = ({ data }: HeaderProps) => {
                             <Button text={data.phone} variant="header-outline" icon={<PhoneIcon />} />
                         </div>
                         <div className={style.headerButtonFilled}>
-                            <Button text={data.consultationText} variant="header-filled" />
+                            <Button text={data.consultationText} variant="header-filled" href="#contact" />
                         </div>
                     </div>
                 </div>

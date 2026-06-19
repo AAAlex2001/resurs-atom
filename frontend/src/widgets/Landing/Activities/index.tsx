@@ -36,7 +36,7 @@ export const Activities = ({ data }: ActivitiesProps) => {
                         </div>
                     </div>
                     <div className={style.activitiesButton}>
-                        <Button text={data.buttonText} variant="outline-dark" />
+                        <Button text={data.buttonText} variant="outline-dark" href="#contact" />
                     </div>
                 </div>
                 <div className={style.activitiesSliderWrapper}>

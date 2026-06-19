@@ -31,8 +31,8 @@ export const Hero = ({ data }: HeroProps) => {
                         <p className={style.subtitle}>{data.subtitle}</p>
                     </div>
                     <div className={style.heroButtons}>
-                        <Button text={data.buttonFilledText} variant="filled" />
-                        <Button text={data.buttonOutlineText} variant="outline" />
+                        <Button text={data.buttonFilledText} variant="filled" href="#contact" />
+                        <Button text={data.buttonOutlineText} variant="outline" href="#contact" />
                     </div>
                 </div>
             </div>

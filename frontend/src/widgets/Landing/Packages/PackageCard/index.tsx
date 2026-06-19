@@ -46,7 +46,7 @@ export const PackageCard = ({ item, highlighted, onMouseEnter }: PackageCardProp
                 <ClockIcon className={style.durationIcon} />
                 <span className={style.durationText}>{item.duration}</span>
             </div>
-            <Button text={item.buttonText} variant="filled" className={style.cardButton} />
+            <Button text={item.buttonText} variant="filled" className={style.cardButton} href="#contact" />
         </div>
     );
 };
