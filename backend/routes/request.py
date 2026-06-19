@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException, Security, status
+from fastapi import APIRouter, Depends, HTTPException, Query, Security, status
 from fastapi.security import APIKeyHeader
 
 from database import settings
@@ -40,3 +40,17 @@ async def get_requests(
     request_service: RequestService = Depends(),
 ) -> list[RequestOut]:
     return await request_service.get_requests()
+
+
+@router.delete(
+    "/delete-all-requests",
+    summary="Удалить все запросы",
+    response_model=None,
+    status_code=status.HTTP_204_NO_CONTENT,
+    description="Удалить все запросы",
+    dependencies=[Depends(verify_api_key)],
+)
+async def delete_all_requests(
+    request_service: RequestService = Depends(),
+) -> None:
+    await request_service.delete_all_requests()

@@ -7,7 +7,7 @@ export default async function AdminPage() {
     const token = cookieStore.get("admin-token");
 
     if (token?.value !== "authenticated") {
-        redirect("/f7k2x9n3/login");
+        redirect("/");
     }
 
     const response = await fetch(`${process.env.BACKEND_URL}/request/get-requests`, {

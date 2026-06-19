@@ -5,6 +5,11 @@ import { useAdminAuth } from "@/features/admin-auth";
 import { Button } from "@/shared/ui/Button";
 import style from "./style.module.scss";
 
+const deleteAllRequests = async (): Promise<void> => {
+    const response = await fetch("/api/admin/requests", { method: "DELETE" });
+    if (!response.ok) throw new Error("Не удалось удалить запросы");
+};
+
 type Request = {
     id: number;
     name: string;
@@ -30,6 +35,11 @@ export const RequestsTable = ({ requests }: RequestsTableProps) => {
         router.push("/f7k2x9n3/login");
     };
 
+    const onDeleteAll = async () => {
+        await deleteAllRequests();
+        router.refresh();
+    };
+
     const formatDate = (iso: string) =>
         new Date(iso).toLocaleString("ru-RU", {
             day: "2-digit",
@@ -47,6 +57,7 @@ export const RequestsTable = ({ requests }: RequestsTableProps) => {
                     <span className={style.count}>{requests.length}</span>
                 </div>
                 <Button text="Выйти" variant="transparent" onClick={onLogout} />
+                <Button text="Удалить все запросы" variant="transparent" onClick={onDeleteAll} />
             </div>
 
             <div className={style.tableWrap}>
