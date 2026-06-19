@@ -56,8 +56,8 @@ export const RequestsTable = ({ requests }: RequestsTableProps) => {
                     <span className={style.title}>Заявки</span>
                     <span className={style.count}>{requests.length}</span>
                 </div>
-                <Button text="Выйти" variant="transparent" onClick={onLogout} />
                 <Button text="Удалить все запросы" variant="transparent" onClick={onDeleteAll} />
+                <Button text="Выйти" variant="transparent" onClick={onLogout} />
             </div>
 
             <div className={style.tableWrap}>
