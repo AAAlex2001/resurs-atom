@@ -34,9 +34,9 @@ export const Footer = ({ data }: FooterProps) => {
         <footer className={style.footer}>
             <div className={style.main}>
                 <div className={style.brand}>
-                    <span className={style.logo}>
+                    <a className={style.logo} href="/" aria-label="Атом-Плюс — на главную">
                         <LogoBig />
-                    </span>
+                    </a>
                     <p className={style.description}>{data.description}</p>
                 </div>
                 <div className={style.column}>

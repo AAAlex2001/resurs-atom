@@ -22,6 +22,16 @@
     margin: 0 auto;
 }
 
+.headerLogoLink {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+}
+
+.headerLogoSmall {
+    display: flex;
+}
+
 .headerLogoBig {
     display: none;
 }

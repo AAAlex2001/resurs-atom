@@ -27,12 +27,14 @@ export const Header = ({ data }: HeaderProps) => {
         <>
             <header className={style.header}>
                 <div className={style.headerContent}>
-                    <div className={style.headerLogoSmall}>
-                        <LogoSmall />
-                    </div>
-                    <div className={style.headerLogoBig}>
-                        <LogoBig />
-                    </div>
+                    <a className={style.headerLogoLink} href="/" aria-label="Атом-Плюс — на главную">
+                        <span className={style.headerLogoSmall}>
+                            <LogoSmall />
+                        </span>
+                        <span className={style.headerLogoBig}>
+                            <LogoBig />
+                        </span>
+                    </a>
                     <nav className={style.headerNav} aria-label="Основная навигация">
                         {data.navLinks.map((link) => (
                             <a className={style.headerNavLink} href={link.href} key={link.id}>
