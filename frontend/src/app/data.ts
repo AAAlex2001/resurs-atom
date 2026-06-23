@@ -176,7 +176,7 @@ export const ClientsBenefitsData = {
         {
             id: 6,
             number: "6",
-            title: "Подготовкак Инспекции Ростехнадзора",
+            title: "Подготовка к Инспекции Ростехнадзора",
         },
         {
             id: 7,
