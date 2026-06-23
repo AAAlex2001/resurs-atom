@@ -50,7 +50,7 @@ export const Header = ({ data }: HeaderProps) => {
                             />
                         </div>
                         <div className={style.headerButtonFilled}>
-                            <Button text={data.consultationText} variant="header-filled" href="#contact" />
+                            <Button text={data.consultationText} variant="header-filled" href="/#contact" />
                         </div>
                     </div>
                 </div>

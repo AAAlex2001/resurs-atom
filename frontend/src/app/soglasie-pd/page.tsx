@@ -12,6 +12,10 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "/soglasie-pd",
     },
+    robots: {
+        index: true,
+        follow: true,
+    },
 };
 
 export default function PersonalDataConsentPage() {

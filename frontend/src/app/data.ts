@@ -5,17 +5,17 @@ export const HeaderData = {
         {
             id: 1,
             label: "Услуги",
-            href: "#services",
+            href: "/#services",
         },
         {
             id: 2,
             label: "Процесс",
-            href: "#process",
+            href: "/#process",
         },
         {
             id: 3,
             label: "Контакты",
-            href: "#contact",
+            href: "/#contact",
         },
     ],
 };
@@ -723,10 +723,10 @@ export const FooterData = {
         "Независимая консалтинговая компания, помогающая организациям получать и поддерживать лицензии Ростехнадзора в области использования атомной энергии на территории РФ.",
     servicesTitle: "Услуги",
     services: [
-        { label: "Аудит готовности", href: "#process" },
-        { label: "Подготовка документации", href: "#process" },
-        { label: "Полное сопровождение", href: "#process" },
-        { label: "Консультация", href: "#contact" },
+        { label: "Аудит готовности", href: "/#process" },
+        { label: "Подготовка документации", href: "/#process" },
+        { label: "Полное сопровождение", href: "/#process" },
+        { label: "Консультация", href: "/#contact" },
     ],
     legalTitle: "Документы",
     legal: [

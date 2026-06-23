@@ -12,6 +12,10 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "/politika-pd",
     },
+    robots: {
+        index: true,
+        follow: true,
+    },
 };
 
 export default function PrivacyPolicyPage() {

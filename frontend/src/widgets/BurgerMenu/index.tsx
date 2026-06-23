@@ -133,7 +133,7 @@ export const BurgerMenu = ({ data }: BurgerMenuProps) => {
                                   icon={<PhoneIcon />}
                                   href={toTelHref(data.phone)}
                               />
-                              <Button text={data.consultationText} variant="header-filled" href="#contact" onClick={closeMenu} />
+                              <Button text={data.consultationText} variant="header-filled" href="/#contact" onClick={closeMenu} />
                           </div>
                       </div>
                   </div>,

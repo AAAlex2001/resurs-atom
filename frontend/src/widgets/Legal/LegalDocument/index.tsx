@@ -1,4 +1,5 @@
 import type { LegalDocumentData } from "@/app/legal/content";
+import { linkifyLegalText } from "@/app/legal/linkify";
 import style from "./style.module.scss";
 
 type LegalDocumentProps = {
@@ -20,7 +21,7 @@ export const LegalDocument = ({ data }: LegalDocumentProps) => {
                             {section.heading && <h2 className={style.heading}>{section.heading}</h2>}
                             {section.paragraphs.map((paragraph, paragraphIndex) => (
                                 <p className={style.paragraph} key={paragraphIndex}>
-                                    {paragraph}
+                                    {linkifyLegalText(paragraph, { linkClassName: style.link })}
                                 </p>
                             ))}
                         </section>
