@@ -715,7 +715,6 @@ export const ContactData = {
             },
         ],
         submitText: "Отправить заявку",
-        consent: "Отправляя заявку, вы соглашаетесь на обработку персональных данных для целей консультации.",
     },
 };
 
@@ -728,6 +727,11 @@ export const FooterData = {
         { label: "Подготовка документации", href: "#process" },
         { label: "Полное сопровождение", href: "#process" },
         { label: "Консультация", href: "#contact" },
+    ],
+    legalTitle: "Документы",
+    legal: [
+        { label: "Согласие на обработку ПД", href: "/soglasie-pd" },
+        { label: "Политика обработки ПД", href: "/politika-pd" },
     ],
     contactsTitle: "Контакты",
     phone: "+7-923-520-20-00",

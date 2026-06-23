@@ -18,4 +18,6 @@ export type RequestIn = {
     company: string;
     inn: string;
     message: string;
-}
+    personalDataConsent: boolean;
+    privacyPolicyAccepted: boolean;
+};

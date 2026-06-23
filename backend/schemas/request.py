@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field, EmailStr
+from pydantic import BaseModel, Field, EmailStr, field_validator
 from enum import Enum
 from typing import Optional
 from datetime import datetime
@@ -24,6 +24,15 @@ class RequestIn(BaseModel):
     company: Optional[str] = Field(None, max_length=255, description="Компания")
     inn: Optional[int] = Field(None, ge=0, le=999999999999, description="ИНН")
     message: Optional[str] = Field(None, max_length=1000, description="Сообщение")
+    personal_data_consent: bool = Field(..., description="Согласие на обработку персональных данных")
+    privacy_policy_accepted: bool = Field(..., description="Принятие политики обработки персональных данных")
+
+    @field_validator("personal_data_consent", "privacy_policy_accepted")
+    @classmethod
+    def consent_must_be_true(cls, value: bool) -> bool:
+        if not value:
+            raise ValueError("Необходимо подтвердить согласие")
+        return value
 
 
 class RequestOut(RequestIn):

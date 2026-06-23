@@ -227,17 +227,14 @@
     gap: 15px;
 }
 
-.submit {
-    width: 100%;
+.consents {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.consent {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0;
-    text-align: center;
-    color: #8E8E93;
+.submit {
+    width: 100%;
 }
 
 @media (min-width: 768px) {

@@ -2,7 +2,9 @@
 
 import type { RequestIn } from "@/entities/request";
 import { useSendRequest } from "@/features/send-request";
+import { LEGAL_ROUTES } from "@/app/legal/config";
 import { Button } from "@/shared/ui/Button";
+import { Checkbox } from "@/shared/ui/Checkbox";
 import { Input } from "@/shared/ui/Input";
 import { Select } from "@/shared/ui/Select";
 import { CheckCircleIcon } from "@/shared/ui/icons/CheckCircleIcon";
@@ -40,7 +42,6 @@ type ContactData = {
         subtitle: string;
         fields: Field[];
         submitText: string;
-        consent: string;
     };
 };
 
@@ -49,7 +50,7 @@ type ContactProps = {
 };
 
 export const Contact = ({ data }: ContactProps) => {
-    const { state, handleChange, handleSubmit, reset } = useSendRequest();
+    const { state, handleChange, handleConsentChange, handleSubmit, reset } = useSendRequest();
 
     return (
         <section id="contact" className={style.contact}>
@@ -172,13 +173,42 @@ export const Contact = ({ data }: ContactProps) => {
                                 ))}
                             </div>
                             <div className={style.formFooter}>
+                                <div className={style.consents}>
+                                    <Checkbox
+                                        checked={state.fields.personalDataConsent}
+                                        error={state.errors.personalDataConsent}
+                                        id="personal-data-consent"
+                                        label={
+                                            <>
+                                                Я даю{" "}
+                                                <a href={LEGAL_ROUTES.personalDataConsent} target="_blank" rel="noopener noreferrer">
+                                                    согласие на обработку персональных данных
+                                                </a>
+                                            </>
+                                        }
+                                        onCheckedChange={(value) => handleConsentChange("personalDataConsent", value)}
+                                    />
+                                    <Checkbox
+                                        checked={state.fields.privacyPolicyAccepted}
+                                        error={state.errors.privacyPolicyAccepted}
+                                        id="privacy-policy-accepted"
+                                        label={
+                                            <>
+                                                Я принимаю{" "}
+                                                <a href={LEGAL_ROUTES.privacyPolicy} target="_blank" rel="noopener noreferrer">
+                                                    политику обработки персональных данных
+                                                </a>
+                                            </>
+                                        }
+                                        onCheckedChange={(value) => handleConsentChange("privacyPolicyAccepted", value)}
+                                    />
+                                </div>
                                 <Button
                                     text={state.isLoading ? "Отправка..." : data.form.submitText}
                                     variant="filled-dark"
                                     className={style.submit}
                                     type="submit"
                                 />
-                                <span className={style.consent}>{data.form.consent}</span>
                             </div>
                             {state.isError && state.errorMessage && (
                                 <span className={style.fieldError}>{state.errorMessage}</span>

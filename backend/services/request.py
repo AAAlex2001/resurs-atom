@@ -20,6 +20,8 @@ class RequestService:
             company=request.company,
             inn=request.inn,
             message=request.message,
+            personal_data_consent=request.personal_data_consent,
+            privacy_policy_accepted=request.privacy_policy_accepted,
         )
 
         self.db.add(db_request)
