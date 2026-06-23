@@ -732,7 +732,7 @@ export const FooterData = {
     contactsTitle: "Контакты",
     phone: "+7-923-520-20-00",
     email: "licensing@atom.com",
-    location: "Кемерово · Российская Федерация",
+    location: "Российская Федерация",
     copyright: "© 2026 Атом-Плюс. Все права защищены.",
     note: "Решение о лицензировании принимает Ростехнадзор.",
 };
