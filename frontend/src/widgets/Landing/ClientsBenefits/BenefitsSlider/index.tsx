@@ -8,7 +8,7 @@ type Benefit = {
     id: number;
     number: string;
     title: string;
-    description: string;
+    description?: string;
 };
 
 type BenefitsSliderProps = {
@@ -52,7 +52,9 @@ export const BenefitsSlider = ({ benefits }: BenefitsSliderProps) => {
                             <div className={style.number}>{benefit.number}</div>
                             <div className={style.cardTexts}>
                                 <div className={style.title}>{benefit.title}</div>
-                                <div className={style.description}>{benefit.description}</div>
+                                {benefit.description && (
+                                    <div className={style.description}>{benefit.description}</div>
+                                )}
                             </div>
                         </div>
                     </div>

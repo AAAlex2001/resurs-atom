@@ -6,6 +6,7 @@ import { Button } from "@/shared/ui/Button";
 import { LogoBig } from "@/shared/ui/icons/LogoBig";
 import { LogoSmall } from "@/shared/ui/icons/LogoSmall";
 import { PhoneIcon } from "@/shared/ui/icons/PhoneIcon";
+import { toTelHref } from "@/shared/lib/phone";
 import style from "./style.module.scss";
 
 type NavLink = {
@@ -126,7 +127,12 @@ export const BurgerMenu = ({ data }: BurgerMenuProps) => {
                           </nav>
 
                           <div className={style.overlayButtons}>
-                              <Button text={data.phone} variant="header-outline" icon={<PhoneIcon />} />
+                              <Button
+                                  text={data.phone}
+                                  variant="header-outline"
+                                  icon={<PhoneIcon />}
+                                  href={toTelHref(data.phone)}
+                              />
                               <Button text={data.consultationText} variant="header-filled" href="#contact" onClick={closeMenu} />
                           </div>
                       </div>

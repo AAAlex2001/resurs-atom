@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { FaqData, FooterData, PackagesData, SeoTextData } from "@/app/data";
+import { ActivitiesData, FooterData, LicensingData, SeoTextData } from "@/app/data";
+import { toTelHref } from "@/shared/lib/phone";
 import "./globals.scss";
+
+const organizationPhone = toTelHref(FooterData.phone).replace(/^tel:/, "");
 
 export const metadata: Metadata = {
     title: "Атомные лицензии Ростехнадзора под ключ | Атом-Плюс",
     description:
-        "Лицензии Ростехнадзора в области использования атомной энергии под ключ: аудит готовности, лицензионная документация, обоснование безопасности, сопровождение до получения. 120+ проектов, 94% одобрено.",
+        "Лицензии Ростехнадзора в области использования атомной энергии под ключ: аудит готовности, лицензионная документация, обоснование безопасности, сопровождение до получения.",
     keywords: [
         "лицензия Ростехнадзора",
         "лицензия в области использования атомной энергии",
@@ -40,7 +43,7 @@ export const metadata: Metadata = {
         siteName: "Атом-Плюс",
         title: "Атомные лицензии Ростехнадзора под ключ | Атом-Плюс",
         description:
-            "Сопровождение лицензирования в области использования атомной энергии под ключ: аудит готовности, документация, обоснование безопасности. 120+ проектов, 94% одобрено.",
+            "Сопровождение лицензирования в области использования атомной энергии под ключ: аудит готовности, документация, обоснование безопасности.",
         images: [
             {
                 url: "/og-image.jpg",
@@ -54,7 +57,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Атомные лицензии Ростехнадзора под ключ | Атом-Плюс",
         description:
-            "Сопровождение лицензирования в области использования атомной энергии под ключ: аудит готовности, документация, обоснование безопасности. 120+ проектов, 94% одобрено.",
+            "Сопровождение лицензирования в области использования атомной энергии под ключ: аудит готовности, документация, обоснование безопасности.",
         images: ["/og-image.jpg"],
     },
     robots: {
@@ -78,7 +81,7 @@ const jsonLd = {
             "@id": "https://atom-plus.pro/#organization",
             name: "Атом-Плюс",
             url: "https://atom-plus.pro",
-            telephone: "+79990018000",
+            telephone: organizationPhone,
             email: FooterData.email,
             description:
                 "Сопровождение получения атомных лицензий Ростехнадзора под ключ: аудит готовности, подготовка документации, обоснование безопасности.",
@@ -90,7 +93,7 @@ const jsonLd = {
             },
             contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+79990018000",
+                telephone: organizationPhone,
                 email: FooterData.email,
                 contactType: "customer service",
                 areaServed: "RU",
@@ -120,7 +123,7 @@ const jsonLd = {
             isPartOf: { "@id": "https://atom-plus.pro/#website" },
             about: { "@id": "https://atom-plus.pro/#organization" },
             description:
-                "Получение атомных лицензий Ростехнадзора под ключ. 120+ проектов, 10 лет в атомном надзоре, 94% одобренной документации.",
+                "Получение атомных лицензий Ростехнадзора под ключ: аудит готовности, подготовка документации, сопровождение до выдачи лицензии.",
             inLanguage: "ru-RU",
         },
         {
@@ -131,33 +134,26 @@ const jsonLd = {
             areaServed: "RU",
             hasOfferCatalog: {
                 "@type": "OfferCatalog",
-                name: "Пакеты услуг лицензирования",
-                itemListElement: PackagesData.packages.map((pkg) => ({
+                name: "Виды деятельности, требующие лицензии",
+                itemListElement: ActivitiesData.activities.map((activity) => ({
                     "@type": "Offer",
                     itemOffered: {
                         "@type": "Service",
-                        name: pkg.title,
-                        description: pkg.description,
-                        serviceType: pkg.name,
-                    },
-                    eligibleDuration: {
-                        "@type": "QuantitativeValue",
-                        description: pkg.duration,
+                        name: activity.title,
+                        description: activity.description,
                     },
                 })),
             },
         },
         {
-            "@type": "FAQPage",
-            "@id": "https://atom-plus.pro/#faq",
+            "@type": "HowTo",
+            "@id": "https://atom-plus.pro/#licensing-process",
+            name: "Процесс лицензирования в области использования атомной энергии",
             inLanguage: "ru-RU",
-            mainEntity: FaqData.items.map((item) => ({
-                "@type": "Question",
-                name: item.question,
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: item.answer,
-                },
+            step: LicensingData.steps.map((step, index) => ({
+                "@type": "HowToStep",
+                position: index + 1,
+                name: step.title,
             })),
         },
         {

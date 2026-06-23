@@ -31,3 +31,5 @@ export const formatRussianPhone = (raw: string): string => {
 
     return result;
 };
+
+export const toTelHref = (phone: string): string => `tel:${phone.replace(/[^\d+]/g, "")}`;

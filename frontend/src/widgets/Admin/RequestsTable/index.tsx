@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useAdminAuth } from "@/features/admin-auth";
 import { Button } from "@/shared/ui/Button";
+import { toTelHref } from "@/shared/lib/phone";
 import style from "./style.module.scss";
 
 const deleteAllRequests = async (): Promise<void> => {
@@ -83,7 +84,9 @@ export const RequestsTable = ({ requests }: RequestsTableProps) => {
                                 <tr key={req.id}>
                                     <td>{req.id}</td>
                                     <td>{req.name}</td>
-                                    <td>{req.phone}</td>
+                                    <td>
+                                        <a href={toTelHref(req.phone)}>{req.phone}</a>
+                                    </td>
                                     <td>{req.email}</td>
                                     <td>{req.activity ?? "—"}</td>
                                     <td>{req.company ?? "—"}</td>

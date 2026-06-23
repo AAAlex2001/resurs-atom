@@ -3,32 +3,32 @@ import {
     ClientsBenefitsData,
     HeaderData,
     HeroData,
-    DocumentsData,
-    LicenseTermData,
+    // DocumentsData,
+    // LicenseTermData,
     LicensingData,
-    StatsData,
-    WhyUsData,
-    CasesData,
-    PackagesData,
-    TestimonialsData,
-    FaqData,
+    // StatsData,
+    // WhyUsData,
+    // CasesData,
+    // PackagesData,
+    // TestimonialsData,
+    // FaqData,
     SeoTextData,
     ContactData,
     FooterData,
 } from "@/app/data";
 import { Hero } from "@/widgets/Landing/Hero";
 import { Header } from "@/widgets/Header";
-import { Stats } from "@/widgets/Landing/Stats";
+// import { Stats } from "@/widgets/Landing/Stats";
 import { Activities } from "@/widgets/Landing/Activities";
 import { ClientsBenefits } from "@/widgets/Landing/ClientsBenefits";
 import { Licensing } from "@/widgets/Landing/Licensing";
-import { LicenseTerm } from "@/widgets/Landing/LicenseTerm";
-import { Documents } from "@/widgets/Landing/Documents";
-import { WhyUs } from "@/widgets/Landing/WhyUs";
-import { Cases } from "@/widgets/Landing/Cases";
-import { Packages } from "@/widgets/Landing/Packages";
-import { Testimonials } from "@/widgets/Landing/Testimonials";
-import { Faq } from "@/widgets/Landing/Faq";
+// import { LicenseTerm } from "@/widgets/Landing/LicenseTerm";
+// import { Documents } from "@/widgets/Landing/Documents";
+// import { WhyUs } from "@/widgets/Landing/WhyUs";
+// import { Cases } from "@/widgets/Landing/Cases";
+// import { Packages } from "@/widgets/Landing/Packages";
+// import { Testimonials } from "@/widgets/Landing/Testimonials";
+// import { Faq } from "@/widgets/Landing/Faq";
 import { SeoText } from "@/widgets/Landing/SeoText";
 import { Contact } from "@/widgets/Landing/Contact";
 import { Footer } from "@/widgets/Footer";
@@ -38,17 +38,17 @@ export default function Home() {
         <>
             <Header data={HeaderData} />
             <Hero data={HeroData} />
-            <Stats data={StatsData} />
+            {/* <Stats data={StatsData} /> */}
             <Activities data={ActivitiesData} />
             <ClientsBenefits data={ClientsBenefitsData} />
             <Licensing data={LicensingData} />
-            <LicenseTerm data={LicenseTermData} />
-            <Documents data={DocumentsData} />
-            <WhyUs data={WhyUsData} />
-            <Cases data={CasesData} />
-            <Packages data={PackagesData} />
-            <Testimonials data={TestimonialsData} />
-            <Faq data={FaqData} />
+            {/* <LicenseTerm data={LicenseTermData} /> */}
+            {/* <Documents data={DocumentsData} /> */}
+            {/* <WhyUs data={WhyUsData} /> */}
+            {/* <Cases data={CasesData} /> */}
+            {/* <Packages data={PackagesData} /> */}
+            {/* <Testimonials data={TestimonialsData} /> */}
+            {/* <Faq data={FaqData} /> */}
             <SeoText data={SeoTextData} />
             <Contact data={ContactData} />
             <Footer data={FooterData} />

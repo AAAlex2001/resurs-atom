@@ -8,7 +8,7 @@ import { Select } from "@/shared/ui/Select";
 import { CheckCircleIcon } from "@/shared/ui/icons/CheckCircleIcon";
 import { PhoneIcon } from "@/shared/ui/icons/PhoneIcon";
 import { MailIcon } from "@/shared/ui/icons/MailIcon";
-import { formatRussianPhone } from "@/shared/lib/phone";
+import { formatRussianPhone, toTelHref } from "@/shared/lib/phone";
 import style from "./style.module.scss";
 
 type Field = {
@@ -80,7 +80,7 @@ export const Contact = ({ data }: ContactProps) => {
                                 <span className={style.contactLabel}>{data.phone.label}</span>
                                 <a
                                     className={style.contactValue}
-                                    href={`tel:${data.phone.value.replace(/[^\d+]/g, "")}`}
+                                    href={toTelHref(data.phone.value)}
                                 >
                                     {data.phone.value}
                                 </a>

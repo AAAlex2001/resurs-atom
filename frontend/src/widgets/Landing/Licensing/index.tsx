@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import { ArrowRightIcon } from "@/shared/ui/icons/ArrowRightIcon";
 import { LicensingCard, type LicensingCardData } from "@/widgets/Landing/Licensing/LicensingCard";
 import style from "./style.module.scss";
@@ -46,18 +46,37 @@ export const Licensing = ({ data }: LicensingProps) => {
                 </div>
                 <div className={style.licensingBody}>
                     <div className={style.licensingSteps}>
-                        {data.steps.map((step) => (
-                            <button
-                                className={`${style.licensingStep} ${activeStep === step.id ? style.active : ""}`}
-                                key={step.id}
-                                onClick={() => toggle(step.id)}
-                                type="button"
-                            >
-                                <span className={style.licensingStepNumber}>{step.number}</span>
-                                <span className={style.licensingStepTitle}>{step.title}</span>
-                                <ArrowRightIcon className={style.licensingStepIcon} />
-                            </button>
-                        ))}
+                        {data.steps.map((step) => {
+                            const card = data.stepsCard.find((item) => item.id === step.id);
+                            const isActive = activeStep === step.id;
+
+                            return (
+                                <Fragment key={step.id}>
+                                    <button
+                                        className={`${style.licensingStep} ${isActive ? style.active : ""}`}
+                                        onClick={() => toggle(step.id)}
+                                        type="button"
+                                    >
+                                        <span className={style.licensingStepNumber}>{step.number}</span>
+                                        <span className={style.licensingStepTitle}>{step.title}</span>
+                                        <ArrowRightIcon className={style.licensingStepIcon} />
+                                    </button>
+                                    <AnimatePresence initial={false}>
+                                        {isActive && card && (
+                                            <motion.div
+                                                className={style.licensingCardWrap}
+                                                initial={{ opacity: 0, height: 0 }}
+                                                animate={{ opacity: 1, height: "auto" }}
+                                                exit={{ opacity: 0, height: 0 }}
+                                                transition={{ duration: 0.28, ease: "easeOut" }}
+                                            >
+                                                <LicensingCard card={card} />
+                                            </motion.div>
+                                        )}
+                                    </AnimatePresence>
+                                </Fragment>
+                            );
+                        })}
                     </div>
                     <div className={style.licensingCards}>
                         <AnimatePresence mode="wait">

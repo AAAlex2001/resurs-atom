@@ -2,6 +2,7 @@ import { LogoBig } from "@/shared/ui/icons/LogoBig";
 import { PhoneIcon } from "@/shared/ui/icons/PhoneIcon";
 import { MailIcon } from "@/shared/ui/icons/MailIcon";
 import { LocationIcon } from "@/shared/ui/icons/LocationIcon";
+import { toTelHref } from "@/shared/lib/phone";
 import style from "./style.module.scss";
 
 type FooterData = {
@@ -52,7 +53,7 @@ export const Footer = ({ data }: FooterProps) => {
                             <span className={style.contactIcon}>
                                 <PhoneIcon />
                             </span>
-                            <a className={style.contactLink} href={`tel:${data.phone.replace(/[^\d+]/g, "")}`}>
+                            <a className={style.contactLink} href={toTelHref(data.phone)}>
                                 {data.phone}
                             </a>
                         </li>

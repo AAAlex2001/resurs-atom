@@ -9,7 +9,7 @@ type Benefit = {
     id: number;
     number: string;
     title: string;
-    description: string;
+    description?: string;
 };
 
 type BenefitsOrbitProps = {
@@ -146,7 +146,9 @@ export const BenefitsOrbit = ({ benefits, hint }: BenefitsOrbitProps) => {
                             transition={{ duration: 0.2 }}
                         >
                             <div className={style.infoTitle}>{activeBenefit.title}</div>
-                            <div className={style.infoDescription}>{activeBenefit.description}</div>
+                            {activeBenefit.description && (
+                                <div className={style.infoDescription}>{activeBenefit.description}</div>
+                            )}
                         </motion.div>
                     )}
                 </AnimatePresence>

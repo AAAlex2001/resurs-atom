@@ -68,9 +68,8 @@
 }
 
 .licensingSteps {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    grid-auto-rows: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
     position: relative;
     z-index: 1;
@@ -135,7 +134,7 @@
     min-width: 0;
     font-size: 18px;
     font-weight: 500;
-    line-height: 100%;
+    line-height: 23px;
     letter-spacing: 0;
     color: #F7FFF3;
     text-align: left;
@@ -149,8 +148,13 @@
     flex-shrink: 0;
 }
 
+.licensingCardWrap {
+    width: 100%;
+    overflow: hidden;
+}
+
 .licensingCards {
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 100%;
 }
@@ -158,7 +162,6 @@
 .licensingCardMotion {
     display: flex;
     width: 100%;
-    height: 100%;
 }
 
 
@@ -189,16 +192,15 @@
     .licensingBody {
         display: grid;
         grid-template-columns: minmax(0, 1fr) 742px;
-        align-items: stretch;
+        align-items: start;
         gap: 30px;
     }
 
-    .licensingSteps {
-        height: 508px;
-        grid-template-rows: repeat(7, minmax(0, 1fr));
+    .licensingCardWrap {
+        display: none;
     }
 
     .licensingCards {
-        height: 508px;
+        display: flex;
     }
 }

@@ -4,6 +4,7 @@ import { Button } from "@/shared/ui/Button";
 import { LogoBig } from "@/shared/ui/icons/LogoBig";
 import { LogoSmall } from "@/shared/ui/icons/LogoSmall";
 import { PhoneIcon } from "@/shared/ui/icons/PhoneIcon";
+import { toTelHref } from "@/shared/lib/phone";
 
 type NavLink = {
     id: number;
@@ -41,7 +42,12 @@ export const Header = ({ data }: HeaderProps) => {
                     </nav>
                     <div className={style.headerButtons}>
                         <div className={style.headerButtonOutline}>
-                            <Button text={data.phone} variant="header-outline" icon={<PhoneIcon />} />
+                            <Button
+                                text={data.phone}
+                                variant="header-outline"
+                                icon={<PhoneIcon />}
+                                href={toTelHref(data.phone)}
+                            />
                         </div>
                         <div className={style.headerButtonFilled}>
                             <Button text={data.consultationText} variant="header-filled" href="#contact" />

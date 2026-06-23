@@ -6,7 +6,7 @@ type Benefit = {
     id: number;
     number: string;
     title: string;
-    description: string;
+    description?: string;
 };
 
 type ClientsBenefitsData = {
