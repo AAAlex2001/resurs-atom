@@ -1,0 +1,40 @@
+.svg {
+    display: block;
+}
+
+.orbits {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: logoSpin 5s linear infinite;
+    animation-play-state: paused;
+}
+
+.core {
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.svg:hover .orbits {
+    animation-play-state: running;
+}
+
+.svg:hover .core {
+    transform: scale(1.14);
+}
+
+@keyframes logoSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .orbits {
+        animation: none;
+    }
+
+    .core {
+        transition: none;
+    }
+}
