@@ -52,7 +52,12 @@
     }
 
     .card {
+        flex-wrap: wrap;
         padding: 14px 16px;
         gap: 14px;
+    }
+
+    .button {
+        width: 100%;
     }
 }
