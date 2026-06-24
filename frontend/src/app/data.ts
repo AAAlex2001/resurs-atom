@@ -677,7 +677,7 @@ export const ContactData = {
     },
     email: {
         label: "Электронная почта",
-        value: "licensing@atom.com",
+        value: "info@atom-plus.pro",
     },
     form: {
         title: "Запрос консультации",
@@ -735,7 +735,7 @@ export const FooterData = {
     ],
     contactsTitle: "Контакты",
     phone: "+7-923-520-20-00",
-    email: "licensing@atom.com",
+    email: "info@atom-plus.pro",
     location: "Российская Федерация",
     copyright: "© 2026 Атом-Плюс. Все права защищены.",
     note: "Решение о лицензировании принимает Ростехнадзор.",

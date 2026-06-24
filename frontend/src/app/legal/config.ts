@@ -1,5 +1,5 @@
 export const LEGAL_SITE_URL = "https://atom-plus.pro";
-export const LEGAL_OPERATOR_EMAIL = "licensing@atom.com";
+export const LEGAL_OPERATOR_EMAIL = "info@atom-plus.pro";
 
 export const LEGAL_ROUTES = {
     privacyPolicy: "/politika-pd",
