@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { ActivitiesData, FooterData, LicensingData, SeoTextData } from "@/app/data";
+import { CookiesBanner } from "@/widgets/CookiesBanner";
 import { toTelHref } from "@/shared/lib/phone";
 import "./globals.scss";
 
@@ -205,6 +206,7 @@ export default function RootLayout({
             </head>
             <body>
                 {children}
+                <CookiesBanner />
                 <Script id="yandex-metrika" strategy="afterInteractive">
                     {`
                         (function(m,e,t,r,i,k,a){
