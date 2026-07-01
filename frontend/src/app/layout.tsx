@@ -1,11 +1,20 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { ActivitiesData, FooterData, LicensingData, SeoTextData } from "@/app/data";
+import { ActivitiesData, FooterData, HeaderData, LicensingData, SeoTextData } from "@/app/data";
 import { CookiesBanner } from "@/widgets/CookiesBanner";
 import { toTelHref } from "@/shared/lib/phone";
 import "./globals.scss";
 
 const organizationPhone = toTelHref(FooterData.phone).replace(/^tel:/, "");
+
+const partnerOrganizations = HeaderData.partners.items
+    .filter((partner) => partner.href)
+    .map((partner) => ({
+        "@type": "Organization",
+        name: partner.name,
+        url: partner.href,
+        description: partner.description,
+    }));
 
 export const metadata: Metadata = {
     title: "Атомные лицензии Ростехнадзора под ключ | Атом-Плюс",
@@ -126,6 +135,8 @@ const jsonLd = {
             description:
                 "Получение атомных лицензий Ростехнадзора под ключ: аудит готовности, подготовка документации, сопровождение до выдачи лицензии.",
             inLanguage: "ru-RU",
+            mentions: partnerOrganizations,
+            relatedLink: partnerOrganizations.map((partner) => partner.url),
         },
         {
             "@type": "ProfessionalService",

@@ -52,9 +52,10 @@ export const PartnersMenu = ({ partners }: PartnersMenuProps) => {
                                 className={style.partnerItem}
                                 href={item.href}
                                 key={item.id}
-                                rel="noopener noreferrer"
+                                rel="noopener"
                                 role="menuitem"
                                 target="_blank"
+                                title={`${item.name} — ${item.description}`}
                             >
                                 {content}
                             </a>

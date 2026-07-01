@@ -172,8 +172,9 @@ export const BurgerMenu = ({ data }: BurgerMenuProps) => {
                                                   href={item.href}
                                                   key={item.id}
                                                   onClick={closeMenu}
-                                                  rel="noopener noreferrer"
+                                                  rel="noopener"
                                                   target="_blank"
+                                                  title={`${item.name} — ${item.description}`}
                                               >
                                                   {content}
                                               </a>
