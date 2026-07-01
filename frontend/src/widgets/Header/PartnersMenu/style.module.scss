@@ -1,0 +1,141 @@
+.partners {
+    display: none;
+    position: relative;
+    align-items: center;
+}
+
+.partnersTrigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 44px;
+    padding: 0 18px;
+    border: 1px solid #E6E6E6;
+    border-radius: 40px;
+    background-color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.partnersLabel {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.partnersChevron {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+.partners:hover .partnersTrigger,
+.partners:focus-within .partnersTrigger {
+    border-color: #00C77A;
+    background-color: rgba(0, 220, 85, 0.08);
+}
+
+.partners:hover .partnersChevron,
+.partners:focus-within .partnersChevron {
+    transform: rotate(180deg);
+}
+
+.partnersPanel {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 360px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #E6E6E6;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 10, 31, 0.12);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+
+// Прозрачный "мостик" перекрывает зазор между плашкой и панелью,
+// чтобы курсор не терял ховер при переходе к списку партнёров.
+.partnersPanel::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    height: 12px;
+}
+
+.partners:hover .partnersPanel,
+.partners:focus-within .partnersPanel {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.partnerItem {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+a.partnerItem:hover {
+    background-color: rgba(0, 220, 85, 0.08);
+}
+
+.partnerIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: #F5F7FA;
+
+    svg {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+.partnerText {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.partnerName {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #000A1F;
+}
+
+.partnerDescription {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #5C6672;
+}
+
+@media (min-width: 768px) {
+    .partners {
+        display: flex;
+    }
+}

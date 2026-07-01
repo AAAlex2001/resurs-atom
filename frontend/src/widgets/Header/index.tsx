@@ -1,5 +1,6 @@
 import style from "./style.module.scss";
 import { BurgerMenu } from "@/widgets/BurgerMenu";
+import { PartnersMenu } from "@/widgets/Header/PartnersMenu";
 import { Button } from "@/shared/ui/Button";
 import { LogoBig } from "@/shared/ui/icons/LogoBig";
 import { LogoSmall } from "@/shared/ui/icons/LogoSmall";
@@ -12,9 +13,21 @@ type NavLink = {
     href: string;
 };
 
+type PartnerItem = {
+    id: number;
+    icon: string;
+    name: string;
+    description: string;
+    href?: string;
+};
+
 type HeaderData = {
     phone: string;
     consultationText: string;
+    partners: {
+        label: string;
+        items: PartnerItem[];
+    };
     navLinks: NavLink[];
 };
 
@@ -43,6 +56,7 @@ export const Header = ({ data }: HeaderProps) => {
                         ))}
                     </nav>
                     <div className={style.headerButtons}>
+                        <PartnersMenu partners={data.partners} />
                         <div className={style.headerButtonOutline}>
                             <Button
                                 text={data.phone}

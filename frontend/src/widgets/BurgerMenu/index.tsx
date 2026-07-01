@@ -1,11 +1,14 @@
 "use client";
 
+import type { ComponentType } from "react";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Button } from "@/shared/ui/Button";
 import { LogoBig } from "@/shared/ui/icons/LogoBig";
 import { LogoSmall } from "@/shared/ui/icons/LogoSmall";
 import { PhoneIcon } from "@/shared/ui/icons/PhoneIcon";
+import { PartnerResursPlusIcon } from "@/shared/ui/icons/PartnerResursPlusIcon";
+import { PartnerNedraIcon } from "@/shared/ui/icons/PartnerNedraIcon";
 import { toTelHref } from "@/shared/lib/phone";
 import style from "./style.module.scss";
 
@@ -15,10 +18,27 @@ type NavLink = {
     href: string;
 };
 
+type PartnerItem = {
+    id: number;
+    icon: string;
+    name: string;
+    description: string;
+    href?: string;
+};
+
 type BurgerMenuData = {
     navLinks: NavLink[];
     phone: string;
     consultationText: string;
+    partners: {
+        label: string;
+        items: PartnerItem[];
+    };
+};
+
+const partnerIcons: Record<string, ComponentType<{ className?: string }>> = {
+    "resurs-plus": PartnerResursPlusIcon,
+    nedra: PartnerNedraIcon,
 };
 
 type BurgerMenuProps = {
@@ -125,6 +145,49 @@ export const BurgerMenu = ({ data }: BurgerMenuProps) => {
                                   </a>
                               ))}
                           </nav>
+
+                          <div className={style.overlayPartners}>
+                              <span className={style.overlayPartnersTitle}>{data.partners.label}</span>
+                              <div className={style.overlayPartnersList}>
+                                  {data.partners.items.map((item) => {
+                                      const Icon = partnerIcons[item.icon];
+                                      const content = (
+                                          <>
+                                              <span className={style.overlayPartnerIcon}>
+                                                  {Icon ? <Icon /> : null}
+                                              </span>
+                                              <span className={style.overlayPartnerText}>
+                                                  <span className={style.overlayPartnerName}>{item.name}</span>
+                                                  <span className={style.overlayPartnerDescription}>
+                                                      {item.description}
+                                                  </span>
+                                              </span>
+                                          </>
+                                      );
+
+                                      if (item.href) {
+                                          return (
+                                              <a
+                                                  className={style.overlayPartnerItem}
+                                                  href={item.href}
+                                                  key={item.id}
+                                                  onClick={closeMenu}
+                                                  rel="noopener noreferrer"
+                                                  target="_blank"
+                                              >
+                                                  {content}
+                                              </a>
+                                          );
+                                      }
+
+                                      return (
+                                          <div className={style.overlayPartnerItem} key={item.id}>
+                                              {content}
+                                          </div>
+                                      );
+                                  })}
+                              </div>
+                          </div>
 
                           <div className={style.overlayButtons}>
                               <Button

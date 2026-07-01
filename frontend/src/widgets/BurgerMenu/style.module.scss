@@ -135,6 +135,79 @@
     }
 }
 
+.overlayPartners {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.overlayPartnersTitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #5C6672;
+}
+
+.overlayPartnersList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.overlayPartnerItem {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px;
+    border: 1px solid #E6E6E6;
+    border-radius: 16px;
+    background-color: #fff;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+a.overlayPartnerItem:hover {
+    background-color: rgba(0, 220, 85, 0.08);
+}
+
+.overlayPartnerIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background-color: #F5F7FA;
+
+    svg {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.overlayPartnerText {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.overlayPartnerName {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #000A1F;
+}
+
+.overlayPartnerDescription {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #5C6672;
+}
+
 .overlayButtons {
     display: flex;
     flex-direction: column;
