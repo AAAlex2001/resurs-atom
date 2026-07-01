@@ -9,13 +9,14 @@
     align-items: center;
     gap: 8px;
     height: 44px;
-    padding: 0 12px;
+    padding: 0 16px;
     border: 0;
+    border-radius: 40px;
     background-color: transparent;
     color: #000A1F;
     cursor: pointer;
     white-space: nowrap;
-    transition: color 0.2s ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .partnersLabel {
@@ -35,6 +36,7 @@
 
 .partners:hover .partnersTrigger,
 .partners:focus-within .partnersTrigger {
+    background-color: rgba(0, 220, 85, 0.12);
     color: #00C77A;
 }
 
@@ -45,7 +47,7 @@
 
 .partnersPanel {
     position: absolute;
-    top: calc(100% + 2px);
+    top: calc(100% + 18px);
     left: 50%;
     z-index: 10;
     display: flex;
@@ -68,10 +70,10 @@
 .partnersPanel::before {
     content: "";
     position: absolute;
-    top: -2px;
+    top: -18px;
     left: 0;
     right: 0;
-    height: 2px;
+    height: 18px;
 }
 
 .partners:hover .partnersPanel,
@@ -88,6 +90,11 @@
     padding: 12px;
     border-radius: 12px;
     text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+a.partnerItem:hover {
+    background-color: #F5F7FA;
 }
 
 .partnerIcon {
@@ -98,7 +105,7 @@
     width: 48px;
     height: 48px;
     border-radius: 12px;
-    background-color: #F5F7FA;
+    background-color: #EEF1F5;
 
     svg {
         width: 34px;
