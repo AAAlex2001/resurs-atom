@@ -1,5 +1,5 @@
 import type { ComponentType } from "react";
-import { ChevronDownIcon } from "@/shared/ui/icons/ChevronDownIcon";
+import { CaretDownIcon } from "@/shared/ui/icons/CaretDownIcon";
 import { PartnerResursPlusIcon } from "@/shared/ui/icons/PartnerResursPlusIcon";
 import { PartnerNedraIcon } from "@/shared/ui/icons/PartnerNedraIcon";
 import style from "./style.module.scss";
@@ -31,7 +31,7 @@ export const PartnersMenu = ({ partners }: PartnersMenuProps) => {
         <div className={style.partners}>
             <button type="button" className={style.partnersTrigger} aria-haspopup="true">
                 <span className={style.partnersLabel}>{partners.label}</span>
-                <ChevronDownIcon className={style.partnersChevron} />
+                <CaretDownIcon className={style.partnersChevron} />
             </button>
             <div className={style.partnersPanel} role="menu" aria-label={partners.label}>
                 {partners.items.map((item) => {

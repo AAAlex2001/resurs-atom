@@ -138,38 +138,44 @@
 .overlayPartners {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 16px;
 }
 
 .overlayPartnersTitle {
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #5C6672;
+    line-height: 120%;
+    text-align: center;
+    background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .overlayPartnersList {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 12px 30px rgba(0, 10, 31, 0.06);
+    overflow: hidden;
 }
 
 .overlayPartnerItem {
     display: flex;
     align-items: center;
-    gap: 14px;
-    padding: 14px;
-    border: 1px solid #E6E6E6;
-    border-radius: 16px;
-    background-color: #fff;
+    gap: 16px;
+    padding: 18px 16px;
     text-decoration: none;
     transition: background-color 0.2s ease;
 }
 
+.overlayPartnerItem + .overlayPartnerItem {
+    border-top: 1px solid #EEF1F5;
+}
+
 a.overlayPartnerItem:hover {
-    background-color: rgba(0, 220, 85, 0.08);
+    background-color: rgba(0, 220, 85, 0.06);
 }
 
 .overlayPartnerIcon {
@@ -177,14 +183,14 @@ a.overlayPartnerItem:hover {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    width: 52px;
-    height: 52px;
-    border-radius: 12px;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
     background-color: #F5F7FA;
 
     svg {
-        width: 36px;
-        height: 36px;
+        width: 38px;
+        height: 38px;
     }
 }
 
@@ -199,6 +205,11 @@ a.overlayPartnerItem:hover {
     font-weight: 500;
     line-height: 20px;
     color: #000A1F;
+    transition: color 0.2s ease;
+}
+
+a.overlayPartnerItem:hover .overlayPartnerName {
+    color: #00C77A;
 }
 
 .overlayPartnerDescription {
@@ -228,6 +239,11 @@ a.overlayPartnerItem:hover {
 
     .logoBig {
         display: flex;
+    }
+
+    // На десктопе/планшете партнёры уже показаны плашкой в шапке.
+    .overlayPartners {
+        display: none;
     }
 }
 

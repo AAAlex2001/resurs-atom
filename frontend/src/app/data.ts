@@ -9,7 +9,7 @@ export const HeaderData = {
                 icon: "resurs-plus",
                 name: "Ресурс-Плюс",
                 description: "Первая единая площадка для специалистов и экспертов промышленной безопасности",
-                href: "",
+                href: "https://plus-resurs.com/",
             },
             {
                 id: 2,
@@ -17,7 +17,7 @@ export const HeaderData = {
                 name: "НПИ «Недра»",
                 description:
                     "Проектно-экспертный институт промышленной безопасности объектов горнорудной и нефтехимической промышленности",
-                href: "",
+                href: "https://nedra-npi.ru/",
             },
         ],
     },

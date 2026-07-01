@@ -9,36 +9,33 @@
     align-items: center;
     gap: 8px;
     height: 44px;
-    padding: 0 18px;
-    border: 1px solid #E6E6E6;
-    border-radius: 40px;
-    background-color: #fff;
+    padding: 0 12px;
+    border: 0;
+    background-color: transparent;
+    color: #000A1F;
     cursor: pointer;
     white-space: nowrap;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .partnersLabel {
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
-    background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: inherit;
 }
 
 .partnersChevron {
     width: 20px;
     height: 20px;
     flex-shrink: 0;
+    color: inherit;
     transition: transform 0.2s ease;
 }
 
 .partners:hover .partnersTrigger,
 .partners:focus-within .partnersTrigger {
-    border-color: #00C77A;
-    background-color: rgba(0, 220, 85, 0.08);
+    color: #00C77A;
 }
 
 .partners:hover .partnersChevron,
@@ -48,8 +45,8 @@
 
 .partnersPanel {
     position: absolute;
-    top: calc(100% + 12px);
-    right: 0;
+    top: calc(100% + 2px);
+    left: 50%;
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -62,7 +59,7 @@
     box-shadow: 0 20px 40px rgba(0, 10, 31, 0.12);
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-8px);
+    transform: translateX(-50%) translateY(-8px);
     transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
 }
 
@@ -71,17 +68,17 @@
 .partnersPanel::before {
     content: "";
     position: absolute;
-    top: -12px;
+    top: -2px;
     left: 0;
     right: 0;
-    height: 12px;
+    height: 2px;
 }
 
 .partners:hover .partnersPanel,
 .partners:focus-within .partnersPanel {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: translateX(-50%) translateY(0);
 }
 
 .partnerItem {
@@ -91,11 +88,6 @@
     padding: 12px;
     border-radius: 12px;
     text-decoration: none;
-    transition: background-color 0.2s ease;
-}
-
-a.partnerItem:hover {
-    background-color: rgba(0, 220, 85, 0.08);
 }
 
 .partnerIcon {
@@ -125,6 +117,11 @@ a.partnerItem:hover {
     font-weight: 500;
     line-height: 18px;
     color: #000A1F;
+    transition: color 0.2s ease;
+}
+
+a.partnerItem:hover .partnerName {
+    color: #00C77A;
 }
 
 .partnerDescription {
