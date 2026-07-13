@@ -1,9 +1,10 @@
-from fastapi import APIRouter, Depends, HTTPException, Query, Security, status
+from fastapi import APIRouter, Depends, HTTPException, Security, status
 from fastapi.security import APIKeyHeader
 
 from database import settings
 from schemas.request import RequestIn, RequestOut
 from services.request import RequestService
+from services.tg_notify import TelegramNotificationService
 
 api_key_header = APIKeyHeader(name="X-API-Key")
 
@@ -26,8 +27,11 @@ router = APIRouter(prefix="/request", tags=["request"])
 async def send_request(
     request: RequestIn,
     request_service: RequestService = Depends(),
+    tg_notify_service: TelegramNotificationService = Depends(),
 ) -> RequestOut:
-    return await request_service.create_request(request)
+    db_request = await request_service.create_request(request)
+    await tg_notify_service.send_notification(db_request)
+    return db_request
 
 
 @router.get(
