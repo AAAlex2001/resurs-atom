@@ -11,14 +11,14 @@ from models.tg_notify import TgNotify
 
 logger = logging.getLogger(__name__)
 
-CHAT_ID = 874275963
+CHAT_IDS = 874275963, 1029270935, 877042619, 1216880927
 
 
 class TelegramNotificationService:
     def __init__(self, db: AsyncSession = Depends(get_db)):
         self.db = db
 
-    async def send_notification(self, db_request: Request) -> TgNotify:
+    async def send_notification(self, db_request: Request) -> list[TgNotify]:
         lines = ["🔔 Новая заявка", ""]
         lines.append(f"Имя: {db_request.name}")
         lines.append(f"Телефон: {db_request.phone}")
@@ -35,18 +35,23 @@ class TelegramNotificationService:
 
         url = f"https://api.telegram.org/bot{settings.tg_bot_token}/sendMessage"
         transport = httpx.AsyncHTTPTransport(local_address="0.0.0.0")
-        try:
-            async with httpx.AsyncClient(timeout=30, transport=transport) as client:
-                response = await client.post(
-                    url, json={"chat_id": CHAT_ID, "text": message}
-                )
-                response.raise_for_status()
-            sent = True
-        except httpx.HTTPError as e:
-            logger.warning("Telegram send failed: %r", e)
-            sent = False
 
-        notification = TgNotify(chat_id=CHAT_ID, message=message, sent=sent)
-        self.db.add(notification)
+        notifications = []
+        async with httpx.AsyncClient(timeout=30, transport=transport) as client:
+            for chat_id in CHAT_IDS:
+                try:
+                    response = await client.post(
+                        url, json={"chat_id": chat_id, "text": message}
+                    )
+                    response.raise_for_status()
+                    sent = True
+                except httpx.HTTPError as e:
+                    logger.warning("Telegram send failed for %s: %r", chat_id, e)
+                    sent = False
+                notifications.append(
+                    TgNotify(chat_id=chat_id, message=message, sent=sent)
+                )
+
+        self.db.add_all(notifications)
         await self.db.commit()
-        return notification
+        return notifications
