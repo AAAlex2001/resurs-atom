@@ -24,6 +24,8 @@ services:
       DATABASE_URL: ${DATABASE_URL}
       API_KEY: ${API_KEY}
       TG_BOT_TOKEN: ${TG_BOT_TOKEN}
+    extra_hosts:
+      - "api.telegram.org:149.154.167.220"
     ports:
       - "8000:8000"
     depends_on:
