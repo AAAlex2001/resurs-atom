@@ -1,5 +1,5 @@
 from fastapi import Depends
-from sqlalchemy import delete, select
+from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from database import get_db
@@ -38,9 +38,11 @@ class RequestService:
         return requests.scalars().all()
 
 
-    async def delete_all_requests(self) -> None:
-        await self.db.execute(
-            delete(Request)
-        )
+    async def delete_request(self, request_id: int) -> bool:
+        db_request = await self.db.get(Request, request_id)
+        if db_request is None:
+            return False
+        await self.db.delete(db_request)
         await self.db.commit()
+        return True
 

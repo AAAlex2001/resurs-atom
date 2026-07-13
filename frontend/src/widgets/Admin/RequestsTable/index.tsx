@@ -6,9 +6,9 @@ import { Button } from "@/shared/ui/Button";
 import { toTelHref } from "@/shared/lib/phone";
 import style from "./style.module.scss";
 
-const deleteAllRequests = async (): Promise<void> => {
-    const response = await fetch("/api/admin/requests", { method: "DELETE" });
-    if (!response.ok) throw new Error("Не удалось удалить запросы");
+const deleteRequest = async (id: number): Promise<void> => {
+    const response = await fetch(`/api/admin/requests/${id}`, { method: "DELETE" });
+    if (!response.ok) throw new Error("Не удалось удалить заявку");
 };
 
 type Request = {
@@ -36,8 +36,8 @@ export const RequestsTable = ({ requests }: RequestsTableProps) => {
         router.push("/f7k2x9n3/login");
     };
 
-    const onDeleteAll = async () => {
-        await deleteAllRequests();
+    const onDelete = async (id: number) => {
+        await deleteRequest(id);
         router.refresh();
     };
 
@@ -57,7 +57,6 @@ export const RequestsTable = ({ requests }: RequestsTableProps) => {
                     <span className={style.title}>Заявки</span>
                     <span className={style.count}>{requests.length}</span>
                 </div>
-                <Button text="Удалить все запросы" variant="transparent" onClick={onDeleteAll} />
                 <Button text="Выйти" variant="transparent" onClick={onLogout} />
             </div>
 
@@ -77,6 +76,7 @@ export const RequestsTable = ({ requests }: RequestsTableProps) => {
                                 <th>ИНН</th>
                                 <th>Сообщение</th>
                                 <th>Дата</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -93,6 +93,13 @@ export const RequestsTable = ({ requests }: RequestsTableProps) => {
                                     <td>{req.inn ?? "—"}</td>
                                     <td className={style.message}>{req.message ?? "—"}</td>
                                     <td className={style.date}>{formatDate(req.created_at)}</td>
+                                    <td>
+                                        <Button
+                                            text="Удалить"
+                                            variant="transparent"
+                                            onClick={() => onDelete(req.id)}
+                                        />
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>

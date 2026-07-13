@@ -47,14 +47,17 @@ async def get_requests(
 
 
 @router.delete(
-    "/delete-all-requests",
-    summary="Удалить все запросы",
+    "/delete-request/{request_id}",
+    summary="Удалить заявку по id",
     response_model=None,
     status_code=status.HTTP_204_NO_CONTENT,
-    description="Удалить все запросы",
+    description="Удалить заявку по id",
     dependencies=[Depends(verify_api_key)],
 )
-async def delete_all_requests(
+async def delete_request(
+    request_id: int,
     request_service: RequestService = Depends(),
 ) -> None:
-    await request_service.delete_all_requests()
+    deleted = await request_service.delete_request(request_id)
+    if not deleted:
+        raise HTTPException(status_code=404, detail="Заявка не найдена")
