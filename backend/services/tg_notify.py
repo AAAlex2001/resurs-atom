@@ -19,12 +19,19 @@ class TelegramNotificationService:
         self.db = db
 
     async def send_notification(self, db_request: Request) -> TgNotify:
-        message = (
-            f"Новая заявка от {db_request.name}. "
-            f"Телефон: {db_request.phone}, Email: {db_request.email}, "
-            f"Компания: {db_request.company}, Деятельность: {db_request.activity}, "
-            f"ИНН: {db_request.inn}, Сообщение: {db_request.message}"
-        )
+        lines = ["🔔 Новая заявка", ""]
+        lines.append(f"Имя: {db_request.name}")
+        lines.append(f"Телефон: {db_request.phone}")
+        lines.append(f"Email: {db_request.email}")
+        if db_request.activity:
+            lines.append(f"Деятельность: {db_request.activity.value}")
+        if db_request.company:
+            lines.append(f"Компания: {db_request.company}")
+        if db_request.inn:
+            lines.append(f"ИНН: {db_request.inn}")
+        if db_request.message:
+            lines.append(f"Сообщение: {db_request.message}")
+        message = "\n".join(lines)
 
         url = f"https://api.telegram.org/bot{settings.tg_bot_token}/sendMessage"
         transport = httpx.AsyncHTTPTransport(local_address="0.0.0.0")
