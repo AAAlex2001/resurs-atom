@@ -29,7 +29,7 @@ class TelegramNotificationService:
         url = f"https://api.telegram.org/bot{settings.tg_bot_token}/sendMessage"
         transport = httpx.AsyncHTTPTransport(local_address="0.0.0.0")
         try:
-            async with httpx.AsyncClient(timeout=10, transport=transport) as client:
+            async with httpx.AsyncClient(timeout=30, transport=transport) as client:
                 response = await client.post(
                     url, json={"chat_id": CHAT_ID, "text": message}
                 )
