@@ -1,3 +1,5 @@
+import logging
+
 import httpx
 from fastapi import Depends
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -6,6 +8,8 @@ from database import get_db, settings
 from models.request import Request
 from models.tg_notify import TgNotify
 
+
+logger = logging.getLogger(__name__)
 
 CHAT_ID = 874275963
 
@@ -23,14 +27,16 @@ class TelegramNotificationService:
         )
 
         url = f"https://api.telegram.org/bot{settings.tg_bot_token}/sendMessage"
+        transport = httpx.AsyncHTTPTransport(local_address="0.0.0.0")
         try:
-            async with httpx.AsyncClient(timeout=10) as client:
+            async with httpx.AsyncClient(timeout=10, transport=transport) as client:
                 response = await client.post(
                     url, json={"chat_id": CHAT_ID, "text": message}
                 )
                 response.raise_for_status()
             sent = True
-        except httpx.HTTPError:
+        except httpx.HTTPError as e:
+            logger.warning("Telegram send failed: %r", e)
             sent = False
 
         notification = TgNotify(chat_id=CHAT_ID, message=message, sent=sent)
