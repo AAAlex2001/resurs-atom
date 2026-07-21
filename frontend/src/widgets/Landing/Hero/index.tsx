@@ -1,4 +1,3 @@
-import Image from "next/image";
 import style from "./style.module.scss";
 import { Button } from "@/shared/ui/Button";
 
@@ -9,8 +8,8 @@ type HeroData = {
     subtitle: string;
     buttonFilledText: string;
     buttonOutlineText: string;
-    image: string;
-    imageAlt: string;
+    video: string;
+    poster: string;
 };
 
 type HeroProps = {
@@ -36,15 +35,16 @@ export const Hero = ({ data }: HeroProps) => {
                     </div>
                 </div>
             </div>
-            <Image
-                src={data.image}
-                alt={data.imageAlt}
+            <video
                 className={style.image}
-                width={1680}
-                height={1120}
-                sizes="(min-width: 1440px) 50vw, 100vw"
-                quality={70}
-                priority
+                src={data.video}
+                poster={data.poster}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                aria-hidden
             />
         </section>
     );
