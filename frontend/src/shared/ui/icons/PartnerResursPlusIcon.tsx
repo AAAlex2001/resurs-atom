@@ -1,8 +1,6 @@
-type PartnerResursPlusIconProps = {
-    className?: string;
-};
+import type { IconProps } from "./types";
 
-export const PartnerResursPlusIcon = ({ className }: PartnerResursPlusIconProps) => (
+export const PartnerResursPlusIcon = ({ className }: IconProps) => (
     <svg
         className={className}
         width="38"

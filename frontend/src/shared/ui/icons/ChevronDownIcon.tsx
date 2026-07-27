@@ -1,8 +1,6 @@
-type ChevronDownIconProps = {
-    className?: string;
-};
+import type { IconProps } from "./types";
 
-export const ChevronDownIcon = ({ className }: ChevronDownIconProps) => (
+export const ChevronDownIcon = ({ className }: IconProps) => (
     <svg
         className={className}
         width="24"

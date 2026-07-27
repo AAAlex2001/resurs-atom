@@ -1,8 +1,6 @@
-type CaretDownIconProps = {
-    className?: string;
-};
+import type { IconProps } from "./types";
 
-export const CaretDownIcon = ({ className }: CaretDownIconProps) => (
+export const CaretDownIcon = ({ className }: IconProps) => (
     <svg
         className={className}
         width="24"

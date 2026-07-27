@@ -1,8 +1,6 @@
-type ArrowRightIconProps = {
-    className?: string;
-};
+import type { IconProps } from "./types";
 
-export const ArrowRightIcon = ({ className }: ArrowRightIconProps) => (
+export const ArrowRightIcon = ({ className }: IconProps) => (
     <svg
         className={className}
         width="24"

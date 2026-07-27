@@ -1,8 +1,6 @@
-type LocationIconProps = {
-    className?: string;
-};
+import type { IconProps } from "./types";
 
-export const LocationIcon = ({ className }: LocationIconProps) => (
+export const LocationIcon = ({ className }: IconProps) => (
     <svg
         className={className}
         width="24"

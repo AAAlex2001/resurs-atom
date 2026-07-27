@@ -108,8 +108,10 @@ a.partnerItem:hover {
     background-color: #EEF1F5;
 
     svg {
-        width: 34px;
-        height: 34px;
+        width: auto;
+        height: auto;
+        max-width: 42px;
+        max-height: 34px;
     }
 }
 
