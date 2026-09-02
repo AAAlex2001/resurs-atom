@@ -7,6 +7,8 @@ import "./globals.scss";
 
 const organizationPhone = toTelHref(FooterData.phone).replace(/^tel:/, "");
 
+
+//правка
 const partnerOrganizations = HeaderData.partners.items
     .filter((partner) => partner.href)
     .map((partner) => ({
