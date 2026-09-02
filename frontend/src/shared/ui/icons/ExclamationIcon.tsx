@@ -1,8 +1,6 @@
-type ExclamationIconProps = {
-    className?: string;
-};
+import type { IconProps } from "./types";
 
-export const ExclamationIcon = ({ className }: ExclamationIconProps) => (
+export const ExclamationIcon = ({ className }: IconProps) => (
     <svg
         className={className}
         width="29"

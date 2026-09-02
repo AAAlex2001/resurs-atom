@@ -1,8 +1,6 @@
-type CheckCircleIconProps = {
-    className?: string;
-};
+import type { IconProps } from "./types";
 
-export const CheckCircleIcon = ({ className }: CheckCircleIconProps) => (
+export const CheckCircleIcon = ({ className }: IconProps) => (
     <svg
         className={className}
         width="20"

@@ -3,6 +3,7 @@ from fastapi.security import APIKeyHeader
 
 from database import settings
 from schemas.request import RequestIn, RequestOut
+from services.email_notify import EmailNotificationService
 from services.request import RequestService
 from services.tg_notify import TelegramNotificationService
 
@@ -28,9 +29,11 @@ async def send_request(
     request: RequestIn,
     request_service: RequestService = Depends(),
     tg_notify_service: TelegramNotificationService = Depends(),
+    email_notify_service: EmailNotificationService = Depends(),
 ) -> RequestOut:
     db_request = await request_service.create_request(request)
     await tg_notify_service.send_notification(db_request)
+    await email_notify_service.send_notification(db_request)
     return db_request
 
 

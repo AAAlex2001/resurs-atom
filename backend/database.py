@@ -15,6 +15,12 @@ class Settings(BaseSettings):
     database_url: str
     api_key: str
     tg_bot_token: str
+    smtp_host: str = "smtp.timeweb.ru"
+    smtp_port: int = 465
+    smtp_user: str
+    smtp_password: str
+    smtp_from: str = "info@atom-plus.pro"
+    smtp_use_ssl: bool = True
 
 
 settings = Settings()

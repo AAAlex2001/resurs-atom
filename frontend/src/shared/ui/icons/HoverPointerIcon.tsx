@@ -1,5 +1,6 @@
-type HoverPointerIconProps = {
-    className?: string;
+import type { IconProps } from "./types";
+
+type HoverPointerIconProps = IconProps & {
     gradientId: string;
 };
 
