@@ -61,7 +61,7 @@
 
 .panel {
     position: absolute;
-    top: calc(100% + 17px);
+    top: calc(100% + 16px);
     left: 50%;
     z-index: 10;
     display: flex;
@@ -81,10 +81,10 @@
     &::before {
         content: "";
         position: absolute;
-        top: -17px;
+        top: -16px;
         left: 0;
         right: 0;
-        height: 17px;
+        height: 16px;
     }
 }
 

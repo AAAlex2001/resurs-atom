@@ -51,7 +51,7 @@ export const getLatestArticles = async (
 ): Promise<ArticleCard[]> => {
     try {
         const response = await backendFetch(`/articles?section=${section}&limit=${limit}`, {
-            next: { revalidate: 300 },
+            cache: "no-store",
         });
         if (!response.ok) return [];
 
