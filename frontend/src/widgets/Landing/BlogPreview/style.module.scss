@@ -20,7 +20,7 @@
 .title {
     font-size: 28px;
     font-weight: 700;
-    line-height: 32px;
+    line-height: 1.2;
     letter-spacing: 0;
     background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
     -webkit-background-clip: text;
@@ -62,8 +62,7 @@
     }
 
     .title {
-        font-size: 44px;
-        line-height: 52px;
+        font-size: 36px;
     }
 
     .actions {
