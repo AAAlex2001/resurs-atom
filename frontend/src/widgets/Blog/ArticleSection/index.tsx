@@ -30,6 +30,10 @@ export const ArticleSection = ({ data, middle }: ArticleSectionProps) => {
         description: data.article.description ?? undefined,
         image: data.article.cover_image ? `${SITE_URL}${data.article.cover_image}` : undefined,
         datePublished: data.article.published_at ?? undefined,
+        dateModified: data.article.updated_at,
+        inLanguage: "ru-RU",
+        articleSection: data.article.tags.map((tag) => tag.title),
+        keywords: data.article.seo_keywords ?? undefined,
         author: { "@id": `${SITE_URL}/#organization` },
         publisher: { "@id": `${SITE_URL}/#organization` },
         mainEntityOfPage: `${SITE_URL}${articlePath(data.article)}`,
@@ -71,7 +75,14 @@ export const ArticleSection = ({ data, middle }: ArticleSectionProps) => {
 
                     {data.article.cover_image && (
                         <div className={style.cover}>
-                            <img src={data.article.cover_image} alt={data.article.title} className={style.coverImage} />
+                            <img
+                                src={data.article.cover_image}
+                                alt={data.article.title}
+                                width={1200}
+                                height={675}
+                                fetchPriority="high"
+                                className={style.coverImage}
+                            />
                         </div>
                     )}
 

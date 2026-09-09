@@ -253,7 +253,10 @@
 }
 
 .middle {
-    margin: 0 -20px;
+    width: 100%;
+    overflow: hidden;
+    background: #F7FFF3;
+    border-radius: 20px;
 }
 
 .toc {
@@ -310,10 +313,6 @@
 
     .title {
         font-size: 40px;
-    }
-
-    .middle {
-        margin: 0 -50px;
     }
 }
 

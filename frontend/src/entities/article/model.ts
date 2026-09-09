@@ -21,6 +21,7 @@ export type ArticleCard = {
     description: string | null;
     cover_image: string | null;
     published_at: string | null;
+    updated_at: string;
     views_count: number;
     likes_count: number;
     dislikes_count: number;
@@ -54,7 +55,6 @@ export type ArticleStats = {
 export type ArticleAdminCard = Omit<ArticleCard, "tags"> & {
     id: number;
     created_at: string;
-    updated_at: string;
     tags: TagAdmin[];
 };
 

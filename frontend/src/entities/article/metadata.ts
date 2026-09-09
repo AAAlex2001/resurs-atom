@@ -22,15 +22,19 @@ export const buildArticleMetadata = (article: Article): Metadata => {
             .filter(Boolean);
     }
 
-    let images: string[] | undefined;
+    let ogImages: { url: string; width: number; height: number; alt: string }[] | undefined;
+    let twitterImages: string[] | undefined;
     if (article.cover_image) {
-        images = [`${SITE_URL}${article.cover_image}`];
+        const coverUrl = `${SITE_URL}${article.cover_image}`;
+        ogImages = [{ url: coverUrl, width: 1200, height: 675, alt: article.title }];
+        twitterImages = [coverUrl];
     }
 
     return {
         title,
         description,
         keywords,
+        authors: [{ name: SITE_NAME }],
         alternates: { canonical: url },
         openGraph: {
             type: "article",
@@ -40,13 +44,16 @@ export const buildArticleMetadata = (article: Article): Metadata => {
             title: article.title,
             description,
             publishedTime: article.published_at ?? undefined,
-            images,
+            modifiedTime: article.updated_at,
+            section: article.tags[0]?.title,
+            tags: article.tags.map((tag) => tag.title),
+            images: ogImages,
         },
         twitter: {
             card: article.cover_image ? "summary_large_image" : "summary",
             title: article.title,
             description,
-            images,
+            images: twitterImages,
         },
     };
 };

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { BlogPageData, ContactData, FooterData, HeaderData } from "@/app/data";
+import { BlogPageData, FooterData, HeaderData } from "@/app/data";
 import { getArticles, getTags } from "@/entities/article/api";
 import { ArticlesSection } from "@/widgets/Blog/ArticlesSection";
+import { ContactCard } from "@/widgets/Blog/ContactCard";
 import { Footer } from "@/widgets/Footer";
 import { Header } from "@/widgets/Header";
-import { Contact } from "@/widgets/Landing/Contact";
 
 export const dynamic = "force-dynamic";
 
@@ -59,7 +59,7 @@ export default async function BlogPage({ searchParams }: { searchParams: SearchP
                     page: pageNumber,
                 }}
             />
-            <Contact data={ContactData} />
+            <ContactCard />
             <Footer data={FooterData} />
         </>
     );

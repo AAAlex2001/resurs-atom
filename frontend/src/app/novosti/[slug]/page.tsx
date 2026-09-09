@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
-import { ActivitiesData, ContactData, FooterData, HeaderData, NewsPageData } from "@/app/data";
+import { ActivitiesData, FooterData, HeaderData, NewsPageData } from "@/app/data";
 import { NOT_FOUND_METADATA, articlePath, buildArticleMetadata } from "@/entities/article";
 import { getArticle, getRelatedArticles } from "@/entities/article/api";
 import { ArticleSection } from "@/widgets/Blog/ArticleSection";
+import { ContactCard } from "@/widgets/Blog/ContactCard";
 import { RelatedArticles } from "@/widgets/Blog/RelatedArticles";
 import { Footer } from "@/widgets/Footer";
 import { Header } from "@/widgets/Header";
 import { Activities } from "@/widgets/Landing/Activities";
-import { Contact } from "@/widgets/Landing/Contact";
 
 export const dynamic = "force-dynamic";
 
@@ -43,7 +43,7 @@ export default async function NewsArticlePage({ params }: { params: Params }) {
                 }}
                 middle={<Activities data={ActivitiesData} />}
             />
-            <Contact data={ContactData} />
+            <ContactCard />
             {related.length > 0 && (
                 <RelatedArticles data={{ title: NewsPageData.relatedTitle, articles: related }} />
             )}

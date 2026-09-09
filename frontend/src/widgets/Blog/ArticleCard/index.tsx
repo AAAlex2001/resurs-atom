@@ -18,6 +18,7 @@ export type ArticleCardData = {
     description: string | null;
     cover_image: string | null;
     published_at: string | null;
+    updated_at: string;
     views_count: number;
     likes_count: number;
     dislikes_count: number;
@@ -35,7 +36,14 @@ export const ArticleCard = ({ item }: ArticleCardProps) => {
         <a href={articlePath(item)} className={style.card}>
             <div className={style.cover}>
                 {item.cover_image ? (
-                    <img src={item.cover_image} alt="" className={style.image} loading="lazy" />
+                    <img
+                        src={item.cover_image}
+                        alt={item.title}
+                        width={1200}
+                        height={675}
+                        className={style.image}
+                        loading="lazy"
+                    />
                 ) : (
                     <div className={style.placeholder} />
                 )}

@@ -32,6 +32,7 @@ class ArticleCardSchema(BaseModel):
     description: str | None = Field(None, description="Краткое описание статьи")
     cover_image: str | None = Field(None, description="Ссылка на обложку статьи")
     published_at: datetime | None = Field(None, description="Дата публикации статьи")
+    updated_at: datetime = Field(..., description="Дата последнего изменения")
 
     views_count: int = Field(..., description="Количество просмотров")
     likes_count: int = Field(..., description="Количество лайков")
@@ -78,7 +79,6 @@ class ReactionInSchema(BaseModel):
 class ArticleAdminCardSchema(ArticleCardSchema):
     id: int = Field(..., description="ID статьи")
     created_at: datetime = Field(..., description="Дата создания")
-    updated_at: datetime = Field(..., description="Дата последнего изменения")
     tags: list[TagAdminSchema] = Field(default_factory=list, description="Теги статьи")
 
 

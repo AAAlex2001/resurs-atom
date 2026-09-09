@@ -1,0 +1,30 @@
+.wrap {
+    width: 100%;
+}
+
+.inner {
+    width: 100%;
+    padding: 0 20px 80px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+    .inner {
+        max-width: 768px;
+        padding: 0 50px 100px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .inner {
+        max-width: 1440px;
+        padding: 0 50px 120px;
+    }
+}

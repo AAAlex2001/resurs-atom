@@ -348,5 +348,355 @@
     "direction": "Персонал и разрешения",
     "kind": "guide",
     "cover_query": "exam certificate workers"
+  },
+  {
+    "slug": "licenziya-na-ekspluataciyu-radiacionnogo-istochnika-polnyy-komplekt",
+    "title": "Лицензия на эксплуатацию радиационного источника: полный комплект документов для промышленного предприятия",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "radiation source industrial equipment"
+  },
+  {
+    "slug": "licenziya-na-ekspertizu-dokumentov-obosnovyvayushchih-bezopasnost",
+    "title": "Лицензия на экспертизу документов, обосновывающих безопасность: как стать экспертной организацией",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "expert reviewing documents office"
+  },
+  {
+    "slug": "licenziya-na-obrashchenie-s-rv-pri-niokr",
+    "title": "Использование радиоактивных веществ при НИОКР: лицензия для институтов, вузов и лабораторий",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "research laboratory scientist"
+  },
+  {
+    "slug": "sovmeshchenie-neskolkih-vidov-deyatelnosti-v-odnoy-licenzii",
+    "title": "Несколько видов деятельности в одной лицензии: когда объединять, а когда подавать отдельно",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "documents folders stack"
+  },
+  {
+    "slug": "licenzirovanie-pri-reorganizacii-i-smene-sobstvennika",
+    "title": "Атомная лицензия при реорганизации и смене собственника: что переходит, а что придётся получать заново",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "business handshake contract"
+  },
+  {
+    "slug": "filialy-i-obosoblennye-podrazdeleniya-v-atomnoy-licenzii",
+    "title": "Филиалы и обособленные подразделения в атомной лицензии: как оформить деятельность на нескольких площадках",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "industrial buildings map"
+  },
+  {
+    "slug": "reestr-licenziy-rostehnadzora-kak-proverit-kontragenta",
+    "title": "Реестр лицензий Ростехнадзора: как проверить подрядчика или поставщика перед договором",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "magnifying glass documents check"
+  },
+  {
+    "slug": "tipichnye-zamechaniya-ekspertizy-top-15",
+    "title": "15 типичных замечаний экспертизы безопасности при лицензировании и как закрыть их заранее",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "checklist clipboard inspector"
+  },
+  {
+    "slug": "licenziya-dlya-uchastiya-v-zakupkah-rosatoma",
+    "title": "Лицензия Ростехнадзора для участия в закупках атомной отрасли: что требуют заказчики и когда её проверяют",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "tender procurement documents"
+  },
+  {
+    "slug": "kak-sformulirovat-vidy-deyatelnosti-v-zayavlenii",
+    "title": "Как сформулировать виды деятельности в заявлении на атомную лицензию, чтобы не получить возврат",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "writing application form pen"
+  },
+  {
+    "slug": "medicinskie-radiacionnye-istochniki-gamma-terapiya-brahiterapiya",
+    "title": "Радиационные источники в медицине: лицензия Ростехнадзора для гамма-терапии, брахитерапии и ядерной медицины",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "radiotherapy machine hospital"
+  },
+  {
+    "slug": "obluchatelnye-ustanovki-sterilizaciya-licenziya",
+    "title": "Облучательные установки для стерилизации и обработки продукции: лицензия и требования к эксплуатации",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "gamma irradiator facility"
+  },
+  {
+    "slug": "dosmotrovye-kompleksy-s-radionuklidnymi-istochnikami",
+    "title": "Досмотровые комплексы с радионуклидными источниками: что нужно службе безопасности предприятия",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "cargo scanner security checkpoint"
+  },
+  {
+    "slug": "kalibrovochnye-i-kontrolnye-istochniki-v-laboratorii",
+    "title": "Калибровочные и контрольные источники в лаборатории: учёт, хранение и когда нужна лицензия",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "laboratory instruments calibration"
+  },
+  {
+    "slug": "perezaryadka-gamma-defektoskopov-kto-vprave",
+    "title": "Перезарядка гамма-дефектоскопов: кто вправе её выполнять и как оформить замену источника",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "industrial radiography equipment"
+  },
+  {
+    "slug": "avariynye-situacii-s-radiacionnym-istochnikom-poryadok-deystviy",
+    "title": "Аварийные ситуации с радиационным источником: утеря, повреждение, застревание — порядок действий",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "emergency response team hazmat"
+  },
+  {
+    "slug": "radiacionno-gigienicheskiy-pasport-organizacii",
+    "title": "Радиационно-гигиенический паспорт организации: кто обязан вести, как заполнять и когда сдавать",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "report document stamp"
+  },
+  {
+    "slug": "individualnyy-dozimetricheskiy-kontrol-organizaciya",
+    "title": "Индивидуальный дозиметрический контроль на предприятии: как организовать и что проверяет инспектор",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "personal dosimeter badge"
+  },
+  {
+    "slug": "pokupka-radionuklidnogo-istochnika-chto-proverit-do-dogovora",
+    "title": "Покупка радионуклидного источника: что проверить у поставщика и оформить у себя до подписания договора",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "contract signing supplier"
+  },
+  {
+    "slug": "peredacha-istochnikov-mezhdu-organizaciyami-arenda-i-prodazha",
+    "title": "Передача радиационных источников между организациями: продажа, аренда, безвозмездная передача",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "handover equipment warehouse"
+  },
+  {
+    "slug": "import-i-eksport-radiacionnyh-istochnikov",
+    "title": "Импорт и экспорт радиационных источников: разрешения, таможня и лицензия на обращение",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "customs cargo containers port"
+  },
+  {
+    "slug": "dezaktivaciya-pomeshcheniy-i-oborudovaniya",
+    "title": "Дезактивация помещений и оборудования: когда требуется, кто выполняет и как подтвердить результат",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "decontamination workers protective suits"
+  },
+  {
+    "slug": "vremennoe-hranenie-rao-na-predpriyatii-sroki-i-usloviya",
+    "title": "Временное хранение радиоактивных отходов на предприятии: сроки, условия и когда нужна лицензия",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "storage containers warehouse hazard"
+  },
+  {
+    "slug": "inventarizaciya-rv-i-rao-kak-provesti",
+    "title": "Инвентаризация радиоактивных веществ и отходов: порядок, комиссия, документы и типичные расхождения",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "inventory checklist warehouse"
+  },
+  {
+    "slug": "svarka-oborudovaniya-dlya-aes-attestaciya-tehnologiy-i-svarshchikov",
+    "title": "Сварка оборудования для АЭС: аттестация технологий и сварщиков по требованиям атомной отрасли",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "welder welding pipe industrial"
+  },
+  {
+    "slug": "nerazrushayushchiy-kontrol-na-zavode-dlya-oiae-attestaciya-specialistov",
+    "title": "Неразрушающий контроль на заводе-изготовителе оборудования для ОИАЭ: методы, объём и аттестация специалистов",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "ultrasonic testing weld inspection"
+  },
+  {
+    "slug": "vhodnoy-kontrol-materialov-dlya-oborudovaniya-oiae",
+    "title": "Входной контроль материалов и комплектующих для оборудования ОИАЭ: что проверять и как документировать",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "steel material inspection warehouse"
+  },
+  {
+    "slug": "proslezhivaemost-oborudovaniya-dlya-aes-ot-plavki-do-pasporta",
+    "title": "Прослеживаемость оборудования для АЭС: от плавки металла до паспорта изделия",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "metal marking serial number stamp"
+  },
+  {
+    "slug": "upravlenie-nesootvetstvuyushchey-produkciey-na-zavode-oiae",
+    "title": "Управление несоответствующей продукцией на заводе-изготовителе оборудования для ОИАЭ",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "rejected parts quality control tag"
+  },
+  {
+    "slug": "verifikaciya-i-validaciya-proektnyh-resheniy-po-np-090-11",
+    "title": "Верификация и валидация проектных решений по НП-090-11: что это такое и как организовать в проектной организации",
+    "direction": "Проектирование и конструирование",
+    "kind": "guide",
+    "cover_query": "engineers reviewing drawings"
+  },
+  {
+    "slug": "upravlenie-izmeneniyami-v-proektnoy-i-konstruktorskoy-dokumentacii",
+    "title": "Управление изменениями в проектной и конструкторской документации для ОИАЭ: порядок, согласование, записи",
+    "direction": "Проектирование и конструирование",
+    "kind": "guide",
+    "cover_query": "document revision stamp drawing"
+  },
+  {
+    "slug": "ekspertiza-proektnoy-dokumentacii-oiae-u-ekspluatiruyushchey-organizacii",
+    "title": "Экспертиза проектной документации ОИАЭ у эксплуатирующей организации: как проходит и как подготовиться проектировщику",
+    "direction": "Проектирование и конструирование",
+    "kind": "guide",
+    "cover_query": "technical documents review meeting"
+  },
+  {
+    "slug": "proektirovanie-radiacionnoy-zashchity-pomeshcheniy",
+    "title": "Проектирование радиационной защиты помещений: расчёт, материалы, согласование и типичные ошибки",
+    "direction": "Проектирование и конструирование",
+    "kind": "guide",
+    "cover_query": "concrete wall shielding room"
+  },
+  {
+    "slug": "radiofarmacevticheskiy-zavod-licenzirovanie-proizvodstva-rfp",
+    "title": "Запуск нового радиофармацевтического завода: как лицензируется производство радиофармпрепаратов",
+    "direction": "Радиационные источники",
+    "kind": "news",
+    "cover_query": "pharmaceutical production cleanroom"
+  },
+  {
+    "slug": "montazh-truboprovodov-klassov-bezopasnosti-na-aes-trebovaniya",
+    "title": "Монтаж трубопроводов классов безопасности на АЭС: требования к подрядчику, персоналу, сварке и документации",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "pipeline installation industrial plant"
+  },
+  {
+    "slug": "ispolnitelnaya-dokumentaciya-na-atomnoy-stroyke",
+    "title": "Исполнительная документация на атомной стройке: состав, порядок ведения и почему её не принимают",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "construction documents site office"
+  },
+  {
+    "slug": "dopusk-personala-podryadchika-na-ploshchadku-aes",
+    "title": "Допуск персонала подрядчика на площадку АЭС: проверки, обучение, медосмотры и сроки оформления",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "security checkpoint industrial gate"
+  },
+  {
+    "slug": "remontnaya-kampaniya-na-aes-kak-podryadchiku-podgotovitsya",
+    "title": "Ремонтная кампания на АЭС: как подрядчику подготовиться к работам на останове блока",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "power plant maintenance outage workers"
+  },
+  {
+    "slug": "reabilitaciya-uranovogo-naslediya-uroki-dlya-predpriyatiy-s-rao",
+    "title": "«Росатом» начал реабилитацию уранового наследия в Таджикистане: уроки для предприятий с радиоактивными отходами",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "news",
+    "cover_query": "uranium mine tailings rehabilitation"
+  },
+  {
+    "slug": "rukovodstva-po-bezopasnosti-rb-status-i-primenenie",
+    "title": "Руководства по безопасности (РБ) Ростехнадзора: правовой статус и как применять при лицензировании",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "guideline documents binder"
+  },
+  {
+    "slug": "nrb-99-2009-i-osporb-99-2010-chto-trebuyut-ot-predpriyatiya",
+    "title": "НРБ-99/2009 и ОСПОРБ-99/2010: что санитарные нормы требуют от предприятия с источниками излучения",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "radiation safety sign laboratory"
+  },
+  {
+    "slug": "kultura-bezopasnosti-v-organizacii-kak-podtverdit-ekspertize",
+    "title": "Культура безопасности в организации: что это значит на практике и как подтвердить её экспертизе и инспекции",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "team meeting safety workplace"
+  },
+  {
+    "slug": "vnutrennie-audity-sistemy-kachestva-kak-provodit",
+    "title": "Внутренние аудиты системы качества по НП-090-11: как планировать, проводить и оформлять, чтобы они были полезны",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "audit documents review office"
+  },
+  {
+    "slug": "otvetstvennyy-za-obespechenie-kachestva-kto-i-s-kakimi-polnomochiyami",
+    "title": "Ответственный за обеспечение качества в организации атомной отрасли: кто это, какие полномочия и почему не совместитель",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "quality manager factory portrait"
+  },
+  {
+    "slug": "medicinskie-osmotry-personala-gruppy-a",
+    "title": "Медицинские осмотры персонала группы А: порядок, периодичность, противопоказания и типичные нарушения",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "medical examination doctor worker"
+  },
+  {
+    "slug": "chetyre-plavuchih-aes-licenzirovanie-postavshchikov-oborudovaniya",
+    "title": "Четыре плавучих энергоблока для Чукотки: что нужно поставщикам оборудования для плавучих АЭС",
+    "direction": "Изготовление оборудования",
+    "kind": "news",
+    "cover_query": "floating nuclear power plant ship"
+  },
+  {
+    "slug": "smena-rukovoditelya-organizacii-licenziata-chto-pereoformlyat",
+    "title": "Смена руководителя организации-лицензиата: что переоформлять в Ростехнадзоре и внутри организации",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "office manager desk documents"
+  },
+  {
+    "slug": "kontrakt-na-sooruzhenie-aes-v-kazahstane-chto-nuzhno-postavshchikam",
+    "title": "Контракт на сооружение АЭС в Казахстане подписан: что нужно российским поставщикам и подрядчикам, чтобы попасть в проект",
+    "direction": "Строительство и монтаж",
+    "kind": "news",
+    "cover_query": "nuclear power plant construction site"
+  },
+  {
+    "slug": "primorskaya-aes-uskorenie-vvoda-chto-znachit-dlya-podryadchikov",
+    "title": "Приморскую АЭС планируют ввести раньше: что ускорение графика значит для подрядчиков и поставщиков",
+    "direction": "Строительство и монтаж",
+    "kind": "news",
+    "cover_query": "construction cranes power plant coast"
+  },
+  {
+    "slug": "uchebnye-centry-po-yarb-kak-vybrat",
+    "title": "Учебные центры по ядерной и радиационной безопасности: как выбрать, чтобы обучение приняли Ростехнадзор и заказчик",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "training center classroom lecture"
   }
 ]
