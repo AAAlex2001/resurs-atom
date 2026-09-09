@@ -1,0 +1,42 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    color: #00C77A;
+    background: #FFFFFF;
+    border: 2px solid #00C77A;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+
+    &:hover {
+        color: #FFFFFF;
+        background: linear-gradient(90deg, #00DC55 0%, #00C77A 100%);
+    }
+}
+
+.viewport {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    min-width: 0;
+}

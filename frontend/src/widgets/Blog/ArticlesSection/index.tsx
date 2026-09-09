@@ -12,7 +12,6 @@ type Tag = {
 
 type ArticlesSectionData = {
     basePath: string;
-    kicker: string;
     title: string;
     subtitle: string;
     emptyText: string;
@@ -47,22 +46,25 @@ export const ArticlesSection = ({ data }: ArticlesSectionProps) => {
                 <Breadcrumbs items={[{ label: "Главная", href: "/" }, { label: data.title }]} />
 
                 <div className={style.head}>
-                    <div className={style.kicker}>{data.kicker}</div>
                     <h1 className={style.title}>{data.title}</h1>
                     <p className={style.subtitle}>{data.subtitle}</p>
                 </div>
 
-                <div className={style.toolbar}>
-                    <TagFilter
-                        data={{
-                            basePath: data.basePath,
-                            tags: data.tags,
-                            activeTag: data.activeTag,
-                            allLabel: data.allTagsLabel,
-                        }}
-                    />
-                    {data.total > 0 && <span className={style.count}>{countText}</span>}
-                </div>
+                {(data.tags.length > 0 || data.total > 0) && (
+                    <div className={style.toolbar}>
+                        {data.tags.length > 0 && (
+                            <TagFilter
+                                data={{
+                                    basePath: data.basePath,
+                                    tags: data.tags,
+                                    activeTag: data.activeTag,
+                                    allLabel: data.allTagsLabel,
+                                }}
+                            />
+                        )}
+                        {data.total > 0 && <span className={style.count}>{countText}</span>}
+                    </div>
+                )}
 
                 {data.articles.length === 0 ? (
                     <p className={style.empty}>{data.emptyText}</p>

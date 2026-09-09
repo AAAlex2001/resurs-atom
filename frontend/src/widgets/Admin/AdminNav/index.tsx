@@ -25,21 +25,23 @@ export const AdminNav = () => {
 
     return (
         <nav className={style.nav} aria-label="Разделы админки">
-            <div className={style.left}>
-                <span className={style.brand}>Панель управления</span>
-                <div className={style.links}>
-                    {LINKS.map((link) => (
-                        <a
-                            key={link.href}
-                            href={link.href}
-                            className={`${style.link} ${activeHref === link.href ? style.linkActive : ""}`}
-                        >
-                            {link.label}
-                        </a>
-                    ))}
+            <div className={style.inner}>
+                <div className={style.left}>
+                    <span className={style.brand}>Панель управления</span>
+                    <div className={style.links}>
+                        {LINKS.map((link) => (
+                            <a
+                                key={link.href}
+                                href={link.href}
+                                className={`${style.link} ${activeHref === link.href ? style.linkActive : ""}`}
+                            >
+                                {link.label}
+                            </a>
+                        ))}
+                    </div>
                 </div>
+                <Button text="Выйти" variant="transparent" onClick={onLogout} />
             </div>
-            <Button text="Выйти" variant="transparent" onClick={onLogout} />
         </nav>
     );
 };

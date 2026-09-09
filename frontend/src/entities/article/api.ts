@@ -63,6 +63,17 @@ export const getLatestArticles = async (
     }
 };
 
+export const getPreviewArticles = async (limit: number): Promise<ArticleCard[]> => {
+    const blog = await getLatestArticles("blog", limit);
+
+    const remaining = limit - blog.length;
+    if (remaining <= 0) return blog;
+
+    const news = await getLatestArticles("news", remaining);
+
+    return [...blog, ...news];
+};
+
 export const getArticle = async (slug: string): Promise<Article | null> => {
     try {
         const response = await backendFetch(`/articles/${encodeURIComponent(slug)}`, {
@@ -94,9 +105,9 @@ export const getRelatedArticles = async (slug: string, limit = 10): Promise<Arti
     }
 };
 
-export const getTags = async (): Promise<Tag[]> => {
+export const getTags = async (section: ArticleSection): Promise<Tag[]> => {
     try {
-        const response = await backendFetch("/tags", { cache: "no-store" });
+        const response = await backendFetch(`/tags?section=${section}`, { cache: "no-store" });
         if (!response.ok) return [];
 
         const tags: Tag[] = await response.json();

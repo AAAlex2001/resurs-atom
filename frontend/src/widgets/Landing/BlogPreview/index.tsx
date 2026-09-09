@@ -1,14 +1,14 @@
-import { getLatestArticles } from "@/entities/article/api";
+import { getPreviewArticles } from "@/entities/article/api";
 import { Button } from "@/shared/ui/Button";
-import { ArticleCard } from "@/widgets/Blog/ArticleCard";
+import { ArticlesSlider } from "@/widgets/Blog/ArticlesSlider";
 import style from "./style.module.scss";
 
 type BlogPreviewData = {
-    kicker: string;
     title: string;
     highlight: string;
     description: string;
-    buttonText: string;
+    blogButtonText: string;
+    newsButtonText: string;
     limit: number;
 };
 
@@ -17,7 +17,7 @@ type BlogPreviewProps = {
 };
 
 export const BlogPreview = async ({ data }: BlogPreviewProps) => {
-    const articles = await getLatestArticles("blog", data.limit);
+    const articles = await getPreviewArticles(data.limit);
 
     if (articles.length === 0) return null;
 
@@ -25,24 +25,18 @@ export const BlogPreview = async ({ data }: BlogPreviewProps) => {
         <section id="blog" className={style.blog}>
             <div className={style.inner}>
                 <div className={style.header}>
-                    <div className={style.kicker}>{data.kicker}</div>
-                    <div className={style.texts}>
-                        <h2 className={style.title}>
-                            {data.title} <span className={style.highlight}>{data.highlight}</span>
-                        </h2>
-                        <p className={style.description}>{data.description}</p>
-                    </div>
+                    <h2 className={style.title}>
+                        {data.title} <span className={style.highlight}>{data.highlight}</span>
+                    </h2>
+                    <p className={style.description}>{data.description}</p>
                 </div>
 
-                <ul className={style.grid}>
-                    {articles.map((article) => (
-                        <li key={article.slug} className={style.cell}>
-                            <ArticleCard item={article} />
-                        </li>
-                    ))}
-                </ul>
+                <ArticlesSlider data={{ articles, ariaLabel: `${data.title} ${data.highlight}` }} />
 
-                <Button text={data.buttonText} variant="outline-dark" className={style.button} href="/blog" />
+                <div className={style.actions}>
+                    <Button text={data.blogButtonText} variant="outline-dark" className={style.button} href="/blog" />
+                    <Button text={data.newsButtonText} variant="outline-dark" className={style.button} href="/novosti" />
+                </div>
             </div>
         </section>
     );

@@ -37,7 +37,7 @@ export default async function BlogPage({ searchParams }: { searchParams: SearchP
 
     const [list, tags] = await Promise.all([
         getArticles({ section: "blog", tag, page: pageNumber }),
-        getTags(),
+        getTags("blog"),
     ]);
 
     return (
@@ -46,7 +46,6 @@ export default async function BlogPage({ searchParams }: { searchParams: SearchP
             <ArticlesSection
                 data={{
                     basePath: "/blog",
-                    kicker: BlogPageData.kicker,
                     title: BlogPageData.title,
                     subtitle: BlogPageData.subtitle,
                     emptyText: BlogPageData.emptyText,

@@ -46,57 +46,59 @@ export const RequestsTable = ({ requests }: RequestsTableProps) => {
     return (
         <div className={style.page}>
             <div className={style.header}>
-                <div className={style.headerLeft}>
+                <div className={style.headerInner}>
                     <span className={style.title}>Заявки</span>
                     <span className={style.count}>{requests.length}</span>
                 </div>
             </div>
 
-            <div className={style.tableWrap}>
-                {requests.length === 0 ? (
-                    <div className={style.empty}>Заявок пока нет</div>
-                ) : (
-                    <table className={style.table}>
-                        <thead>
-                            <tr>
-                                <th>№</th>
-                                <th>Имя</th>
-                                <th>Телефон</th>
-                                <th>Email</th>
-                                <th>Деятельность</th>
-                                <th>Компания</th>
-                                <th>ИНН</th>
-                                <th>Сообщение</th>
-                                <th>Дата</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {requests.map((req) => (
-                                <tr key={req.id}>
-                                    <td>{req.id}</td>
-                                    <td>{req.name}</td>
-                                    <td>
-                                        <a href={toTelHref(req.phone)}>{req.phone}</a>
-                                    </td>
-                                    <td>{req.email}</td>
-                                    <td>{req.activity ?? "—"}</td>
-                                    <td>{req.company ?? "—"}</td>
-                                    <td>{req.inn ?? "—"}</td>
-                                    <td className={style.message}>{req.message ?? "—"}</td>
-                                    <td className={style.date}>{formatDate(req.created_at)}</td>
-                                    <td>
-                                        <Button
-                                            text="Удалить"
-                                            variant="transparent"
-                                            onClick={() => onDelete(req.id)}
-                                        />
-                                    </td>
+            <div className={style.body}>
+                <div className={style.tableWrap}>
+                    {requests.length === 0 ? (
+                        <div className={style.empty}>Заявок пока нет</div>
+                    ) : (
+                        <table className={style.table}>
+                            <thead>
+                                <tr>
+                                    <th>№</th>
+                                    <th>Имя</th>
+                                    <th>Телефон</th>
+                                    <th>Email</th>
+                                    <th>Деятельность</th>
+                                    <th>Компания</th>
+                                    <th>ИНН</th>
+                                    <th>Сообщение</th>
+                                    <th>Дата</th>
+                                    <th></th>
                                 </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                )}
+                            </thead>
+                            <tbody>
+                                {requests.map((req) => (
+                                    <tr key={req.id}>
+                                        <td>{req.id}</td>
+                                        <td>{req.name}</td>
+                                        <td>
+                                            <a href={toTelHref(req.phone)}>{req.phone}</a>
+                                        </td>
+                                        <td>{req.email}</td>
+                                        <td>{req.activity ?? "—"}</td>
+                                        <td>{req.company ?? "—"}</td>
+                                        <td>{req.inn ?? "—"}</td>
+                                        <td className={style.message}>{req.message ?? "—"}</td>
+                                        <td className={style.date}>{formatDate(req.created_at)}</td>
+                                        <td>
+                                            <Button
+                                                text="Удалить"
+                                                variant="transparent"
+                                                onClick={() => onDelete(req.id)}
+                                            />
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    )}
+                </div>
             </div>
         </div>
     );

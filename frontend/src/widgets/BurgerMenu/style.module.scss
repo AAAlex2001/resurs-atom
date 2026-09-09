@@ -242,11 +242,6 @@ a.overlayPartnerItem:hover .overlayPartnerName {
     .logoBig {
         display: flex;
     }
-
-    // На десктопе/планшете партнёры уже показаны плашкой в шапке.
-    .overlayPartners {
-        display: none;
-    }
 }
 
 @media (min-width: 1440px) {

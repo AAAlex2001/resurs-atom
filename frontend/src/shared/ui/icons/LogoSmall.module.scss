@@ -5,35 +5,25 @@
 .orbits {
     transform-box: fill-box;
     transform-origin: center;
-    animation: logoSpin 5s linear infinite;
-    animation-play-state: paused;
+    transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .core {
     transform-box: fill-box;
     transform-origin: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .svg:hover .orbits {
-    animation-play-state: running;
+    transform: rotate(180deg);
 }
 
 .svg:hover .core {
     transform: scale(1.14);
 }
 
-@keyframes logoSpin {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 @media (prefers-reduced-motion: reduce) {
-    .orbits {
-        animation: none;
-    }
-
+    .orbits,
     .core {
         transition: none;
     }

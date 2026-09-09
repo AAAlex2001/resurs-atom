@@ -70,9 +70,9 @@ export const Header = ({ data }: HeaderProps) => {
                                 </a>
                             ),
                         )}
+                        <PartnersMenu partners={data.partners} />
                     </nav>
                     <div className={style.headerButtons}>
-                        <PartnersMenu partners={data.partners} />
                         <div className={style.headerButtonOutline}>
                             <Button
                                 text={data.phone}

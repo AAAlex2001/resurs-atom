@@ -20,14 +20,6 @@
     gap: 15px;
 }
 
-.kicker {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 23px;
-    text-transform: uppercase;
-    color: #00DE4F;
-}
-
 .title {
     font-size: 32px;
     font-weight: 700;
@@ -148,6 +140,10 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .count {
+        margin-left: auto;
     }
 
     .grid {

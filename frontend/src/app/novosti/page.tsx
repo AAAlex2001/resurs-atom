@@ -37,7 +37,7 @@ export default async function NewsPage({ searchParams }: { searchParams: SearchP
 
     const [list, tags] = await Promise.all([
         getArticles({ section: "news", tag, page: pageNumber }),
-        getTags(),
+        getTags("news"),
     ]);
 
     return (
@@ -46,7 +46,6 @@ export default async function NewsPage({ searchParams }: { searchParams: SearchP
             <ArticlesSection
                 data={{
                     basePath: "/novosti",
-                    kicker: NewsPageData.kicker,
                     title: NewsPageData.title,
                     subtitle: NewsPageData.subtitle,
                     emptyText: NewsPageData.emptyText,

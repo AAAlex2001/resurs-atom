@@ -82,8 +82,12 @@ class ArticleService:
 
         return list(result.scalars().all())
 
-    async def list_tags(self) -> list[Tag]:
+    async def list_tags(self, section: str | None = None) -> list[Tag]:
         stmt = select(Tag).order_by(Tag.title)
+
+        if section:
+            has_published = Tag.articles.any(and_(PUBLISHED, Article.section == section))
+            stmt = stmt.where(has_published)
 
         result = await self.db.execute(stmt)
 
