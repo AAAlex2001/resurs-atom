@@ -59,7 +59,7 @@
 
 .partnersPanel {
     position: absolute;
-    top: calc(100% + 18px);
+    top: calc(100% + 17px);
     left: 50%;
     z-index: 10;
     display: flex;
@@ -79,10 +79,10 @@
     &::before {
         content: "";
         position: absolute;
-        top: -18px;
+        top: -17px;
         left: 0;
         right: 0;
-        height: 18px;
+        height: 17px;
     }
 }
 
