@@ -1,19 +1,10 @@
-from fastapi import APIRouter, Depends, HTTPException, Security, status
-from fastapi.security import APIKeyHeader
+from fastapi import APIRouter, Depends, HTTPException, status
 
-from database import settings
+from dependencies import verify_api_key
 from schemas.request import RequestIn, RequestOut
 from services.email_notify import EmailNotificationService
 from services.request import RequestService
 from services.tg_notify import TelegramNotificationService
-
-api_key_header = APIKeyHeader(name="X-API-Key")
-
-
-def verify_api_key(key: str = Security(api_key_header)):
-    if key != settings.api_key:
-        raise HTTPException(status_code=401, detail="Неверный ключ")
-
 
 router = APIRouter(prefix="/request", tags=["request"])
 

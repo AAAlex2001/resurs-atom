@@ -9,9 +9,10 @@ type ButtonProps = {
     type?: "button" | "submit" | "reset";
     icon?: ReactNode;
     href?: string;
+    disabled?: boolean;
 };
 
-export const Button = ({ text = "", variant, onClick, className, type = "button", icon, href }: ButtonProps) => {
+export const Button = ({ text = "", variant, onClick, className, type = "button", icon, href, disabled }: ButtonProps) => {
     const classNames = `${style.button} ${style[variant]} ${className ?? ""}`;
 
     if (href) {
@@ -24,7 +25,7 @@ export const Button = ({ text = "", variant, onClick, className, type = "button"
     }
 
     return (
-        <button className={classNames} onClick={onClick} type={type}>
+        <button className={classNames} onClick={onClick} type={type} disabled={disabled}>
             {icon && <span className={style.icon}>{icon}</span>}
             <span className={style.buttonText}>{text}</span>
         </button>

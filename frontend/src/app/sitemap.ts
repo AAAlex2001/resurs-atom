@@ -1,25 +1,54 @@
 import { MetadataRoute } from "next";
 import { LEGAL_URLS } from "@/app/legal/config";
+import { articlePath } from "@/entities/article";
+import { getAllArticleCards } from "@/entities/article/api";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-    return [
+const SITE_URL = "https://atom-plus.pro";
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+    const lastModified = new Date();
+
+    const pages: MetadataRoute.Sitemap = [
         {
-            url: "https://atom-plus.pro",
-            lastModified: new Date(),
+            url: SITE_URL,
+            lastModified,
             changeFrequency: "monthly",
             priority: 1,
         },
         {
+            url: `${SITE_URL}/blog`,
+            lastModified,
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
+        {
+            url: `${SITE_URL}/novosti`,
+            lastModified,
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
+        {
             url: LEGAL_URLS.privacyPolicy,
-            lastModified: new Date(),
+            lastModified,
             changeFrequency: "yearly",
             priority: 0.5,
         },
         {
             url: LEGAL_URLS.personalDataConsent,
-            lastModified: new Date(),
+            lastModified,
             changeFrequency: "yearly",
             priority: 0.5,
         },
     ];
+
+    const articles = await getAllArticleCards();
+
+    const articlePages: MetadataRoute.Sitemap = articles.map((article) => ({
+        url: `${SITE_URL}${articlePath(article)}`,
+        lastModified: article.published_at ? new Date(article.published_at) : lastModified,
+        changeFrequency: "monthly",
+        priority: 0.7,
+    }));
+
+    return [...pages, ...articlePages];
 }

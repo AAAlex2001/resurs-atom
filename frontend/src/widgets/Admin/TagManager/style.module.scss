@@ -1,0 +1,87 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    padding: 20px;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 12px;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000A1F;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    button {
+        height: 44px;
+        padding: 0 24px;
+    }
+}
+
+.inputWrap {
+    flex: 1;
+    min-width: 220px;
+
+    input {
+        height: 44px;
+    }
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 8px 7px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #000A1F;
+    background: rgba(0, 222, 79, 0.1);
+    border-radius: 20px;
+}
+
+.remove {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 1;
+    color: #00A65A;
+    background: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+
+    &:hover:not(:disabled) {
+        color: #FFFFFF;
+        background: #00C77A;
+    }
+}
+
+.empty {
+    font-size: 14px;
+    color: #8E8E93;
+}
+
+.error {
+    font-size: 13px;
+    color: #FF3B30;
+}

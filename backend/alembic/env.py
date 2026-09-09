@@ -12,7 +12,9 @@ from alembic import context
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 from database import Base, Settings
+from models.articles import Article, ArticleReaction, ArticleView, Tag  # noqa: F401
 from models.request import Request  # noqa: F401
+from models.tg_notify import TgNotify  # noqa: F401
 
 settings = Settings()
 

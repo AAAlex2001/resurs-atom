@@ -1,0 +1,1 @@
+export { useArticleStats } from "./model";

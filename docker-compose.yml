@@ -30,8 +30,12 @@ services:
       SMTP_PASSWORD: ${SMTP_PASSWORD}
       SMTP_FROM: ${SMTP_FROM:-info@atom-plus.pro}
       SMTP_USE_SSL: ${SMTP_USE_SSL:-true}
+      MEDIA_DIR: /app/media
+      COOKIE_SECURE: ${COOKIE_SECURE:-true}
     extra_hosts:
       - "api.telegram.org:149.154.167.220"
+    volumes:
+      - media_data:/app/media
     ports:
       - "8000:8000"
     depends_on:
@@ -56,6 +60,7 @@ services:
 
 volumes:
   postgres_data:
+  media_data:
 
 networks:
   app:

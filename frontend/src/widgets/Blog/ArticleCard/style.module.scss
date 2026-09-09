@@ -1,0 +1,148 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+        border-color: #00C77A;
+        box-shadow: 0 10px 30px rgba(0, 199, 122, 0.12);
+    }
+}
+
+.cover {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background: #F4F5F7;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.placeholder {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #F7FFF3 0%, #F4F5F7 100%);
+}
+
+.tag {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #00C77A;
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(0, 222, 79, 0.4);
+    border-radius: 100px;
+}
+
+.body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px 18px 16px;
+}
+
+.title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #4D555F;
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: auto;
+    padding-top: 12px;
+    border-top: 1px solid rgba(120, 120, 128, 0.16);
+}
+
+.date {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #8E8E93;
+}
+
+.read {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #00C77A;
+}
+
+.readIcon {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover .readIcon {
+    transform: translateX(3px);
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.stat {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #8E8E93;
+}
+
+.statIcon {
+    width: 17px;
+    height: 17px;
+}
+
+.views {
+    margin-left: auto;
+}

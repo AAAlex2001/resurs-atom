@@ -21,6 +21,8 @@ class Settings(BaseSettings):
     smtp_password: str
     smtp_from: str = "info@atom-plus.pro"
     smtp_use_ssl: bool = True
+    media_dir: str = "media"
+    cookie_secure: bool = True
 
 
 settings = Settings()

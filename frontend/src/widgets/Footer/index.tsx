@@ -12,6 +12,11 @@ type FooterData = {
         label: string;
         href: string;
     }[];
+    materialsTitle: string;
+    materials: {
+        label: string;
+        href: string;
+    }[];
     legalTitle: string;
     legal: {
         label: string;
@@ -46,6 +51,18 @@ export const Footer = ({ data }: FooterProps) => {
                             <li key={service.label}>
                                 <a className={style.link} href={service.href}>
                                     {service.label}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div className={style.column}>
+                    <div className={style.columnTitle}>{data.materialsTitle}</div>
+                    <ul className={style.links}>
+                        {data.materials.map((item) => (
+                            <li key={item.label}>
+                                <a className={style.link} href={item.href}>
+                                    {item.label}
                                 </a>
                             </li>
                         ))}

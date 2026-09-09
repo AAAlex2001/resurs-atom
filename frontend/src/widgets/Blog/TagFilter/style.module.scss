@@ -1,0 +1,118 @@
+.root {
+    position: relative;
+    width: 100%;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    height: 48px;
+    padding: 0 14px 0 16px;
+    text-align: left;
+    color: #000A1F;
+    background: #FFFFFF;
+    border: 1px solid #B3B9C0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease;
+
+    &:hover {
+        border-color: #00C77A;
+    }
+}
+
+.controlOpen {
+    border-color: #00C77A;
+}
+
+.controlActive {
+    color: #00C77A;
+    background: rgba(0, 222, 79, 0.06);
+    border-color: #00C77A;
+}
+
+.controlText {
+    overflow: hidden;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.chevron {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+}
+
+.chevronOpen {
+    transform: rotate(180deg);
+}
+
+.list {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+    max-height: 360px;
+    padding: 8px;
+    overflow-y: auto;
+    list-style: none;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 12px;
+    box-shadow: 0 14px 36px rgba(0, 10, 31, 0.12);
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 11px 14px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #000A1F;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.2s ease, color 0.2s ease;
+
+    &:hover {
+        background: #F4F5F7;
+    }
+}
+
+.optionActive,
+.optionActive:hover {
+    color: #00C77A;
+    background: rgba(0, 222, 79, 0.08);
+}
+
+.check {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+}
+
+@media (min-width: 768px) {
+    .root {
+        width: auto;
+        min-width: 320px;
+    }
+
+    .list {
+        width: max-content;
+        min-width: 100%;
+        max-width: 480px;
+    }
+}

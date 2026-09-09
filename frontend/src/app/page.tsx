@@ -15,6 +15,7 @@ import {
     SeoTextData,
     ContactData,
     FooterData,
+    BlogPreviewData,
 } from "@/app/data";
 import { Hero } from "@/widgets/Landing/Hero";
 import { Header } from "@/widgets/Header";
@@ -30,6 +31,7 @@ import { Licensing } from "@/widgets/Landing/Licensing";
 // import { Testimonials } from "@/widgets/Landing/Testimonials";
 // import { Faq } from "@/widgets/Landing/Faq";
 import { SeoText } from "@/widgets/Landing/SeoText";
+import { BlogPreview } from "@/widgets/Landing/BlogPreview";
 import { Contact } from "@/widgets/Landing/Contact";
 import { Footer } from "@/widgets/Footer";
 
@@ -49,6 +51,7 @@ export default function Home() {
             {/* <Packages data={PackagesData} /> */}
             {/* <Testimonials data={TestimonialsData} /> */}
             {/* <Faq data={FaqData} /> */}
+            <BlogPreview data={BlogPreviewData} />
             <SeoText data={SeoTextData} />
             <Contact data={ContactData} />
             <Footer data={FooterData} />

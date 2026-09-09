@@ -1,7 +1,6 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useAdminAuth } from "@/features/admin-auth";
 import { Button } from "@/shared/ui/Button";
 import { toTelHref } from "@/shared/lib/phone";
 import style from "./style.module.scss";
@@ -29,12 +28,6 @@ type RequestsTableProps = {
 
 export const RequestsTable = ({ requests }: RequestsTableProps) => {
     const router = useRouter();
-    const { handleLogout } = useAdminAuth();
-
-    const onLogout = async () => {
-        await handleLogout();
-        router.push("/f7k2x9n3/login");
-    };
 
     const onDelete = async (id: number) => {
         await deleteRequest(id);
@@ -57,7 +50,6 @@ export const RequestsTable = ({ requests }: RequestsTableProps) => {
                     <span className={style.title}>Заявки</span>
                     <span className={style.count}>{requests.length}</span>
                 </div>
-                <Button text="Выйти" variant="transparent" onClick={onLogout} />
             </div>
 
             <div className={style.tableWrap}>

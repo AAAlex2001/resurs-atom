@@ -1,0 +1,37 @@
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+}
+
+.list,
+.item {
+    display: contents;
+}
+
+.crumb {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #8E8E93;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a.crumb:hover {
+    color: #00C77A;
+}
+
+.current {
+    color: #00C77A;
+}
+
+.arrow {
+    flex-shrink: 0;
+    width: 15px;
+    height: 15px;
+    color: #B3B9C0;
+}
