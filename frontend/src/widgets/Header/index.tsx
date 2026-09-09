@@ -1,5 +1,6 @@
 import style from "./style.module.scss";
 import { BurgerMenu } from "@/widgets/BurgerMenu";
+import { ContentMenu } from "@/widgets/Header/ContentMenu";
 import { PartnersMenu } from "@/widgets/Header/PartnersMenu";
 import { Button } from "@/shared/ui/Button";
 import { LogoBig } from "@/shared/ui/icons/LogoBig";
@@ -11,6 +12,17 @@ type NavLink = {
     id: number;
     label: string;
     href: string;
+};
+
+type NavGroup = {
+    id: number;
+    label: string;
+    items: {
+        id: number;
+        label: string;
+        description: string;
+        href: string;
+    }[];
 };
 
 type PartnerItem = {
@@ -28,7 +40,7 @@ type HeaderData = {
         label: string;
         items: PartnerItem[];
     };
-    navLinks: NavLink[];
+    navLinks: (NavLink | NavGroup)[];
 };
 
 type HeaderProps = {
@@ -49,11 +61,15 @@ export const Header = ({ data }: HeaderProps) => {
                         </span>
                     </a>
                     <nav className={style.headerNav} aria-label="Основная навигация">
-                        {data.navLinks.map((link) => (
-                            <a className={style.headerNavLink} href={link.href} key={link.id}>
-                                <span>{link.label}</span>
-                            </a>
-                        ))}
+                        {data.navLinks.map((link) =>
+                            "items" in link ? (
+                                <ContentMenu data={link} key={link.id} />
+                            ) : (
+                                <a className={style.headerNavLink} href={link.href} key={link.id}>
+                                    <span>{link.label}</span>
+                                </a>
+                            ),
+                        )}
                     </nav>
                     <div className={style.headerButtons}>
                         <PartnersMenu partners={data.partners} />

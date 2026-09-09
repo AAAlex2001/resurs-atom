@@ -43,7 +43,9 @@ export const ArticleEditor = ({ data }: ArticleEditorProps) => {
     return (
         <div className={style.page}>
             <div className={style.header}>
-                <span className={style.title}>{data.article ? "Редактирование статьи" : "Новая статья"}</span>
+                <div className={style.headerInner}>
+                    <span className={style.title}>{data.article ? "Редактирование статьи" : "Новая статья"}</span>
+                </div>
             </div>
 
             <div className={style.body}>

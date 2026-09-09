@@ -36,6 +36,8 @@ services:
       - "api.telegram.org:149.154.167.220"
     volumes:
       - media_data:/app/media
+      - ./content:/app/content:ro
+      - ./scripts:/app/scripts:ro
     ports:
       - "8000:8000"
     depends_on:

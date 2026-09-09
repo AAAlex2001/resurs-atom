@@ -51,27 +51,29 @@ export const ArticlesPanel = ({ data }: ArticlesPanelProps) => {
     return (
         <div className={style.page}>
             <div className={style.header}>
-                <div className={style.headerLeft}>
+                <div className={style.headerInner}>
                     <span className={style.title}>Статьи</span>
                     <span className={style.count}>{data.articles.length}</span>
-                </div>
-                <div className={style.headerButton}>
-                    <Button text="Новая статья" variant="header-filled" href={newHref} />
                 </div>
             </div>
 
             <div className={style.body}>
-                <nav className={style.filters} aria-label="Раздел">
-                    {FILTERS.map((item) => (
-                        <a
-                            key={item.key ?? "all"}
-                            href={item.key ? `${listPath}?section=${item.key}` : listPath}
-                            className={`${style.pill} ${item.key === data.section ? style.pillActive : ""}`}
-                        >
-                            {item.label}
-                        </a>
-                    ))}
-                </nav>
+                <div className={style.toolbar}>
+                    <nav className={style.filters} aria-label="Раздел">
+                        {FILTERS.map((item) => (
+                            <a
+                                key={item.key ?? "all"}
+                                href={item.key ? `${listPath}?section=${item.key}` : listPath}
+                                className={`${style.pill} ${item.key === data.section ? style.pillActive : ""}`}
+                            >
+                                {item.label}
+                            </a>
+                        ))}
+                    </nav>
+                    <div className={style.newButton}>
+                        <Button text="Новая статья" variant="header-filled" href={newHref} />
+                    </div>
+                </div>
 
                 {data.error ? (
                     <div className={style.error}>{data.error}</div>

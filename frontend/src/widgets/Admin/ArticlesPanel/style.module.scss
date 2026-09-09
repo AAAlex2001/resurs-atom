@@ -5,19 +5,18 @@
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
     padding: 20px 20px;
     background: #FFFFFF;
     border-bottom: 1px solid #E6E6E6;
 }
 
-.headerLeft {
+.headerInner {
     display: flex;
     align-items: center;
     gap: 10px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .title {
@@ -35,25 +34,36 @@
     color: #8E8E93;
 }
 
-.headerButton {
-    a {
-        height: 44px;
-        padding: 0 24px;
-        white-space: nowrap;
-    }
-}
-
 .body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 24px 20px;
+}
+
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
 }
 
 .filters {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+}
+
+.newButton {
+    a {
+        height: 44px;
+        padding: 0 24px;
+        white-space: nowrap;
+    }
 }
 
 .pill {

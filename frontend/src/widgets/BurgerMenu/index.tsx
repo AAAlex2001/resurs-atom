@@ -18,6 +18,17 @@ type NavLink = {
     href: string;
 };
 
+type NavGroup = {
+    id: number;
+    label: string;
+    items: {
+        id: number;
+        label: string;
+        description: string;
+        href: string;
+    }[];
+};
+
 type PartnerItem = {
     id: number;
     icon: string;
@@ -27,7 +38,7 @@ type PartnerItem = {
 };
 
 type BurgerMenuData = {
-    navLinks: NavLink[];
+    navLinks: (NavLink | NavGroup)[];
     phone: string;
     consultationText: string;
     partners: {
@@ -139,11 +150,13 @@ export const BurgerMenu = ({ data }: BurgerMenuProps) => {
                           </div>
 
                           <nav className={style.overlayNav} aria-label="Мобильная навигация">
-                              {data.navLinks.map((link) => (
-                                  <a className={style.overlayLink} href={link.href} key={link.id} onClick={closeMenu}>
-                                      <span>{link.label}</span>
-                                  </a>
-                              ))}
+                              {data.navLinks
+                                  .flatMap((link) => ("items" in link ? link.items : [link]))
+                                  .map((link) => (
+                                      <a className={style.overlayLink} href={link.href} key={link.id} onClick={closeMenu}>
+                                          <span>{link.label}</span>
+                                      </a>
+                                  ))}
                           </nav>
 
                           <div className={style.overlayPartners}>

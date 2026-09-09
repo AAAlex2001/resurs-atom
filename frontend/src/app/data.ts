@@ -34,8 +34,21 @@ export const HeaderData = {
         },
         {
             id: 3,
-            label: "Блог",
-            href: "/blog",
+            label: "Контент",
+            items: [
+                {
+                    id: 31,
+                    label: "Блог",
+                    description: "Экспертные статьи о лицензировании в атомной отрасли",
+                    href: "/blog",
+                },
+                {
+                    id: 32,
+                    label: "Новости",
+                    description: "Изменения законодательства и требований Ростехнадзора",
+                    href: "/novosti",
+                },
+            ],
         },
         {
             id: 4,

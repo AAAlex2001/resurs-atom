@@ -1,0 +1,129 @@
+.content {
+    position: relative;
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.trigger {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    height: 44px;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 40px;
+    background-color: transparent;
+    color: #000A1F;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    background: linear-gradient(90deg, #000A1F 0%, #012E59 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: -webkit-text-fill-color 0.2s ease;
+}
+
+.chevron {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    color: #012E59;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.content:hover .trigger,
+.content:focus-within .trigger {
+    background-color: rgba(0, 220, 85, 0.12);
+}
+
+.content:hover .label,
+.content:focus-within .label {
+    background: none;
+    -webkit-text-fill-color: #00C77A;
+    color: #00C77A;
+}
+
+.content:hover .chevron,
+.content:focus-within .chevron {
+    color: #00C77A;
+    transform: rotate(180deg);
+}
+
+.panel {
+    position: absolute;
+    top: calc(100% + 17px);
+    left: 50%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 320px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 10, 31, 0.12);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%) translateY(-8px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -17px;
+        left: 0;
+        right: 0;
+        height: 17px;
+    }
+}
+
+.content:hover .panel,
+.content:focus-within .panel {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background-color: #E6EAF1;
+    }
+}
+
+.itemLabel {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #000A1F;
+    transition: color 0.2s ease;
+}
+
+.item:hover .itemLabel {
+    color: #00C77A;
+}
+
+.itemDescription {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #5C6672;
+}

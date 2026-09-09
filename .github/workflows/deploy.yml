@@ -15,7 +15,30 @@ jobs:
           username: root
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
+            set -e
             cd /root/resurs-atom
-            git pull origin main
+            git fetch origin main
+            git reset --hard origin/main
             docker-compose build
             docker-compose up -d
+            docker-compose ps
+            docker image prune -f
+
+            healthy=0
+            for _ in $(seq 1 30); do
+              if curl --fail --silent http://127.0.0.1:8000/health >/dev/null; then
+                healthy=1
+                break
+              fi
+              sleep 2
+            done
+            if [ "$healthy" -ne 1 ]; then
+              echo "Backend health check failed"
+              docker-compose logs --tail 80 backend
+              exit 1
+            fi
+
+            echo "Загрузка новостей из content/news"
+            docker-compose exec -T backend sh -c \
+              'python scripts/news/seed.py --api http://127.0.0.1:8000 --token "$API_KEY"' \
+              || echo "::warning::Загрузка новостей не удалась, сайт при этом задеплоен"
