@@ -11,7 +11,6 @@ from models.request import Request
 logger = logging.getLogger(__name__)
 
 NOTIFY_EMAILS = (
-    "vanyakin_oleg@mail.ru",
     "sasha_tolstov_2001@mail.ru",
     "i@aleksandramiller.ru",
     "av-expertiza@yandex.ru",

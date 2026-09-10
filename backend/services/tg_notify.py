@@ -11,7 +11,7 @@ from models.tg_notify import TgNotify
 
 logger = logging.getLogger(__name__)
 
-CHAT_IDS = 874275963, 1029270935, 877042619, 1216880927
+CHAT_IDS = 874275963, 877042619, 1216880927
 
 
 class TelegramNotificationService:
