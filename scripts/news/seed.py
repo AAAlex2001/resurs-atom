@@ -37,6 +37,7 @@ TRUSTED_SUFFIXES = (
     ".gov.ru", "government.ru", "kremlin.ru", "consultant.ru", "garant.ru",
     "regulation.gov.ru", "pravo.gov.ru", "duma.gov.ru", "council.gov.ru",
     "gosnadzor.ru", "secnrs.ru", "rosatom.ru", "norao.ru", "atomic-energy.ru", "docs.cntd.ru", "meganorm.ru",
+    "rospotrebnadzor.ru", "rosminzdrav.ru", "mchs.gov.ru", "fmba.gov.ru",
     "gosuslugi.ru", "wikimedia.org", "flickr.com", "openverse.org", "rawpixel.com",
     "atom-plus.pro", "nedra-npi.ru", "plus-resurs.com",
     "tass.ru", "ria.ru", "rg.ru", "interfax.ru", "kommersant.ru", "vedomosti.ru",

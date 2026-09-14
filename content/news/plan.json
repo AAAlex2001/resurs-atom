@@ -698,5 +698,705 @@
     "direction": "Персонал и разрешения",
     "kind": "guide",
     "cover_query": "training center classroom lecture"
+  },
+  {
+    "slug": "skolko-stoit-atomnaya-licenziya-razbor-smety",
+    "title": "Сколько стоит лицензия Ростехнадзора на самом деле: разбираем смету по статьям расходов",
+    "direction": "Лицензирование",
+    "kind": "money",
+    "cover_query": "money calculator documents desk"
+  },
+  {
+    "slug": "skrytye-rashody-pri-licenzirovanii-o-kotoryh-ne-govoryat",
+    "title": "Скрытые расходы при лицензировании: семь статей бюджета, о которых узнают в последний момент",
+    "direction": "Лицензирование",
+    "kind": "money",
+    "cover_query": "invoice paperwork calculator office"
+  },
+  {
+    "slug": "skolko-stoit-programma-obespecheniya-kachestva",
+    "title": "Сколько стоит программа обеспечения качества и почему шаблон за тридцать тысяч не работает",
+    "direction": "Лицензирование",
+    "kind": "money",
+    "cover_query": "thick document binder desk"
+  },
+  {
+    "slug": "skolko-stoit-zahoronit-otrabotavshiy-istochnik",
+    "title": "Сколько стоит захоронить отработавший источник и почему цена растёт с каждым годом хранения",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "money",
+    "cover_query": "radioactive waste drums storage facility"
+  },
+  {
+    "slug": "svoya-sluzhba-rb-ili-autsorsing-chto-deshevle",
+    "title": "Своя служба радиационной безопасности или аутсорсинг: считаем на цифрах, что дешевле предприятию",
+    "direction": "Радиационная безопасность",
+    "kind": "compare",
+    "cover_query": "office workers discussion table"
+  },
+  {
+    "slug": "cena-otkaza-v-licenzii-vo-chto-obhoditsya-povtornaya-podacha",
+    "title": "Цена отказа: во что обходится предприятию повторная подача документов на лицензию",
+    "direction": "Лицензирование",
+    "kind": "money",
+    "cover_query": "rejected stamp document"
+  },
+  {
+    "slug": "skolko-stoit-attestaciya-svarochnogo-proizvodstva-dlya-aes",
+    "title": "Сколько стоит аттестация сварочного производства для атомных заказов и сколько времени занимает",
+    "direction": "Изготовление оборудования",
+    "kind": "money",
+    "cover_query": "welder industrial workshop sparks"
+  },
+  {
+    "slug": "byudzhet-pervoy-postavki-na-aes-chto-zalozhit-zavodu",
+    "title": "Бюджет первой поставки на АЭС: что заложить заводу кроме себестоимости изделия",
+    "direction": "Изготовление оборудования",
+    "kind": "money",
+    "cover_query": "factory production line heavy equipment"
+  },
+  {
+    "slug": "skolko-stoit-obuchenie-personala-po-yarb",
+    "title": "Сколько стоит обучить персонал по ядерной и радиационной безопасности и что входит в цену",
+    "direction": "Персонал и разрешения",
+    "kind": "money",
+    "cover_query": "training classroom adults lecture"
+  },
+  {
+    "slug": "skolko-stoit-dezaktivaciya-pomeshcheniya",
+    "title": "Сколько стоит дезактивация помещения и почему смету нельзя составить без обследования",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "money",
+    "cover_query": "workers protective suits cleaning industrial"
+  },
+  {
+    "slug": "kogda-licenziya-okupaetsya-ekonomika-vyhoda-v-atomnuyu-otrasl",
+    "title": "Когда лицензия окупается: экономика выхода предприятия в атомную отрасль на реальных цифрах",
+    "direction": "Отрасль и рынок",
+    "kind": "money",
+    "cover_query": "business graph chart growth"
+  },
+  {
+    "slug": "na-chem-nelzya-ekonomit-pri-licenzirovanii",
+    "title": "На чём нельзя экономить при лицензировании: пять решений, которые обходятся дороже экономии",
+    "direction": "Лицензирование",
+    "kind": "list",
+    "cover_query": "coins stack budget planning"
+  },
+  {
+    "slug": "pochemu-rostehnadzor-zatyagivaet-sroki-i-chto-delat",
+    "title": "Почему Ростехнадзор затягивает сроки и что действительно ускоряет рассмотрение документов",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "hourglass clock office desk"
+  },
+  {
+    "slug": "kalendar-licenziata-chto-sdavat-v-techenie-goda",
+    "title": "Календарь лицензиата: что и когда сдавать в Ростехнадзор в течение года, чтобы не получить предписание",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "wall calendar planning office"
+  },
+  {
+    "slug": "kak-uskorit-poluchenie-licenzii-chto-rabotaet",
+    "title": "Как ускорить получение лицензии: что действительно работает, а что только кажется ускорением",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "fast motion business people walking"
+  },
+  {
+    "slug": "za-skolko-nachinat-gotovitsya-k-prodleniyu-licenzii",
+    "title": "За сколько месяцев начинать готовиться к продлению лицензии, чтобы не останавливать работы",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "calendar deadline planning documents"
+  },
+  {
+    "slug": "sroki-hraneniya-dokumentov-licenziata",
+    "title": "Сроки хранения документов лицензиата: что нельзя выбрасывать даже через десять лет",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "archive shelves folders documents"
+  },
+  {
+    "slug": "dorozhnaya-karta-licenzirovaniya-na-god-vpered",
+    "title": "Дорожная карта лицензирования: план на год вперёд для предприятия, которое начинает с нуля",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "roadmap planning whiteboard meeting"
+  },
+  {
+    "slug": "10-oshibok-v-zayavlenii-na-licenziyu",
+    "title": "Десять ошибок в заявлении на лицензию, из-за которых документы возвращают без рассмотрения",
+    "direction": "Лицензирование",
+    "kind": "list",
+    "cover_query": "application form pen desk"
+  },
+  {
+    "slug": "7-oshibok-v-programme-obespecheniya-kachestva",
+    "title": "Семь ошибок в программе обеспечения качества, которые эксперт находит за пятнадцать минут",
+    "direction": "Нормы и правила",
+    "kind": "list",
+    "cover_query": "documents review magnifying glass"
+  },
+  {
+    "slug": "top-10-narusheniy-kotorye-nahodit-inspektor",
+    "title": "Топ-10 нарушений, которые инспектор Ростехнадзора находит на первой же проверке предприятия",
+    "direction": "Проверки и ответственность",
+    "kind": "list",
+    "cover_query": "inspector clipboard industrial facility"
+  },
+  {
+    "slug": "15-dokumentov-kotorye-zaprosit-inspektor",
+    "title": "Пятнадцать документов, которые инспектор запросит в первые полчаса проверки",
+    "direction": "Проверки и ответственность",
+    "kind": "list",
+    "cover_query": "stack of documents folders desk"
+  },
+  {
+    "slug": "chek-list-gotovnosti-k-inspekcii-rostehnadzora",
+    "title": "Чек-лист готовности к инспекции Ростехнадзора: сорок пунктов, которые проверяют всегда",
+    "direction": "Проверки и ответственность",
+    "kind": "checklist",
+    "cover_query": "checklist clipboard inspection"
+  },
+  {
+    "slug": "5-prichin-otkaza-v-licenzii-i-kak-ih-izbezhat",
+    "title": "Пять причин отказа в лицензии и что сделать до подачи, чтобы не попасть ни в одну",
+    "direction": "Лицензирование",
+    "kind": "list",
+    "cover_query": "denied stamp red document"
+  },
+  {
+    "slug": "oshibki-v-uchete-istochnikov-kotorye-vskryvayutsya-na-proverke",
+    "title": "Ошибки в учёте источников, которые вскрываются на проверке через годы после того, как сделаны",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "list",
+    "cover_query": "inventory logbook warehouse"
+  },
+  {
+    "slug": "8-oshibok-postavshchika-oborudovaniya-dlya-aes",
+    "title": "Восемь ошибок поставщика оборудования для АЭС, из-за которых срывается приёмка изделия",
+    "direction": "Изготовление оборудования",
+    "kind": "list",
+    "cover_query": "quality control inspection factory"
+  },
+  {
+    "slug": "chek-list-dlya-podryadchika-pered-vyhodom-na-ploshchadku-aes",
+    "title": "Чек-лист подрядчика перед выходом на площадку АЭС: тридцать пунктов, без которых не пустят",
+    "direction": "Строительство и монтаж",
+    "kind": "checklist",
+    "cover_query": "construction workers helmets site entrance"
+  },
+  {
+    "slug": "oshibki-proektirovshchikov-na-obektah-ispolzovaniya-atomnoy-energii",
+    "title": "Ошибки проектировщиков на объектах использования атомной энергии, которые всплывают на экспертизе",
+    "direction": "Проектирование и конструирование",
+    "kind": "list",
+    "cover_query": "engineers blueprints drawings table"
+  },
+  {
+    "slug": "chto-proveryayut-v-pervuyu-ochered-u-novogo-licenziata",
+    "title": "Что проверяют в первую очередь у нового лицензиата в первый год после выдачи лицензии",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "audit meeting documents office"
+  },
+  {
+    "slug": "krasnye-flagi-v-dokumentah-na-licenziyu",
+    "title": "Красные флаги в документах на лицензию: что заставляет эксперта читать комплект под лупой",
+    "direction": "Лицензирование",
+    "kind": "list",
+    "cover_query": "red flag warning documents"
+  },
+  {
+    "slug": "oshibki-v-dogovorah-s-podryadchikami-v-atomnoy-otrasli",
+    "title": "Ошибки в договорах с подрядчиками в атомной отрасли, которые оборачиваются предписанием",
+    "direction": "Нормы и правила",
+    "kind": "list",
+    "cover_query": "contract signing pen business"
+  },
+  {
+    "slug": "chek-list-pri-pokupke-predpriyatiya-s-istochnikami",
+    "title": "Чек-лист при покупке предприятия или помещения, где раньше работали с источниками излучения",
+    "direction": "Радиационные источники",
+    "kind": "checklist",
+    "cover_query": "abandoned industrial building interior"
+  },
+  {
+    "slug": "ugolovnaya-otvetstvennost-za-narusheniya-v-atomnoy-otrasli",
+    "title": "Уголовная ответственность в атомной отрасли: статьи 215, 220 и 247 УК простым языком",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "courtroom gavel justice"
+  },
+  {
+    "slug": "shtrafy-za-rabotu-bez-licenzii-realnye-summy",
+    "title": "Штрафы за работу без лицензии в области атомной энергии: реальные суммы и практика судов",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "fine penalty money documents"
+  },
+  {
+    "slug": "chto-budet-esli-poteryat-radiacionnyy-istochnik",
+    "title": "Что будет, если потерять радиоактивный источник: порядок действий и последствия для организации",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "radiation warning sign fence"
+  },
+  {
+    "slug": "priostanovka-deyatelnosti-predpriyatiya-kak-perezhit",
+    "title": "Приостановка деятельности предприятия: что делать в первый день и как пережить девяносто суток",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "closed factory gate padlock"
+  },
+  {
+    "slug": "diskvalifikaciya-rukovoditelya-za-chto-i-nadolgo-li",
+    "title": "Дисквалификация руководителя: за что назначают и как она бьёт по лицензии организации",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "empty office chair desk"
+  },
+  {
+    "slug": "rabota-s-prosrochennoy-licenziey-chem-grozit",
+    "title": "Работа с просроченной лицензией: чем это грозит организации, руководителю и её заказчику",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "expired stamp document calendar"
+  },
+  {
+    "slug": "vneplanovaya-proverka-rostehnadzora-osnovaniya-i-prava",
+    "title": "Внеплановая проверка Ростехнадзора: основания, права инспектора и права организации",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "inspector visiting industrial plant"
+  },
+  {
+    "slug": "kak-osporit-predpisanie-rostehnadzora",
+    "title": "Как оспорить предписание Ростехнадзора: досудебное обжалование и сроки, которые нельзя пропустить",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "legal documents court papers"
+  },
+  {
+    "slug": "moratoriy-na-proverki-rasprostranyaetsya-li-na-atomnuyu-otrasl",
+    "title": "Мораторий на проверки: распространяется ли он на объекты использования атомной энергии",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "government building facade columns"
+  },
+  {
+    "slug": "proverochnye-listy-rostehnadzora-gde-vzyat-i-kak-ispolzovat",
+    "title": "Проверочные листы Ростехнадзора: где взять и как подготовиться по ним заранее",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "checklist form paper pen"
+  },
+  {
+    "slug": "otvetstvennost-zakazchika-za-podryadchika-bez-licenzii",
+    "title": "Ответственность заказчика за подрядчика без лицензии: почему на проверке спрашивают с обоих",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "handshake business contract office"
+  },
+  {
+    "slug": "kategorii-riska-i-chastota-proverok-v-atomnoy-otrasli",
+    "title": "Категории риска и частота проверок: как понять, когда именно к вам придут",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "risk matrix chart presentation"
+  },
+  {
+    "slug": "mozhno-li-rabotat-po-licenzii-podryadchika",
+    "title": "Можно ли работать по лицензии подрядчика: разбираем популярную схему и её последствия",
+    "direction": "Лицензирование",
+    "kind": "qa",
+    "cover_query": "two businessmen discussion office"
+  },
+  {
+    "slug": "nuzhna-li-licenziya-na-rentgenovskiy-apparat",
+    "title": "Нужна ли лицензия Ростехнадзора на рентгеновский аппарат: короткий ответ и длинное объяснение",
+    "direction": "Радиационные источники",
+    "kind": "qa",
+    "cover_query": "x-ray machine industrial laboratory"
+  },
+  {
+    "slug": "mozhno-li-kupit-gotovuyu-firmu-s-licenziey",
+    "title": "Можно ли купить готовую фирму с атомной лицензией: риски схемы и что проверить до сделки",
+    "direction": "Лицензирование",
+    "kind": "qa",
+    "cover_query": "business deal signing documents"
+  },
+  {
+    "slug": "nuzhna-li-licenziya-na-pribor-s-vstroennym-istochnikom",
+    "title": "Нужна ли лицензия на прибор со встроенным источником: разбираем по категориям и активностям",
+    "direction": "Радиационные источники",
+    "kind": "qa",
+    "cover_query": "industrial measurement device equipment"
+  },
+  {
+    "slug": "mozhno-li-hranit-istochnik-v-obychnom-seyfe",
+    "title": "Можно ли хранить источник в обычном сейфе: требования к хранилищу простым языком",
+    "direction": "Радиационные источники",
+    "kind": "qa",
+    "cover_query": "metal safe vault door"
+  },
+  {
+    "slug": "nuzhna-li-licenziya-esli-istochnik-arendovan",
+    "title": "Нужна ли лицензия, если источник арендован, а не куплен: разбор частого заблуждения",
+    "direction": "Радиационные источники",
+    "kind": "qa",
+    "cover_query": "rental agreement equipment industrial"
+  },
+  {
+    "slug": "mozhno-li-vyvozit-istochnik-na-obekt-zakazchika",
+    "title": "Можно ли вывозить источник на объект заказчика и что для этого нужно оформить",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "qa",
+    "cover_query": "truck transport cargo road"
+  },
+  {
+    "slug": "nuzhna-li-licenziya-na-metallolom-s-povyshennym-fonom",
+    "title": "В металлоломе нашли повышенный фон: что делать предприятию и нужна ли лицензия",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "qa",
+    "cover_query": "scrap metal yard pile"
+  },
+  {
+    "slug": "mozhno-li-samomu-napisat-programmu-obespecheniya-kachestva",
+    "title": "Можно ли написать программу обеспечения качества самому: честный ответ консультанта",
+    "direction": "Нормы и правила",
+    "kind": "qa",
+    "cover_query": "person writing document laptop"
+  },
+  {
+    "slug": "nuzhen-li-shtatnyy-inzhener-po-radiacionnoy-bezopasnosti",
+    "title": "Нужен ли штатный инженер по радиационной безопасности или хватит совместителя",
+    "direction": "Персонал и разрешения",
+    "kind": "qa",
+    "cover_query": "engineer safety helmet industrial"
+  },
+  {
+    "slug": "mozhno-li-rabotat-na-aes-bez-opyta-v-atomnoy-otrasli",
+    "title": "Можно ли зайти подрядчиком на АЭС без опыта в атомной отрасли: с чего начинают новички",
+    "direction": "Строительство и монтаж",
+    "kind": "qa",
+    "cover_query": "nuclear power plant construction cranes"
+  },
+  {
+    "slug": "nuzhna-li-licenziya-dlya-nauchnoy-laboratorii-vuza",
+    "title": "Нужна ли лицензия научной лаборатории вуза и как оформляют источники в образовании",
+    "direction": "Лицензирование",
+    "kind": "qa",
+    "cover_query": "university laboratory students research"
+  },
+  {
+    "slug": "licenziya-rostehnadzora-ili-sro-v-chem-raznica",
+    "title": "Лицензия Ростехнадзора или СРО: в чём разница и почему строителю на АЭС нужны обе",
+    "direction": "Лицензирование",
+    "kind": "compare",
+    "cover_query": "construction documents helmet desk"
+  },
+  {
+    "slug": "rostehnadzor-ili-rospotrebnadzor-kto-chto-kontroliruet",
+    "title": "Ростехнадзор или Роспотребнадзор: кто что контролирует по источникам излучения",
+    "direction": "Нормы и правила",
+    "kind": "compare",
+    "cover_query": "two government office buildings"
+  },
+  {
+    "slug": "zakrytyy-ili-otkrytyy-istochnik-v-chem-raznica-dlya-predpriyatiya",
+    "title": "Закрытый или открытый источник: в чём разница для требований к предприятию",
+    "direction": "Радиационные источники",
+    "kind": "compare",
+    "cover_query": "laboratory glovebox radioactive handling"
+  },
+  {
+    "slug": "rao-ili-radioaktivnoe-veshchestvo-gde-prohodit-granica",
+    "title": "РАО или радиоактивное вещество: где проходит граница и почему это вопрос денег",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "compare",
+    "cover_query": "radioactive waste container yellow"
+  },
+  {
+    "slug": "svoya-laboratoriya-nk-ili-podryad-chto-vygodnee-zavodu",
+    "title": "Своя лаборатория неразрушающего контроля или подряд: что выгоднее заводу",
+    "direction": "Изготовление оборудования",
+    "kind": "compare",
+    "cover_query": "ultrasonic testing weld inspection"
+  },
+  {
+    "slug": "fnp-gost-i-standart-organizacii-chto-glavnee",
+    "title": "ФНП, ГОСТ и стандарт организации: что главнее, когда требования противоречат друг другу",
+    "direction": "Нормы и правила",
+    "kind": "compare",
+    "cover_query": "law books library shelf"
+  },
+  {
+    "slug": "gamma-defektoskopiya-ili-rentgen-chto-vybrat-laboratorii",
+    "title": "Гамма-дефектоскопия или рентген: что выбрать лаборатории с учётом регуляторной нагрузки",
+    "direction": "Радиационные источники",
+    "kind": "compare",
+    "cover_query": "industrial radiography pipe inspection"
+  },
+  {
+    "slug": "kategorii-magate-i-np-038-16-kak-sootnosyatsya",
+    "title": "Категории источников МАГАТЭ и НП-038-16: как они соотносятся и зачем это знать предприятию",
+    "direction": "Радиационные источники",
+    "kind": "compare",
+    "cover_query": "radiation hazard symbol sign"
+  },
+  {
+    "slug": "10-mifov-o-radiacii-v-kotorye-veryat-dazhe-inzhenery",
+    "title": "Десять мифов о радиации, в которые верят даже инженеры с профильным образованием",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "radiation symbol yellow black"
+  },
+  {
+    "slug": "zivert-ber-rentgen-i-kyuri-kak-ne-putat-edinicy",
+    "title": "Зиверт, бэр, рентген и кюри: как не путать единицы и правильно читать протоколы измерений",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "measurement instruments laboratory dials"
+  },
+  {
+    "slug": "skolko-radiacii-chelovek-poluchaet-za-god",
+    "title": "Сколько радиации человек получает за год: таблица доз от природы, медицины и работы",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "sunlight sky landscape nature"
+  },
+  {
+    "slug": "radiacionnyy-fon-v-kvartire-chto-fonit-doma",
+    "title": "Радиационный фон в квартире: что действительно фонит дома и когда стоит волноваться",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "apartment interior living room"
+  },
+  {
+    "slug": "radon-glavnyy-istochnik-oblucheniya-naseleniya",
+    "title": "Радон: главный источник облучения населения, о котором почти никто не думает",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "basement cellar concrete underground"
+  },
+  {
+    "slug": "dozy-pri-kt-rentgene-i-perelete-sravnenie",
+    "title": "Дозы при КТ, рентгене и перелёте: сравниваем на одной шкале и объясняем, что это значит",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "ct scanner hospital medical"
+  },
+  {
+    "slug": "chto-doza-delaet-s-organizmom",
+    "title": "Что доза делает с организмом: от микрозивертов фона до значений, несовместимых с жизнью",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "medical research laboratory microscope"
+  },
+  {
+    "slug": "kak-rabotaet-dozimetr-i-pochemu-bytovye-vrut",
+    "title": "Как работает дозиметр и почему бытовые приборы показывают что угодно, кроме правды",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "geiger counter radiation meter"
+  },
+  {
+    "slug": "zashchita-vremenem-rasstoyaniem-i-ekranom",
+    "title": "Защита временем, расстоянием и экраном: три правила, которые действительно спасают жизни",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "protective lead shielding laboratory"
+  },
+  {
+    "slug": "pochemu-svinec-ne-vsegda-luchshaya-zashchita",
+    "title": "Почему свинец не всегда лучшая защита и когда вместо него нужен полиэтилен с бором",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "lead bricks shielding blocks"
+  },
+  {
+    "slug": "period-poluraspada-prostymi-slovami",
+    "title": "Период полураспада простыми словами: почему один источник ждут месяцы, а другой тысячи лет",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "hourglass sand time passing"
+  },
+  {
+    "slug": "gde-na-zavode-vstrechayutsya-istochniki-izlucheniya",
+    "title": "Где на обычном заводе встречаются источники излучения: полный список приборов и установок",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "factory industrial plant interior"
+  },
+  {
+    "slug": "radiofobiya-pochemu-aes-boyatsya-bolshe-chem-avtomobiley",
+    "title": "Радиофобия: почему атомных станций боятся больше, чем автомобилей, и что с этим делают",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "crowd people city street"
+  },
+  {
+    "slug": "bananovyy-ekvivalent-i-drugie-sposoby-obyasnit-dozu",
+    "title": "Банановый эквивалент и другие способы объяснить дозу тому, кто далёк от физики",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "bananas fruit market"
+  },
+  {
+    "slug": "estestvennaya-radioaktivnost-stroitelnyh-materialov",
+    "title": "Естественная радиоактивность стройматериалов: классы, нормы и почему это проверяют",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "construction materials bricks concrete"
+  },
+  {
+    "slug": "produkty-i-radiaciya-chto-pokazyvayut-izmereniya",
+    "title": "Продукты и радиация: что показывают измерения и зачем нужен радиационный контроль пищи",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "food market vegetables produce"
+  },
+  {
+    "slug": "goyaniya-1987-kak-istochnik-iz-broshennoy-kliniki-ubil-lyudey",
+    "title": "Гояния-1987: как источник из брошенной клиники убил людей и переписал мировые правила",
+    "direction": "Радиационная безопасность",
+    "kind": "story",
+    "cover_query": "abandoned hospital building ruins"
+  },
+  {
+    "slug": "poteryannye-istochniki-skolko-ih-teryayut-v-mire",
+    "title": "Потерянные источники: сколько их теряют в мире каждый год и чем это обычно заканчивается",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "story",
+    "cover_query": "search flashlight dark warehouse"
+  },
+  {
+    "slug": "radioaktivnyy-metallolom-kak-istochnik-popadaet-v-pech",
+    "title": "Радиоактивный металлолом: как источник попадает в печь и во что это обходится заводу",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "story",
+    "cover_query": "steel mill furnace molten metal"
+  },
+  {
+    "slug": "samye-dorogie-oshibki-v-atomnoy-otrasli",
+    "title": "Самые дорогие ошибки в атомной отрасли: во что компаниям обошлись потерянные лицензии",
+    "direction": "Проверки и ответственность",
+    "kind": "story",
+    "cover_query": "broken glass shattered damage"
+  },
+  {
+    "slug": "tri-mayl-aylend-chemu-nauchila-avariya",
+    "title": "Три-Майл-Айленд: как одна авария изменила требования к персоналу во всём мире",
+    "direction": "Радиационная безопасность",
+    "kind": "story",
+    "cover_query": "nuclear plant control room panel"
+  },
+  {
+    "slug": "chernobyl-i-fukusima-chto-izmenilos-v-normah-posle",
+    "title": "Чернобыль и Фукусима: что конкретно изменилось в нормах безопасности после каждой аварии",
+    "direction": "Нормы и правила",
+    "kind": "story",
+    "cover_query": "nuclear power plant cooling towers"
+  },
+  {
+    "slug": "demonicheskoe-yadro-istoriya-dvuh-eksperimentov",
+    "title": "Демоническое ядро: история двух экспериментов, после которых запретили работать руками",
+    "direction": "Радиационная безопасность",
+    "kind": "story",
+    "cover_query": "physics laboratory vintage experiment"
+  },
+  {
+    "slug": "radievye-devushki-kak-poyavilis-normy-radiacionnoy-bezopasnosti",
+    "title": "Радиевые девушки: как трагедия работниц циферблатного цеха создала нормы радиационной безопасности",
+    "direction": "Радиационная безопасность",
+    "kind": "story",
+    "cover_query": "vintage watch clock dial"
+  },
+  {
+    "slug": "kak-nahodyat-beshozyaynye-istochniki",
+    "title": "Как находят бесхозяйные источники: кто их ищет, где обычно находят и что делают дальше",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "story",
+    "cover_query": "radiation detection portal monitor"
+  },
+  {
+    "slug": "atomnye-ledokoly-rossii-kto-poluchaet-kontrakty",
+    "title": "Атомные ледоколы России: как они устроены и кто получает контракты на их обслуживание",
+    "direction": "Отрасль и рынок",
+    "kind": "story",
+    "cover_query": "icebreaker ship arctic ice"
+  },
+  {
+    "slug": "kak-stat-postavshchikom-rosatoma-poshagovo",
+    "title": "Как стать поставщиком «Росатома»: пошаговый маршрут от регистрации до первого контракта",
+    "direction": "Отрасль и рынок",
+    "kind": "guide",
+    "cover_query": "business meeting handshake corporate"
+  },
+  {
+    "slug": "gde-iskat-tendery-atomnoy-otrasli",
+    "title": "Где искать тендеры атомной отрасли и как читать закупочную документацию, чтобы не попасть",
+    "direction": "Отрасль и рынок",
+    "kind": "guide",
+    "cover_query": "laptop screen data analysis office"
+  },
+  {
+    "slug": "skolko-zarabatyvaet-inzhener-po-radiacionnoy-bezopasnosti",
+    "title": "Сколько зарабатывает инженер по радиационной безопасности: обзор рынка труда в отрасли",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "engineer working desk computer"
+  },
+  {
+    "slug": "professii-atomnoy-otrasli-kto-nuzhen-predpriyatiyu-s-licenziey",
+    "title": "Профессии атомной отрасли: кто реально нужен предприятию с лицензией и где этих людей искать",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "industrial team workers portrait"
+  },
+  {
+    "slug": "gde-uchitsya-na-specialista-po-yarb",
+    "title": "Где учиться на специалиста по ядерной и радиационной безопасности: вузы и переподготовка",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "university lecture hall students"
+  },
+  {
+    "slug": "atomnaya-otrasl-rossii-v-cifrah",
+    "title": "Атомная отрасль России в цифрах: блоки, стройки, экспорт и что это значит для подрядчиков",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "nuclear power plant aerial view"
+  },
+  {
+    "slug": "karta-aes-rossii-gde-stroyat-i-gde-budut-stroit",
+    "title": "Карта АЭС России: где строят сейчас и где будут строить до 2042 года",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "map russia geography"
+  },
+  {
+    "slug": "malye-modulnye-reaktory-novyy-rynok-dlya-podryadchikov",
+    "title": "Малые модульные реакторы: новый рынок для подрядчиков и поставщиков оборудования",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "modular industrial construction modules"
+  },
+  {
+    "slug": "yadernaya-medicina-v-rossii-rynok-i-trebovaniya",
+    "title": "Ядерная медицина в России: растущий рынок и регуляторные требования к его участникам",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "nuclear medicine pet scanner hospital"
+  },
+  {
+    "slug": "importozameshchenie-v-atomnom-mashinostroenii",
+    "title": "Импортозамещение в атомном машиностроении: шанс для заводов и что нужно, чтобы им воспользоваться",
+    "direction": "Изготовление оборудования",
+    "kind": "explainer",
+    "cover_query": "heavy machinery factory manufacturing"
   }
 ]
