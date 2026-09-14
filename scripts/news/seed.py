@@ -222,10 +222,15 @@ def main() -> None:
     parser.add_argument("--start", default=date.today().isoformat(), help="Дата отсчёта, ГГГГ-ММ-ДД; даты идут назад от неё")
     parser.add_argument("--per-week", type=int, default=3, help="Сколько статей приходится на одну неделю в прошлом")
     parser.add_argument("--update", action="store_true", help="Перезаписать и уже существующие статьи")
+    parser.add_argument("--slugs", default="", help="Через запятую: обрабатывать только эти статьи")
     parser.add_argument("--dry-run", action="store_true", help="Только показать, ничего не отправлять")
     args = parser.parse_args()
 
+    only = {slug.strip() for slug in args.slugs.split(",") if slug.strip()}
+
     plan = load_json(PLAN_FILE)
+    if only:
+        plan = [item for item in plan if item["slug"] in only]
     credits = load_json(CREDITS_FILE) if CREDITS_FILE.exists() else {}
     articles = load_articles(plan)
 

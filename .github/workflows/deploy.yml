@@ -42,3 +42,9 @@ jobs:
             docker-compose exec -T backend sh -c \
               'python scripts/news/seed.py --api http://127.0.0.1:8000 --token "$API_KEY"' \
               || echo "::warning::Загрузка новостей не удалась, сайт при этом задеплоен"
+
+            echo "Разовое обновление статей с вырезанными ссылками на Роспотребнадзор"
+            docker-compose exec -T backend sh -c \
+              'python scripts/news/seed.py --api http://127.0.0.1:8000 --token "$API_KEY" --update --slugs \
+              radiacionno-gigienicheskiy-pasport-organizacii,individualnyy-dozimetricheskiy-kontrol-organizaciya,proektirovanie-radiacionnoy-zashchity-pomeshcheniy,dopusk-personala-podryadchika-na-ploshchadku-aes,remontnaya-kampaniya-na-aes-kak-podryadchiku-podgotovitsya,nrb-99-2009-i-osporb-99-2010-chto-trebuyut-ot-predpriyatiya,medicinskie-osmotry-personala-gruppy-a,uchebnye-centry-po-yarb-kak-vybrat' \
+              || echo "::warning::Точечное обновление не удалось"
