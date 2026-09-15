@@ -1398,5 +1398,1405 @@
     "direction": "Изготовление оборудования",
     "kind": "explainer",
     "cover_query": "heavy machinery factory manufacturing"
+  },
+  {
+    "slug": "prikaz-7-perevod-yadernyh-materialov-v-rao",
+    "title": "Приказ Ростехнадзора №7: что изменилось в переводе ядерных материалов в радиоактивные отходы",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "news",
+    "cover_query": "nuclear fuel storage pool"
+  },
+  {
+    "slug": "smolenskaya-aes-2-licenziya-na-sooruzhenie-chto-znachit-dlya-podryadchikov",
+    "title": "Смоленская АЭС-2 получила лицензию на сооружение: что это значит для подрядчиков и поставщиков",
+    "direction": "Строительство и монтаж",
+    "kind": "news",
+    "cover_query": "nuclear power plant construction site crane"
+  },
+  {
+    "slug": "vver-optim-referentnyy-proekt-chto-menyaetsya-dlya-postavshchikov",
+    "title": "ВВЭР-оптим становится референтным проектом: что меняется для поставщиков оборудования",
+    "direction": "Изготовление оборудования",
+    "kind": "news",
+    "cover_query": "reactor pressure vessel factory"
+  },
+  {
+    "slug": "magate-prognoziruet-tysyachu-malyh-reaktorov-k-2060",
+    "title": "МАГАТЭ ждёт тысячу малых реакторов к 2060 году: что это значит для российских заводов",
+    "direction": "Отрасль и рынок",
+    "kind": "news",
+    "cover_query": "small modular reactor model"
+  },
+  {
+    "slug": "tridcat-reaktorov-ritm-v-rabote-rynok-dlya-postavshchikov",
+    "title": "Тридцать реакторов РИТМ в разной стадии готовности: где здесь работа для поставщиков",
+    "direction": "Отрасль и рынок",
+    "kind": "news",
+    "cover_query": "nuclear reactor module industrial"
+  },
+  {
+    "slug": "akkuyu-pervyy-blok-chemu-uchit-zarubezhnyy-proekt",
+    "title": "Пуск первого блока АЭС «Аккую»: чему зарубежная стройка учит российских подрядчиков",
+    "direction": "Строительство и монтаж",
+    "kind": "news",
+    "cover_query": "nuclear power plant construction turkey"
+  },
+  {
+    "slug": "kolskaya-aes-vodorodnyy-stend-rabota-na-deystvuyushchey-ploshchadke",
+    "title": "Водородный стенд на Кольской АЭС: новое направление работ на действующей площадке",
+    "direction": "Строительство и монтаж",
+    "kind": "news",
+    "cover_query": "hydrogen production facility industrial"
+  },
+  {
+    "slug": "el-dabaa-novye-bloki-k-chemu-gotovitsya-postavshchikam",
+    "title": "Новые блоки АЭС «Эль-Дабаа»: к чему готовиться поставщикам египетского проекта",
+    "direction": "Отрасль и рынок",
+    "kind": "news",
+    "cover_query": "desert construction site industrial"
+  },
+  {
+    "slug": "uzbekistan-aes-kakie-raboty-dostanutsya-rossiyskim-kompaniyam",
+    "title": "АЭС в Узбекистане: какие работы и поставки достанутся российским компаниям",
+    "direction": "Отрасль и рынок",
+    "kind": "news",
+    "cover_query": "nuclear plant construction central asia"
+  },
+  {
+    "slug": "rosatom-i-petrovietnam-centr-additivnyh-tehnologiy",
+    "title": "«Росатом» и Petrovietnam строят центр аддитивных технологий: зачем отрасли 3D-печать",
+    "direction": "Изготовление оборудования",
+    "kind": "news",
+    "cover_query": "3d printing metal additive manufacturing"
+  },
+  {
+    "slug": "pervyy-robot-v-gornorudnom-divizione-rosatoma",
+    "title": "Первый робот в горнорудном дивизионе «Росатома»: роботизация приходит в добычу урана",
+    "direction": "Отрасль и рынок",
+    "kind": "news",
+    "cover_query": "industrial robot arm mining"
+  },
+  {
+    "slug": "akra-podtverdila-reyting-rosatoma-chto-eto-znachit-postavshchiku",
+    "title": "АКРА подтвердила рейтинг «Росатома» на уровне AAA: что это значит поставщику",
+    "direction": "Отрасль и рынок",
+    "kind": "news",
+    "cover_query": "financial charts business office"
+  },
+  {
+    "slug": "atomnye-cod-rosatoma-novyy-rynok-podryada",
+    "title": "Атомные центры обработки данных: «Росатом» строит хабы и это новый рынок подряда",
+    "direction": "Отрасль и рынок",
+    "kind": "news",
+    "cover_query": "data center server room"
+  },
+  {
+    "slug": "ledokol-leningrad-ochistka-stochnyh-vod-trebovaniya-k-oborudovaniyu",
+    "title": "Очистка стоков на ледоколе «Ленинград»: экологические требования к судовому оборудованию",
+    "direction": "Изготовление оборудования",
+    "kind": "news",
+    "cover_query": "icebreaker ship shipyard"
+  },
+  {
+    "slug": "ekologicheskiy-otchet-aes-chto-v-nem-smotret",
+    "title": "Экологический отчёт АЭС: что в нём смотреть подрядчику, журналисту и жителю города",
+    "direction": "Экология и общественность",
+    "kind": "news",
+    "cover_query": "environmental report nature river"
+  },
+  {
+    "slug": "zaporozhskaya-aes-i-magate-kak-ustroen-mezhdunarodnyy-kontrol",
+    "title": "Запорожская АЭС и МАГАТЭ: как устроен международный контроль ядерной безопасности",
+    "direction": "Нормы и правила",
+    "kind": "news",
+    "cover_query": "IAEA inspection nuclear facility"
+  },
+  {
+    "slug": "prioritety-rosatoma-na-simpoziume-wna",
+    "title": "Приоритеты «Росатома» на симпозиуме WNA: куда движется отрасль и где точки входа",
+    "direction": "Отрасль и рынок",
+    "kind": "news",
+    "cover_query": "international conference hall business"
+  },
+  {
+    "slug": "predynzhenery-kak-otrasl-reshaet-kadrovyy-golod",
+    "title": "Прединженеры: как промышленность решает кадровый голод и что делать предприятию сейчас",
+    "direction": "Персонал и разрешения",
+    "kind": "news",
+    "cover_query": "students engineering laboratory training"
+  },
+  {
+    "slug": "lokalizaciya-3d-skanera-v-indii-eksport-tehnologiy",
+    "title": "Локализация российского 3D-сканера в Индии: отрасль экспортирует не только реакторы",
+    "direction": "Отрасль и рынок",
+    "kind": "news",
+    "cover_query": "3d scanner metrology equipment"
+  },
+  {
+    "slug": "leningradskaya-aes-bloki-7-i-8-licenzii-na-sooruzhenie",
+    "title": "Лицензии на сооружение блоков № 7 и 8 Ленинградской АЭС: как выглядит документ на 15 лет",
+    "direction": "Лицензирование",
+    "kind": "news",
+    "cover_query": "nuclear power plant reactor building"
+  },
+  {
+    "slug": "generalnaya-shema-do-2042-goda-skolko-blokov-i-gde",
+    "title": "Генеральная схема до 2042 года: сколько энергоблоков построят и где искать подряд",
+    "direction": "Отрасль и рынок",
+    "kind": "news",
+    "cover_query": "power grid transmission lines"
+  },
+  {
+    "slug": "obmelenie-dunaya-i-aes-paks-klimat-kak-faktor-proektirovaniya",
+    "title": "Обмеление Дуная и АЭС «Пакш»: как климат стал фактором проектирования станций",
+    "direction": "Проектирование и конструирование",
+    "kind": "news",
+    "cover_query": "dry river bed drought"
+  },
+  {
+    "slug": "zhara-snizhaet-moshchnost-aes-pochemu-tak-proishodit",
+    "title": "Жара снижает мощность АЭС: почему это происходит и как станции с этим справляются",
+    "direction": "Эксплуатация и ресурс",
+    "kind": "explainer",
+    "cover_query": "cooling tower steam summer"
+  },
+  {
+    "slug": "rosatom-na-vef-2026-chego-zhdat-podryadchikam-dalnego-vostoka",
+    "title": "«Росатом» на Восточном экономическом форуме: чего ждать подрядчикам Дальнего Востока",
+    "direction": "Отрасль и рынок",
+    "kind": "news",
+    "cover_query": "business forum exhibition hall"
+  },
+  {
+    "slug": "yadernyy-toplivnyy-cikl-prostymi-slovami",
+    "title": "Ядерный топливный цикл простыми словами: от урановой руды до захоронения отходов",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "uranium ore processing plant"
+  },
+  {
+    "slug": "oyat-pochemu-eto-ne-othody",
+    "title": "ОЯТ: почему отработавшее ядерное топливо в России не считают отходами",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "explainer",
+    "cover_query": "spent fuel pool blue water"
+  },
+  {
+    "slug": "pererabotka-otrabotavshego-topliva-kak-ustroena",
+    "title": "Переработка отработавшего ядерного топлива: как устроена и кто в ней участвует",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "explainer",
+    "cover_query": "nuclear reprocessing plant industrial"
+  },
+  {
+    "slug": "zamknutyy-cikl-i-proekt-proryv-chto-stroyat-v-severske",
+    "title": "Замкнутый топливный цикл и проект «Прорыв»: что строят в Северске и зачем",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "nuclear facility construction industrial"
+  },
+  {
+    "slug": "moks-toplivo-i-bystrye-reaktory",
+    "title": "МОКС-топливо и быстрые реакторы: зачем отрасли держать плутоний в обороте",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "nuclear fuel assembly rods"
+  },
+  {
+    "slug": "pgzro-kak-horonyat-vysokoaktivnye-othody",
+    "title": "Пункт глубинного захоронения: как в России собираются хоронить высокоактивные отходы",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "explainer",
+    "cover_query": "underground tunnel rock mine"
+  },
+  {
+    "slug": "transportnye-upakovochnye-komplekty-sertifikat-razreshenie",
+    "title": "Транспортные упаковочные комплекты: зачем нужен сертификат-разрешение и как его получают",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "shipping cask transport container"
+  },
+  {
+    "slug": "perevozka-oyat-i-yadernyh-materialov-kto-imeet-pravo",
+    "title": "Перевозка ОЯТ и ядерных материалов: кто имеет право и какие документы оформляются",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "guide",
+    "cover_query": "railway freight transport wagon"
+  },
+  {
+    "slug": "uchet-i-kontrol-yadernyh-materialov-trebovaniya",
+    "title": "Учёт и контроль ядерных материалов: требования к предприятию и что проверяет инспектор",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "guide",
+    "cover_query": "inventory control room monitors"
+  },
+  {
+    "slug": "kategorirovanie-yadernyh-materialov-ot-chego-zavisit-ohrana",
+    "title": "Категорирование ядерных материалов: от чего зависит уровень охраны объекта",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "guide",
+    "cover_query": "security fence barbed wire facility"
+  },
+  {
+    "slug": "perevod-yadernyh-materialov-v-rao-poryadok",
+    "title": "Перевод ядерных материалов в радиоактивные отходы: порядок, документы, частые ошибки",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "guide",
+    "cover_query": "radioactive waste container storage"
+  },
+  {
+    "slug": "fizicheskaya-zashchita-yadernyh-obektov-trebovaniya",
+    "title": "Физическая защита ядерных объектов: что требуется от эксплуатирующей организации",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "guide",
+    "cover_query": "security checkpoint gate industrial"
+  },
+  {
+    "slug": "antiterroristicheskaya-zashchishchennost-obektov-otrasli",
+    "title": "Антитеррористическая защищённость объектов атомной отрасли: категории и паспорт безопасности",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "guide",
+    "cover_query": "surveillance camera security perimeter"
+  },
+  {
+    "slug": "dopusk-k-gosudarstvennoy-tayne-v-atomnoy-otrasli",
+    "title": "Допуск к государственной тайне в атомной отрасли: кому нужен и сколько оформляется",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "classified documents folder stamp"
+  },
+  {
+    "slug": "rezhimnye-trebovaniya-v-zato-kak-rabotat-podryadchiku",
+    "title": "Режимные требования в ЗАТО: как подрядчику попасть на объект и не сорвать график работ",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "checkpoint barrier entrance town"
+  },
+  {
+    "slug": "sluzhba-bezopasnosti-na-yadernom-obekte",
+    "title": "Служба безопасности на ядерном объекте: структура, полномочия и взаимодействие с охраной",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "guide",
+    "cover_query": "control room security monitors"
+  },
+  {
+    "slug": "proverki-fizicheskoy-zashchity-chto-nahodyat-inspektory",
+    "title": "Проверки физической защиты: что находят инспекторы и какие нарушения повторяются чаще всего",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "list",
+    "cover_query": "security inspection facility perimeter"
+  },
+  {
+    "slug": "inzhenerno-tehnicheskie-sredstva-fizzashchity",
+    "title": "Инженерно-технические средства физической защиты: что входит в комплекс и как его проектируют",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "guide",
+    "cover_query": "perimeter fence sensors industrial"
+  },
+  {
+    "slug": "tehnicheskie-usloviya-na-oborudovanie-dlya-aes",
+    "title": "Технические условия на оборудование для АЭС: как разработать и с кем согласовать",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "technical drawings engineering desk"
+  },
+  {
+    "slug": "kvalifikaciya-oborudovaniya-na-seysmiku",
+    "title": "Квалификация оборудования на сейсмические воздействия: что это такое и кому она нужна",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "vibration test shaker laboratory"
+  },
+  {
+    "slug": "kvalifikaciya-oborudovaniya-na-avariynye-usloviya",
+    "title": "Квалификация оборудования на аварийные условия: испытания, которые проходит не всё",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "test chamber laboratory equipment"
+  },
+  {
+    "slug": "asu-tp-dlya-aes-trebovaniya-i-licenzirovanie",
+    "title": "АСУ ТП для АЭС: требования к системам управления и кому нужна лицензия",
+    "direction": "Проектирование и конструирование",
+    "kind": "guide",
+    "cover_query": "control room panels industrial automation"
+  },
+  {
+    "slug": "programmnoe-obespechenie-dlya-oiae-attestaciya",
+    "title": "Программное обеспечение для атомных объектов: аттестация, верификация и жизненный цикл",
+    "direction": "Проектирование и конструирование",
+    "kind": "guide",
+    "cover_query": "software code computer screen"
+  },
+  {
+    "slug": "kiberbezopasnost-asu-tp-na-atomnyh-obektah",
+    "title": "Кибербезопасность АСУ ТП на атомных объектах: требования и типичные пробелы",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "server rack network cables"
+  },
+  {
+    "slug": "importnoe-oborudovanie-na-aes-kak-podtverdit-sootvetstvie",
+    "title": "Импортное оборудование на АЭС: как подтвердить соответствие российским нормам",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "shipping containers port logistics"
+  },
+  {
+    "slug": "razreshenie-na-primenenie-oborudovaniya-nuzhno-li-seychas",
+    "title": "Разрешение на применение оборудования: нужно ли оно сейчас и чем его заменили",
+    "direction": "Изготовление оборудования",
+    "kind": "qa",
+    "cover_query": "industrial equipment nameplate label"
+  },
+  {
+    "slug": "golovnoy-obrazec-oborudovaniya-dlya-aes",
+    "title": "Головной образец оборудования для АЭС: как проходит приёмка и почему это так долго",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "prototype machinery factory floor"
+  },
+  {
+    "slug": "materialy-dlya-oborudovaniya-aes-dopushchennye-marki",
+    "title": "Материалы для оборудования АЭС: какие марки допущены и что делать, если нужной нет",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "steel samples metallurgy laboratory"
+  },
+  {
+    "slug": "additivnye-tehnologii-v-atomnoy-otrasli",
+    "title": "Аддитивные технологии в атомной отрасли: что уже печатают и как это подтверждают",
+    "direction": "Изготовление оборудования",
+    "kind": "explainer",
+    "cover_query": "metal 3d printer industrial"
+  },
+  {
+    "slug": "metrologiya-na-predpriyatii-atomnoy-otrasli",
+    "title": "Метрология на предприятии атомной отрасли: поверка, калибровка и что смотрит инспектор",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "calibration laboratory measurement instruments"
+  },
+  {
+    "slug": "prodlenie-sroka-ekspluatacii-energobloka",
+    "title": "Продление срока эксплуатации энергоблока: как станции добавляют себе двадцать лет жизни",
+    "direction": "Эксплуатация и ресурс",
+    "kind": "explainer",
+    "cover_query": "nuclear power plant turbine hall"
+  },
+  {
+    "slug": "upravlenie-stareniem-oborudovaniya-aes",
+    "title": "Управление старением оборудования: программа, которой нет у большинства предприятий",
+    "direction": "Эксплуатация и ресурс",
+    "kind": "guide",
+    "cover_query": "old industrial pipes corrosion"
+  },
+  {
+    "slug": "veroyatnostnyy-analiz-bezopasnosti-zachem-i-komu",
+    "title": "Вероятностный анализ безопасности: зачем считают вероятности аварий и кто это делает",
+    "direction": "Эксплуатация и ресурс",
+    "kind": "explainer",
+    "cover_query": "engineer computer analysis charts"
+  },
+  {
+    "slug": "otchet-po-obosnovaniyu-bezopasnosti-aes-struktura",
+    "title": "Отчёт по обоснованию безопасности АЭС: из чего состоит и кто его пишет",
+    "direction": "Эксплуатация и ресурс",
+    "kind": "guide",
+    "cover_query": "thick technical documents binders"
+  },
+  {
+    "slug": "otzhig-korpusa-reaktora-kak-vosstanavlivayut-metall",
+    "title": "Отжиг корпуса реактора: как металлу возвращают ресурс, не разбирая установку",
+    "direction": "Эксплуатация и ресурс",
+    "kind": "explainer",
+    "cover_query": "reactor vessel steel industrial"
+  },
+  {
+    "slug": "periodicheskaya-ocenka-bezopasnosti-bloka",
+    "title": "Периодическая оценка безопасности блока: зачем станцию пересматривают раз в десять лет",
+    "direction": "Эксплуатация и ресурс",
+    "kind": "guide",
+    "cover_query": "nuclear plant inspection engineers"
+  },
+  {
+    "slug": "narusheniya-v-rabote-aes-klassifikaciya-i-rassledovanie",
+    "title": "Нарушения в работе АЭС: как их классифицируют, расследуют и что попадает в отчётность",
+    "direction": "Эксплуатация и ресурс",
+    "kind": "guide",
+    "cover_query": "control room operators monitoring"
+  },
+  {
+    "slug": "shkala-ines-kak-ocenivayut-sereznost-sobytiy",
+    "title": "Шкала ИНЕС: как в мире оценивают серьёзность ядерных и радиационных событий",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "warning sign scale gauge"
+  },
+  {
+    "slug": "vyvod-aes-iz-ekspluatacii-tri-scenariya",
+    "title": "Вывод АЭС из эксплуатации: три сценария и почему это дольше, чем строительство",
+    "direction": "Эксплуатация и ресурс",
+    "kind": "explainer",
+    "cover_query": "decommissioned power plant demolition"
+  },
+  {
+    "slug": "ovos-dlya-obektov-atomnoy-energii",
+    "title": "ОВОС для объектов атомной энергии: из чего состоит и сколько времени занимает",
+    "direction": "Экология и общественность",
+    "kind": "guide",
+    "cover_query": "environmental assessment nature landscape"
+  },
+  {
+    "slug": "obshchestvennye-slushaniya-po-atomnomu-obektu",
+    "title": "Общественные слушания по атомному объекту: как проходят и как к ним готовиться",
+    "direction": "Экология и общественность",
+    "kind": "guide",
+    "cover_query": "public hearing audience hall"
+  },
+  {
+    "slug": "sanitarno-zashchitnaya-zona-i-zona-nablyudeniya",
+    "title": "Санитарно-защитная зона и зона наблюдения: чем отличаются и что в них разрешено",
+    "direction": "Экология и общественность",
+    "kind": "compare",
+    "cover_query": "fence field industrial boundary"
+  },
+  {
+    "slug": "radiacionnyy-monitoring-okruzhayushchey-sredy",
+    "title": "Радиационный мониторинг окружающей среды: кто и как следит за фоном вокруг объектов",
+    "direction": "Экология и общественность",
+    "kind": "explainer",
+    "cover_query": "environmental monitoring station field"
+  },
+  {
+    "slug": "normativy-vybrosov-i-sbrosov-radionuklidov",
+    "title": "Нормативы выбросов и сбросов радионуклидов: как считают допустимое и кто это проверяет",
+    "direction": "Экология и общественность",
+    "kind": "guide",
+    "cover_query": "industrial chimney emissions sky"
+  },
+  {
+    "slug": "ekologicheskiy-otchet-predpriyatiya-atomnoy-otrasli",
+    "title": "Экологический отчёт предприятия атомной отрасли: что раскрывают и зачем это нужно бизнесу",
+    "direction": "Экология и общественность",
+    "kind": "guide",
+    "cover_query": "report documents green nature"
+  },
+  {
+    "slug": "avariynaya-gotovnost-predpriyatiya-plan-meropriyatiy",
+    "title": "Аварийная готовность предприятия: план мероприятий по защите персонала и населения",
+    "direction": "Экология и общественность",
+    "kind": "guide",
+    "cover_query": "emergency response drill workers"
+  },
+  {
+    "slug": "informirovanie-naseleniya-o-radiacionnoy-obstanovke",
+    "title": "Информирование населения о радиационной обстановке: что предприятие обязано раскрывать",
+    "direction": "Экология и общественность",
+    "kind": "guide",
+    "cover_query": "public information board town"
+  },
+  {
+    "slug": "akkreditaciya-laboratorii-radiacionnogo-kontrolya",
+    "title": "Аккредитация лаборатории радиационного контроля: порядок, сроки и типичные причины отказа",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "laboratory technician instruments"
+  },
+  {
+    "slug": "oblast-akkreditacii-laboratorii-kak-sformulirovat",
+    "title": "Область аккредитации лаборатории: как сформулировать, чтобы не переделывать через год",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "laboratory documents certificate"
+  },
+  {
+    "slug": "mezhlaboratornye-sravnitelnye-ispytaniya",
+    "title": "Межлабораторные сравнительные испытания: зачем нужны и что бывает при плохом результате",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "laboratory samples comparison test"
+  },
+  {
+    "slug": "metodiki-izmereniy-v-radiacionnom-kontrole",
+    "title": "Методики измерений в радиационном контроле: где их брать и можно ли писать свои",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "measurement protocol laboratory desk"
+  },
+  {
+    "slug": "gamma-spektrometriya-kak-opredelyayut-nuklidy",
+    "title": "Гамма-спектрометрия: как по спектру понимают, какой именно нуклид перед вами",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "spectrometer laboratory equipment"
+  },
+  {
+    "slug": "otbor-prob-dlya-radiacionnogo-kontrolya-oshibki",
+    "title": "Отбор проб для радиационного контроля: ошибки, из-за которых результат ничего не значит",
+    "direction": "Радиационная безопасность",
+    "kind": "list",
+    "cover_query": "sampling soil field laboratory"
+  },
+  {
+    "slug": "poverka-dozimetrov-kak-chasto-i-chto-budet-bez-nee",
+    "title": "Поверка дозиметров: как часто она нужна и что будет, если её пропустить",
+    "direction": "Радиационная безопасность",
+    "kind": "qa",
+    "cover_query": "calibration instrument laboratory"
+  },
+  {
+    "slug": "vodorodnaya-energetika-rosatoma-rynok-dlya-podryadchikov",
+    "title": "Водородная энергетика «Росатома»: что строят и кому там найдётся работа",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "hydrogen plant industrial pipes"
+  },
+  {
+    "slug": "vetroenergetika-rosatoma-chto-eto-za-rynok",
+    "title": "Ветроэнергетика «Росатома»: что это за направление и кто в нём зарабатывает",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "wind turbines field landscape"
+  },
+  {
+    "slug": "nakopiteli-energii-i-litiy-novye-zavody-otrasli",
+    "title": "Накопители энергии и литий: новые заводы отрасли и требования к их поставщикам",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "battery production line factory"
+  },
+  {
+    "slug": "kompozity-v-atomnoy-otrasli-zachem-uglevolokno",
+    "title": "Композиты в атомной отрасли: зачем «Росатому» углеволокно и кто его производит",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "carbon fiber composite material"
+  },
+  {
+    "slug": "cifrovye-produkty-rosatoma-importozameshchenie-softa",
+    "title": "Цифровые продукты «Росатома»: импортозамещение инженерного программного обеспечения",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "engineering software computer workstation"
+  },
+  {
+    "slug": "severnyy-morskoy-put-i-atomnyy-flot-podryady",
+    "title": "Северный морской путь и атомный флот: где здесь подряды и какие допуски понадобятся",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "arctic icebreaker sea ice"
+  },
+  {
+    "slug": "malye-nazemnye-aes-gde-nachinaetsya-stroyka",
+    "title": "Малые наземные АЭС: Якутия и другие площадки, где стройка начинается прямо сейчас",
+    "direction": "Строительство и монтаж",
+    "kind": "explainer",
+    "cover_query": "remote arctic settlement construction"
+  },
+  {
+    "slug": "suhie-gradirni-i-stancii-v-malovodnyh-regionah",
+    "title": "Сухие градирни и станции в маловодных регионах: инженерный ответ на дефицит воды",
+    "direction": "Проектирование и конструирование",
+    "kind": "explainer",
+    "cover_query": "cooling tower dry air industrial"
+  },
+  {
+    "slug": "kak-chitat-usloviya-deystviya-licenzii",
+    "title": "Как читать условия действия лицензии: где спрятаны обязанности, о которых потом забывают",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "reading document magnifier desk"
+  },
+  {
+    "slug": "izmenenie-usloviy-deystviya-licenzii-kogda-trebuetsya",
+    "title": "Изменение условий действия лицензии: когда требуется и как это оформляется",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "document revision pen paper"
+  },
+  {
+    "slug": "licenziya-na-razmeshchenie-i-na-sooruzhenie-v-chem-raznica",
+    "title": "Лицензия на размещение и лицензия на сооружение: в чём разница и что идёт первым",
+    "direction": "Лицензирование",
+    "kind": "compare",
+    "cover_query": "construction site preparation earthworks"
+  },
+  {
+    "slug": "zhiznennyy-cikl-atomnogo-obekta-i-licenzii-na-kazhdom-etape",
+    "title": "Жизненный цикл атомного объекта: какая лицензия нужна на каждом из шести этапов",
+    "direction": "Лицензирование",
+    "kind": "explainer",
+    "cover_query": "nuclear plant aerial panorama"
+  },
+  {
+    "slug": "ekspluatiruyushchaya-organizaciya-kto-eto-i-kak-eyu-stat",
+    "title": "Эксплуатирующая организация: кто это по закону и как организация ею становится",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "office building corporate entrance"
+  },
+  {
+    "slug": "priznanie-organizacii-prigodnoy-ekspluatirovat-obekt",
+    "title": "Признание организации пригодной эксплуатировать объект: процедура, о которой мало кто знает",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "official document seal signature"
+  },
+  {
+    "slug": "licenziya-na-obrashchenie-s-yadernymi-materialami",
+    "title": "Лицензия на обращение с ядерными материалами: чем отличается от лицензии на источники",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "compare",
+    "cover_query": "nuclear material container facility"
+  },
+  {
+    "slug": "strahovanie-yadernogo-ushcherba-zachem-licenziatu-polis",
+    "title": "Страхование ядерного ущерба: зачем лицензиату полис и от чего зависит его цена",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "insurance policy document desk"
+  },
+  {
+    "slug": "finansovoe-obespechenie-deyatelnosti-licenziata",
+    "title": "Финансовое обеспечение деятельности лицензиата: что подтверждать и какими документами",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "financial documents calculator office"
+  },
+  {
+    "slug": "dokumenty-obosnovyvayushchie-bezopasnost-po-vidam-deyatelnosti",
+    "title": "Документы, обосновывающие безопасность: почему перечень разный для разных видов деятельности",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "document stack office shelves"
+  },
+  {
+    "slug": "profstandarty-v-atomnoy-otrasli-kak-primenyat",
+    "title": "Профстандарты в атомной отрасли: как применять при приёме на работу и при аттестации",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "human resources documents office"
+  },
+  {
+    "slug": "nastavnichestvo-i-kadrovyy-rezerv-na-predpriyatii",
+    "title": "Наставничество и кадровый резерв: как предприятию не потерять компетенции с уходом людей",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "mentor teaching worker industrial"
+  },
+  {
+    "slug": "chto-takoe-zato-i-kak-ustroeny-atomnye-goroda",
+    "title": "Что такое ЗАТО: как устроены закрытые атомные города и кто может туда переехать",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "small town street buildings"
+  },
+  {
+    "slug": "rabota-vahtoy-na-atomnyh-obektah",
+    "title": "Работа вахтой на атомных объектах: как оформляется и чем отличается от обычной",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "workers dormitory camp industrial"
+  },
+  {
+    "slug": "radiacionnaya-sterilizaciya-medizdeliy-trebovaniya",
+    "title": "Радиационная стерилизация медизделий: как устроено производство и что требует регулятор",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "medical devices sterile packaging production"
+  },
+  {
+    "slug": "obluchenie-produktov-pitaniya-chto-eto-i-zakonno-li",
+    "title": "Облучение продуктов питания: что это такое, законно ли в России и как лицензируется",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "food processing conveyor factory"
+  },
+  {
+    "slug": "radiacionnaya-modifikaciya-polimerov-i-kabeley",
+    "title": "Радиационная модификация полимеров: зачем кабели и трубы облучают на ускорителях",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "cable production line factory"
+  },
+  {
+    "slug": "neytralizatory-staticheskogo-elektrichestva-s-istochnikami",
+    "title": "Нейтрализаторы статического электричества с источниками: нужна ли на них лицензия",
+    "direction": "Радиационные источники",
+    "kind": "qa",
+    "cover_query": "industrial printing press machine"
+  },
+  {
+    "slug": "tolshchinomery-v-prokatnom-proizvodstve-istochniki",
+    "title": "Толщиномеры в прокатном производстве: радиоизотопные приборы, о которых забывают на заводе",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "steel rolling mill production"
+  },
+  {
+    "slug": "riteg-radioizotopnye-generatory-nasledie-i-utilizaciya",
+    "title": "РИТЭГи: радиоизотопные генераторы на маяках, их поиск и утилизация",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "story",
+    "cover_query": "lighthouse coast remote"
+  },
+  {
+    "slug": "rentgenofluorescentnyy-analiz-nuzhna-li-licenziya",
+    "title": "Рентгенофлуоресцентный анализ: нужна ли лицензия на анализатор состава сплавов",
+    "direction": "Радиационные источники",
+    "kind": "qa",
+    "cover_query": "xrf analyzer metal testing"
+  },
+  {
+    "slug": "neytronno-aktivacionnyy-analiz-gde-primenyaetsya",
+    "title": "Нейтронно-активационный анализ: где применяется и какие разрешения нужны лаборатории",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "neutron laboratory research equipment"
+  },
+  {
+    "slug": "radiouglerodnyy-analiz-kak-datiruyut-nahodki",
+    "title": "Радиоуглеродный анализ: как по углероду-14 определяют возраст находок",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "archaeology excavation artifacts"
+  },
+  {
+    "slug": "pet-centry-i-ciklotrony-trebovaniya-k-zapusku",
+    "title": "ПЭТ-центры и циклотроны: что нужно оформить, чтобы запустить производство радиофармпрепаратов",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "cyclotron medical facility"
+  },
+  {
+    "slug": "protonnaya-terapiya-v-rossii-kak-ustroena",
+    "title": "Протонная терапия: как устроены центры и какие разрешения нужны для их работы",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "proton therapy medical equipment"
+  },
+  {
+    "slug": "radioyodterapiya-trebovaniya-k-otdeleniyu",
+    "title": "Радиойодтерапия: требования к отделению, палатам и обращению с отходами",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "hospital ward medical room"
+  },
+  {
+    "slug": "brahiterapiya-istochniki-i-uchet-v-klinike",
+    "title": "Брахитерапия: как в клинике учитывают источники и что проверяет надзор",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "medical treatment room equipment"
+  },
+  {
+    "slug": "radiacionnaya-defektoskopiya-betona-i-konstrukciy",
+    "title": "Радиационный контроль бетона и конструкций: когда просвечивают здания и чем это регулируется",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "concrete structure construction inspection"
+  },
+  {
+    "slug": "istochniki-v-agropromyshlennom-komplekse",
+    "title": "Источники излучения в агропромышленном комплексе: обеззараживание, селекция, контроль",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "agriculture grain harvest field"
+  },
+  {
+    "slug": "pozharnye-izveshchateli-s-am-241-chto-s-nimi-delat",
+    "title": "Дымовые извещатели с америцием-241: нужна ли лицензия и куда девать старые",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "qa",
+    "cover_query": "smoke detector ceiling building"
+  },
+  {
+    "slug": "sanitarnyy-pasport-na-rabotu-s-istochnikami",
+    "title": "Санитарный паспорт на право работ с источниками: зачем нужен и как оформляется",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "official document stamp certificate"
+  },
+  {
+    "slug": "instrukciya-po-radiacionnoy-bezopasnosti-chto-v-ney-pisat",
+    "title": "Инструкция по радиационной безопасности: что в ней должно быть, чтобы её приняли",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "safety manual document desk"
+  },
+  {
+    "slug": "programma-proizvodstvennogo-kontrolya-radiacionnoy-bezopasnosti",
+    "title": "Программа производственного контроля радиационной безопасности: структура и частые ошибки",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "monitoring equipment industrial control"
+  },
+  {
+    "slug": "kontrolnye-urovni-kak-ustanovit-i-obosnovat",
+    "title": "Контрольные уровни: как их установить, обосновать и что делать при превышении",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "measurement gauge dial instrument"
+  },
+  {
+    "slug": "prikazy-po-radiacionnoy-bezopasnosti-kakie-nuzhny",
+    "title": "Приказы по радиационной безопасности: полный список того, что должно лежать в папке",
+    "direction": "Радиационная безопасность",
+    "kind": "list",
+    "cover_query": "office documents folder signature"
+  },
+  {
+    "slug": "zhurnaly-po-radiacionnoy-bezopasnosti-kakie-vesti",
+    "title": "Журналы по радиационной безопасности: какие вести, как заполнять и сколько хранить",
+    "direction": "Радиационная безопасность",
+    "kind": "list",
+    "cover_query": "logbook records handwriting desk"
+  },
+  {
+    "slug": "rassledovanie-radiacionnoy-avarii-na-predpriyatii",
+    "title": "Расследование радиационной аварии на предприятии: порядок действий и состав комиссии",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "emergency response team equipment"
+  },
+  {
+    "slug": "reglament-tehobsluzhivaniya-ustanovok-s-istochnikami",
+    "title": "Регламент технического обслуживания установок с источниками: что писать и как соблюдать",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "maintenance technician industrial equipment"
+  },
+  {
+    "slug": "akt-vvoda-v-ekspluataciyu-pomeshcheniya-s-istochnikom",
+    "title": "Ввод в эксплуатацию помещения с источником: измерения, акты и кто их подписывает",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "empty industrial room interior"
+  },
+  {
+    "slug": "dokumenty-pri-smene-adresa-raboty-s-istochnikami",
+    "title": "Переезд лаборатории с источниками: какие документы переоформлять и в каком порядке",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "moving boxes office relocation"
+  },
+  {
+    "slug": "betonirovanie-na-atomnoy-stroyke-osobennosti",
+    "title": "Бетонирование на атомной стройке: почему крупные заливки готовят месяцами",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "concrete pouring construction site"
+  },
+  {
+    "slug": "armaturnye-raboty-i-mehanicheskie-soedineniya-na-aes",
+    "title": "Арматурные работы на АЭС: механические соединения, контроль и исполнительная документация",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "rebar reinforcement construction"
+  },
+  {
+    "slug": "zashchitnaya-obolochka-aes-kak-ee-stroyat",
+    "title": "Защитная оболочка энергоблока: как её строят и что контролируют на каждом этапе",
+    "direction": "Строительство и монтаж",
+    "kind": "explainer",
+    "cover_query": "containment dome nuclear construction"
+  },
+  {
+    "slug": "montazh-tyazhelovesnogo-oborudovaniya-na-aes",
+    "title": "Монтаж тяжеловесного оборудования на АЭС: такелаж, краны и цена одной ошибки",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "heavy lift crane industrial"
+  },
+  {
+    "slug": "elektromontazh-na-aes-kabelnye-trassy-i-trebovaniya",
+    "title": "Электромонтаж на АЭС: кабельные трассы, разделение каналов и требования к материалам",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "electrical cables industrial installation"
+  },
+  {
+    "slug": "specventilyaciya-na-yadernom-obekte-montazh-i-ispytaniya",
+    "title": "Спецвентиляция на ядерном объекте: монтаж, испытания и почему её проверяют отдельно",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "ventilation ducts industrial building"
+  },
+  {
+    "slug": "teplovaya-izolyaciya-i-antikorroziynaya-zashchita-na-aes",
+    "title": "Тепловая изоляция и антикоррозионная защита на АЭС: требования и приёмка",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "pipe insulation industrial plant"
+  },
+  {
+    "slug": "geodezicheskoe-soprovozhdenie-atomnoy-stroyki",
+    "title": "Геодезическое сопровождение атомной стройки: допуски, которых нет в обычном строительстве",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "surveyor equipment construction site"
+  },
+  {
+    "slug": "stroitelnyy-kontrol-na-oiae-kto-i-chto-proveryaet",
+    "title": "Строительный контроль на атомном объекте: кто и что проверяет на каждом этапе",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "construction inspection workers site"
+  },
+  {
+    "slug": "konservaciya-nezavershennogo-stroitelstva-na-oiae",
+    "title": "Консервация недостроенного атомного объекта: как это оформляется и во что обходится",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "abandoned construction site concrete"
+  },
+  {
+    "slug": "vhodnoy-kontrol-na-stroyploshchadke-aes",
+    "title": "Входной контроль на стройплощадке АЭС: что проверяют у каждой партии материалов",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "construction materials delivery site"
+  },
+  {
+    "slug": "svarka-na-montazhe-otlichiya-ot-zavodskoy",
+    "title": "Сварка на монтаже: чем работа на площадке сложнее заводской и как это учитывать",
+    "direction": "Строительство и монтаж",
+    "kind": "compare",
+    "cover_query": "welding pipeline field work"
+  },
+  {
+    "slug": "kompanovka-i-genplan-atomnoy-stancii",
+    "title": "Компоновка и генплан атомной станции: почему здания стоят именно так",
+    "direction": "Проектирование и конструирование",
+    "kind": "explainer",
+    "cover_query": "architectural site plan drawing"
+  },
+  {
+    "slug": "raschet-na-prochnost-oborudovaniya-aes",
+    "title": "Расчёт на прочность оборудования АЭС: нормы, программы и кто проверяет результат",
+    "direction": "Проектирование и конструирование",
+    "kind": "guide",
+    "cover_query": "engineering calculation computer analysis"
+  },
+  {
+    "slug": "bim-v-atomnom-proektirovanii-chto-uzhe-rabotaet",
+    "title": "BIM в атомном проектировании: что уже работает и как это принимает заказчик",
+    "direction": "Проектирование и конструирование",
+    "kind": "explainer",
+    "cover_query": "3d building model computer design"
+  },
+  {
+    "slug": "avtorskiy-nadzor-na-atomnom-obekte",
+    "title": "Авторский надзор на атомном объекте: полномочия проектировщика и журнал, который читают",
+    "direction": "Проектирование и конструирование",
+    "kind": "guide",
+    "cover_query": "engineer site visit drawings"
+  },
+  {
+    "slug": "proektnaya-i-rabochaya-dokumentaciya-v-chem-raznica",
+    "title": "Проектная и рабочая документация: в чём разница и почему их путают на атомных объектах",
+    "direction": "Проектирование и конструирование",
+    "kind": "compare",
+    "cover_query": "technical drawings blueprints desk"
+  },
+  {
+    "slug": "seysmichnost-ploshchadki-i-proektnye-zemletryaseniya",
+    "title": "Сейсмичность площадки: как определяют проектное и максимальное расчётное землетрясение",
+    "direction": "Проектирование и конструирование",
+    "kind": "explainer",
+    "cover_query": "seismograph geology equipment"
+  },
+  {
+    "slug": "vneshnie-vozdeystviya-na-aes-samolet-smerch-navodnenie",
+    "title": "Внешние воздействия на АЭС: как считают падение самолёта, смерч и наводнение",
+    "direction": "Проектирование и конструирование",
+    "kind": "explainer",
+    "cover_query": "storm clouds dramatic sky"
+  },
+  {
+    "slug": "printsip-glubokoeshelonirovannoy-zashchity",
+    "title": "Принцип глубокоэшелонированной защиты: почему у реактора несколько барьеров",
+    "direction": "Как работает АЭС",
+    "kind": "explainer",
+    "cover_query": "nuclear containment building interior"
+  },
+  {
+    "slug": "pokas-po-etapam-r-i-s-e-chto-eto-znachit",
+    "title": "ПОКАС Р, И, С и Э: почему программ обеспечения качества несколько и чем они отличаются",
+    "direction": "Нормы и правила",
+    "kind": "compare",
+    "cover_query": "quality documents management office"
+  },
+  {
+    "slug": "matrica-otvetstvennosti-v-programme-kachestva",
+    "title": "Матрица ответственности в программе обеспечения качества: как её построить",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "organization chart planning board"
+  },
+  {
+    "slug": "upravlenie-dokumentaciey-i-zapisyami-po-np-090-11",
+    "title": "Управление документацией и записями: требование, на котором сыпется каждая вторая проверка",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "document archive shelves office"
+  },
+  {
+    "slug": "analiz-sistemy-kachestva-so-storony-rukovodstva",
+    "title": "Анализ системы качества со стороны руководства: что это за отчёт и кто его читает",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "management meeting boardroom"
+  },
+  {
+    "slug": "audit-postavshchika-vtoroy-storonoy-kak-provodit",
+    "title": "Аудит поставщика второй стороной: как проверять подрядчика, пока не проверили вас",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "auditor factory inspection clipboard"
+  },
+  {
+    "slug": "obuchenie-po-obespecheniyu-kachestva-kogo-i-chemu",
+    "title": "Обучение по обеспечению качества: кого и чему учить, чтобы программа работала",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "training session workers classroom"
+  },
+  {
+    "slug": "korrektiruyushchie-i-preduprezhdayushchie-deystviya",
+    "title": "Корректирующие и предупреждающие действия: как отличить и как довести до результата",
+    "direction": "Нормы и правила",
+    "kind": "compare",
+    "cover_query": "problem solving whiteboard team"
+  },
+  {
+    "slug": "kak-vnedrit-programmu-kachestva-za-tri-mesyaca",
+    "title": "Как внедрить программу обеспечения качества за три месяца: реалистичный план",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "project timeline planning calendar"
+  },
+  {
+    "slug": "inspekcii-upolnomochennoy-organizacii-kak-prohodyat",
+    "title": "Инспекции уполномоченной организации: как проходят и чем отличаются от проверок надзора",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "inspector factory equipment check"
+  },
+  {
+    "slug": "stroitelnyy-nadzor-rostehnadzora-na-atomnom-obekte",
+    "title": "Строительный надзор Ростехнадзора на атомном объекте: программа проверок и итоговое заключение",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "construction supervision site inspection"
+  },
+  {
+    "slug": "zaklyuchenie-o-sootvetstvii-postroennogo-obekta",
+    "title": "Заключение о соответствии построенного объекта: чем оно отличается от обычной стройки",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "official document approval stamp"
+  },
+  {
+    "slug": "vvod-atomnogo-obekta-v-ekspluataciyu-etapy",
+    "title": "Ввод атомного объекта в эксплуатацию: от холодно-горячей обкатки до промышленной эксплуатации",
+    "direction": "Эксплуатация и ресурс",
+    "kind": "explainer",
+    "cover_query": "nuclear plant commissioning control"
+  },
+  {
+    "slug": "fizicheskiy-pusk-i-energeticheskiy-pusk-v-chem-raznica",
+    "title": "Физический пуск и энергетический пуск: в чём разница и что происходит между ними",
+    "direction": "Как работает АЭС",
+    "kind": "compare",
+    "cover_query": "reactor startup control panel"
+  },
+  {
+    "slug": "priemka-rabot-zakazchikom-na-aes-chto-gotovit",
+    "title": "Приёмка работ заказчиком на АЭС: какой комплект готовить, чтобы подписали с первого раза",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "documents handover meeting site"
+  },
+  {
+    "slug": "dogovor-podryada-na-atomnom-obekte-osobennosti",
+    "title": "Договор подряда на атомном объекте: условия, которых нет в обычном строительстве",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "contract signing business documents"
+  },
+  {
+    "slug": "garantiynye-obyazatelstva-na-oborudovanie-dlya-aes",
+    "title": "Гарантийные обязательства на оборудование для АЭС: сроки, объём и как их считают",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "warranty document equipment industrial"
+  },
+  {
+    "slug": "subpodryad-na-atomnom-obekte-kak-oformlyat",
+    "title": "Субподряд на атомном объекте: как оформлять, чтобы не лишиться договора",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "construction workers team site"
+  },
+  {
+    "slug": "bankovskie-garantii-v-atomnyh-zakupkah",
+    "title": "Банковские гарантии в атомных закупках: зачем нужны и сколько стоят",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "bank building finance documents"
+  },
+  {
+    "slug": "antidemping-v-zakupkah-chem-opasna-nizkaya-cena",
+    "title": "Антидемпинг в закупках: чем опасна слишком низкая цена и что придётся доказывать",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "auction bidding price chart"
+  },
+  {
+    "slug": "obzhalovanie-zakupki-v-fas-kak-i-kogda",
+    "title": "Обжалование закупки в ФАС: когда есть смысл жаловаться и как это делают",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "legal complaint documents office"
+  },
+  {
+    "slug": "reestr-nedobrosovestnyh-postavshchikov-kak-ne-popast",
+    "title": "Реестр недобросовестных поставщиков: как туда попадают и почему это конец атомных заказов",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "blacklist documents warning"
+  },
+  {
+    "slug": "nacionalnyy-rezhim-v-zakupkah-i-rossiyskoe-proishozhdenie",
+    "title": "Национальный режим в закупках: как подтвердить российское происхождение продукции",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "made in russia production factory"
+  },
+  {
+    "slug": "kvalifikaciya-postavshchika-v-zakupkah-rosatoma",
+    "title": "Квалификация поставщика в закупках отрасли: что проверяют и как подготовить пакет",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "supplier evaluation documents office"
+  },
+  {
+    "slug": "pretenzionnaya-rabota-po-atomnym-kontraktam",
+    "title": "Претензионная работа по атомным контрактам: как отвечать на претензию и как её заявлять",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "legal correspondence letter desk"
+  },
+  {
+    "slug": "kak-schitat-sebestoimost-atomnogo-zakaza",
+    "title": "Как считать себестоимость атомного заказа: скрытые издержки, которые съедают маржу",
+    "direction": "Закупки и договоры",
+    "kind": "money",
+    "cover_query": "calculator financial documents"
+  },
+  {
+    "slug": "epc-kontrakty-v-atomnoy-otrasli-chto-eto",
+    "title": "EPC-контракты в атомной отрасли: что это за модель и кто в ней несёт риски",
+    "direction": "Закупки и договоры",
+    "kind": "explainer",
+    "cover_query": "project management construction planning"
+  },
+  {
+    "slug": "konvenciya-o-yadernoy-bezopasnosti-chto-ona-daet",
+    "title": "Конвенция о ядерной безопасности: что она требует от стран и как это доходит до предприятий",
+    "direction": "Нормы и правила",
+    "kind": "explainer",
+    "cover_query": "international treaty signing hall"
+  },
+  {
+    "slug": "obedinennaya-konvenciya-po-oyat-i-rao",
+    "title": "Объединённая конвенция по ОЯТ и радиоактивным отходам: обязательства и отчётность России",
+    "direction": "Нормы и правила",
+    "kind": "explainer",
+    "cover_query": "international conference meeting hall"
+  },
+  {
+    "slug": "venskaya-konvenciya-o-grazhdanskoy-otvetstvennosti",
+    "title": "Венская конвенция о гражданской ответственности за ядерный ущерб: как работает",
+    "direction": "Нормы и правила",
+    "kind": "explainer",
+    "cover_query": "legal books international law"
+  },
+  {
+    "slug": "garantii-magate-i-dogovor-o-nerasprostranenii",
+    "title": "Гарантии МАГАТЭ и договор о нераспространении: что проверяют инспекторы агентства",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "explainer",
+    "cover_query": "IAEA inspector nuclear facility"
+  },
+  {
+    "slug": "eksportnyy-kontrol-yadernyh-tovarov-i-tehnologiy",
+    "title": "Экспортный контроль ядерных товаров и технологий: списки, лицензии и ответственность",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "guide",
+    "cover_query": "customs export cargo documents"
+  },
+  {
+    "slug": "gruppa-yadernyh-postavshchikov-i-kontrolnye-spiski",
+    "title": "Группа ядерных поставщиков и контрольные списки: что нельзя вывезти без разрешения",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "explainer",
+    "cover_query": "cargo ship containers export"
+  },
+  {
+    "slug": "tovary-dvoynogo-naznacheniya-v-atomnoy-otrasli",
+    "title": "Товары двойного назначения в атомной отрасли: как понять, что ваша продукция под контролем",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "guide",
+    "cover_query": "industrial equipment shipping crate"
+  },
+  {
+    "slug": "vnutrifirmennaya-programma-eksportnogo-kontrolya",
+    "title": "Внутрифирменная программа экспортного контроля: зачем нужна и как её ставят",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "guide",
+    "cover_query": "compliance documents office desk"
+  },
+  {
+    "slug": "protivoavariynye-trenirovki-na-predpriyatii",
+    "title": "Противоаварийные тренировки: как их проводят и что записывают в журнал",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "emergency drill training workers"
+  },
+  {
+    "slug": "polnomasshtabnyy-trenazher-kak-gotovyat-operatorov",
+    "title": "Полномасштабный тренажёр: как готовят операторов блочного щита управления",
+    "direction": "Персонал и разрешения",
+    "kind": "explainer",
+    "cover_query": "simulator control room training"
+  },
+  {
+    "slug": "stazhirovka-i-dublirovanie-pered-dopuskom",
+    "title": "Стажировка и дублирование: как работника допускают к самостоятельной работе",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "mentor trainee industrial workplace"
+  },
+  {
+    "slug": "komissiya-po-proverke-znaniy-kak-sformirovat",
+    "title": "Комиссия по проверке знаний: как её сформировать и как оформлять протоколы",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "examination committee documents"
+  },
+  {
+    "slug": "periodicheskaya-proverka-znaniy-sroki-i-posledstviya",
+    "title": "Периодическая проверка знаний: сроки, порядок и что бывает при просрочке",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "written exam test papers"
+  },
+  {
+    "slug": "otstranenie-rabotnika-ot-raboty-s-istochnikami",
+    "title": "Отстранение работника от работ с источниками: основания и как оформить без спора",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "office hr meeting documents"
+  },
+  {
+    "slug": "kak-rabotaet-reaktor-vver-prostymi-slovami",
+    "title": "Как работает реактор ВВЭР: от таблетки урана до электричества в розетке",
+    "direction": "Как работает АЭС",
+    "kind": "explainer",
+    "cover_query": "nuclear reactor vessel diagram model"
+  },
+  {
+    "slug": "chem-rbmk-otlichaetsya-ot-vver",
+    "title": "Чем РБМК отличается от ВВЭР: два типа реакторов и почему строят только один",
+    "direction": "Как работает АЭС",
+    "kind": "compare",
+    "cover_query": "nuclear reactor hall industrial"
+  },
+  {
+    "slug": "chto-vnutri-teplovydelyayushchey-sborki",
+    "title": "Что внутри тепловыделяющей сборки: как устроено ядерное топливо",
+    "direction": "Как работает АЭС",
+    "kind": "explainer",
+    "cover_query": "fuel assembly nuclear rods"
+  },
+  {
+    "slug": "aktivnaya-zona-reaktora-kak-ona-ustroena",
+    "title": "Активная зона реактора: как она устроена и что в ней происходит каждую секунду",
+    "direction": "Как работает АЭС",
+    "kind": "explainer",
+    "cover_query": "reactor core fuel loading"
+  },
+  {
+    "slug": "zachem-bor-v-vode-pervogo-kontura",
+    "title": "Зачем бор в воде первого контура: химия, которая управляет реактором",
+    "direction": "Как работает АЭС",
+    "kind": "explainer",
+    "cover_query": "water chemistry laboratory sample"
+  },
+  {
+    "slug": "tri-kontura-aes-pochemu-voda-ne-smeshivaetsya",
+    "title": "Три контура АЭС: почему вода из реактора никогда не попадает в реку",
+    "direction": "Как работает АЭС",
+    "kind": "explainer",
+    "cover_query": "power plant piping systems"
+  },
+  {
+    "slug": "pochemu-aes-ne-mozhet-vzorvatsya-kak-bomba",
+    "title": "Почему АЭС не может взорваться как атомная бомба: физика вместо страшилок",
+    "direction": "Как работает АЭС",
+    "kind": "explainer",
+    "cover_query": "nuclear power plant landscape"
+  },
+  {
+    "slug": "ostatochnoe-teplovydelenie-pochemu-reaktor-ne-vyklyuchaetsya",
+    "title": "Остаточное тепловыделение: почему остановленный реактор всё равно нужно охлаждать",
+    "direction": "Как работает АЭС",
+    "kind": "explainer",
+    "cover_query": "cooling system pipes industrial"
+  },
+  {
+    "slug": "ksenonovoe-otravlenie-reaktora-chto-eto",
+    "title": "Ксеноновая яма: почему реактор нельзя просто взять и снова запустить",
+    "direction": "Как работает АЭС",
+    "kind": "explainer",
+    "cover_query": "control room instruments panel"
+  },
+  {
+    "slug": "sistemy-bezopasnosti-aes-aktivnye-i-passivnye",
+    "title": "Системы безопасности АЭС: чем активные отличаются от пассивных",
+    "direction": "Как работает АЭС",
+    "kind": "compare",
+    "cover_query": "safety systems industrial valves"
+  },
+  {
+    "slug": "skolko-urana-nuzhno-blokapu-na-god-raboty",
+    "title": "Сколько урана нужно энергоблоку на год работы и сколько это в вагонах угля",
+    "direction": "Как работает АЭС",
+    "kind": "explainer",
+    "cover_query": "uranium pellet fuel comparison"
+  },
+  {
+    "slug": "pochemu-atomnaya-energiya-nizkouglerodnaya",
+    "title": "Почему атомную энергию считают низкоуглеродной: разбор аргументов сторон",
+    "direction": "Как работает АЭС",
+    "kind": "explainer",
+    "cover_query": "power plant emissions climate"
+  },
+  {
+    "slug": "aes-i-vie-konkurenty-ili-soyuzniki",
+    "title": "АЭС и возобновляемая энергетика: конкуренты или союзники в энергосистеме",
+    "direction": "Как работает АЭС",
+    "kind": "compare",
+    "cover_query": "wind turbines power plant landscape"
+  },
+  {
+    "slug": "peregruzka-topliva-na-aes-kak-eto-proishodit",
+    "title": "Перегрузка топлива на АЭС: как меняют топливо в работающем блоке",
+    "direction": "Как работает АЭС",
+    "kind": "explainer",
+    "cover_query": "refueling machine reactor hall"
   }
 ]
