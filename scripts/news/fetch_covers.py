@@ -77,10 +77,25 @@ FALLBACK_QUERIES = {
     "Изготовление оборудования": ["heavy industry factory workshop", "steel pressure vessel manufacturing", "industrial valves pipes"],
     "Проектирование и конструирование": ["engineers blueprint office", "cad engineering design", "nuclear plant construction"],
     "Строительство и монтаж": ["construction site cranes", "industrial construction workers", "nuclear plant construction site"],
-    "Радиационные источники": ["radiation warning sign", "industrial radiography", "laboratory instruments"],
+    "Радиационные источники": ["industrial radiography camera", "radiation measurement instrument", "nuclear laboratory equipment"],
     "Обращение с РВ и РАО": ["radioactive waste storage", "industrial containers warehouse", "hazardous cargo transport"],
     "Персонал и разрешения": ["engineers hard hats plant", "industrial training class", "control room operators"],
+    "Радиационная безопасность": ["radiation protection worker", "dosimeter radiation measurement", "radiation warning sign"],
+    "Проверки и ответственность": ["inspection industrial plant", "nuclear regulatory inspection", "office documents inspection"],
+    "Отрасль и рынок": ["nuclear power plant", "nuclear power station reactor", "nuclear industry facility"],
+    "Ядерные материалы и физзащита": ["nuclear material container", "security fence nuclear facility", "nuclear safeguards inspection"],
+    "Эксплуатация и ресурс": ["nuclear power plant turbine hall", "industrial maintenance workers", "power plant equipment"],
+    "Экология и общественность": ["environmental monitoring sampling", "nuclear power plant landscape", "river nature power plant"],
+    "Закупки и договоры": ["contract documents signing office", "business meeting documents", "office desk paperwork"],
+    "Как работает АЭС": ["nuclear reactor hall", "nuclear power plant control room", "nuclear fuel assembly"],
 }
+
+LAST_QUERIES = [
+    "nuclear power plant",
+    "nuclear power station",
+    "nuclear reactor building",
+    "industrial plant equipment",
+]
 
 
 def strip_html(text: str) -> str:
@@ -98,6 +113,16 @@ def has_stop_word(title: str, author: str = "") -> bool:
     lowered_author = author.lower()
 
     return any(word in lowered_author for word in STOP_AUTHORS)
+
+
+def query_words(query: str) -> list[str]:
+    return [word for word in re.findall(r"[a-z]+", query.lower()) if len(word) >= 4]
+
+
+def title_hits(title: str, words: list[str]) -> int:
+    lowered = title.lower()
+
+    return sum(1 for word in words if word in lowered or word.rstrip("s") in lowered)
 
 
 def good_shape(width: int, height: int) -> bool:
@@ -191,11 +216,16 @@ def search_commons(query: str) -> list[dict]:
     response.raise_for_status()
     pages = response.json().get("query", {}).get("pages", {}).values()
 
+    words = query_words(query)
     candidates = []
 
     for page in pages:
         title = page.get("title", "")
         if has_stop_word(title):
+            continue
+
+        hits = title_hits(title, words)
+        if hits < min(2, len(words)):
             continue
 
         infos = page.get("imageinfo") or []
@@ -225,7 +255,7 @@ def search_commons(query: str) -> list[dict]:
 
         candidates.append(
             {
-                "score": page.get("index", 50) + penalty,
+                "score": page.get("index", 50) + penalty - 20 * hits,
                 "title": title,
                 "url": info.get("thumburl") or info.get("url"),
                 "source": info.get("descriptionurl"),
@@ -276,11 +306,27 @@ def download_cover(url: str, target: Path) -> bool:
     return True
 
 
+def expand_queries(queries: list[str]) -> list[str]:
+    expanded: list[str] = []
+
+    for query in queries:
+        words = query_words(query)
+        variants = [query]
+        if len(words) > 2:
+            variants.append(" ".join(words[:2]))
+            variants.append(" ".join(words[-2:]))
+        for variant in variants:
+            if variant and variant not in expanded:
+                expanded.append(variant)
+
+    return expanded
+
+
 def find_cover(queries: list[str], used_urls: set[str], target: Path, commons_only: bool = False) -> dict | None:
     searches = (search_commons,) if commons_only else (search_openverse, search_commons)
 
     for search in searches:
-        for query in queries:
+        for query in expand_queries(queries):
             if not query:
                 continue
 
@@ -302,7 +348,7 @@ def find_cover(queries: list[str], used_urls: set[str], target: Path, commons_on
                 if saved:
                     return candidate
 
-            time.sleep(3)
+            time.sleep(1)
 
     return None
 
@@ -353,7 +399,7 @@ def main() -> None:
             continue
 
         queries = overrides.get(slug, [item.get("cover_query", "")])
-        queries = queries + FALLBACK_QUERIES.get(item.get("direction", ""), [])
+        queries = queries + FALLBACK_QUERIES.get(item.get("direction", ""), []) + LAST_QUERIES
         chosen = find_cover(queries, used_urls, target, args.commons_only)
 
         if chosen is None:
@@ -375,7 +421,7 @@ def main() -> None:
         )
 
         print(f"[{index}/{len(plan)}] {slug}: {chosen['provider']}, {chosen['license']} — {chosen['title'][:70]}")
-        time.sleep(3)
+        time.sleep(1)
 
     missing = [item["slug"] for item in plan if item["slug"] not in credits]
     print(f"\nГотово: {len(plan) - len(missing)} обложек, без обложки: {len(missing)}")

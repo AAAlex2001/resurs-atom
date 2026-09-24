@@ -2798,5 +2798,2805 @@
     "direction": "Как работает АЭС",
     "kind": "explainer",
     "cover_query": "refueling machine reactor hall"
+  },
+  {
+    "slug": "kobalt-60-gde-primenyaetsya-i-kak-licenziruetsya",
+    "title": "Кобальт-60: где применяется, чем опасен и какие обязанности возникают у предприятия",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "gamma irradiator industrial facility"
+  },
+  {
+    "slug": "ceziy-137-pribory-riski-i-obyazannosti",
+    "title": "Цезий-137: приборы на вашем заводе, риски и обязанности владельца",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "industrial level gauge pipe"
+  },
+  {
+    "slug": "iridiy-192-samyy-chastyy-istochnik-v-promyshlennosti",
+    "title": "Иридий-192: почему это самый частый промышленный источник и что с ним не так",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "industrial radiography pipe weld"
+  },
+  {
+    "slug": "americiy-241-ot-izveshchateley-do-vlagomerov",
+    "title": "Америций-241: от дымовых извещателей до влагомеров и нейтронных источников",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "smoke detector device ceiling"
+  },
+  {
+    "slug": "stronciy-90-gde-vstrechaetsya-i-chem-opasen",
+    "title": "Стронций-90: где встречается на производстве и почему его боятся медики",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "laboratory radiation source container"
+  },
+  {
+    "slug": "radiy-226-staroe-nasledie-v-priborah",
+    "title": "Радий-226: старое наследие в приборах и что с ним делать сегодня",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "story",
+    "cover_query": "vintage instrument dial glowing"
+  },
+  {
+    "slug": "kripton-85-v-tolshchinomerah-i-neytralizatorah",
+    "title": "Криптон-85: где применяется газообразный источник и чем он неудобен",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "thickness gauge industrial line"
+  },
+  {
+    "slug": "nikel-63-v-detektorah-i-hromatografah",
+    "title": "Никель-63: источник внутри хроматографа, о котором не знает лаборатория",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "gas chromatograph laboratory"
+  },
+  {
+    "slug": "prometiy-147-i-beta-istochniki-v-priborah",
+    "title": "Прометий-147 и другие бета-источники в измерительных приборах",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "measuring instrument industrial device"
+  },
+  {
+    "slug": "selen-75-kompaktnaya-alternativa-iridiyu",
+    "title": "Селен-75: компактная альтернатива иридию в дефектоскопии",
+    "direction": "Радиационные источники",
+    "kind": "compare",
+    "cover_query": "portable radiography equipment"
+  },
+  {
+    "slug": "itterbiy-169-dlya-tonkostennyh-izdeliy",
+    "title": "Иттербий-169: источник для контроля тонкостенных изделий",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "thin wall pipe inspection"
+  },
+  {
+    "slug": "tuliy-170-portativnaya-defektoskopiya",
+    "title": "Тулий-170: когда нужен совсем маленький источник",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "portable inspection device industrial"
+  },
+  {
+    "slug": "yod-125-v-brahiterapii-uchet-i-riski",
+    "title": "Йод-125 в брахитерапии: поштучный учёт и что бывает при потере семени",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "medical seed implant treatment"
+  },
+  {
+    "slug": "yod-131-v-medicine-i-obrashchenie-s-othodami",
+    "title": "Йод-131: лечение, палаты и отходы, которые нельзя просто слить",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "hospital isolation ward room"
+  },
+  {
+    "slug": "tehneciy-99m-samyy-massovyy-medicinskiy-nuklid",
+    "title": "Технеций-99m: самый массовый медицинский нуклид и его генератор",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "nuclear medicine scanner hospital"
+  },
+  {
+    "slug": "ftor-18-i-korotkozhivushchie-nuklidy-pet",
+    "title": "Фтор-18 и короткоживущие нуклиды: почему ПЭТ-центр строят рядом с циклотроном",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "PET scanner medical imaging"
+  },
+  {
+    "slug": "lyuteciy-177-radiofarmpreparaty-novogo-pokoleniya",
+    "title": "Лютеций-177: радиофармпрепараты нового поколения и требования к работе с ними",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "pharmaceutical vial laboratory"
+  },
+  {
+    "slug": "molibden-99-kak-ustroena-cepochka-postavok",
+    "title": "Молибден-99: как устроена мировая цепочка поставок медицинских изотопов",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "research reactor laboratory"
+  },
+  {
+    "slug": "plutoniy-238-istochniki-pitaniya-i-riteg",
+    "title": "Плутоний-238: источники питания для космоса и наследие РИТЭГов",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "explainer",
+    "cover_query": "space probe satellite model"
+  },
+  {
+    "slug": "kaliforniy-252-neytronnyy-istochnik-dlya-analiza",
+    "title": "Калифорний-252: нейтронный источник для анализа и его особый режим",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "neutron source laboratory shielding"
+  },
+  {
+    "slug": "tritiy-gde-vstrechaetsya-i-chem-reguliruetsya",
+    "title": "Тритий: светящиеся указатели, мишени и почему это не безобидно",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "emergency exit sign glowing"
+  },
+  {
+    "slug": "uglerod-14-v-nauke-i-promyshlennosti",
+    "title": "Углерод-14: от датирования до меченых соединений в лаборатории",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "laboratory research samples"
+  },
+  {
+    "slug": "prirodnyy-uran-kogda-on-stanovitsya-obektom-regulirovaniya",
+    "title": "Природный уран: когда обычное сырьё становится объектом атомного регулирования",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "explainer",
+    "cover_query": "uranium ore mineral sample"
+  },
+  {
+    "slug": "toriy-232-zabytyy-radionuklid-v-promyshlennosti",
+    "title": "Торий-232: забытый радионуклид в сплавах, оптике и сварочных электродах",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "explainer",
+    "cover_query": "welding electrodes industrial"
+  },
+  {
+    "slug": "radon-222-na-proizvodstve-a-ne-tolko-v-podvale",
+    "title": "Радон-222 на производстве: шахты, подземные сооружения и рабочие места",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "underground mine tunnel"
+  },
+  {
+    "slug": "poloniy-210-v-neytralizatorah-statiki",
+    "title": "Полоний-210 в нейтрализаторах статики: короткая жизнь и длинные обязанности",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "printing press industrial machine"
+  },
+  {
+    "slug": "zhelezo-55-i-kadmiy-109-v-rentgenofluorescencii",
+    "title": "Железо-55 и кадмий-109: источники внутри анализаторов состава",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "xrf analyzer handheld metal"
+  },
+  {
+    "slug": "bariy-133-i-evropiy-152-kontrolnye-istochniki",
+    "title": "Барий-133 и европий-152: контрольные источники, которые тоже нужно учитывать",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "calibration source laboratory"
+  },
+  {
+    "slug": "radiy-i-svetomassy-pochemu-staroe-oborudovanie-opasno",
+    "title": "Радий и светомассы: почему старые приборы на складе опаснее новых источников",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "story",
+    "cover_query": "vintage aircraft instruments panel"
+  },
+  {
+    "slug": "kak-chitat-pasport-istochnika",
+    "title": "Как читать паспорт источника: нуклид, активность, срок службы и что между строк",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "technical document certificate paper"
+  },
+  {
+    "slug": "gamma-defektoskop-ustroystvo-i-obyazannosti-vladelca",
+    "title": "Гамма-дефектоскоп: как устроен и какие обязанности появляются у владельца",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "gamma radiography camera device"
+  },
+  {
+    "slug": "rentgenovskiy-krouler-dlya-truboprovodov",
+    "title": "Рентгеновский кроулер для трубопроводов: техника, которая ездит внутри трубы",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "pipeline inspection crawler device"
+  },
+  {
+    "slug": "urovnemer-radioizotopnyy-kak-vybrat-i-oformit",
+    "title": "Радиоизотопный уровнемер: как выбрать, установить и оформить",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "industrial tank level measurement"
+  },
+  {
+    "slug": "plotnomer-na-truboprovode-chto-nuzhno-znat",
+    "title": "Плотномер на трубопроводе: что нужно знать до покупки",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "pipeline flow measurement industrial"
+  },
+  {
+    "slug": "vlagomer-neytronnyy-na-proizvodstve",
+    "title": "Нейтронный влагомер: где применяется и почему он строже обычного прибора",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "moisture measurement industrial process"
+  },
+  {
+    "slug": "tolshchinomer-izotopnyy-v-prokate",
+    "title": "Изотопный толщиномер в прокатном производстве: непрерывный контроль полосы",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "steel strip rolling mill"
+  },
+  {
+    "slug": "zolomer-i-analizator-uglya-na-tec",
+    "title": "Золомер и поточный анализатор угля: источники на тепловой станции",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "coal conveyor power plant"
+  },
+  {
+    "slug": "konveyernye-vesy-s-istochnikom",
+    "title": "Конвейерные весы с источником: измерение потока без остановки линии",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "conveyor belt industrial material"
+  },
+  {
+    "slug": "neytralizator-statiki-v-tipografii",
+    "title": "Нейтрализатор статики в типографии: маленький источник с полным набором обязанностей",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "printing machine paper rolls"
+  },
+  {
+    "slug": "karotazhnyy-pribor-polnyy-cikl-obyazannostey",
+    "title": "Каротажный прибор: полный цикл обязанностей от покупки до скважины",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "oil drilling rig equipment"
+  },
+  {
+    "slug": "neytronnyy-generator-v-laboratorii",
+    "title": "Нейтронный генератор в лаборатории: прибор без радионуклида, но с полным контролем",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "neutron generator laboratory equipment"
+  },
+  {
+    "slug": "radioizotopnyy-dymovoy-izveshchatel-rid",
+    "title": "Радиоизотопный дымовой извещатель: сотни штук на объекте и один вопрос при демонтаже",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "smoke detector installation ceiling"
+  },
+  {
+    "slug": "gamma-obluchatelnaya-ustanovka-na-predpriyatii",
+    "title": "Гамма-облучательная установка на предприятии: что нужно для запуска и работы",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "irradiation facility industrial hall"
+  },
+  {
+    "slug": "uskoritel-elektronov-dlya-sterilizacii",
+    "title": "Ускоритель электронов для стерилизации: альтернатива кобальту и её плюсы",
+    "direction": "Радиационные источники",
+    "kind": "compare",
+    "cover_query": "electron accelerator industrial facility"
+  },
+  {
+    "slug": "gamma-terapevticheskiy-apparat-v-klinike",
+    "title": "Гамма-терапевтический аппарат в клинике: от поставки до вывода из эксплуатации",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "radiotherapy machine hospital room"
+  },
+  {
+    "slug": "apparat-brahiterapii-posledovatelnogo-vvedeniya",
+    "title": "Аппарат брахитерапии: источник на тросике и требования к процедурному кабинету",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "medical treatment room equipment"
+  },
+  {
+    "slug": "rentgenovskiy-apparat-v-promyshlennosti",
+    "title": "Промышленный рентгеновский аппарат: почему он проще в оформлении и где подвох",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "industrial x-ray inspection machine"
+  },
+  {
+    "slug": "dosmotrovyy-skaner-bagazha-i-gruzov",
+    "title": "Досмотровый сканер багажа и грузов: кто отвечает за безопасность оператора",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "airport security scanner baggage"
+  },
+  {
+    "slug": "spektrometr-gamma-izlucheniya-v-laboratorii",
+    "title": "Гамма-спектрометр в лаборатории: от выбора детектора до протокола измерений",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "gamma spectrometer laboratory detector"
+  },
+  {
+    "slug": "dozimetr-radiometr-kak-vybrat-dlya-predpriyatiya",
+    "title": "Дозиметр и радиометр для предприятия: как выбрать прибор, который примет надзор",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "radiation survey meter handheld"
+  },
+  {
+    "slug": "individualnyy-dozimetr-tld-i-osl",
+    "title": "Индивидуальный дозиметр: как работают термолюминесцентные и ОСЛ-детекторы",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "personal dosimeter badge worker"
+  },
+  {
+    "slug": "portalnyy-monitor-na-prohodnoy",
+    "title": "Портальный монитор на проходной: зачем он нужен и что делать при срабатывании",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "radiation portal monitor gate"
+  },
+  {
+    "slug": "ustanovka-radiacionnogo-kontrolya-metalloloma",
+    "title": "Установка радиационного контроля металлолома: обязанность или страховка",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "scrap metal yard monitoring"
+  },
+  {
+    "slug": "transportnyy-konteyner-dlya-istochnika",
+    "title": "Транспортный контейнер для источника: маркировка, сертификат и перевозка",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "transport cask container radioactive"
+  },
+  {
+    "slug": "hranilishche-istochnikov-tipovye-resheniya",
+    "title": "Хранилище источников: типовые решения, ошибки проектирования и приёмка",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "storage vault industrial room"
+  },
+  {
+    "slug": "kamera-dlya-radiografii-na-zavode",
+    "title": "Радиографическая камера на заводе: стационарный контроль вместо выездного",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "radiography chamber industrial facility"
+  },
+  {
+    "slug": "perezaryadka-istochnika-kak-ustroena-usluga",
+    "title": "Перезарядка источника: как устроена услуга и что подписывает заказчик",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "hot cell manipulator facility"
+  },
+  {
+    "slug": "kontrolnye-istochniki-nabor-laboratorii",
+    "title": "Набор контрольных источников лаборатории: что в нём, как учитывать и поверять",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "calibration sources laboratory set"
+  },
+  {
+    "slug": "sredstva-zashchity-pri-rabote-s-istochnikami",
+    "title": "Средства защиты при работе с источниками: ширмы, контейнеры, манипуляторы",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "lead shielding screen laboratory"
+  },
+  {
+    "slug": "mobilnaya-laboratoriya-radiacionnogo-kontrolya",
+    "title": "Мобильная лаборатория радиационного контроля: оснащение и оформление выездов",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "mobile laboratory van equipment"
+  },
+  {
+    "slug": "istochniki-v-neftegazovoy-otrasli",
+    "title": "Источники излучения в нефтегазовой отрасли: каротаж, дефектоскопия, уровнемеры",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "oil gas refinery industrial"
+  },
+  {
+    "slug": "istochniki-v-metallurgii",
+    "title": "Источники излучения в металлургии: от толщиномера до контроля лома",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "steel mill furnace industrial"
+  },
+  {
+    "slug": "istochniki-v-himii-i-neftehimii",
+    "title": "Источники излучения в химии и нефтехимии: уровнемеры, плотномеры, дефектоскопия",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "chemical plant pipes towers"
+  },
+  {
+    "slug": "istochniki-v-mashinostroenii",
+    "title": "Источники излучения в машиностроении: контроль отливок, сварки и сборок",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "machine factory production hall"
+  },
+  {
+    "slug": "istochniki-v-sudostroenii",
+    "title": "Источники излучения в судостроении: контроль корпусов и трубопроводов",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "shipyard construction vessel"
+  },
+  {
+    "slug": "istochniki-v-aviastroenii",
+    "title": "Источники излучения в авиастроении: контроль ответственных деталей",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "aircraft assembly factory"
+  },
+  {
+    "slug": "istochniki-v-pishchevoy-promyshlennosti",
+    "title": "Источники излучения в пищевой промышленности: контроль, взвешивание, обработка",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "food factory production line"
+  },
+  {
+    "slug": "istochniki-v-cbk",
+    "title": "Источники излучения в целлюлозно-бумажной промышленности: плотность и влажность полотна",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "paper mill production roll"
+  },
+  {
+    "slug": "istochniki-v-cementnoy-promyshlennosti",
+    "title": "Источники излучения в цементной промышленности: уровнемеры и анализаторы сырья",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "cement plant industrial kiln"
+  },
+  {
+    "slug": "istochniki-v-gornodobyche-i-na-gok",
+    "title": "Источники излучения в горнодобыче и на обогатительных комбинатах",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "mining quarry industrial equipment"
+  },
+  {
+    "slug": "istochniki-na-teplovyh-elektrostanciyah",
+    "title": "Источники излучения на тепловых электростанциях: золомеры, уровнемеры, дефектоскопия",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "thermal power plant industrial"
+  },
+  {
+    "slug": "istochniki-v-zhkh-i-vodokanale",
+    "title": "Источники излучения в ЖКХ и водоканале: там, где их никто не ищет",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "water treatment plant tanks"
+  },
+  {
+    "slug": "istochniki-na-transporte-i-v-logistike",
+    "title": "Источники излучения на транспорте и в логистике: сканеры, весы, перевозки",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "logistics warehouse trucks"
+  },
+  {
+    "slug": "istochniki-v-tamozhne-i-pogranichnom-kontrole",
+    "title": "Источники излучения в таможенном и пограничном контроле",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "customs border checkpoint scanner"
+  },
+  {
+    "slug": "istochniki-v-vuzah-i-nauchnyh-institutah",
+    "title": "Источники излучения в вузах и научных институтах: учебные, поверочные, исследовательские",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "university laboratory research"
+  },
+  {
+    "slug": "istochniki-v-medicinskih-organizaciyah-svodnyy-obzor",
+    "title": "Источники излучения в медицинской организации: полный перечень и что с ними делать",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "hospital medical equipment room"
+  },
+  {
+    "slug": "istochniki-v-selskom-hozyaystve",
+    "title": "Источники излучения в сельском хозяйстве: обеззараживание, анализ, влагометрия",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "agriculture farm grain silo"
+  },
+  {
+    "slug": "istochniki-v-stroitelnoy-otrasli",
+    "title": "Источники излучения в строительстве: плотномеры грунта и контроль конструкций",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "construction site soil testing"
+  },
+  {
+    "slug": "istochniki-v-ekologicheskih-laboratoriyah",
+    "title": "Источники излучения в экологических лабораториях: контроль среды и продукции",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "environmental laboratory samples"
+  },
+  {
+    "slug": "kto-eshche-obyazan-poluchat-licenziyu-neochevidnye-sluchai",
+    "title": "Кому ещё нужна атомная лицензия: неочевидные случаи, о которых узнают на проверке",
+    "direction": "Лицензирование",
+    "kind": "list",
+    "cover_query": "surprised office documents desk"
+  },
+  {
+    "slug": "mtu-po-nadzoru-za-yarb-kak-ustroena-sistema",
+    "title": "Межрегиональные управления по надзору за ЯРБ: как устроена система надзора",
+    "direction": "Проверки и ответственность",
+    "kind": "explainer",
+    "cover_query": "government office building facade"
+  },
+  {
+    "slug": "kuda-podavat-dokumenty-esli-obekty-v-raznyh-regionah",
+    "title": "Куда подавать документы, если объекты в разных регионах",
+    "direction": "Лицензирование",
+    "kind": "qa",
+    "cover_query": "map regions planning office"
+  },
+  {
+    "slug": "pereezd-predpriyatiya-v-drugoy-region-chto-s-licenziey",
+    "title": "Переезд предприятия в другой регион: что происходит с лицензией",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "moving office boxes relocation"
+  },
+  {
+    "slug": "vzaimodeystvie-s-inspektorom-kak-vystroit",
+    "title": "Взаимодействие с инспектором: как выстроить отношения и не навредить себе",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "business meeting office discussion"
+  },
+  {
+    "slug": "zapros-razyasneniy-u-rostehnadzora-kak-sostavit",
+    "title": "Запрос разъяснений в Ростехнадзор: как составить, чтобы получить полезный ответ",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "letter writing official document"
+  },
+  {
+    "slug": "gosuslugi-dlya-atomnogo-licenziata-chto-dostupno",
+    "title": "Госуслуги для атомного лицензиата: что уже можно оформить онлайн",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "computer screen online service"
+  },
+  {
+    "slug": "publichnye-reestry-rostehnadzora-chto-v-nih-est",
+    "title": "Публичные реестры Ростехнадзора: что в них есть и как этим пользоваться",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "database screen search computer"
+  },
+  {
+    "slug": "kak-proverit-svoyu-licenziyu-v-reestre",
+    "title": "Как проверить свою лицензию в реестре и что делать при ошибке в сведениях",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "magnifier document verification"
+  },
+  {
+    "slug": "dosudebnoe-obzhalovanie-cherez-gosuslugi",
+    "title": "Досудебное обжалование решений надзора через Госуслуги: пошагово",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "online form laptop screen"
+  },
+  {
+    "slug": "chto-delat-esli-nadzor-ne-otvechaet-v-srok",
+    "title": "Что делать, если надзорный орган не отвечает в установленный срок",
+    "direction": "Проверки и ответственность",
+    "kind": "qa",
+    "cover_query": "calendar waiting clock office"
+  },
+  {
+    "slug": "truboprovody-aes-klassy-i-trebovaniya",
+    "title": "Трубопроводы АЭС: классы безопасности и что из них следует для изготовителя",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "industrial pipes plant interior"
+  },
+  {
+    "slug": "nasosy-dlya-aes-trebovaniya-i-priemka",
+    "title": "Насосы для АЭС: требования, испытания и приёмка",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "industrial pump equipment plant"
+  },
+  {
+    "slug": "truboprovodnaya-armatura-dlya-aes",
+    "title": "Трубопроводная арматура для АЭС: задвижки, клапаны и их квалификация",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "industrial valves pipeline"
+  },
+  {
+    "slug": "teploobmennoe-oborudovanie-dlya-aes",
+    "title": "Теплообменное оборудование для АЭС: от парогенератора до доохладителя",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "heat exchanger industrial equipment"
+  },
+  {
+    "slug": "sosudy-pod-davleniem-na-atomnom-obekte",
+    "title": "Сосуды под давлением на атомном объекте: два надзора и один комплект документов",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "pressure vessel industrial tank"
+  },
+  {
+    "slug": "gruzopodemnye-mehanizmy-na-aes",
+    "title": "Грузоподъёмные механизмы на АЭС: краны, которые тоже важны для безопасности",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "overhead crane industrial hall"
+  },
+  {
+    "slug": "elektrooborudovanie-dlya-aes-trebovaniya",
+    "title": "Электрооборудование для АЭС: классификация, квалификация и документы",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "electrical switchgear industrial"
+  },
+  {
+    "slug": "kabelnaya-produkciya-dlya-aes",
+    "title": "Кабельная продукция для АЭС: огнестойкость, ресурс и подтверждение соответствия",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "electrical cables bundle industrial"
+  },
+  {
+    "slug": "kip-i-datchiki-dlya-atomnyh-obektov",
+    "title": "КИП и датчики для атомных объектов: метрология плюс ядерная безопасность",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "instrumentation sensors control panel"
+  },
+  {
+    "slug": "ventilyacionnoe-oborudovanie-dlya-yadernyh-obektov",
+    "title": "Вентиляционное оборудование для ядерных объектов: требования и испытания",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "ventilation system industrial ducts"
+  },
+  {
+    "slug": "filtry-ochistki-vozduha-na-aes",
+    "title": "Фильтры очистки воздуха на АЭС: аэрозольные, йодные и их испытания",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "air filter industrial system"
+  },
+  {
+    "slug": "oborudovanie-specvodoochistki",
+    "title": "Оборудование спецводоочистки: как на станции чистят радиоактивные воды",
+    "direction": "Изготовление оборудования",
+    "kind": "explainer",
+    "cover_query": "water treatment industrial tanks"
+  },
+  {
+    "slug": "ionoobmennye-filtry-i-smoly",
+    "title": "Ионообменные фильтры и смолы: расходник, который становится отходом",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "explainer",
+    "cover_query": "ion exchange resin industrial"
+  },
+  {
+    "slug": "kompressory-i-vozduhosnabzhenie-na-aes",
+    "title": "Компрессоры и воздухоснабжение на АЭС: почему сжатый воздух критичен",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "industrial compressor equipment"
+  },
+  {
+    "slug": "dizel-generatory-avariynogo-elektrosnabzheniya",
+    "title": "Дизель-генераторы аварийного электроснабжения: последняя линия обороны",
+    "direction": "Изготовление оборудования",
+    "kind": "explainer",
+    "cover_query": "diesel generator industrial power"
+  },
+  {
+    "slug": "akkumulyatornye-batarei-na-atomnom-obekte",
+    "title": "Аккумуляторные батареи на атомном объекте: питание, когда нет ничего другого",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "battery room industrial power"
+  },
+  {
+    "slug": "transformatory-i-raspredustroystva-na-aes",
+    "title": "Трансформаторы и распредустройства на АЭС: требования и подтверждение соответствия",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "electrical transformer substation"
+  },
+  {
+    "slug": "sistemy-pozharotusheniya-na-aes",
+    "title": "Системы пожаротушения на АЭС: два надзора и особые требования",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "fire suppression system industrial"
+  },
+  {
+    "slug": "germoprohodki-i-zashchitnye-dveri",
+    "title": "Гермопроходки и защитные двери: элементы, от которых зависит герметичность",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "heavy steel door industrial"
+  },
+  {
+    "slug": "biologicheskaya-zashchita-materialy-i-konstrukcii",
+    "title": "Биологическая защита: материалы и конструкции, которые держат излучение",
+    "direction": "Проектирование и конструирование",
+    "kind": "explainer",
+    "cover_query": "concrete shielding wall thick"
+  },
+  {
+    "slug": "opory-i-podveski-truboprovodov-aes",
+    "title": "Опоры и подвески трубопроводов АЭС: незаметный элемент с большими последствиями",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "pipe support bracket industrial"
+  },
+  {
+    "slug": "metallokonstrukcii-dlya-atomnyh-obektov",
+    "title": "Металлоконструкции для атомных объектов: от закладных до каркасов",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "steel structure construction industrial"
+  },
+  {
+    "slug": "zakladnye-detali-i-ankery-na-aes",
+    "title": "Закладные детали и анкеры на АЭС: что бетонируют один раз и навсегда",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "embedded plates concrete construction"
+  },
+  {
+    "slug": "kompensatory-i-silfonnye-uzly",
+    "title": "Компенсаторы и сильфонные узлы: как трубопровод переживает нагрев",
+    "direction": "Изготовление оборудования",
+    "kind": "explainer",
+    "cover_query": "expansion joint pipe industrial"
+  },
+  {
+    "slug": "krepezh-dlya-atomnyh-obektov",
+    "title": "Крепёж для атомных объектов: почему болт тоже бывает классом безопасности",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "bolts fasteners industrial metal"
+  },
+  {
+    "slug": "oborudovanie-dlya-obrashcheniya-s-rao-na-obekte",
+    "title": "Оборудование для обращения с отходами на объекте: прессы, установки, ёмкости",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "explainer",
+    "cover_query": "waste processing industrial equipment"
+  },
+  {
+    "slug": "konteynery-dlya-rao-trebovaniya",
+    "title": "Контейнеры для радиоактивных отходов: типы, требования и приёмка оператором",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "waste container storage yellow"
+  },
+  {
+    "slug": "siz-na-yadernom-obekte",
+    "title": "Средства индивидуальной защиты на ядерном объекте: что выдают и как учитывают",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "protective suit equipment workers"
+  },
+  {
+    "slug": "perezaryadochnaya-mashina-i-oborudovanie-reaktornogo-zala",
+    "title": "Перегрузочная машина и оборудование реакторного зала",
+    "direction": "Изготовление оборудования",
+    "kind": "explainer",
+    "cover_query": "refueling machine reactor hall"
+  },
+  {
+    "slug": "oborudovanie-dlya-dezaktivacii",
+    "title": "Оборудование для дезактивации: установки, средства и что учесть при закупке",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "decontamination equipment industrial"
+  },
+  {
+    "slug": "otvetstvennyy-za-radiacionnuyu-bezopasnost-chto-dolzhen",
+    "title": "Ответственный за радиационную безопасность: обязанности, права и личные риски",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "safety officer industrial worker"
+  },
+  {
+    "slug": "otvetstvennyy-za-uchet-yadernyh-materialov",
+    "title": "Ответственный за учёт ядерных материалов: что он делает и чем отвечает",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "guide",
+    "cover_query": "inventory records control room"
+  },
+  {
+    "slug": "otvetstvennyy-za-fizicheskuyu-zashchitu",
+    "title": "Ответственный за физическую защиту: полномочия и взаимодействие с охраной",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "guide",
+    "cover_query": "security officer monitoring station"
+  },
+  {
+    "slug": "otvetstvennyy-za-uchet-rv-i-rao",
+    "title": "Ответственный за учёт радиоактивных веществ и отходов: журналы и отчётность",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "logbook records warehouse"
+  },
+  {
+    "slug": "inzhener-dozimetrist-obyazannosti-i-dokumenty",
+    "title": "Инженер-дозиметрист: обязанности, приборы и документы, которые он ведёт",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "radiation measurement technician"
+  },
+  {
+    "slug": "defektoskopist-kak-stat-i-chto-nuzhno",
+    "title": "Дефектоскопист: как им стать, какие аттестации нужны и сколько это занимает",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "ndt technician inspection equipment"
+  },
+  {
+    "slug": "inzhener-po-svarke-v-atomnoy-otrasli",
+    "title": "Инженер по сварке в атомной отрасли: аттестация, карты и ответственность",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "welding engineer industrial workshop"
+  },
+  {
+    "slug": "specialist-nerazrushayushchego-kontrolya-urovni",
+    "title": "Специалист неразрушающего контроля: уровни квалификации и что они дают",
+    "direction": "Персонал и разрешения",
+    "kind": "explainer",
+    "cover_query": "ultrasonic testing technician"
+  },
+  {
+    "slug": "glavnyy-konstruktor-atomnogo-oborudovaniya",
+    "title": "Главный конструктор атомного оборудования: зона ответственности и подписи",
+    "direction": "Проектирование и конструирование",
+    "kind": "guide",
+    "cover_query": "engineer drawings design office"
+  },
+  {
+    "slug": "gip-na-atomnom-obekte-zona-otvetstvennosti",
+    "title": "ГИП на атомном объекте: чем отличается от обычной стройки",
+    "direction": "Проектирование и конструирование",
+    "kind": "guide",
+    "cover_query": "project manager engineering office"
+  },
+  {
+    "slug": "nachalnik-otk-na-zavode-oiae",
+    "title": "Начальник ОТК на заводе для атомной отрасли: полномочия и точки конфликта",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "quality inspector factory floor"
+  },
+  {
+    "slug": "nachalnik-uchastka-na-atomnoy-stroyke",
+    "title": "Начальник участка на атомной стройке: за что отвечает и что подписывает",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "construction manager site helmet"
+  },
+  {
+    "slug": "kladovshchik-hranilishcha-istochnikov",
+    "title": "Кладовщик хранилища источников: должность, которую недооценивают",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "warehouse storage room shelves"
+  },
+  {
+    "slug": "specialist-po-zakupkam-v-atomnoy-otrasli",
+    "title": "Специалист по закупкам в атомной отрасли: что он обязан проверять в поставщике",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "procurement office documents"
+  },
+  {
+    "slug": "yurist-predpriyatiya-atomnoy-otrasli",
+    "title": "Юрист предприятия атомной отрасли: что нужно знать помимо гражданского права",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "legal books office desk"
+  },
+  {
+    "slug": "rukovoditel-sluzhby-kachestva-na-predpriyatii",
+    "title": "Руководитель службы качества: как выстроить работу за первые сто дней",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "quality manager office meeting"
+  },
+  {
+    "slug": "operator-ustanovki-s-istochnikom",
+    "title": "Оператор установки с источником: допуск, инструкции и ежедневные действия",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "operator control panel industrial"
+  },
+  {
+    "slug": "vnutrenniy-auditor-sistemy-kachestva",
+    "title": "Внутренний аудитор системы качества: как им стать и как не испортить отношения",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "auditor checklist office"
+  },
+  {
+    "slug": "specialist-po-ohrane-truda-na-yadernom-obekte",
+    "title": "Специалист по охране труда на ядерном объекте: где кончается охрана труда",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "safety officer industrial site"
+  },
+  {
+    "slug": "rukovoditel-predpriyatiya-licenziata-lichnaya-otvetstvennost",
+    "title": "Руководитель предприятия-лицензиата: личная ответственность и как её ограничить",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "executive office desk documents"
+  },
+  {
+    "slug": "istochnik-zastryal-v-konteynere",
+    "title": "Источник застрял и не вернулся в контейнер: что делать в первые минуты",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "emergency response radiation equipment"
+  },
+  {
+    "slug": "srabotal-portalnyy-monitor-na-prohodnoy",
+    "title": "Сработал портальный монитор: порядок действий и типичные ошибки",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "radiation portal alarm gate"
+  },
+  {
+    "slug": "uvolilsya-otvetstvennyy-za-rb",
+    "title": "Уволился ответственный за радиационную безопасность: что делать сегодня",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "empty office desk chair"
+  },
+  {
+    "slug": "istekla-poverka-pribora-chto-delat",
+    "title": "Истекла поверка прибора радиационного контроля: последствия и что делать",
+    "direction": "Радиационная безопасность",
+    "kind": "qa",
+    "cover_query": "measurement instrument calibration"
+  },
+  {
+    "slug": "uteryan-pasport-istochnika",
+    "title": "Утерян паспорт источника: как восстановить и чем это грозит",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "lost documents search office"
+  },
+  {
+    "slug": "prishlo-predpisanie-rostehnadzora-plan-deystviy",
+    "title": "Пришло предписание Ростехнадзора: план действий на первую неделю",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "official letter document desk"
+  },
+  {
+    "slug": "zakazchik-trebuet-pok-za-nedelyu",
+    "title": "Заказчик требует программу обеспечения качества за неделю: что реально сделать",
+    "direction": "Нормы и правила",
+    "kind": "qa",
+    "cover_query": "deadline clock office stress"
+  },
+  {
+    "slug": "ne-prinyali-ispolnitelnuyu-dokumentaciyu",
+    "title": "Не приняли исполнительную документацию: как разобрать замечания и закрыть их",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "documents rejected review desk"
+  },
+  {
+    "slug": "svarshchik-ne-proshel-attestaciyu",
+    "title": "Сварщик не прошёл аттестацию перед объектом: что делать подрядчику",
+    "direction": "Строительство и монтаж",
+    "kind": "qa",
+    "cover_query": "welder workshop industrial"
+  },
+  {
+    "slug": "partiya-metalla-bez-sertifikata",
+    "title": "Пришла партия металла без сертификата: можно ли её использовать",
+    "direction": "Изготовление оборудования",
+    "kind": "qa",
+    "cover_query": "steel plates warehouse stock"
+  },
+  {
+    "slug": "obnaruzhen-fon-v-zdanii",
+    "title": "Обнаружен повышенный фон в здании: порядок действий собственника",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "radiation measurement building interior"
+  },
+  {
+    "slug": "sotrudnik-prevysil-kontrolnyy-uroven",
+    "title": "Сотрудник превысил контрольный уровень дозы: расследование и меры",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "dosimeter reading worker"
+  },
+  {
+    "slug": "beremennaya-sotrudnica-v-gruppe-a",
+    "title": "Беременная сотрудница в группе А: что обязан сделать работодатель",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "office worker desk conversation"
+  },
+  {
+    "slug": "avariya-pri-perevozke-istochnika",
+    "title": "Авария при перевозке источника: кто что делает в первые часы",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "truck accident road emergency"
+  },
+  {
+    "slug": "kontragent-likvidirovan-a-istochnik-ostalsya",
+    "title": "Контрагент ликвидирован, а источник остался: кому теперь его девать",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "qa",
+    "cover_query": "abandoned warehouse building"
+  },
+  {
+    "slug": "istochnik-ne-vernulsya-s-perezaryadki",
+    "title": "Источник не вернулся с перезарядки: как не потерять его в документах",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "shipping container logistics"
+  },
+  {
+    "slug": "inspektor-prishel-bez-preduprezhdeniya",
+    "title": "Инспектор пришёл без предупреждения: права сторон и порядок действий",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "inspector visit office entrance"
+  },
+  {
+    "slug": "srok-sluzhby-istochnika-istekaet-cherez-mesyac",
+    "title": "Срок службы источника истекает через месяц: три варианта и их цена",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "calendar deadline countdown"
+  },
+  {
+    "slug": "poteryan-dozimetr-rabotnika",
+    "title": "Потерян индивидуальный дозиметр работника: как оформить и что с дозой",
+    "direction": "Радиационная безопасность",
+    "kind": "qa",
+    "cover_query": "dosimeter badge lost"
+  },
+  {
+    "slug": "zatoplenie-ili-pozhar-v-hranilishche-istochnikov",
+    "title": "Затопление или пожар в хранилище источников: действия и последствия",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "flooded basement water damage"
+  },
+  {
+    "slug": "vskryto-hranilishche-ili-narushena-plomba",
+    "title": "Вскрыто хранилище или нарушена пломба на контейнере: что делать",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "guide",
+    "cover_query": "broken seal lock door"
+  },
+  {
+    "slug": "obnaruzhen-neuchtennyy-istochnik",
+    "title": "Обнаружен неучтённый источник: как легализовать находку без последствий",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "old equipment storage discovery"
+  },
+  {
+    "slug": "rabotnik-otkazyvaetsya-ot-raboty-s-istochnikami",
+    "title": "Работник отказывается работать с источниками: правомерно ли и что делать",
+    "direction": "Персонал и разрешения",
+    "kind": "qa",
+    "cover_query": "worker refusing meeting office"
+  },
+  {
+    "slug": "zakazchik-menyaet-tehzadanie-posle-podpisaniya",
+    "title": "Заказчик меняет техзадание после подписания: как защитить сроки и деньги",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "contract revision meeting table"
+  },
+  {
+    "slug": "subpodryadchik-sorval-srok-na-atomnom-obekte",
+    "title": "Субподрядчик сорвал срок на атомном объекте: варианты действий генподрядчика",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "construction delay site empty"
+  },
+  {
+    "slug": "postavshchik-prislal-drugoy-material",
+    "title": "Поставщик прислал не тот материал: как оформить и чем это грозит",
+    "direction": "Изготовление оборудования",
+    "kind": "qa",
+    "cover_query": "warehouse delivery inspection"
+  },
+  {
+    "slug": "na-obekte-nashli-radioaktivnyy-grunt",
+    "title": "На объекте нашли радиоактивный грунт: остановка работ и порядок действий",
+    "direction": "Экология и общественность",
+    "kind": "guide",
+    "cover_query": "excavation soil construction site"
+  },
+  {
+    "slug": "istek-srok-licenzii-a-raboty-idut",
+    "title": "Истёк срок лицензии, а работы идут: как выходить из ситуации",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "expired document calendar desk"
+  },
+  {
+    "slug": "smena-yuradresa-vo-vremya-licenzirovaniya",
+    "title": "Смена юридического адреса во время лицензирования: что переделывать",
+    "direction": "Лицензирование",
+    "kind": "qa",
+    "cover_query": "address change documents office"
+  },
+  {
+    "slug": "propushchen-srok-otchetnosti-v-sistemu-ucheta",
+    "title": "Пропущен срок отчётности в систему учёта: последствия и как исправить",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "qa",
+    "cover_query": "deadline calendar missed office"
+  },
+  {
+    "slug": "licenziya-ili-sez-chto-nuzhno-imenno-vam",
+    "title": "Лицензия Ростехнадзора или санитарное заключение: что нужно именно вам",
+    "direction": "Лицензирование",
+    "kind": "compare",
+    "cover_query": "two documents comparison desk"
+  },
+  {
+    "slug": "zakrytyy-istochnik-ili-generiruyushchiy-apparat",
+    "title": "Закрытый источник или генерирующий аппарат: что выбрать для контроля",
+    "direction": "Радиационные источники",
+    "kind": "compare",
+    "cover_query": "x-ray machine gamma camera"
+  },
+  {
+    "slug": "pokupka-ili-arenda-pribora-s-istochnikom",
+    "title": "Купить или арендовать прибор с источником: считаем обязанности, а не только цену",
+    "direction": "Радиационные источники",
+    "kind": "compare",
+    "cover_query": "equipment rental purchase decision"
+  },
+  {
+    "slug": "svoy-personal-ili-podryadnaya-laboratoriya",
+    "title": "Свой персонал или подрядная лаборатория для контроля: что выгоднее",
+    "direction": "Радиационная безопасность",
+    "kind": "compare",
+    "cover_query": "laboratory workers equipment"
+  },
+  {
+    "slug": "hranenie-ili-nemedlennaya-peredacha-istochnika",
+    "title": "Хранить отработавший источник или сразу передать: сравнение по деньгам и рискам",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "compare",
+    "cover_query": "storage drums warehouse radioactive"
+  },
+  {
+    "slug": "sobstvennoe-hranilishche-ili-uslugi-specorganizacii",
+    "title": "Своё хранилище или услуги специализированной организации: что дешевле",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "compare",
+    "cover_query": "storage facility industrial building"
+  },
+  {
+    "slug": "remont-ili-zamena-ustanovki-s-istochnikom",
+    "title": "Ремонт или замена установки с источником: как принять решение",
+    "direction": "Радиационные источники",
+    "kind": "compare",
+    "cover_query": "industrial equipment maintenance"
+  },
+  {
+    "slug": "attestaciya-ili-poverka-v-chem-raznica",
+    "title": "Аттестация или поверка: в чём разница и что нужно вашему оборудованию",
+    "direction": "Нормы и правила",
+    "kind": "compare",
+    "cover_query": "calibration laboratory instruments"
+  },
+  {
+    "slug": "sertifikaciya-ili-deklarirovanie-dlya-oiae",
+    "title": "Сертификация или декларирование для атомной продукции: как выбрать форму",
+    "direction": "Изготовление оборудования",
+    "kind": "compare",
+    "cover_query": "certificate document approval"
+  },
+  {
+    "slug": "vnutrenniy-audit-ili-vneshniy-konsultant",
+    "title": "Внутренний аудит или внешний консультант: кто найдёт больше проблем",
+    "direction": "Нормы и правила",
+    "kind": "compare",
+    "cover_query": "consultant meeting office documents"
+  },
+  {
+    "slug": "skolko-stoit-hranilishche-istochnikov-postroit",
+    "title": "Сколько стоит построить хранилище источников и из чего складывается смета",
+    "direction": "Радиационные источники",
+    "kind": "money",
+    "cover_query": "construction budget planning documents"
+  },
+  {
+    "slug": "skolko-stoit-soderzhat-istochnik-v-god",
+    "title": "Сколько стоит содержать один источник в год: полный расчёт владения",
+    "direction": "Радиационные источники",
+    "kind": "money",
+    "cover_query": "calculator money documents desk"
+  },
+  {
+    "slug": "skolko-stoit-sluzhba-radiacionnoy-bezopasnosti",
+    "title": "Сколько стоит служба радиационной безопасности: штат, приборы, обучение",
+    "direction": "Радиационная безопасность",
+    "kind": "money",
+    "cover_query": "office team workplace industrial"
+  },
+  {
+    "slug": "skolko-stoit-akkreditaciya-laboratorii",
+    "title": "Сколько стоит аккредитация лаборатории и сколько времени она занимает",
+    "direction": "Радиационная безопасность",
+    "kind": "money",
+    "cover_query": "laboratory accreditation documents"
+  },
+  {
+    "slug": "skolko-stoit-attestaciya-specialista-nk",
+    "title": "Сколько стоит аттестация специалиста неразрушающего контроля",
+    "direction": "Персонал и разрешения",
+    "kind": "money",
+    "cover_query": "training certification classroom"
+  },
+  {
+    "slug": "skolko-stoit-sanitarno-epidemiologicheskoe-zaklyuchenie",
+    "title": "Сколько стоит санитарно-эпидемиологическое заключение и что входит в работу",
+    "direction": "Радиационная безопасность",
+    "kind": "money",
+    "cover_query": "official documents stamp office"
+  },
+  {
+    "slug": "skolko-stoit-proekt-radiacionnoy-zashchity",
+    "title": "Сколько стоит проект радиационной защиты помещения",
+    "direction": "Проектирование и конструирование",
+    "kind": "money",
+    "cover_query": "engineering drawings design desk"
+  },
+  {
+    "slug": "skolko-stoit-perevozka-radioaktivnyh-materialov",
+    "title": "Сколько стоит перевозка радиоактивных материалов и почему так дорого",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "money",
+    "cover_query": "transport truck cargo road"
+  },
+  {
+    "slug": "skolko-vremeni-zanimaet-akkreditaciya-i-attestaciya",
+    "title": "Сколько времени занимают аккредитация, аттестация и разрешения: сводный календарь",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "calendar planning timeline office"
+  },
+  {
+    "slug": "byudzhet-na-radiacionnuyu-bezopasnost-kak-zashchitit",
+    "title": "Бюджет на радиационную безопасность: как обосновать его перед руководством",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "business presentation budget meeting"
+  },
+  {
+    "slug": "chto-takoe-ioniziruyushchee-izluchenie",
+    "title": "Что такое ионизирующее излучение и чем оно отличается от обычного света",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "light spectrum physics abstract"
+  },
+  {
+    "slug": "alfa-beta-gamma-i-neytrony-v-chem-raznica",
+    "title": "Альфа, бета, гамма и нейтроны: в чём разница и что от чего защищает",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "radiation types physics diagram"
+  },
+  {
+    "slug": "chto-takoe-radioaktivnyy-raspad",
+    "title": "Что такое радиоактивный распад и почему его нельзя ускорить или остановить",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "atom physics abstract model"
+  },
+  {
+    "slug": "aktivnost-i-doza-pochemu-eto-raznye-veshchi",
+    "title": "Активность и доза: почему это разные вещи и как их не путать",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "measurement instruments comparison"
+  },
+  {
+    "slug": "chto-takoe-moshchnost-dozy-i-kak-ee-meryat",
+    "title": "Что такое мощность дозы и как её правильно измерять",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "survey meter measurement reading"
+  },
+  {
+    "slug": "zagryaznenie-i-oblucheniye-v-chem-raznica",
+    "title": "Загрязнение и облучение: разница, которую путают даже специалисты",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "contamination protective gloves"
+  },
+  {
+    "slug": "vnutrennee-i-vneshnee-oblucheniye",
+    "title": "Внутреннее и внешнее облучение: почему альфа опаснее внутри",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "human body anatomy medical"
+  },
+  {
+    "slug": "chto-takoe-kriticheskiy-organ-i-dozovye-koefficienty",
+    "title": "Критический орган и дозовые коэффициенты: почему разные нуклиды бьют по-разному",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "medical anatomy diagram"
+  },
+  {
+    "slug": "normirovanie-obosnovanie-optimizaciya-tri-principa",
+    "title": "Обоснование, оптимизация, нормирование: три принципа радиационной безопасности",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "balance scales principles"
+  },
+  {
+    "slug": "chto-takoe-alara-i-kak-eto-rabotaet-na-praktike",
+    "title": "Принцип ALARA: как выглядит оптимизация доз на реальном предприятии",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "workers planning safety industrial"
+  },
+  {
+    "slug": "fmba-rossii-chem-zanimaetsya-v-atomnoy-otrasli",
+    "title": "ФМБА России: чем занимается в атомной отрасли и когда к вам придёт",
+    "direction": "Нормы и правила",
+    "kind": "explainer",
+    "cover_query": "medical agency building office"
+  },
+  {
+    "slug": "rosgvardiya-i-ohrana-yadernyh-obektov",
+    "title": "Росгвардия и охрана ядерных объектов: кто и что охраняет",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "explainer",
+    "cover_query": "security guard facility gate"
+  },
+  {
+    "slug": "mchs-i-avariynoe-reagirovanie-na-radiacionnyh-obektah",
+    "title": "МЧС и аварийное реагирование: как устроено взаимодействие с предприятием",
+    "direction": "Экология и общественность",
+    "kind": "explainer",
+    "cover_query": "emergency service vehicle response"
+  },
+  {
+    "slug": "fstek-i-zashchita-informacii-na-yadernom-obekte",
+    "title": "ФСТЭК и защита информации на ядерном объекте: что относится к их компетенции",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "explainer",
+    "cover_query": "server room security data"
+  },
+  {
+    "slug": "rosakkreditaciya-i-laboratorii-atomnoy-otrasli",
+    "title": "Росаккредитация и лаборатории атомной отрасли: что проверяют и как часто",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "laboratory accreditation inspection"
+  },
+  {
+    "slug": "rosstandart-i-metrologiya-v-atomnoy-otrasli",
+    "title": "Росстандарт и метрология: поверка, утверждение типа и госнадзор",
+    "direction": "Нормы и правила",
+    "kind": "explainer",
+    "cover_query": "metrology standards laboratory"
+  },
+  {
+    "slug": "rosprirodnadzor-i-atomnye-obekty",
+    "title": "Росприроднадзор и атомные объекты: экологическая экспертиза и надзор",
+    "direction": "Экология и общественность",
+    "kind": "explainer",
+    "cover_query": "environmental inspection nature"
+  },
+  {
+    "slug": "rostransnadzor-i-perevozki-radioaktivnyh-gruzov",
+    "title": "Ространснадзор и перевозки радиоактивных грузов: зона ответственности",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "explainer",
+    "cover_query": "transport inspection truck cargo"
+  },
+  {
+    "slug": "fas-i-zakupki-v-atomnoy-otrasli",
+    "title": "ФАС и закупки в атомной отрасли: за чем следит антимонопольный орган",
+    "direction": "Закупки и договоры",
+    "kind": "explainer",
+    "cover_query": "government building official"
+  },
+  {
+    "slug": "gosudarstvennaya-korporaciya-kak-organ-upravleniya",
+    "title": "Госкорпорация «Росатом» как орган управления: чем отличается от надзора",
+    "direction": "Нормы и правила",
+    "kind": "explainer",
+    "cover_query": "corporate headquarters building"
+  },
+  {
+    "slug": "kak-poluchit-licenziyu-na-istochnik-poshagovo",
+    "title": "Как получить лицензию на радиационный источник: пошаговый маршрут с нуля",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "step by step planning documents"
+  },
+  {
+    "slug": "kak-postavit-istochnik-na-uchet-poshagovo",
+    "title": "Как поставить источник на учёт: пошаговая инструкция после покупки",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "registration documents desk office"
+  },
+  {
+    "slug": "kak-oformit-peredachu-istochnika-na-zahoronenie",
+    "title": "Как оформить передачу источника на захоронение: документы и последовательность",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "waste transfer documents container"
+  },
+  {
+    "slug": "kak-organizovat-sluzhbu-rb-s-nulya",
+    "title": "Как организовать службу радиационной безопасности с нуля за три месяца",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "team organization office planning"
+  },
+  {
+    "slug": "kak-podgotovit-pomeshchenie-pod-istochnik",
+    "title": "Как подготовить помещение под источник: от идеи до акта ввода",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "empty room renovation industrial"
+  },
+  {
+    "slug": "kak-provesti-pervichnoe-obsledovanie-predpriyatiya",
+    "title": "Как провести первичное радиационное обследование предприятия своими силами",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "inspection survey equipment industrial"
+  },
+  {
+    "slug": "kak-sobrat-komplekt-na-prodlenie-licenzii",
+    "title": "Как собрать комплект на продление лицензии: чек-лист и порядок",
+    "direction": "Лицензирование",
+    "kind": "checklist",
+    "cover_query": "documents folder preparation office"
+  },
+  {
+    "slug": "kak-oformit-rabotnika-v-gruppu-a",
+    "title": "Как оформить работника в группу А: последовательность и документы",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "hr onboarding documents office"
+  },
+  {
+    "slug": "kak-provesti-inventarizaciyu-istochnikov-za-den",
+    "title": "Как провести инвентаризацию источников за один день: практический порядок",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "inventory checklist warehouse"
+  },
+  {
+    "slug": "kak-podgotovitsya-k-pervoy-proverke-posle-licenzii",
+    "title": "Как подготовиться к первой проверке после получения лицензии",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "audit preparation office documents"
+  },
+  {
+    "slug": "kak-vnedrit-uchet-i-otchetnost-po-pp-542",
+    "title": "Как наладить учёт и отчётность по постановлению №542: практическая схема",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "database records computer office"
+  },
+  {
+    "slug": "kak-sostavit-programmu-radiacionnogo-kontrolya",
+    "title": "Как составить программу радиационного контроля, которую примут",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "monitoring plan documents desk"
+  },
+  {
+    "slug": "kak-razrabotat-instrukciyu-po-rb-za-nedelyu",
+    "title": "Как разработать инструкцию по радиационной безопасности за неделю",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "writing manual document laptop"
+  },
+  {
+    "slug": "kak-oformit-avariynuyu-gotovnost-na-predpriyatii",
+    "title": "Как оформить аварийную готовность на предприятии с источниками",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "emergency plan documents drill"
+  },
+  {
+    "slug": "kak-vybrat-podryadchika-na-radiacionnye-raboty",
+    "title": "Как выбрать подрядчика на радиационные работы и что проверить в документах",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "contractor selection meeting documents"
+  },
+  {
+    "slug": "kak-peredat-istochnik-drugoy-organizacii",
+    "title": "Как передать источник другой организации: документы и последовательность",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "handover equipment transfer documents"
+  },
+  {
+    "slug": "kak-vvesti-pribor-v-ekspluataciyu-posle-postavki",
+    "title": "Как ввести прибор с источником в эксплуатацию после поставки",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "equipment installation industrial"
+  },
+  {
+    "slug": "kak-spisat-i-utilizirovat-pribor-s-istochnikom",
+    "title": "Как списать и утилизировать прибор с источником: порядок без нарушений",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "old equipment disposal industrial"
+  },
+  {
+    "slug": "kak-podgotovit-dokumenty-dlya-sez",
+    "title": "Как подготовить документы для санитарно-эпидемиологического заключения",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "documents preparation desk office"
+  },
+  {
+    "slug": "kak-nachat-rabotu-s-otkrytymi-istochnikami",
+    "title": "Как начать работу с открытыми радионуклидами: помещения, класс работ, документы",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "laboratory glovebox radioactive"
+  },
+  {
+    "slug": "slovar-terminov-radiacionnoy-bezopasnosti",
+    "title": "Словарь терминов радиационной безопасности: 40 понятий простым языком",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "dictionary book open pages"
+  },
+  {
+    "slug": "slovar-terminov-atomnogo-licenzirovaniya",
+    "title": "Словарь терминов атомного лицензирования: что значат слова в ваших документах",
+    "direction": "Лицензирование",
+    "kind": "explainer",
+    "cover_query": "legal documents glossary desk"
+  },
+  {
+    "slug": "chto-takoe-oiae-i-kakie-obekty-k-nim-otnosyatsya",
+    "title": "Что такое объект использования атомной энергии и какие объекты к ним относятся",
+    "direction": "Лицензирование",
+    "kind": "explainer",
+    "cover_query": "nuclear facility industrial site"
+  },
+  {
+    "slug": "chto-takoe-radiacionnyy-istochnik-po-zakonu",
+    "title": "Что такое радиационный источник по закону и чем он отличается от прибора",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "legal book definition document"
+  },
+  {
+    "slug": "chto-takoe-yadernaya-ustanovka-po-zakonu",
+    "title": "Что такое ядерная установка по закону: перечень и признаки",
+    "direction": "Лицензирование",
+    "kind": "explainer",
+    "cover_query": "nuclear reactor facility"
+  },
+  {
+    "slug": "chto-takoe-punkt-hraneniya-i-kogda-on-voznikaet",
+    "title": "Что такое пункт хранения и когда обычный склад им становится",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "explainer",
+    "cover_query": "storage warehouse industrial interior"
+  },
+  {
+    "slug": "chto-takoe-zona-kontroliruemogo-dostupa",
+    "title": "Что такое зона контролируемого доступа и как она устроена",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "controlled area entrance industrial"
+  },
+  {
+    "slug": "chto-takoe-naryad-dopusk-na-radiacionno-opasnye-raboty",
+    "title": "Что такое наряд-допуск на радиационно опасные работы и как его оформлять",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "work permit document clipboard"
+  },
+  {
+    "slug": "chto-takoe-personal-gruppy-a-i-b",
+    "title": "Персонал группы А и группы Б: кто к кому относится и что из этого следует",
+    "direction": "Персонал и разрешения",
+    "kind": "compare",
+    "cover_query": "industrial workers group team"
+  },
+  {
+    "slug": "chto-takoe-radiacionnaya-avariya-po-opredeleniyu",
+    "title": "Что считается радиационной аварией по закону и что просто инцидентом",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "warning sign emergency industrial"
+  },
+  {
+    "slug": "spravochnik-normativnyh-dokumentov-po-istochnikam",
+    "title": "Справочник нормативных документов по радиационным источникам: что читать и в каком порядке",
+    "direction": "Нормы и правила",
+    "kind": "list",
+    "cover_query": "law books shelf library"
+  },
+  {
+    "slug": "spravochnik-dokumentov-dlya-predpriyatiya-s-istochnikami",
+    "title": "Справочник документов предприятия с источниками: полный перечень папок",
+    "direction": "Радиационная безопасность",
+    "kind": "checklist",
+    "cover_query": "office folders archive shelf"
+  },
+  {
+    "slug": "kalendar-obyazannostey-vladelca-istochnika",
+    "title": "Календарь обязанностей владельца источника: что делать каждый месяц и год",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "wall calendar planning office"
+  },
+  {
+    "slug": "chasto-zadavaemye-voprosy-po-atomnomu-licenzirovaniyu",
+    "title": "Часто задаваемые вопросы по атомному лицензированию: двадцать коротких ответов",
+    "direction": "Лицензирование",
+    "kind": "qa",
+    "cover_query": "question marks office desk"
+  },
+  {
+    "slug": "chasto-zadavaemye-voprosy-po-rabote-s-istochnikami",
+    "title": "Часто задаваемые вопросы по работе с источниками: двадцать коротких ответов",
+    "direction": "Радиационные источники",
+    "kind": "qa",
+    "cover_query": "laboratory worker question"
+  },
+  {
+    "slug": "mify-ob-atomnom-licenzirovanii",
+    "title": "Мифы об атомном лицензировании, которые дорого обходятся предприятиям",
+    "direction": "Лицензирование",
+    "kind": "list",
+    "cover_query": "myth truth documents office"
+  },
+  {
+    "slug": "chto-pochitat-nachinayushchemu-otvetstvennomu-za-rb",
+    "title": "Что почитать начинающему ответственному за радиационную безопасность",
+    "direction": "Радиационная безопасность",
+    "kind": "list",
+    "cover_query": "books study desk reading"
+  },
+  {
+    "slug": "kak-ustroena-sistema-normativnyh-dokumentov-v-otrasli",
+    "title": "Как устроена система нормативных документов отрасли: от закона до инструкции",
+    "direction": "Нормы и правила",
+    "kind": "explainer",
+    "cover_query": "document hierarchy books office"
+  },
+  {
+    "slug": "gde-iskat-aktualnye-redakcii-norm",
+    "title": "Где искать актуальные редакции норм и как не работать по отменённому документу",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "search database computer library"
+  },
+  {
+    "slug": "kak-sledit-za-izmeneniyami-zakonodatelstva",
+    "title": "Как следить за изменениями законодательства в атомной отрасли: рабочая схема",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "news monitoring computer office"
+  },
+  {
+    "slug": "kak-ustroen-atom-i-otkuda-beretsya-radioaktivnost",
+    "title": "Как устроен атом и откуда берётся радиоактивность",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "atom model physics abstract"
+  },
+  {
+    "slug": "izotopy-prostymi-slovami",
+    "title": "Изотопы простыми словами: почему один элемент бывает стабильным и радиоактивным",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "periodic table chemistry"
+  },
+  {
+    "slug": "cepnaya-reakciya-deleniya-kak-ona-rabotaet",
+    "title": "Цепная реакция деления: как она работает и почему ею можно управлять",
+    "direction": "Как работает АЭС",
+    "kind": "explainer",
+    "cover_query": "nuclear physics reaction abstract"
+  },
+  {
+    "slug": "kriticheskaya-massa-chto-eto-takoe",
+    "title": "Критическая масса: что это и почему её нельзя собрать случайно",
+    "direction": "Как работает АЭС",
+    "kind": "explainer",
+    "cover_query": "metal sphere laboratory physics"
+  },
+  {
+    "slug": "zamedlitel-i-teplonositel-zachem-oni-nuzhny",
+    "title": "Замедлитель и теплоноситель: зачем реактору вода и графит",
+    "direction": "Как работает АЭС",
+    "kind": "explainer",
+    "cover_query": "reactor water pool blue"
+  },
+  {
+    "slug": "obogashchenie-urana-zachem-i-kak",
+    "title": "Обогащение урана: зачем оно нужно и как устроены центрифуги",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "centrifuge industrial facility"
+  },
+  {
+    "slug": "chto-takoe-vygoranie-topliva",
+    "title": "Что такое выгорание топлива и почему сборку нельзя держать в реакторе вечно",
+    "direction": "Как работает АЭС",
+    "kind": "explainer",
+    "cover_query": "fuel assembly reactor nuclear"
+  },
+  {
+    "slug": "chto-takoe-reaktivnost-i-kak-eyu-upravlyayut",
+    "title": "Что такое реактивность и как ею управляют на энергоблоке",
+    "direction": "Как работает АЭС",
+    "kind": "explainer",
+    "cover_query": "control rods reactor mechanism"
+  },
+  {
+    "slug": "estestvennyy-radiacionnyy-fon-otkuda-on-beretsya",
+    "title": "Естественный радиационный фон: из чего он складывается и почему разный",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "mountain landscape nature sky"
+  },
+  {
+    "slug": "kosmicheskoe-izluchenie-i-poleti-na-samolete",
+    "title": "Космическое излучение: почему экипажи самолётов считают профессионально облучаемыми",
+    "direction": "Радиационная безопасность",
+    "kind": "explainer",
+    "cover_query": "airplane sky clouds flight"
+  },
+  {
+    "slug": "klassifikaciya-rao-po-kategoriyam",
+    "title": "Классификация радиоактивных отходов: категории, критерии и почему это про деньги",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "explainer",
+    "cover_query": "waste drums storage categories"
+  },
+  {
+    "slug": "tverdye-rao-sbor-sortirovka-upakovka",
+    "title": "Твёрдые радиоактивные отходы: сбор, сортировка и упаковка на предприятии",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "waste sorting industrial containers"
+  },
+  {
+    "slug": "zhidkie-rao-na-predpriyatii-chto-s-nimi-delat",
+    "title": "Жидкие радиоактивные отходы: сбор, переработка и типичные ошибки",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "liquid waste tanks industrial"
+  },
+  {
+    "slug": "ochen-nizkoaktivnye-othody-otdelnaya-istoriya",
+    "title": "Очень низкоактивные отходы: отдельная категория и отдельная экономика",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "explainer",
+    "cover_query": "low level waste site landfill"
+  },
+  {
+    "slug": "harakterizaciya-rao-kak-eto-delaetsya",
+    "title": "Характеризация радиоактивных отходов: как определяют, что именно у вас в бочке",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "laboratory sample analysis waste"
+  },
+  {
+    "slug": "pasport-upakovki-rao-chto-v-nem",
+    "title": "Паспорт упаковки радиоактивных отходов: что в нём и кто его подписывает",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "documents container label waste"
+  },
+  {
+    "slug": "kondicionirovanie-rao-cementirovanie-i-bitumirovanie",
+    "title": "Кондиционирование отходов: цементирование, битумирование, остекловывание",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "explainer",
+    "cover_query": "concrete mixing industrial process"
+  },
+  {
+    "slug": "nacionalnyy-operator-kak-s-nim-rabotat",
+    "title": "Национальный оператор по обращению с РАО: как с ним работать на практике",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "waste facility industrial building"
+  },
+  {
+    "slug": "tarify-na-zahoronenie-rao-iz-chego-skladyvayutsya",
+    "title": "Тарифы на захоронение отходов: из чего складываются и как на них влиять",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "money",
+    "cover_query": "calculator invoice waste documents"
+  },
+  {
+    "slug": "osobye-rao-chto-eto-i-pochemu-ih-ne-izvlekayut",
+    "title": "Особые радиоактивные отходы: почему их оставляют на месте",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "explainer",
+    "cover_query": "industrial legacy site abandoned"
+  },
+  {
+    "slug": "vremennoe-hranenie-rao-oformlenie-ploshchadki",
+    "title": "Временное хранение отходов: как оформить площадку на предприятии",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "storage area industrial fenced"
+  },
+  {
+    "slug": "uchet-rao-zhurnaly-i-otchetnost",
+    "title": "Учёт радиоактивных отходов: журналы, формы и отчётность без ошибок",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "logbook records desk office"
+  },
+  {
+    "slug": "rao-medicinskih-organizaciy-osobennosti",
+    "title": "Отходы медицинских организаций: короткоживущие нуклиды и выдержка до распада",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "hospital waste medical containers"
+  },
+  {
+    "slug": "rao-nauchnyh-laboratoriy",
+    "title": "Отходы научных лабораторий: малые объёмы, большие сложности",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "laboratory waste containers research"
+  },
+  {
+    "slug": "dezaktivaciya-ili-zahoronenie-oborudovaniya",
+    "title": "Дезактивировать или захоронить оборудование: как считать решение",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "compare",
+    "cover_query": "industrial equipment decontamination"
+  },
+  {
+    "slug": "radioaktivnyy-grunt-i-stroitelnyy-musor",
+    "title": "Радиоактивный грунт и строительный мусор: что с ними делать на стройке",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "excavation soil construction debris"
+  },
+  {
+    "slug": "othody-s-prirodnymi-radionuklidami",
+    "title": "Отходы с природными радионуклидами: нефтяные осадки, шламы, окалина",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "explainer",
+    "cover_query": "oil sludge industrial deposits"
+  },
+  {
+    "slug": "transportirovanie-rao-vnutri-predpriyatiya",
+    "title": "Транспортирование отходов внутри предприятия: маршруты, тара, документы",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "industrial transport cart container"
+  },
+  {
+    "slug": "minimizaciya-obrazovaniya-rao-kak-ekonomit",
+    "title": "Минимизация образования отходов: как сократить объём и расходы",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "waste reduction recycling industrial"
+  },
+  {
+    "slug": "rao-pri-vyvode-obekta-iz-ekspluatacii",
+    "title": "Отходы при выводе объекта из эксплуатации: главная статья расходов",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "explainer",
+    "cover_query": "demolition industrial building"
+  },
+  {
+    "slug": "planirovanie-kachestva-na-konkretnyy-zakaz",
+    "title": "Планирование качества на конкретный заказ: как составить план качества",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "quality plan documents project"
+  },
+  {
+    "slug": "kontrolnye-tochki-v-plane-kachestva",
+    "title": "Контрольные точки в плане качества: как их расставить и кого уведомлять",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "checkpoint inspection factory"
+  },
+  {
+    "slug": "identifikaciya-produkcii-na-proizvodstve",
+    "title": "Идентификация продукции на производстве: маркировка, бирки и статусы",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "product labeling factory tags"
+  },
+  {
+    "slug": "statusy-kontrolya-i-ispytaniy",
+    "title": "Статусы контроля и испытаний: как не отгрузить непроверенное изделие",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "quality control tags inspection"
+  },
+  {
+    "slug": "sohrannost-produkcii-hranenie-i-konservaciya",
+    "title": "Сохранность продукции: хранение, консервация и транспортирование до заказчика",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "warehouse storage packaging industrial"
+  },
+  {
+    "slug": "vhodnoy-kontrol-pokupnyh-izdeliy",
+    "title": "Входной контроль покупных изделий: арматура, крепёж, электрика",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "components inspection warehouse"
+  },
+  {
+    "slug": "upravlenie-osnastkoy-i-instrumentom",
+    "title": "Управление оснасткой и инструментом на производстве для атомной отрасли",
+    "direction": "Изготовление оборудования",
+    "kind": "guide",
+    "cover_query": "tools workshop industrial equipment"
+  },
+  {
+    "slug": "specialnye-processy-kakie-byvayut-i-chto-s-nimi",
+    "title": "Специальные процессы: сварка, термообработка, покрытия и почему их аттестуют",
+    "direction": "Изготовление оборудования",
+    "kind": "explainer",
+    "cover_query": "heat treatment furnace industrial"
+  },
+  {
+    "slug": "kvalifikaciya-personala-v-sisteme-kachestva",
+    "title": "Квалификация персонала в системе качества: матрица компетенций и записи",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "skills matrix training office"
+  },
+  {
+    "slug": "dokumentirovanie-processov-kak-ne-perestarat",
+    "title": "Документирование процессов: как описать работу и не утонуть в бумагах",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "process documentation flowchart"
+  },
+  {
+    "slug": "leningradskaya-aes-chto-nuzhno-znat-podryadchiku",
+    "title": "Ленинградская АЭС: что нужно знать подрядчику о площадке",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "nuclear power plant baltic coast"
+  },
+  {
+    "slug": "kurskaya-aes-2-stroyka-i-podryady",
+    "title": "Курская АЭС-2: стройка, подряды и требования к участникам",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "nuclear construction site cranes"
+  },
+  {
+    "slug": "novovoronezhskaya-aes-opyt-i-podryady",
+    "title": "Нововоронежская АЭС: опыт площадки и что это значит для подрядчиков",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "nuclear plant cooling towers"
+  },
+  {
+    "slug": "beloyarskaya-aes-bystrye-reaktory",
+    "title": "Белоярская АЭС: единственная площадка с быстрыми реакторами",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "nuclear plant industrial landscape"
+  },
+  {
+    "slug": "kolskaya-aes-arktika-i-vodorod",
+    "title": "Кольская АЭС: Арктика, водород и новые направления работ",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "arctic industrial facility snow"
+  },
+  {
+    "slug": "bilibinskaya-i-plavuchaya-aes-chukotka",
+    "title": "Билибинская АЭС и плавучий энергоблок: энергетика Чукотки",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "arctic settlement power plant"
+  },
+  {
+    "slug": "rostovskaya-i-balakovskaya-aes-yug-i-povolzhie",
+    "title": "Ростовская и Балаковская АЭС: юг и Поволжье как рынок подряда",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "nuclear plant river landscape"
+  },
+  {
+    "slug": "smolenskaya-i-kalininskaya-aes-centr-rossii",
+    "title": "Смоленская и Калининская АЭС: центр России и новые блоки",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "nuclear plant forest landscape"
+  },
+  {
+    "slug": "predpriyatiya-toplivnogo-divisiona-gde-rabota",
+    "title": "Предприятия топливного дивизиона: где искать работу поставщику",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "industrial plant manufacturing"
+  },
+  {
+    "slug": "nauchnye-instituty-otrasli-i-ih-zakazy",
+    "title": "Научные институты отрасли и их заказы: недооценённый сегмент рынка",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "research institute laboratory building"
+  },
+  {
+    "slug": "licenzirovanie-medicinskoy-organizacii-s-istochnikami",
+    "title": "Лицензирование медицинской организации с источниками: два контура и один график",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "hospital administration documents"
+  },
+  {
+    "slug": "radiologicheskoe-otdelenie-trebovaniya-k-pomeshcheniyam",
+    "title": "Радиологическое отделение: требования к помещениям и защите",
+    "direction": "Проектирование и конструирование",
+    "kind": "guide",
+    "cover_query": "hospital radiology room equipment"
+  },
+  {
+    "slug": "rentgenkabinet-trebovaniya-i-dokumenty",
+    "title": "Рентгенкабинет: требования, документы и типичные замечания надзора",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "x-ray room hospital equipment"
+  },
+  {
+    "slug": "peredvizhnye-rentgenovskie-apparaty-v-medicine",
+    "title": "Передвижные рентгеновские аппараты: палаты, операционные и защита персонала",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "mobile x-ray hospital ward"
+  },
+  {
+    "slug": "kt-i-angiograf-dozovaya-nagruzka-personala",
+    "title": "КТ и ангиограф: дозовая нагрузка персонала и как её снижают",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "ct scanner operator hospital"
+  },
+  {
+    "slug": "veterinarnaya-rentgenologiya-trebovaniya",
+    "title": "Ветеринарная рентгенология: те же требования, другая специфика",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "veterinary clinic animal examination"
+  },
+  {
+    "slug": "stomatologicheskiy-rentgen-chto-nuzhno-klinike",
+    "title": "Стоматологический рентген: что нужно оформить небольшой клинике",
+    "direction": "Радиационные источники",
+    "kind": "guide",
+    "cover_query": "dental clinic x-ray equipment"
+  },
+  {
+    "slug": "radiacionnyy-kontrol-v-medicine-chto-izmeryat",
+    "title": "Радиационный контроль в медицинской организации: что и как часто измерять",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "measurement hospital equipment"
+  },
+  {
+    "slug": "obuchenie-medicinskogo-personala-po-rb",
+    "title": "Обучение медицинского персонала по радиационной безопасности: кого и чему",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "medical staff training classroom"
+  },
+  {
+    "slug": "proverki-rospotrebnadzora-v-medicinskoy-organizacii",
+    "title": "Проверки санитарного надзора в медицинской организации с источниками",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "inspection hospital documents"
+  },
+  {
+    "slug": "kyshtymskaya-avariya-1957-chto-proizoshlo",
+    "title": "Кыштымская авария 1957 года: что произошло и какие выводы сделала отрасль",
+    "direction": "Радиационная безопасность",
+    "kind": "story",
+    "cover_query": "industrial legacy site landscape"
+  },
+  {
+    "slug": "uindskeyl-1957-pervyy-reaktornyy-pozhar",
+    "title": "Уиндскейл-1957: первый крупный пожар на реакторе и его последствия",
+    "direction": "Радиационная безопасность",
+    "kind": "story",
+    "cover_query": "old industrial chimney building"
+  },
+  {
+    "slug": "avariya-na-podlodke-k-19-i-uroki",
+    "title": "Аварии на атомных подводных лодках: чему они научили отрасль",
+    "direction": "Радиационная безопасность",
+    "kind": "story",
+    "cover_query": "submarine naval vessel sea"
+  },
+  {
+    "slug": "tokaimura-1999-kriticheskiy-incident-na-proizvodstve",
+    "title": "Токаймура-1999: критический инцидент на производстве топлива",
+    "direction": "Радиационная безопасность",
+    "kind": "story",
+    "cover_query": "industrial laboratory japan facility"
+  },
+  {
+    "slug": "poteryannye-bomby-i-brokenarrow",
+    "title": "Потерянные ядерные боеприпасы: как это влияло на международные правила",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "story",
+    "cover_query": "military aircraft vintage"
+  },
+  {
+    "slug": "samye-izvestnye-krazhi-radioaktivnyh-materialov",
+    "title": "Самые известные кражи радиоактивных материалов и что из них вышло",
+    "direction": "Ядерные материалы и физзащита",
+    "kind": "story",
+    "cover_query": "security breach night facility"
+  },
+  {
+    "slug": "istoriya-atomnogo-proekta-sssr-kratko",
+    "title": "История советского атомного проекта: как за десять лет создали отрасль",
+    "direction": "Отрасль и рынок",
+    "kind": "story",
+    "cover_query": "vintage industrial facility historic"
+  },
+  {
+    "slug": "pervaya-aes-v-obninske-kak-eto-bylo",
+    "title": "Первая в мире АЭС в Обнинске: как это было и что от неё осталось",
+    "direction": "Отрасль и рынок",
+    "kind": "story",
+    "cover_query": "historic power plant building"
+  },
+  {
+    "slug": "istoriya-normirovaniya-doz-ot-rentgena-do-zivertov",
+    "title": "История нормирования доз: от первых рентгенологов до современных пределов",
+    "direction": "Радиационная безопасность",
+    "kind": "story",
+    "cover_query": "vintage x-ray equipment historic"
+  },
+  {
+    "slug": "chelovek-kotoryy-poluchil-samuyu-bolshuyu-dozu",
+    "title": "Люди, получившие самые большие дозы: что медицина узнала из этих случаев",
+    "direction": "Радиационная безопасность",
+    "kind": "story",
+    "cover_query": "hospital medical historic room"
+  },
+  {
+    "slug": "atomnye-vzryvy-v-mirnyh-celyah",
+    "title": "Мирные ядерные взрывы: зачем их проводили и что осталось на местах",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "story",
+    "cover_query": "remote landscape steppe"
+  },
+  {
+    "slug": "radiacionnye-incidenty-s-defektoskopami-v-mire",
+    "title": "Радиационные инциденты с дефектоскопами: почему это самый частый сценарий",
+    "direction": "Радиационные источники",
+    "kind": "story",
+    "cover_query": "industrial radiography site work"
+  },
+  {
+    "slug": "uranovye-rudniki-i-zdorove-shahterov",
+    "title": "Урановые рудники и здоровье шахтёров: как радон попал в нормы",
+    "direction": "Радиационная безопасность",
+    "kind": "story",
+    "cover_query": "underground mine historic"
+  },
+  {
+    "slug": "atomnyy-ledokol-lenin-pervyy-v-mire",
+    "title": "Атомный ледокол «Ленин»: первое в мире гражданское судно с реактором",
+    "direction": "Отрасль и рынок",
+    "kind": "story",
+    "cover_query": "icebreaker ship historic museum"
+  },
+  {
+    "slug": "zakrytye-goroda-kak-oni-poyavilis",
+    "title": "Закрытые города атомной отрасли: как они появились и чем живут сейчас",
+    "direction": "Отрасль и рынок",
+    "kind": "story",
+    "cover_query": "soviet town street architecture"
+  },
+  {
+    "slug": "ekonomika-aes-pochemu-dorogo-stroit-i-deshevo-proizvodit",
+    "title": "Экономика АЭС: почему дорого строить и дёшево производить электричество",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "power plant finance chart"
+  },
+  {
+    "slug": "lcoe-i-sravnenie-stoimosti-energii",
+    "title": "Как сравнивают стоимость энергии разных источников и почему спорят о цифрах",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "energy comparison chart graph"
+  },
+  {
+    "slug": "kak-ustroen-rynok-elektroenergii-i-gde-v-nem-aes",
+    "title": "Как устроен рынок электроэнергии и какое место в нём занимают АЭС",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "power grid transmission lines"
+  },
+  {
+    "slug": "cena-vyvoda-iz-ekspluatacii-kto-platit",
+    "title": "Цена вывода из эксплуатации: кто и когда за это платит",
+    "direction": "Эксплуатация и ресурс",
+    "kind": "money",
+    "cover_query": "decommissioning industrial site"
+  },
+  {
+    "slug": "strahovanie-v-atomnoy-otrasli-kakie-vidy-byvayut",
+    "title": "Страхование в атомной отрасли: какие виды бывают и что реально покрывается",
+    "direction": "Лицензирование",
+    "kind": "explainer",
+    "cover_query": "insurance documents office desk"
+  },
+  {
+    "slug": "kak-ocenit-riski-atomnogo-proekta",
+    "title": "Как оценить риски атомного проекта до входа в него",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "risk assessment meeting charts"
+  },
+  {
+    "slug": "okupaemost-investiciy-v-laboratoriyu-nk",
+    "title": "Окупаемость инвестиций в лабораторию неразрушающего контроля",
+    "direction": "Изготовление оборудования",
+    "kind": "money",
+    "cover_query": "testing laboratory equipment"
+  },
+  {
+    "slug": "kak-schitat-zagruzku-oborudovaniya-s-istochnikom",
+    "title": "Как считать загрузку и окупаемость оборудования с источником",
+    "direction": "Радиационные источники",
+    "kind": "money",
+    "cover_query": "industrial equipment utilization"
+  },
+  {
+    "slug": "chem-otlichaetsya-rynok-atomnyh-podryadov-ot-obychnyh",
+    "title": "Чем рынок атомных подрядов отличается от обычного строительного",
+    "direction": "Отрасль и рынок",
+    "kind": "compare",
+    "cover_query": "construction business meeting"
+  },
+  {
+    "slug": "kak-malomu-predpriyatiyu-zayti-v-atomnuyu-otrasl",
+    "title": "Как малому предприятию зайти в атомную отрасль: реалистичная стратегия",
+    "direction": "Отрасль и рынок",
+    "kind": "guide",
+    "cover_query": "small business workshop owner"
+  },
+  {
+    "slug": "podgotovitelnyy-period-na-atomnoy-stroyke",
+    "title": "Подготовительный период на атомной стройке: что делают до лицензии на сооружение",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "construction site preparation earthworks"
+  },
+  {
+    "slug": "kotlovan-i-osnovanie-pod-yadernyy-ostrov",
+    "title": "Котлован и основание под ядерный остров: геология, которая определяет проект",
+    "direction": "Строительство и монтаж",
+    "kind": "explainer",
+    "cover_query": "excavation foundation construction"
+  },
+  {
+    "slug": "stroitelnyy-gorodok-i-infrastruktura-stroyki",
+    "title": "Строительный городок и инфраструктура атомной стройки",
+    "direction": "Строительство и монтаж",
+    "kind": "explainer",
+    "cover_query": "construction camp site buildings"
+  },
+  {
+    "slug": "bashenne-krany-i-gruzopodemnaya-tehnika-na-aes",
+    "title": "Башенные краны и грузоподъёмная техника на атомной стройке",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "tower crane construction site"
+  },
+  {
+    "slug": "betonnyy-zavod-na-ploshchadke-aes",
+    "title": "Бетонный завод на площадке АЭС: аттестация и контроль качества смеси",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "concrete batching plant industrial"
+  },
+  {
+    "slug": "armaturnyy-ceh-na-stroyke-organizaciya",
+    "title": "Арматурный цех на стройке: организация, контроль и документы",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "rebar workshop construction"
+  },
+  {
+    "slug": "montazh-oborudovaniya-otkrytym-sposobom",
+    "title": "Монтаж оборудования открытым способом: когда технику ставят до стен",
+    "direction": "Строительство и монтаж",
+    "kind": "explainer",
+    "cover_query": "open construction heavy equipment"
+  },
+  {
+    "slug": "pusko-naladochnye-raboty-kto-i-chto-delaet",
+    "title": "Пусконаладочные работы на атомном объекте: кто и что делает",
+    "direction": "Эксплуатация и ресурс",
+    "kind": "guide",
+    "cover_query": "commissioning engineers control panel"
+  },
+  {
+    "slug": "gidroispytaniya-i-ispytaniya-germetichnosti",
+    "title": "Гидроиспытания и испытания герметичности: как проверяют то, что построили",
+    "direction": "Строительство и монтаж",
+    "kind": "explainer",
+    "cover_query": "pressure test industrial pipes"
+  },
+  {
+    "slug": "zimnee-betonirovanie-na-atomnoy-stroyke",
+    "title": "Зимнее бетонирование на атомной стройке: как строят при минусовых температурах",
+    "direction": "Строительство и монтаж",
+    "kind": "guide",
+    "cover_query": "winter construction concrete snow"
+  },
+  {
+    "slug": "eksport-atomnyh-tehnologiy-kak-ustroen-rynok",
+    "title": "Экспорт атомных технологий: как устроен мировой рынок сооружения АЭС",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "world map globe business"
+  },
+  {
+    "slug": "mezhdunarodnye-standarty-magate-i-rossiyskie-normy",
+    "title": "Стандарты МАГАТЭ и российские нормы: как они соотносятся",
+    "direction": "Нормы и правила",
+    "kind": "compare",
+    "cover_query": "international standards documents"
+  },
+  {
+    "slug": "kak-rabotayut-rossiyskie-podryadchiki-za-rubezhom",
+    "title": "Как российские подрядчики работают на зарубежных атомных стройках",
+    "direction": "Отрасль и рынок",
+    "kind": "guide",
+    "cover_query": "international construction site workers"
+  },
+  {
+    "slug": "perevod-i-legalizaciya-dokumentov-dlya-eksporta",
+    "title": "Перевод и легализация документов для зарубежного проекта",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "translated documents stamps office"
+  },
+  {
+    "slug": "tamozhennoe-oformlenie-atomnogo-oborudovaniya",
+    "title": "Таможенное оформление атомного оборудования: коды, разрешения, сроки",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "customs warehouse cargo documents"
+  },
+  {
+    "slug": "valyutnyy-kontrol-po-eksportnym-kontraktam",
+    "title": "Валютный контроль по экспортным контрактам в атомной отрасли",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "currency finance documents bank"
+  },
+  {
+    "slug": "kak-podtverdit-kvalifikaciyu-pered-inostrannym-zakazchikom",
+    "title": "Как подтвердить квалификацию перед иностранным заказчиком",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "business presentation international"
+  },
+  {
+    "slug": "strahovanie-i-garantii-v-mezhdunarodnyh-kontraktah",
+    "title": "Страхование и гарантии в международных атомных контрактах",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "international contract signing"
+  },
+  {
+    "slug": "yazyk-dokumentacii-v-zarubezhnom-proekte",
+    "title": "Язык документации в зарубежном проекте: где нужен перевод, а где нет",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "bilingual documents desk"
+  },
+  {
+    "slug": "komandirovka-personala-na-zarubezhnuyu-ploshchadku",
+    "title": "Командировка персонала на зарубежную площадку: оформление и подготовка",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "airport travel business luggage"
+  },
+  {
+    "slug": "kak-vybrat-konsultanta-po-licenzirovaniyu",
+    "title": "Как выбрать консультанта по лицензированию и не переплатить",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "consultant meeting business office"
+  },
+  {
+    "slug": "chto-dolzhno-byt-v-dogovore-s-konsultantom",
+    "title": "Что должно быть в договоре с консультантом по атомной лицензии",
+    "direction": "Лицензирование",
+    "kind": "checklist",
+    "cover_query": "contract review documents desk"
+  },
+  {
+    "slug": "kak-ocenit-gotovnost-predpriyatiya-za-chas",
+    "title": "Как оценить готовность предприятия к лицензированию за один час",
+    "direction": "Лицензирование",
+    "kind": "checklist",
+    "cover_query": "quick assessment checklist office"
+  },
+  {
+    "slug": "tipovye-oshibki-v-organizacionnoy-strukture",
+    "title": "Типовые ошибки в организационной структуре предприятия-лицензиата",
+    "direction": "Нормы и правила",
+    "kind": "list",
+    "cover_query": "organization chart office wall"
+  },
+  {
+    "slug": "kak-vystroit-dokumentooborot-po-radiacionnoy-bezopasnosti",
+    "title": "Как выстроить документооборот по радиационной безопасности",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "document management office system"
+  },
+  {
+    "slug": "elektronnye-zhurnaly-vmesto-bumazhnyh-mozhno-li",
+    "title": "Электронные журналы вместо бумажных: можно ли и как это оформить",
+    "direction": "Радиационная безопасность",
+    "kind": "qa",
+    "cover_query": "tablet digital records industrial"
+  },
+  {
+    "slug": "arhiv-predpriyatiya-atomnoy-otrasli-kak-organizovat",
+    "title": "Архив предприятия атомной отрасли: как организовать и что хранить вечно",
+    "direction": "Нормы и правила",
+    "kind": "guide",
+    "cover_query": "archive room shelves documents"
+  },
+  {
+    "slug": "peredacha-del-pri-smene-otvetstvennogo",
+    "title": "Передача дел при смене ответственного: акт, который спасает преемника",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "handover documents office meeting"
+  },
+  {
+    "slug": "kak-podgotovit-prezentaciyu-dlya-zakazchika-v-otrasli",
+    "title": "Как подготовить презентацию для атомного заказчика: что он хочет увидеть",
+    "direction": "Закупки и договоры",
+    "kind": "guide",
+    "cover_query": "business presentation screen meeting"
+  },
+  {
+    "slug": "sayt-i-marketing-postavshchika-atomnoy-otrasli",
+    "title": "Сайт и маркетинг поставщика атомной отрасли: что реально работает",
+    "direction": "Отрасль и рынок",
+    "kind": "guide",
+    "cover_query": "website laptop marketing office"
+  },
+  {
+    "slug": "kak-chitat-zaklyuchenie-ekspertizy-bezopasnosti",
+    "title": "Как читать заключение экспертизы безопасности и отвечать на замечания",
+    "direction": "Лицензирование",
+    "kind": "guide",
+    "cover_query": "expert report documents review"
+  },
+  {
+    "slug": "kak-sostavit-plan-ustraneniya-narusheniy",
+    "title": "Как составить план устранения нарушений, который примет надзор",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "action plan documents desk"
+  },
+  {
+    "slug": "kak-dokazat-vypolnenie-predpisaniya",
+    "title": "Как доказать выполнение предписания: какие документы собрать",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "evidence documents folder proof"
+  },
+  {
+    "slug": "samoproverka-pered-inspekciey-za-odin-den",
+    "title": "Самопроверка перед инспекцией за один день: маршрут по предприятию",
+    "direction": "Проверки и ответственность",
+    "kind": "checklist",
+    "cover_query": "walkthrough inspection industrial"
+  },
+  {
+    "slug": "chto-inspektor-sprashivaet-u-rabochih",
+    "title": "Что инспектор спрашивает у рабочих и почему это важнее документов",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "worker interview industrial site"
+  },
+  {
+    "slug": "kak-podgotovit-personal-k-obshcheniyu-s-proveryayushchim",
+    "title": "Как подготовить персонал к общению с проверяющим",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "team briefing office meeting"
+  },
+  {
+    "slug": "chto-pokazyvat-i-chto-ne-pokazyvat-na-proverke",
+    "title": "Что показывать и что не показывать на проверке: границы обязанностей",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "documents review inspection office"
+  },
+  {
+    "slug": "kak-vesti-sebya-pri-vyyavlenii-narusheniya",
+    "title": "Как вести себя при выявлении нарушения прямо во время проверки",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "serious meeting office discussion"
+  },
+  {
+    "slug": "akt-proverki-kak-ego-chitat-i-podpisyvat",
+    "title": "Акт проверки: как его читать, что писать в возражениях и когда не подписывать",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "signing document inspection report"
+  },
+  {
+    "slug": "kak-rabotat-s-povtornoy-proverkoy",
+    "title": "Как работать с повторной проверкой после устранения нарушений",
+    "direction": "Проверки и ответственность",
+    "kind": "guide",
+    "cover_query": "follow up inspection industrial"
+  },
+  {
+    "slug": "radiacionnyy-kontrol-metalloloma-kto-obyazan",
+    "title": "Радиационный контроль металлолома: кто обязан его проводить",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "qa",
+    "cover_query": "scrap metal yard industrial"
+  },
+  {
+    "slug": "kontrol-stroitelnyh-materialov-na-radionuklidy",
+    "title": "Контроль строительных материалов на радионуклиды: кто, когда и зачем",
+    "direction": "Экология и общественность",
+    "kind": "guide",
+    "cover_query": "building materials testing laboratory"
+  },
+  {
+    "slug": "radiacionnyy-kontrol-pishchevoy-produkcii",
+    "title": "Радиационный контроль пищевой продукции: требования и практика",
+    "direction": "Экология и общественность",
+    "kind": "guide",
+    "cover_query": "food laboratory testing samples"
+  },
+  {
+    "slug": "radiacionnoe-obsledovanie-zemelnogo-uchastka",
+    "title": "Радиационное обследование земельного участка: когда требуется и как проводится",
+    "direction": "Экология и общественность",
+    "kind": "guide",
+    "cover_query": "land survey field measurement"
+  },
+  {
+    "slug": "radiacionnyy-kontrol-pri-sdache-obekta",
+    "title": "Радиационный контроль при сдаче объекта в эксплуатацию",
+    "direction": "Экология и общественность",
+    "kind": "guide",
+    "cover_query": "building inspection measurement"
+  },
+  {
+    "slug": "izmerenie-radona-v-zdanii-kak-pravilno",
+    "title": "Измерение радона в здании: как сделать правильно и что делать с результатом",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "radon detector basement measurement"
+  },
+  {
+    "slug": "kontrol-vody-na-radionuklidy",
+    "title": "Контроль воды на радионуклиды: питьевая, техническая, сточная",
+    "direction": "Экология и общественность",
+    "kind": "guide",
+    "cover_query": "water sample laboratory testing"
+  },
+  {
+    "slug": "radiacionnyy-kontrol-importnyh-gruzov",
+    "title": "Радиационный контроль импортных грузов: кто проверяет и что бывает при находке",
+    "direction": "Обращение с РВ и РАО",
+    "kind": "guide",
+    "cover_query": "cargo container inspection port"
+  },
+  {
+    "slug": "chto-delat-esli-v-produkcii-nashli-prevyshenie",
+    "title": "Что делать, если в продукции нашли превышение по радионуклидам",
+    "direction": "Экология и общественность",
+    "kind": "guide",
+    "cover_query": "laboratory alert result documents"
+  },
+  {
+    "slug": "kak-vybrat-laboratoriyu-dlya-radiacionnogo-kontrolya",
+    "title": "Как выбрать лабораторию для радиационного контроля и проверить её документы",
+    "direction": "Радиационная безопасность",
+    "kind": "guide",
+    "cover_query": "laboratory selection documents"
+  },
+  {
+    "slug": "atomnye-stancii-malovodnyh-regionov-i-oborotnoe-vodosnabzhenie",
+    "title": "Оборотное водоснабжение АЭС: пруды-охладители, градирни и их влияние",
+    "direction": "Экология и общественность",
+    "kind": "explainer",
+    "cover_query": "cooling pond water plant"
+  },
+  {
+    "slug": "teplosnabzhenie-ot-aes-kak-eto-rabotaet",
+    "title": "Теплоснабжение от АЭС: как станция отапливает город и почему это безопасно",
+    "direction": "Как работает АЭС",
+    "kind": "explainer",
+    "cover_query": "district heating pipes city"
+  },
+  {
+    "slug": "opresnenie-vody-na-atomnoy-energii",
+    "title": "Опреснение воды на атомной энергии: технология для засушливых регионов",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "desalination plant seawater"
+  },
+  {
+    "slug": "atomnaya-energiya-dlya-promyshlennogo-tepla",
+    "title": "Атомная энергия для промышленного тепла: новое направление применения",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "industrial steam pipes plant"
+  },
+  {
+    "slug": "izotopnaya-produkciya-rossii-chto-my-proizvodim",
+    "title": "Изотопная продукция России: что производим и кому продаём",
+    "direction": "Отрасль и рынок",
+    "kind": "explainer",
+    "cover_query": "isotope production laboratory"
+  },
+  {
+    "slug": "kak-ustroeno-proizvodstvo-radiofarmpreparatov",
+    "title": "Как устроено производство радиофармпрепаратов: от циклотрона до шприца",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "pharmaceutical production cleanroom"
+  },
+  {
+    "slug": "sterilizaciya-medizdeliy-rynok-i-trebovaniya",
+    "title": "Стерилизация медизделий излучением: рынок услуг и требования к участникам",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "sterilization facility medical"
+  },
+  {
+    "slug": "obluchenie-dragocennyh-kamney-i-materialov",
+    "title": "Облучение драгоценных камней и материалов: экзотическое применение с обычными требованиями",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "gemstones colorful minerals"
+  },
+  {
+    "slug": "neytronnaya-radiografiya-gde-primenyaetsya",
+    "title": "Нейтронная радиография: когда рентген бессилен",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "neutron imaging laboratory"
+  },
+  {
+    "slug": "mossbauerovskaya-spektroskopiya-i-istochniki",
+    "title": "Мёссбауэровская спектроскопия: источник в научной лаборатории",
+    "direction": "Радиационные источники",
+    "kind": "explainer",
+    "cover_query": "spectroscopy laboratory physics"
+  },
+  {
+    "slug": "kak-poluchit-razreshenie-rabotniku-poshagovo",
+    "title": "Как получить разрешение Ростехнадзора работнику: пошаговый порядок",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "examination office documents"
+  },
+  {
+    "slug": "podgotovka-k-proverke-znaniy-v-rostehnadzore",
+    "title": "Подготовка к проверке знаний в Ростехнадзоре: что спрашивают и как готовиться",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "exam preparation study books"
+  },
+  {
+    "slug": "chto-delat-esli-ne-sdal-proverku-znaniy",
+    "title": "Что делать, если не сдал проверку знаний: сроки пересдачи и последствия",
+    "direction": "Персонал и разрешения",
+    "kind": "qa",
+    "cover_query": "exam failed papers desk"
+  },
+  {
+    "slug": "kak-organizovat-obuchenie-personala-vnutri-kompanii",
+    "title": "Как организовать обучение персонала внутри компании и что нельзя делать самим",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "corporate training room employees"
+  },
+  {
+    "slug": "kadrovyy-audit-pered-licenzirovaniem",
+    "title": "Кадровый аудит перед лицензированием: кого не хватает и кого учить первым",
+    "direction": "Персонал и разрешения",
+    "kind": "guide",
+    "cover_query": "hr audit documents office"
   }
 ]
