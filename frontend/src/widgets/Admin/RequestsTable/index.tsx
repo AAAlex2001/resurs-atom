@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { Button } from "@/shared/ui/Button";
 import { toTelHref } from "@/shared/lib/phone";
 import style from "./style.module.scss";
@@ -28,6 +29,29 @@ type RequestsTableProps = {
 
 export const RequestsTable = ({ requests }: RequestsTableProps) => {
     const router = useRouter();
+    const [exporting, setExporting] = useState(false);
+    const [exportError, setExportError] = useState("");
+
+    const onExport = async () => {
+        setExporting(true);
+        setExportError("");
+        try {
+            const response = await fetch("/api/admin/requests/export", { cache: "no-store" });
+            if (!response.ok) throw new Error("Не удалось выгрузить заявки. Попробуйте ещё раз.");
+            const url = URL.createObjectURL(await response.blob());
+            const link = document.createElement("a");
+            link.href = url;
+            link.download = "requests.docx";
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+            setTimeout(() => URL.revokeObjectURL(url), 1000);
+        } catch {
+            setExportError("Не удалось выгрузить заявки. Попробуйте ещё раз.");
+        } finally {
+            setExporting(false);
+        }
+    };
 
     const onDelete = async (id: number) => {
         await deleteRequest(id);
@@ -49,7 +73,11 @@ export const RequestsTable = ({ requests }: RequestsTableProps) => {
                 <div className={style.headerInner}>
                     <span className={style.title}>Заявки</span>
                     <span className={style.count}>{requests.length}</span>
+                    <button className={style.exportButton} onClick={onExport} disabled={exporting}>
+                        {exporting ? "Выгрузка…" : "Выгрузить в Word"}
+                    </button>
                 </div>
+                {exportError && <p className={style.exportError} role="alert">{exportError}</p>}
             </div>
 
             <div className={style.body}>

@@ -26,6 +26,24 @@
     padding: 24px 20px;
 }
 
+.exportButton {
+    margin-left: auto;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 10px;
+    background: #E3FBEF;
+    color: #00895B;
+    font: inherit;
+    cursor: pointer;
+    &:disabled { opacity: 0.6; cursor: wait; }
+}
+
+.exportError {
+    color: #B42318;
+    max-width: 1440px;
+    margin: 10px auto 0;
+}
+
 .title {
     font-size: 18px;
     font-weight: 500;

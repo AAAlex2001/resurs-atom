@@ -1,4 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi.responses import Response
+from services.request_export import build_requests_docx
 
 from dependencies import verify_api_key
 from schemas.request import RequestIn, RequestOut
@@ -7,6 +9,17 @@ from services.request import RequestService
 from services.tg_notify import TelegramNotificationService
 
 router = APIRouter(prefix="/request", tags=["request"])
+
+
+@router.get('/export', dependencies=[Depends(verify_api_key)])
+async def export_requests(request_service: RequestService = Depends()) -> Response:
+    requests = await request_service.get_requests()
+    return Response(
+        content=build_requests_docx(requests),
+        media_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+        headers={'Content-Disposition': 'attachment; filename="requests.docx"',
+                 'Cache-Control': 'no-store'},
+    )
 
 
 @router.post(
